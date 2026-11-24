@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-24T12:47:57.946Z",
+  "generatedAt": "2026-11-24T12:54:11.385Z",
   "appName": "BHARAT 2047 · Mission Control",
   "sourceStatus": {
-    "updatedAt": "2026-11-24T12:47:57.946Z",
+    "updatedAt": "2026-11-24T12:54:11.385Z",
     "staleCount": 0,
-    "dataCount": 52
+    "dataCount": 53
   },
   "gdp": {
     "targetT": 47,
@@ -1966,7 +1966,7 @@
       "period": "August",
       "yoy": "",
       "sourceUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9EdUdEdEtPVlU4VEhnSE4zTTlUVjhMQS1JeUk2cW82bXU5aF8yaERBb2UwNk9MQlh1RlJYN3hoRTlqMUw2aWNHMTlsX2JlQzhYSE5QaHNoRl9kcWRMUUNtNGtOZ1hSMngxdHFSOGJMY0bSAXZBVV95cUxNRDlBMEtuV1RtX3ZEMU81ZUY3TnEyYXA5dW83d3h0c1NhSmNKRnRHempoNWdIY1lyR3RTSHZ3ZXl0R1BnSGNpNlpYWFBpTGc0R3JKTlI0c1hZSjIzeFowaFEwSlBHWUVlTUMwQ011UkRxOTNVOW5R?oc=5",
-      "freshness": "Stale · extraction failed",
+      "freshness": "Auto-extracted · verify",
       "mode": "auto-extracted · verify",
       "history": [
         {
@@ -1980,9 +1980,15 @@
           "value": 2.07,
           "yoy": null,
           "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9EdUdEdEtPVlU4VEhnSE4zTTlUVjhMQS1JeUk2cW82bXU5aF8yaERBb2UwNk9MQlh1RlJYN3hoRTlqMUw2aWNHMTlsX2JlQzhYSE5QaHNoRl9kcWRMUUNtNGtOZ1hSMngxdHFSOGJMY0bSAXZBVV95cUxNRDlBMEtuV1RtX3ZEMU81ZUY3TnEyYXA5dW83d3h0c1NhSmNKRnRHempoNWdIY1lyR3RTSHZ3ZXl0R1BnSGNpNlpYWFBpTGc0R3JKTlI0c1hZSjIzeFowaFEwSlBHWUVlTUMwQ011UkRxOTNVOW5R?oc=5"
+        },
+        {
+          "date": "2026-11-24T12:49:12.307Z",
+          "value": 2.07,
+          "yoy": null,
+          "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9EdUdEdEtPVlU4VEhnSE4zTTlUVjhMQS1JeUk2cW82bXU5aF8yaERBb2UwNk9MQlh1RlJYN3hoRTlqMUw2aWNHMTlsX2JlQzhYSE5QaHNoRl9kcWRMUUNtNGtOZ1hSMngxdHFSOGJMY0bSAXZBVV95cUxNRDlBMEtuV1RtX3ZEMU81ZUY3TnEyYXA5dW83d3h0c1NhSmNKRnRHempoNWdIY1lyR3RTSHZ3ZXl0R1BnSGNpNlpYWFBpTGc0R3JKTlI0c1hZSjIzeFowaFEwSlBHWUVlTUMwQ011UkRxOTNVOW5R?oc=5"
         }
       ],
-      "note": "News was found but the AI did not return a verifiable value."
+      "note": "Gemini extracted only from the listed Google News RSS items. Check the linked source before use."
     },
     {
       "metric": "UPI value",
@@ -2035,7 +2041,7 @@
       "period": "",
       "yoy": "",
       "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVnZIWEVmaXZCbzF3elowTTJwM1NfTkhMdjFyRTdNZWRpQ25rLWNwZEc3V1JxRFBjck9pSU5ka0R5Y0FTWFlDQmxpWFF4ZW1LU284a3RNanA1QzJjQlJqYUtNWVFUNlU5NDMyUlRza2xZdWVZUTBFZUhkemlFYjVTcGp3X1pWNzVLeEFVY1pJVjBGOHZ5UFNyXzRjTlZJdnYtWjNFNmFUUQ?oc=5",
-      "freshness": "Stale · extraction failed",
+      "freshness": "Auto-extracted · verify",
       "mode": "auto-extracted · verify",
       "history": [
         {
@@ -2049,9 +2055,15 @@
           "value": 725.727,
           "yoy": null,
           "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVnZIWEVmaXZCbzF3elowTTJwM1NfTkhMdjFyRTdNZWRpQ25rLWNwZEc3V1JxRFBjck9pSU5ka0R5Y0FTWFlDQmxpWFF4ZW1LU284a3RNanA1QzJjQlJqYUtNWVFUNlU5NDMyUlRza2xZdWVZUTBFZUhkemlFYjVTcGp3X1pWNzVLeEFVY1pJVjBGOHZ5UFNyXzRjTlZJdnYtWjNFNmFUUQ?oc=5"
+        },
+        {
+          "date": "2026-11-24T12:49:25.287Z",
+          "value": 725.727,
+          "yoy": null,
+          "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVnZIWEVmaXZCbzF3elowTTJwM1NfTkhMdjFyRTdNZWRpQ25rLWNwZEc3V1JxRFBjck9pSU5ka0R5Y0FTWFlDQmxpWFF4ZW1LU284a3RNanA1QzJjQlJqYUtNWVFUNlU5NDMyUlRza2xZdWVZUTBFZUhkemlFYjVTcGp3X1pWNzVLeEFVY1pJVjBGOHZ5UFNyXzRjTlZJdnYtWjNFNmFUUQ?oc=5"
         }
       ],
-      "note": "News was found but the AI did not return a verifiable value."
+      "note": "Gemini extracted only from the listed Google News RSS items. Check the linked source before use."
     },
     {
       "metric": "Power demand",
@@ -2077,6 +2089,12 @@
         },
         {
           "date": "2026-11-24T12:47:19.235Z",
+          "value": 11.7,
+          "yoy": null,
+          "source_url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxOUzZkR1pjZjhHLWJEcHVhbXAtbk9mY2FYQnptV2twOW9vRllDNDBaSmdXaGtONWFZeWYtcDU0Z213cHdLQjNmRmMtMDB0cUUwVFUyVll6eVE3dkxoVTB5Ry11UWc5MktROGE3NEw1SGdyYXpjWDZKVVVNaVlISDhYQWZKUUUzSWxUSGRYcDdLODZjX3JReHlSRkladHJtclZoU2ljT1dMaG9kSEttMTVxb0tpR0NhS2p2R0ZPNGN2RTl4UmJ5NFVoYXlDTWs2SExMOEdEeXAxMUgwdVhPYUFNSFVqNmdnc0o1bC1IVURLWDQyMDJPcDU0bllhLTJYRkZDNWJXbnNLR1dOak9nYXljaXhyWGZ1bmpUMzYyamVVSGo2aEE2V2hvTWU5ellPTzZlc2tXVDJHZzNGd0hHcXNRMFpFWnVVTV81N0ZBZUFB?oc=5"
+        },
+        {
+          "date": "2026-11-24T12:49:29.664Z",
           "value": 11.7,
           "yoy": null,
           "source_url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxOUzZkR1pjZjhHLWJEcHVhbXAtbk9mY2FYQnptV2twOW9vRllDNDBaSmdXaGtONWFZeWYtcDU0Z213cHdLQjNmRmMtMDB0cUUwVFUyVll6eVE3dkxoVTB5Ry11UWc5MktROGE3NEw1SGdyYXpjWDZKVVVNaVlISDhYQWZKUUUzSWxUSGRYcDdLODZjX3JReHlSRkladHJtclZoU2ljT1dMaG9kSEttMTVxb0tpR0NhS2p2R0ZPNGN2RTl4UmJ5NFVoYXlDTWs2SExMOEdEeXAxMUgwdVhPYUFNSFVqNmdnc0o1bC1IVURLWDQyMDJPcDU0bllhLTJYRkZDNWJXbnNLR1dOak9nYXljaXhyWGZ1bmpUMzYyamVVSGo2aEE2V2hvTWU5ellPTzZlc2tXVDJHZzNGd0hHcXNRMFpFWnVVTV81N0ZBZUFB?oc=5"
@@ -2114,7 +2132,7 @@
       "symbol": "CURRENCY:USDINR",
       "company": "USD / INR",
       "kind": "currency",
-      "price": 92.82785000000001,
+      "price": 92.81315000000001,
       "changePct": null,
       "marketCap": null,
       "freshness": "Live · GOOGLEFINANCE",
@@ -2156,7 +2174,7 @@
       "kind": "company",
       "price": 817.8,
       "changePct": -3.33,
-      "marketCap": 12854821502839.623,
+      "marketCap": 12852785843540.266,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2176,7 +2194,7 @@
       "kind": "company",
       "price": 1585.5,
       "changePct": -3.32,
-      "marketCap": 11724834264339.598,
+      "marketCap": 11722977547161.662,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2196,7 +2214,7 @@
       "kind": "company",
       "price": 1103.4,
       "changePct": 0.49,
-      "marketCap": 4451031617222.587,
+      "marketCap": 4450326762324.265,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -3300,7 +3318,7 @@
       "freshness": "News RSS · Tue, 10 Nov 2026 08:00:00 GMT"
     }
   ],
-  "weeklyBrief": "",
+  "weeklyBrief": "**Weekly Economic Brief**\n\n**What Moved:** \nReal GDP growth registers at 7.8% with inflation at 2.0%. Electronics production reached USD 149 billion, while formally skilled workforce stands at 4.2%. States with $1T GSDP remain at zero. \n\n**Why It Matters:** \nThe economy tracks behind its 2047 target trajectory, with current actual CAGR (2020–2025) at 8.36% against a required 11.97% CAGR, projecting an ETA year of 2056 based on current trends. \n\n**Highest-Priority Strategies:**\n1. Formally skilled workforce\n2. Electronics production\n3. States with $1T GSDP\n\n*(Note: Causal links between external sentiment headlines and dashboard metrics are unavailable.)*",
   "methodology": [
     {
       "name": "GDP and macroeconomic series",
