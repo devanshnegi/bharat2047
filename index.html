@@ -1080,10 +1080,12 @@
       font-variant-numeric: tabular-nums;
     }
     .strat-spark-empty { font-size: 11px; color: var(--subtle); }
-  </style>
+  .bom-tag{display:inline-block;margin-left:6px;padding:1px 6px;border-radius:6px;font-size:10px;font-weight:700;letter-spacing:.04em;border:1px solid #92744b;color:#ffcd8d;vertical-align:middle}
+#staleDataBanner{display:none;background:#5a1f1f;color:#ffe1d6;border:1px solid #c0533f;border-radius:8px;padding:10px 14px;margin:10px 0;font-weight:600}
+</style>
 </head>
 <body>
-  <main class="shell">
+  <main class="shell"><div id="staleDataBanner" role="status"></div>
     <header class="topbar" aria-label="Dashboard header">
       <div class="brand-group">
         <span class="flag" aria-hidden="true"></span>
@@ -1142,7 +1144,7 @@
       <div class="bom-header">
         <div>
           <h2>BHARAT-<em>O</em>-METER</h2>
-          <p>Real-time mid-year interpolated economic, digital payments, and 2047 mission counters updated every second in IST.</p>
+          <p>Live counters are estimates based on official IMF, World Bank and NPCI data, spread across the year (Worldometers method). Future dates are projections, not certainties.</p>
         </div>
         <div class="bom-actions" aria-label="Share Bharat-O-Meter">
           <button id="bomNativeShareBtn" type="button" class="bom-btn bom-btn-primary" hidden>Share</button>
@@ -1181,7 +1183,7 @@
           <div class="bom-grid">
             <article class="card bom-card">
               <div class="bom-card-top">
-                <div class="bom-card-label">🇮🇳 India nominal GDP right now</div>
+                <div class="bom-card-label">🇮🇳 India&#39;s output so far this year <span class="bom-tag">Estimate</span></div>
                 <button type="button" class="bom-share-btn" data-bom-share="gdpNow" aria-label="Share India nominal GDP right now">↗</button>
               </div>
               <div id="bomGdpNow" class="bom-val">—</div>
@@ -1190,7 +1192,7 @@
 
             <article class="card bom-card">
               <div class="bom-card-top">
-                <div class="bom-card-label">PPP GDP right now</div>
+                <div class="bom-card-label">PPP output so far this year <span class="bom-tag">Estimate</span></div>
                 <button type="button" class="bom-share-btn" data-bom-share="pppNow" aria-label="Share PPP GDP right now">↗</button>
               </div>
               <div id="bomPppNow" class="bom-val">—</div>
@@ -1199,7 +1201,7 @@
 
             <article class="card bom-card">
               <div class="bom-card-top">
-                <div class="bom-card-label">Added to India’s GDP today</div>
+                <div class="bom-card-label">India’s output today <span class="bom-tag">Estimate</span></div>
                 <button type="button" class="bom-share-btn" data-bom-share="gdpToday" aria-label="Share GDP added today">↗</button>
               </div>
               <div id="bomGdpToday" class="bom-val">—</div>
@@ -1234,7 +1236,7 @@
             </article>
           </div>
           <div class="bom-session-line">
-            <span>While you were here, India’s economy grew by</span>
+            <span>While you were here, India produced</span>
             <strong id="bomGdpSession">+$0</strong>
           </div>
         </div>
@@ -3266,52 +3268,27 @@
         }
 
         function interpolateMidYear(series, pace, nowMs, istYear) {
+          // Annual anchoring (Worldometers-style): headline = exact IMF estimate for the
+          // current calendar year; tickers spread that annual value across the year.
           const pts = (series || [])
             .filter((p) => p && n(p.year) !== null && n(p.value) !== null && p.value > 0)
             .sort((a, b) => a.year - b.year);
           if (!pts.length) return null;
-
-          const ext = pts.map((p) => ({ year: p.year, value: p.value, extrapolated: false }));
-          const last = ext[ext.length - 1];
-          const safePace = n(pace) !== null ? pace : 0;
-          let y = last.year;
-          const needYear = Math.max(istYear + 2, new Date(nowMs).getUTCFullYear() + 2);
-          while (y < needYear) {
-            y += 1;
-            const prev = ext[ext.length - 1];
-            ext.push({ year: y, value: prev.value * (1 + safePace), extrapolated: true });
+          let pt = pts.find((p) => p.year === istYear);
+          let extrapolated = false;
+          if (!pt) {
+            const last = pts[pts.length - 1];
+            const safePace = n(pace) !== null ? pace : 0;
+            pt = { year: istYear, value: last.value * Math.pow(1 + safePace, Math.max(0, istYear - last.year)) };
+            extrapolated = true;
           }
-
-          let p0 = ext[0];
-          let p1 = ext[1] || ext[0];
-          for (let i = 0; i < ext.length - 1; i++) {
-            const tA = midYearMs(ext[i].year);
-            const tB = midYearMs(ext[i + 1].year);
-            if (nowMs >= tA && nowMs <= tB) {
-              p0 = ext[i];
-              p1 = ext[i + 1];
-              break;
-            }
-          }
-          if (nowMs < midYearMs(ext[0].year) && ext.length >= 2) {
-            p0 = ext[0];
-            p1 = ext[1];
-          }
-
-          const t0 = midYearMs(p0.year);
-          const t1 = midYearMs(p1.year);
-          const secBetween = Math.max(1, (t1 - t0) / 1000);
-          const ratePerSecUsd = ((p1.value - p0.value) * 1e12) / secBetween;
-          const valUsd = p0.value * 1e12 + ratePerSecUsd * ((nowMs - t0) / 1000);
-
-          return {
-            valUsd,
-            valT: valUsd / 1e12,
-            ratePerSecUsd,
-            y0: p0.year,
-            y1: p1.year,
-            extrapolated: Boolean(p1.extrapolated)
-          };
+          const yStart = Date.UTC(istYear, 0, 1) - 5.5 * 3600 * 1000;
+          const yEnd = Date.UTC(istYear + 1, 0, 1) - 5.5 * 3600 * 1000;
+          const secInYear = (yEnd - yStart) / 1000;
+          const annualUsd = pt.value * 1e12;
+          const ratePerSecUsd = annualUsd / secInYear;
+          const ytdUsd = ratePerSecUsd * Math.max(0, Math.min(secInYear, (nowMs - yStart) / 1000));
+          return { valUsd: annualUsd, valT: pt.value, ratePerSecUsd, ytdUsd, y0: istYear, y1: istYear, extrapolated };
         }
 
         function findStrategy(data, regex, refYear) {
@@ -3526,16 +3503,16 @@
             if (el('bomEconSourceLabel')) {
               const imfWin = nom ? `${nom.y0}–${nom.y1}` : 'IMF';
               const upiSrc = upiParsed.ok ? ` & ${upiParsed.periodText} UPI` : '';
-              el('bomEconSourceLabel').textContent = `ⓘ Live estimate · based on IMF ${imfWin} (1 July mid-year)${upiSrc}`;
+              el('bomEconSourceLabel').textContent = `ⓘ Live estimate · IMF ${ist.year} annual GDP spread across the year${upiSrc}`;
             }
 
             // Counter 1: Nominal GDP right now
             let gapUsd = null;
             let gapRatePerSecUsd = null;
             if (nom) {
-              if (el('bomGdpNow')) el('bomGdpNow').textContent = `$${usdIntFmt.format(Math.round(nom.valUsd))}`;
+              if (el('bomGdpNow')) el('bomGdpNow').textContent = `$${usdIntFmt.format(Math.round(nom.ytdUsd))}`;
               if (el('bomGdpNowSub')) {
-                el('bomGdpNowSub').textContent = `+$${usdIntFmt.format(Math.round(nom.ratePerSecUsd))} every second · ${(nom.valT / targetT * 100).toFixed(2)}% of $${targetT}T`;
+                el('bomGdpNowSub').textContent = `+$${usdIntFmt.format(Math.round(nom.ratePerSecUsd))} every second · IMF ${ist.year} GDP: $${nom.valT.toFixed(2)}T (${(nom.valT / targetT * 100).toFixed(2)}% of $${targetT}T)`;
               }
 
               // Counter 3: Added today (IST)
@@ -3548,13 +3525,9 @@
 
               // Counter 4: Gap to $47T path
               if (nomInfo.latest && reqCagr !== null) {
-                const tBase = midYearMs(nomInfo.latest.year);
-                const msPerTargetYear = (midYearMs(TARGET_YEAR) - tBase) / (TARGET_YEAR - nomInfo.latest.year);
-                const reqAt = (ms) => nomInfo.latest.value * 1e12 * Math.pow(1 + reqCagr, (ms - tBase) / msPerTargetYear);
-                const reqNowUsd = reqAt(nowMs);
-                const reqPerSecUsd = reqAt(nowMs + 1000) - reqNowUsd;
-                gapUsd = reqNowUsd - nom.valUsd;
-                gapRatePerSecUsd = reqPerSecUsd - nom.ratePerSecUsd;
+                const reqYearUsd = nomInfo.latest.value * 1e12 * Math.pow(1 + reqCagr, Math.max(0, ist.year - nomInfo.latest.year));
+                gapUsd = reqYearUsd - nom.valUsd;
+                gapRatePerSecUsd = null;
 
                 const gapEl = el('bomGdpGap');
                 const gapSubEl = el('bomGdpGapSub');
@@ -3568,8 +3541,7 @@
                   }
                 }
                 if (gapSubEl) {
-                  const verb = gapRatePerSecUsd >= 0 ? 'widens' : 'narrows';
-                  gapSubEl.textContent = `Gap ${verb} by $${usdIntFmt.format(Math.round(Math.abs(gapRatePerSecUsd)))} every second`;
+                  gapSubEl.textContent = `${ist.year}: needed $${(reqYearUsd / 1e12).toFixed(2)}T on the $${targetT}T path vs IMF $${nom.valT.toFixed(2)}T`;
                 }
               }
 
@@ -3586,7 +3558,7 @@
 
               // Milestone $0.1T celebration
               const currTenth = Math.floor(nom.valT * 10);
-              const dailyIncT = (nom.ratePerSecUsd * 86400) / 1e12;
+              const dailyIncT = 0;
               const dayAgoTenth = Math.floor((nom.valT - dailyIncT) * 10);
               if (lastCrossedTenth === null) {
                 if (currTenth > dayAgoTenth) triggerMilestoneCelebration(currTenth / 10);
@@ -3601,8 +3573,8 @@
 
             // Counter 2: PPP GDP right now
             if (ppp) {
-              if (el('bomPppNow')) el('bomPppNow').textContent = `$${usdIntFmt.format(Math.round(ppp.valUsd))}`;
-              if (el('bomPppNowSub')) el('bomPppNowSub').textContent = `+$${usdIntFmt.format(Math.round(ppp.ratePerSecUsd))} every second`;
+              if (el('bomPppNow')) el('bomPppNow').textContent = `$${usdIntFmt.format(Math.round(ppp.ytdUsd))}`;
+              if (el('bomPppNowSub')) el('bomPppNowSub').textContent = `+$${usdIntFmt.format(Math.round(ppp.ratePerSecUsd))} every second · IMF ${ist.year} PPP: $${ppp.valT.toFixed(2)}T`;
             } else if (el('bomPppNow')) {
               el('bomPppNow').textContent = '—';
             }
@@ -3752,9 +3724,9 @@
               upiTodayCr,
               marketCapDisplay: lastSnapshot.marketCapDisplay || '—',
               shareTexts: {
-                gdpNow: `🇮🇳 India nominal GDP right now: ${el('bomGdpNow')?.textContent || '—'} (~$${nom ? nom.valT.toFixed(2) : '—'}T) · ${el('bomGdpNowSub')?.textContent || ''}. Track live: ${SITE_URL} #Bharat2047`,
-                pppNow: `🇮🇳 India PPP GDP right now: ${el('bomPppNow')?.textContent || '—'} (~$${ppp ? ppp.valT.toFixed(2) : '—'}T) · ${el('bomPppNowSub')?.textContent || ''}. Track live: ${SITE_URL} #Bharat2047`,
-                gdpToday: `Added to India's GDP today (IST): ${el('bomGdpToday')?.textContent || '—'} 🇮🇳 Track live: ${SITE_URL} #Bharat2047`,
+                gdpNow: `🇮🇳 India's GDP ${new Date().getFullYear()} (IMF): ~$${nom ? nom.valT.toFixed(2) : '—'}T · output so far this year: ${el('bomGdpNow')?.textContent || '—'} · ${el('bomGdpNowSub')?.textContent || ''}. Track live: ${SITE_URL} #Bharat2047`,
+                pppNow: `🇮🇳 India's PPP GDP ${new Date().getFullYear()} (IMF): ~$${ppp ? ppp.valT.toFixed(2) : '—'}T · so far this year: ${el('bomPppNow')?.textContent || '—'} · ${el('bomPppNowSub')?.textContent || ''}. Track live: ${SITE_URL} #Bharat2047`,
+                gdpToday: `India's economic output today so far (IST, estimate): ${el('bomGdpToday')?.textContent || '—'} 🇮🇳 Track live: ${SITE_URL} #Bharat2047`,
                 gdpGap: `Gap to India's $47T path right now: ${el('bomGdpGap')?.textContent || '—'} (${el('bomGdpGapSub')?.textContent || ''}). ${SITE_URL} #Bharat2047`,
                 upiToday: `💳 UPI payments in India today: ${el('bomUpiToday')?.textContent || '—'} (${el('bomUpiRate')?.textContent || ''}) ${SITE_URL} #Bharat2047`,
                 countdown: `⏳ Time left to 2047: ${el('bomCountdown')?.textContent || '—'} · Track India's $47T mission: ${SITE_URL} #Bharat2047`
@@ -3835,7 +3807,7 @@
 
             ctx.fillStyle = '#F8FAFC';
             ctx.font = `800 56px ${fontFam}`;
-            ctx.fillText(el('bomGdpNow')?.textContent || '—', 108, 286);
+            ctx.fillText(`$${nom ? nom.valT.toFixed(2) : '—'} trillion (IMF ${new Date().getFullYear()})`, 108, 286);
 
             const pctStr = lastSnapshot.pctReached !== null ? `${lastSnapshot.pctReached.toFixed(1)}% of $47T target` : '—';
             ctx.fillStyle = '#4ADE80';
@@ -3844,7 +3816,7 @@
 
             ctx.fillStyle = '#B6C7D9';
             ctx.font = `700 24px ${fontFam}`;
-            ctx.fillText(`PPP GDP: ${el('bomPppNow')?.textContent || '—'}`, 108, 388);
+            ctx.fillText(`PPP GDP: $${ppp ? ppp.valT.toFixed(2) : '—'} trillion`, 108, 388);
 
             const stats = [
               ['REQUIRED vs ACTUAL PACE', `${lastSnapshot.reqPct !== null ? (lastSnapshot.reqPct * 100).toFixed(1) + '%' : '—'} vs ${lastSnapshot.actPct !== null ? (lastSnapshot.actPct * 100).toFixed(1) + '%' : '—'}`, '#86EFAC'],
@@ -4513,5 +4485,28 @@
       }
     })();
   </script>
+<script>
+/* === STALE-DATA + POST-2047 GUARD === */
+(function(){
+  function check(){
+    try{
+      fetch('./data.json?t='+Date.now()).then(r=>r.json()).then(d=>{
+        var b=document.getElementById('staleDataBanner'); if(!b||!d) return;
+        var msgs=[];
+        var g=new Date(d.generatedAt);
+        if(!isNaN(g) && (Date.now()-g.getTime())>7*86400000){
+          msgs.push('⚠ Data last updated on '+g.toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})+' — automatic updates may be paused.');
+        }
+        var yr=new Date().getFullYear(), nom=(d.deepDive&&d.deepDive.nominal)||[], t=(d.gdp&&d.gdp.targetT)||47;
+        var hit=nom.filter(p=>p&&p.value>=t&&p.year<=yr).sort((a,b)=>a.year-b.year)[0];
+        if(hit) msgs.push('🎯 $'+t+'T target achieved in '+hit.year+'.');
+        else if(yr>2047){var cur=nom.find(p=>p.year===yr); if(cur) msgs.push('$'+t+'T target missed by $'+(t-cur.value).toFixed(2)+'T as of '+yr+'.');}
+        if(msgs.length){b.textContent=msgs.join('  ');b.style.display='block';}
+      }).catch(function(){});
+    }catch(e){}
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',check);else check();
+})();
+</script>
 </body>
 </html>
