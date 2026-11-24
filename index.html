@@ -405,6 +405,18 @@
     .count-box small { display: block; font-size: 11px; color: var(--subtle); margin-top: 2px; }
 
     .chart-card { display: flex; flex-direction: column; }
+    .chart-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
+    .chart-toggles { display: flex; flex-wrap: wrap; gap: 6px; }
+    .chart-toggle {
+      cursor: pointer;
+      transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+    }
+    .chart-toggle:hover { border-color: var(--border-strong); color: var(--text); }
+    .chart-toggle.active {
+      border-color: rgba(244, 163, 64, 0.78);
+      background: rgba(244, 163, 64, 0.2);
+      color: #FDE68A;
+    }
     .chart-wrap { position: relative; width: 100%; min-height: 290px; flex: 1; }
     .chart-note { margin-top: 10px; font-size: 13px; color: var(--muted); }
 
@@ -750,6 +762,17 @@
     }
     .modal-meta { font-size: 13px; color: var(--muted); padding-right: 44px; }
     .modal-chart-wrap { position: relative; height: 320px; width: 100%; }
+    .modal-chart-wrap[hidden], .modal-empty-card[hidden] { display: none; }
+    .modal-empty-card {
+      padding: 22px 20px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--panel-alt);
+      display: grid;
+      gap: 8px;
+    }
+    .modal-empty-primary { margin: 0; font-size: 15px; font-weight: 600; color: var(--text); line-height: 1.5; }
+    .modal-empty-sub { margin: 0; font-size: 13px; color: var(--muted); line-height: 1.5; }
 
     .empty { color: var(--muted); font-size: 14px; padding: 12px 0; }
 
@@ -780,6 +803,283 @@
       .race-line { grid-template-columns: 24px 104px 1fr 68px; font-size: 13px; }
       .chart-wrap { min-height: 240px; }
     }
+
+    /* === BHARAT-O-METER === */
+    .bom-section { margin-top: 24px; scroll-margin-top: 84px; }
+    .bom-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .bom-header h2 { margin: 0; font-size: 24px; font-weight: 800; line-height: 1.2; }
+    .bom-header h2 em { color: var(--saffron); font-style: normal; }
+    .bom-header p { margin: 4px 0 0; font-size: 14px; color: var(--muted); }
+    .bom-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+    .bom-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border-strong);
+      background: var(--panel-alt);
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+    .bom-btn:hover { border-color: var(--saffron); background: #173456; color: var(--text); }
+    .bom-btn-primary {
+      border-color: rgba(244, 163, 64, 0.72);
+      background: rgba(244, 163, 64, 0.16);
+      color: #FDE68A;
+    }
+    .bom-btn-primary:hover { background: rgba(244, 163, 64, 0.28); }
+    .bom-btn[hidden] { display: none; }
+
+    .bom-milestone-banner {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 14px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 1px solid rgba(244, 163, 64, 0.65);
+      background: linear-gradient(135deg, rgba(244, 163, 64, 0.2), rgba(34, 197, 94, 0.16));
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .bom-milestone-banner[hidden] { display: none; }
+    .bom-milestone-close {
+      border: 1px solid var(--border);
+      background: rgba(7, 20, 38, 0.6);
+      color: var(--text);
+      border-radius: 8px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .bom-confetti {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 60;
+      overflow: hidden;
+    }
+    .bom-confetti-piece {
+      position: absolute;
+      top: -12px;
+      width: 9px;
+      height: 9px;
+      border-radius: 2px;
+      animation: bomFall 3.2s linear forwards;
+    }
+    @keyframes bomFall {
+      to { transform: translateY(105vh) rotate(540deg); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .bom-confetti, .bom-confetti-piece { display: none !important; animation: none !important; }
+    }
+
+    .bom-progress-card { margin-bottom: 16px; padding: 18px 20px 16px; }
+    .bom-pin-row { position: relative; height: 28px; margin-bottom: 4px; }
+    .bom-pin {
+      position: absolute;
+      top: 0;
+      transform: translateX(-50%);
+      padding: 3px 8px;
+      border-radius: 6px;
+      border: 1px solid rgba(244, 163, 64, 0.78);
+      background: rgba(11, 26, 46, 0.96);
+      color: #FDE68A;
+      font-size: 11px;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: left 0.4s ease;
+    }
+    .bom-tricolour-track {
+      position: relative;
+      height: 14px;
+      border-radius: 99px;
+      background: rgba(30, 55, 82, 0.85);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .bom-tricolour-fill {
+      position: relative;
+      height: 100%;
+      width: 0%;
+      border-radius: 99px;
+      background: linear-gradient(90deg, #F4A340 0%, #FFFFFF 52%, #22C55E 100%);
+      transition: width 0.4s ease;
+    }
+    .bom-scale {
+      position: relative;
+      height: 22px;
+      margin-top: 6px;
+      font-size: 11px;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+    .bom-tick { position: absolute; top: 0; transform: translateX(-50%); white-space: nowrap; }
+    .bom-tick.start { left: 0; transform: none; }
+    .bom-tick.end { left: auto; right: 0; transform: none; }
+
+    .bom-groups { display: grid; gap: 18px; }
+    .bom-group-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 6px 14px;
+      margin-bottom: 10px;
+    }
+    .bom-group-title {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      color: var(--saffron);
+      text-transform: uppercase;
+    }
+    .bom-group-note { font-size: 12px; color: var(--muted); }
+    .bom-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .bom-card {
+      min-width: 0;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 8px;
+      overflow-wrap: anywhere;
+    }
+    .bom-card[hidden] { display: none; }
+    .bom-card-sm { padding: 14px 15px; gap: 6px; }
+    .bom-card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .bom-card-label { font-size: 13px; font-weight: 700; color: var(--muted); line-height: 1.3; }
+    .bom-share-btn {
+      flex-shrink: 0;
+      min-width: 28px;
+      height: 28px;
+      padding: 0 7px;
+      border-radius: 7px;
+      border: 1px solid var(--border);
+      background: var(--panel-alt);
+      color: var(--muted);
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .bom-share-btn:hover { border-color: var(--saffron); color: var(--text); }
+    .bom-val {
+      font-size: clamp(20px, 2vw, 27px);
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.01em;
+    }
+    .bom-val-sm { font-size: clamp(17px, 1.55vw, 21px); }
+    .bom-sub { font-size: 12px; color: var(--subtle); line-height: 1.35; font-variant-numeric: tabular-nums; }
+    .bom-session-line {
+      margin-top: 10px;
+      padding: 9px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: rgba(16, 36, 62, 0.7);
+      font-size: 13px;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+    }
+    .bom-session-line strong { color: var(--green); font-weight: 800; }
+
+    .bom-compare-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .bom-explainer {
+      margin: 10px 0 0;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .bom-market-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .bom-strip-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .bom-strip-delta { font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+    @media (max-width: 1120px) {
+      .bom-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .bom-market-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 720px) {
+      .bom-grid, .bom-compare-grid, .bom-market-strip { grid-template-columns: 1fr; }
+      .bom-progress-card { padding: 14px; }
+      .bom-val { font-size: 21px; }
+      .bom-val-sm { font-size: 18px; }
+    }
+
+    /* === GRAPHS === */
+    .graph-card { margin-top: 16px; }
+    .graph-card-top { margin-bottom: 16px; margin-top: 0; }
+    .graph-empty {
+      padding: 18px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--panel-alt);
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .graph-empty[hidden], .chart-wrap[hidden] { display: none; }
+    .strat-spark-box {
+      display: grid;
+      gap: 4px;
+      padding: 6px 8px;
+      border-radius: 8px;
+      background: rgba(7, 20, 38, 0.55);
+      border: 1px solid rgba(110, 152, 192, 0.16);
+    }
+    .strat-spark-svg { width: 100%; max-width: 140px; height: 32px; display: block; }
+    .strat-spark-years {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--subtle);
+      font-variant-numeric: tabular-nums;
+    }
+    .strat-spark-empty { font-size: 11px; color: var(--subtle); }
   </style>
 </head>
 <body>
@@ -832,6 +1132,227 @@
       <a href="#methodology">Methodology</a>
     </nav>
 
+    <!-- === BHARAT-O-METER === -->
+    <section class="section bom-section" id="bharat-o-meter" aria-label="Bharat-O-Meter live counters">
+      <div id="bomMilestoneBanner" class="bom-milestone-banner" role="status" hidden>
+        <span id="bomMilestoneText">🇮🇳 India just crossed a new milestone!</span>
+        <button id="bomMilestoneClose" type="button" class="bom-milestone-close" aria-label="Dismiss milestone notice">×</button>
+      </div>
+
+      <div class="bom-header">
+        <div>
+          <h2>BHARAT-<em>O</em>-METER</h2>
+          <p>Real-time mid-year interpolated economic, digital payments, and 2047 mission counters updated every second in IST.</p>
+        </div>
+        <div class="bom-actions" aria-label="Share Bharat-O-Meter">
+          <button id="bomNativeShareBtn" type="button" class="bom-btn bom-btn-primary" hidden>Share</button>
+          <a id="bomShareWa" class="bom-btn" href="https://wa.me/" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a id="bomShareX" class="bom-btn" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener noreferrer">X</a>
+          <a id="bomShareLi" class="bom-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdevanshnegi.github.io%2Fbharat2047" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <button id="bomCopyLinkBtn" type="button" class="bom-btn">Copy link</button>
+          <button id="bomDownloadCardBtn" type="button" class="bom-btn bom-btn-primary">⬇ Download today’s card</button>
+        </div>
+      </div>
+
+      <article class="card bom-progress-card">
+        <div class="bom-pin-row">
+          <div id="bomHerePin" class="bom-pin" style="left:10%">📍 India is here</div>
+        </div>
+        <div class="bom-tricolour-track" aria-label="Progress from $0 to $47 trillion">
+          <div id="bomTricolourFill" class="bom-tricolour-fill" style="width:10%"></div>
+        </div>
+        <div class="bom-scale" aria-hidden="true">
+          <span class="bom-tick start">$0</span>
+          <span class="bom-tick" style="left:10.64%">$5T</span>
+          <span class="bom-tick" style="left:21.28%">$10T</span>
+          <span class="bom-tick" style="left:42.55%">$20T</span>
+          <span class="bom-tick" style="left:63.83%">$30T</span>
+          <span class="bom-tick end">$47T</span>
+        </div>
+      </article>
+
+      <div class="bom-groups">
+        <!-- ROW 1: HEADLINE (6 BIG COUNTERS) -->
+        <div>
+          <div class="bom-group-head">
+            <h3 class="bom-group-title">Headline · Live Counters</h3>
+            <span id="bomEconSourceLabel" class="bom-group-note">ⓘ Live estimate · based on IMF mid-year GDP &amp; monthly pulse</span>
+          </div>
+          <div class="bom-grid">
+            <article class="card bom-card">
+              <div class="bom-card-top">
+                <div class="bom-card-label">🇮🇳 India nominal GDP right now</div>
+                <button type="button" class="bom-share-btn" data-bom-share="gdpNow" aria-label="Share India nominal GDP right now">↗</button>
+              </div>
+              <div id="bomGdpNow" class="bom-val">—</div>
+              <div id="bomGdpNowSub" class="bom-sub">+$0 every second</div>
+            </article>
+
+            <article class="card bom-card">
+              <div class="bom-card-top">
+                <div class="bom-card-label">PPP GDP right now</div>
+                <button type="button" class="bom-share-btn" data-bom-share="pppNow" aria-label="Share PPP GDP right now">↗</button>
+              </div>
+              <div id="bomPppNow" class="bom-val">—</div>
+              <div id="bomPppNowSub" class="bom-sub">+$0 every second</div>
+            </article>
+
+            <article class="card bom-card">
+              <div class="bom-card-top">
+                <div class="bom-card-label">Added to India’s GDP today</div>
+                <button type="button" class="bom-share-btn" data-bom-share="gdpToday" aria-label="Share GDP added today">↗</button>
+              </div>
+              <div id="bomGdpToday" class="bom-val">—</div>
+              <div class="bom-sub">Since midnight IST (resets 00:00 IST)</div>
+            </article>
+
+            <article class="card bom-card">
+              <div class="bom-card-top">
+                <div class="bom-card-label">Gap to the $47T path</div>
+                <button type="button" class="bom-share-btn" data-bom-share="gdpGap" aria-label="Share gap to $47T path">↗</button>
+              </div>
+              <div id="bomGdpGap" class="bom-val">—</div>
+              <div id="bomGdpGapSub" class="bom-sub">Required path right now vs nominal GDP</div>
+            </article>
+
+            <article class="card bom-card">
+              <div class="bom-card-top">
+                <div class="bom-card-label">💳 UPI payments today</div>
+                <button type="button" class="bom-share-btn" data-bom-share="upiToday" aria-label="Share UPI payments today">↗</button>
+              </div>
+              <div id="bomUpiToday" class="bom-val">—</div>
+              <div id="bomUpiRate" class="bom-sub">awaiting verified figure</div>
+            </article>
+
+            <article class="card bom-card">
+              <div class="bom-card-top">
+                <div class="bom-card-label">⏳ Time left to 2047</div>
+                <button type="button" class="bom-share-btn" data-bom-share="countdown" aria-label="Share time left to 2047">↗</button>
+              </div>
+              <div id="bomCountdown" class="bom-val">—</div>
+              <div class="bom-sub">Countdown to 1 Jan 2047, 00:00 IST</div>
+            </article>
+          </div>
+          <div class="bom-session-line">
+            <span>While you were here, India’s economy grew by</span>
+            <strong id="bomGdpSession">+$0</strong>
+          </div>
+        </div>
+
+        <!-- ROW 2: THIS YEAR SO FAR (6 SMALLER COUNTERS) -->
+        <div>
+          <div class="bom-group-head">
+            <h3 class="bom-group-title">This Year So Far</h3>
+            <span id="bomYtdSourceLabel" class="bom-group-note">ⓘ Live estimate · since 1 Jan IST based on World Bank &amp; IMF data</span>
+          </div>
+          <div class="bom-grid">
+            <article class="card bom-card bom-card-sm">
+              <div class="bom-card-label">Exports (goods + services)</div>
+              <div id="bomYtdExports" class="bom-val bom-val-sm">—</div>
+              <div id="bomYtdExportsSub" class="bom-sub">Awaiting strategy series</div>
+            </article>
+
+            <article class="card bom-card bom-card-sm">
+              <div class="bom-card-label">Investment (GFCF)</div>
+              <div id="bomYtdInvestment" class="bom-val bom-val-sm">—</div>
+              <div id="bomYtdInvestmentSub" class="bom-sub">Awaiting strategy %</div>
+            </article>
+
+            <article class="card bom-card bom-card-sm">
+              <div class="bom-card-label">Manufacturing output</div>
+              <div id="bomYtdMfg" class="bom-val bom-val-sm">—</div>
+              <div id="bomYtdMfgSub" class="bom-sub">Awaiting strategy %</div>
+            </article>
+
+            <article class="card bom-card bom-card-sm">
+              <div class="bom-card-label">R&amp;D spending</div>
+              <div id="bomYtdRnd" class="bom-val bom-val-sm">—</div>
+              <div id="bomYtdRndSub" class="bom-sub">Awaiting strategy %</div>
+            </article>
+
+            <article class="card bom-card bom-card-sm">
+              <div class="bom-card-label">Government debt (stock)</div>
+              <div id="bomDebtStock" class="bom-val bom-val-sm">—</div>
+              <div id="bomDebtStockSub" class="bom-sub">Awaiting IMF debt %</div>
+            </article>
+
+            <article id="bomPopCard" class="card bom-card bom-card-sm" hidden>
+              <div class="bom-card-label">👥 Indians added today</div>
+              <div id="bomPopToday" class="bom-val bom-val-sm">—</div>
+              <div id="bomPopTodaySub" class="bom-sub">derived from IMF data</div>
+            </article>
+          </div>
+        </div>
+
+        <!-- ROW 3: TWO WAYS TO MEASURE INDIA -->
+        <div>
+          <div class="bom-group-head">
+            <h3 class="bom-group-title">Two Ways to Measure India</h3>
+            <span id="bomCompareSourceLabel" class="bom-group-note">ⓘ Live estimate · based on IMF nominal, PPP &amp; Global Race ranks</span>
+          </div>
+          <div class="bom-compare-grid">
+            <article class="card bom-card bom-card-sm">
+              <div class="bom-card-label">Nominal vs PPP totals</div>
+              <div id="bomCompareTotals" class="bom-val bom-val-sm">—</div>
+              <div id="bomCompareTotalsSub" class="bom-sub">Global ranks among tracked economies</div>
+            </article>
+
+            <article class="card bom-card bom-card-sm">
+              <div class="bom-card-label">Per person (nominal vs PPP)</div>
+              <div id="bomComparePerCapita" class="bom-val bom-val-sm">—</div>
+              <div id="bomComparePerCapitaSub" class="bom-sub">Daily change &amp; PPP/nominal ratio</div>
+            </article>
+          </div>
+          <p class="bom-explainer">Nominal = value at market exchange rates (used for the $47T target). PPP = adjusted for lower prices in India — shows domestic purchasing power.</p>
+        </div>
+
+        <!-- MARKET STRIP (NOT PER-SECOND) -->
+        <div>
+          <div class="bom-group-head">
+            <h3 class="bom-group-title">Market Strip</h3>
+            <span id="bomMarketStripLabel" class="bom-group-note">ⓘ Live snapshot · GOOGLEFINANCE &amp; monthly market cap</span>
+          </div>
+          <div class="bom-market-strip">
+            <article class="card bom-card bom-card-sm">
+              <div class="bom-strip-head">
+                <div class="bom-card-label">📈 Indian stock market value</div>
+                <span id="bomMarketCapChange" class="bom-strip-delta">—</span>
+              </div>
+              <div id="bomMarketCap" class="bom-val bom-val-sm">—</div>
+              <div id="bomMarketCapSub" class="bom-sub">awaiting verified figure</div>
+            </article>
+
+            <article class="card bom-card bom-card-sm">
+              <div class="bom-strip-head">
+                <div class="bom-card-label">Nifty 50</div>
+                <span id="bomStripNiftyChange" class="bom-strip-delta">—</span>
+              </div>
+              <div id="bomStripNifty" class="bom-val bom-val-sm">—</div>
+              <div class="bom-sub">NSE benchmark index</div>
+            </article>
+
+            <article class="card bom-card bom-card-sm">
+              <div class="bom-strip-head">
+                <div class="bom-card-label">Sensex</div>
+                <span id="bomStripSensexChange" class="bom-strip-delta">—</span>
+              </div>
+              <div id="bomStripSensex" class="bom-val bom-val-sm">—</div>
+              <div class="bom-sub">BSE 30 benchmark index</div>
+            </article>
+
+            <article class="card bom-card bom-card-sm">
+              <div class="bom-strip-head">
+                <div class="bom-card-label">USD / INR</div>
+                <span id="bomStripUsdChange" class="bom-strip-delta">—</span>
+              </div>
+              <div id="bomStripUsd" class="bom-val bom-val-sm">—</div>
+              <div class="bom-sub">Spot exchange rate</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Hero -->
     <section class="section" id="mission-control">
       <div class="hero-grid">
@@ -861,7 +1382,7 @@
                   </div>
                 </div>
                 <div>
-                  <div class="label-muted">5-Year pace-based ETA</div>
+                  <div id="etaLabel" class="label-muted">Pace-based ETA (IMF outlook)</div>
                   <div id="etaYear" class="big-num">—</div>
                   <div id="etaDelta" class="label-muted" style="margin-top:2px">—</div>
                 </div>
@@ -873,6 +1394,7 @@
                   <div id="actualGrowthBox" class="growth-box bad">
                     <div class="label-muted">Actual USD CAGR</div>
                     <b id="actualGrowth">—</b>
+                    <small id="actualGrowthPeriod" class="label-muted" style="display:block;margin-top:3px;font-size:12px">—</small>
                   </div>
                 </div>
               </div>
@@ -894,6 +1416,13 @@
             <h2 class="card-title">GDP Path to $<span data-target>47</span> Trillion (Nominal)</h2>
             <span class="meta-tag">IMF annual</span>
           </div>
+          <div class="chart-controls">
+            <div id="trajToggleGroup" class="chart-toggles" role="group" aria-label="GDP chart time range">
+              <button type="button" class="meta-tag chart-toggle active" data-traj-range="10yr" aria-pressed="true">10-yr view</button>
+              <button type="button" class="meta-tag chart-toggle" data-traj-range="full" aria-pressed="false">Full history</button>
+              <button type="button" class="meta-tag chart-toggle" data-traj-range="future" aria-pressed="false">Future only</button>
+            </div>
+          </div>
           <div class="chart-wrap"><canvas id="trajectoryChart" aria-label="GDP trajectory chart"></canvas></div>
           <div id="trajectoryNote" class="chart-note">—</div>
         </article>
@@ -910,6 +1439,15 @@
         <span class="meta-tag">Client-side math</span>
       </div>
       <div id="realityCards" class="reality-grid"></div>
+      <article id="realityEtaCard" class="card chart-card graph-card">
+        <div class="card-head">
+          <h2 class="card-title">ETA comparison across pace scenarios</h2>
+          <span class="meta-tag">Projected year vs 2047</span>
+        </div>
+        <div id="realityEtaWrap" class="chart-wrap"><canvas id="realityEtaChart" aria-label="Reality check ETA comparison chart"></canvas></div>
+        <div id="realityEtaEmpty" class="graph-empty" hidden>Insufficient scenario data to plot ETAs.</div>
+        <div class="chart-note">Source: Derived client-side from IMF nominal GDP actuals and outlook projections.</div>
+      </article>
     </section>
 
     <!-- Milestones 2030 / 2035 / 2040 / 2047 -->
@@ -921,6 +1459,15 @@
         </div>
         <span class="meta-tag">Checkpoint gap</span>
       </div>
+      <article id="milestonesChartCard" class="card chart-card graph-card graph-card-top">
+        <div class="card-head">
+          <h2 class="card-title">Milestone GDP checkpoints (2030–2047)</h2>
+          <span class="meta-tag">USD trillion</span>
+        </div>
+        <div id="milestonesChartWrap" class="chart-wrap"><canvas id="milestonesBarChart" aria-label="Milestones grouped bar chart"></canvas></div>
+        <div id="milestonesChartEmpty" class="graph-empty" hidden>Insufficient milestone projections to plot comparison bars.</div>
+        <div class="chart-note">Source: Required compound path vs IMF outlook and trailing 10-year pace (USD trillion).</div>
+      </article>
       <article class="card">
         <div class="table-wrap">
           <table class="data-table">
@@ -1106,6 +1653,15 @@
           <div id="deepMetrics" class="deep-metrics"></div>
         </article>
       </div>
+      <article id="deepPerCapitaCard" class="card chart-card graph-card">
+        <div class="card-head">
+          <h2 class="card-title">GDP per capita trajectory</h2>
+          <span class="meta-tag">USD per person</span>
+        </div>
+        <div id="deepPerCapitaWrap" class="chart-wrap" hidden><canvas id="deepPerCapitaChart" aria-label="GDP per capita trend chart"></canvas></div>
+        <div id="deepPerCapitaEmpty" class="graph-empty">Per-capita historical series unavailable (only single-year snapshot present — trend appears once 2+ years exist).</div>
+        <div class="chart-note">Source: IMF nominal GDP per capita series.</div>
+      </article>
     </section>
 
     <!-- Global Race Full Table -->
@@ -1117,6 +1673,18 @@
         </div>
         <span class="meta-tag">Annual IMF</span>
       </div>
+      <article id="globalChartCard" class="card chart-card graph-card graph-card-top">
+        <div class="card-head">
+          <h2 class="card-title">Major economies comparison</h2>
+          <div id="globalChartToggle" class="chart-toggles" role="group" aria-label="Global race metric">
+            <button type="button" class="meta-tag chart-toggle active" data-global-metric="nominal" aria-pressed="true">Nominal</button>
+            <button type="button" class="meta-tag chart-toggle" data-global-metric="ppp" aria-pressed="false">PPP</button>
+          </div>
+        </div>
+        <div id="globalChartWrap" class="chart-wrap"><canvas id="globalRaceChart" aria-label="Global race horizontal bar chart"></canvas></div>
+        <div id="globalChartEmpty" class="graph-empty" hidden>Insufficient global comparison records to plot.</div>
+        <div class="chart-note">Source: IMF DataMapper · India highlighted in saffron (USD trillion).</div>
+      </article>
       <article class="card">
         <div class="table-wrap">
           <table class="data-table">
@@ -1144,6 +1712,15 @@
         </div>
         <span class="meta-tag">Formula-backed</span>
       </div>
+      <article id="marketsChartCard" class="card chart-card graph-card graph-card-top">
+        <div class="card-head">
+          <h2 class="card-title">Company market caps (displayed companies only)</h2>
+          <span class="meta-tag">₹ lakh crore</span>
+        </div>
+        <div id="marketsChartWrap" class="chart-wrap"><canvas id="marketsCapChart" aria-label="Displayed company market caps chart"></canvas></div>
+        <div id="marketsChartEmpty" class="graph-empty" hidden>Fewer than 2 displayed companies have market-cap data.</div>
+        <div class="chart-note">Source: Google Finance · displayed companies only (₹ lakh crore).</div>
+      </article>
       <article class="card">
         <div id="marketTable" class="table-wrap"></div>
         <div id="marketSubtotal" class="market-subtotal">—</div>
@@ -1212,7 +1789,8 @@
       <button id="strategyModalClose" type="button" class="modal-close" aria-label="Close strategy chart">×</button>
       <h2 id="strategyModalTitle" style="margin:0">Strategy</h2>
       <div id="strategyModalMeta" class="modal-meta"></div>
-      <div class="modal-chart-wrap"><canvas id="strategyChart" aria-label="Strategy historical chart"></canvas></div>
+      <div id="strategyChartWrap" class="modal-chart-wrap"><canvas id="strategyChart" aria-label="Strategy historical chart"></canvas></div>
+      <div id="strategyModalEmpty" class="modal-empty-card" hidden></div>
     </article>
   </div>
 
@@ -1236,6 +1814,7 @@
 
       const charts = {};
       let DATA = createEmptyPayload();
+      let trajectoryRange = '10yr';
 
       const $ = (id) => document.getElementById(id);
       const num = (v) => (typeof v === 'number' && Number.isFinite(v) ? v : null);
@@ -1247,6 +1826,51 @@
       const pct = (v) => (num(v) === null ? '—' : `${fmt(v * 100, 1)}%`);
       const trillion = (v) => (num(v) === null ? '—' : `$${fmt(v, 2)}T`);
       const compact = (v) => (num(v) === null ? '—' : new Intl.NumberFormat('en-IN', { notation: 'compact', maximumFractionDigits: 2 }).format(v));
+
+      const IST_DATE_FMT = new Intl.DateTimeFormat('en-IN', {
+        timeZone: 'Asia/Kolkata',
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric'
+      });
+
+      function formatIstDateObj(d) {
+        if (!(d instanceof Date) || Number.isNaN(d.getTime())) return null;
+        return IST_DATE_FMT.format(d).replace(/,/g, '').replace(/\s+/g, ' ').trim();
+      }
+
+      const FULL_DATE_SUB_RE = /(?:(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun),?\s+(?:\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2})\s+\d{4}(?:\s+\d{2}:\d{2}(?::\d{2})?(?:\s+(?:GMT|UTC)[+-]?\d{0,4}(?:\s*\([^)]+\))?)?)?|\b\d{4}-\d{2}-\d{2}(?:[T ]\d{2}:\d{2}(?::\d{2}(?:\.\d+)?)?(?:Z|[+-]\d{2}:?\d{2})?)?\b)/gi;
+
+      function formatDate(value) {
+        if (value === null || value === undefined) return '';
+        if (value instanceof Date) return formatIstDateObj(value) || '';
+        const str = String(value);
+        if (!str.trim()) return str;
+        const trimmed = str.trim();
+        if (/^(?:\d{4}-\d{2}-\d{2}(?:[T ]\d{2}:\d{2}(?::\d{2}(?:\.\d+)?)?(?:Z|[+-]\d{2}:?\d{2})?)?|(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun),?\s+(?:\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2})\s+\d{4}(?:\s+\d{2}:\d{2}(?::\d{2})?(?:\s+(?:GMT|UTC)[+-]?\d{0,4}(?:\s*\([^)]+\))?)?)?)$/i.test(trimmed)) {
+          const parsed = new Date(trimmed);
+          const out = formatIstDateObj(parsed);
+          if (out) return out;
+        }
+        return str.replace(FULL_DATE_SUB_RE, (match) => {
+          const parsed = new Date(match);
+          return formatIstDateObj(parsed) || match;
+        });
+      }
+
+      function extractFormattedDate(value) {
+        if (value === null || value === undefined) return '';
+        if (value instanceof Date) return formatIstDateObj(value) || '';
+        const str = String(value).trim();
+        if (!str) return '';
+        const matches = str.match(FULL_DATE_SUB_RE);
+        if (matches && matches.length) {
+          const parsed = new Date(matches[0]);
+          const out = formatIstDateObj(parsed);
+          if (out) return out;
+        }
+        return '';
+      }
 
       function createEmptyPayload() {
         return {
@@ -1467,7 +2091,7 @@
 
         const neededPerYr = (target - current) / yearsLeft;
         const needsText = `Needs ${formatPaceDelta(neededPerYr, unit)}`;
-        if (recentPace === null) return `${needsText} · recent pace unavailable`;
+        if (recentPace === null) return `${needsText} · pace: needs 2+ data points`;
 
         const recentText = `recent pace ${formatPaceDelta(recentPace, unit)}`;
         const eps = 0.0001;
@@ -1506,7 +2130,8 @@
           }
         }
         if (y === null || m === null || m < 0 || m > 11) return false;
-        return (now.getFullYear() - y) * 12 + (now.getMonth() - m) > maxMonths;
+        const istNow = new Date(now.getTime() + 5.5 * 3600 * 1000);
+        return (istNow.getUTCFullYear() - y) * 12 + (istNow.getUTCMonth() - m) > maxMonths;
       }
 
       function filterNews(items) {
@@ -1547,10 +2172,180 @@
         });
       }
 
+      function getHeroPace(g, reality, reqCagr) {
+        if (reality.imfOutlook && reality.imfOutlook.cagr !== null) {
+          const span = reality.imfOutlook.startYear && reality.imfOutlook.endYear
+            ? `${reality.imfOutlook.startYear}–${reality.imfOutlook.endYear} (IMF outlook)`
+            : 'IMF outlook';
+          return {
+            etaLabel: 'Pace-based ETA (IMF outlook)',
+            etaYear: reality.imfOutlook.etaYear,
+            yearsVs2047: reality.imfOutlook.yearsVs2047,
+            cagr: reality.imfOutlook.cagr,
+            periodLabel: span,
+            status: reqCagr !== null
+              ? (reality.imfOutlook.cagr >= reqCagr + 0.002 ? 'ahead' : reality.imfOutlook.cagr >= reqCagr ? 'on_track' : 'behind')
+              : (g.status || 'unknown')
+          };
+        }
+        if (reality.tenYear && reality.tenYear.cagr !== null) {
+          const span = reality.tenYear.startYear && reality.tenYear.endYear
+            ? `${reality.tenYear.startYear}–${reality.tenYear.endYear} (10-yr pace)`
+            : '10-yr pace';
+          return {
+            etaLabel: 'Pace-based ETA (10-yr pace)',
+            etaYear: reality.tenYear.etaYear,
+            yearsVs2047: reality.tenYear.yearsVs2047,
+            cagr: reality.tenYear.cagr,
+            periodLabel: span,
+            status: reqCagr !== null
+              ? (reality.tenYear.cagr >= reqCagr + 0.002 ? 'ahead' : reality.tenYear.cagr >= reqCagr ? 'on_track' : 'behind')
+              : (g.status || 'unknown')
+          };
+        }
+        return {
+          etaLabel: 'Pace-based ETA (IMF outlook)',
+          etaYear: num(g.etaYear),
+          yearsVs2047: num(g.yearsVs2047),
+          cagr: num(g.actualCagr),
+          periodLabel: g.actualCagrPeriod || '—',
+          status: g.status || 'unknown'
+        };
+      }
+
+      const todayLinePlugin = {
+        id: 'todayLine',
+        afterDatasetsDraw(chart) {
+          const todayYear = new Date().getFullYear();
+          const labels = (chart.data && chart.data.labels) || [];
+          const idx = labels.findIndex((lbl) => Number(lbl) === todayYear);
+          if (idx === -1) return;
+          const xScale = chart.scales && chart.scales.x;
+          const area = chart.chartArea;
+          if (!xScale || !area) return;
+          const x = xScale.getPixelForValue(idx);
+          if (!Number.isFinite(x)) return;
+          const ctx = chart.ctx;
+          ctx.save();
+          ctx.beginPath();
+          ctx.setLineDash([5, 4]);
+          ctx.lineWidth = 1.5;
+          ctx.strokeStyle = 'rgba(244, 163, 64, 0.85)';
+          ctx.moveTo(x, area.top);
+          ctx.lineTo(x, area.bottom);
+          ctx.stroke();
+          ctx.setLineDash([]);
+          ctx.fillStyle = '#FCD34D';
+          ctx.font = '600 11px "Segoe UI", Arial, sans-serif';
+          ctx.textBaseline = 'top';
+          ctx.textAlign = idx === 0 ? 'left' : idx >= labels.length - 1 ? 'right' : 'center';
+          const labelX = idx === 0 ? x + 4 : idx >= labels.length - 1 ? x - 4 : x;
+          ctx.fillText(`Today (${todayYear})`, labelX, area.top + 4);
+          ctx.restore();
+        }
+      };
+
+      function renderTrajectoryChart() {
+        const g = DATA.gdp || {};
+        const targetT = num(g.targetT) !== null ? g.targetT : TARGET_GDP_T;
+        const nominal = (DATA.deepDive && DATA.deepDive.nominal) || [];
+        const reality = computeRealityCheck(nominal, getReferenceYear(), targetT);
+        const latestY = reality.latestActualYear ?? num(g.currentYear);
+        const latestT = reality.latestActualT ?? num(g.currentT);
+        const reqCagr = latestT !== null && latestY !== null && TARGET_YEAR > latestY
+          ? Math.pow(targetT / latestT, 1 / (TARGET_YEAR - latestY)) - 1
+          : num(g.requiredCagr);
+        const heroPace = getHeroPace(g, reality, reqCagr);
+        const trendPace = heroPace.cagr;
+
+        const traj = DATA.trajectory || {};
+        $('trajectoryNote').textContent = traj.sourceNote || '—';
+
+        const currentCalYear = new Date().getFullYear();
+        const imfEtaYear = reality.imfOutlook.etaYear ?? heroPace.etaYear;
+        const endYear = Math.min(2060, Math.max(TARGET_YEAR, imfEtaYear !== null ? imfEtaYear : TARGET_YEAR));
+
+        const trajLabels = Array.isArray(traj.labels) ? traj.labels.map(Number).filter((y) => Number.isFinite(y)) : [];
+        const nominalYears = nominal.map((p) => num(p && p.year)).filter((y) => y !== null);
+        const allAvailableYears = [...trajLabels, ...nominalYears];
+        const earliestYear = allAvailableYears.length ? Math.min(...allAvailableYears) : currentCalYear - 10;
+
+        let startYear = currentCalYear - 10;
+        if (trajectoryRange === 'full') startYear = earliestYear;
+        else if (trajectoryRange === 'future') startYear = currentCalYear;
+        if (startYear > endYear) startYear = endYear;
+
+        const reqMap = new Map();
+        const imfMap = new Map();
+        const trendMap = new Map();
+        (traj.labels || []).forEach((lbl, idx) => {
+          const yr = Number(lbl);
+          if (!Number.isFinite(yr)) return;
+          if (traj.required && num(traj.required[idx]) !== null) reqMap.set(yr, traj.required[idx]);
+          if (traj.imf && num(traj.imf[idx]) !== null) imfMap.set(yr, traj.imf[idx]);
+          if (traj.currentTrend && num(traj.currentTrend[idx]) !== null) trendMap.set(yr, traj.currentTrend[idx]);
+        });
+        const nominalMap = new Map();
+        nominal.forEach((p) => {
+          if (p && num(p.year) !== null && num(p.value) !== null) nominalMap.set(p.year, p.value);
+        });
+
+        const labels = [];
+        const required = [];
+        const imf = [];
+        const currentTrend = [];
+        const round2 = (v) => Math.round(v * 100) / 100;
+
+        for (let yr = startYear; yr <= endYear; yr++) {
+          labels.push(yr);
+
+          const imfVal = imfMap.has(yr) ? imfMap.get(yr) : (nominalMap.has(yr) ? nominalMap.get(yr) : null);
+          imf.push(imfVal);
+
+          if (reqMap.has(yr)) {
+            required.push(reqMap.get(yr));
+          } else if (latestT !== null && latestY !== null && reqCagr !== null && yr >= latestY) {
+            required.push(round2(latestT * Math.pow(1 + reqCagr, yr - latestY)));
+          } else {
+            required.push(yr < (latestY ?? Infinity) && nominalMap.has(yr) ? nominalMap.get(yr) : null);
+          }
+
+          if (trendMap.has(yr)) {
+            currentTrend.push(trendMap.get(yr));
+          } else if (latestT !== null && latestY !== null && trendPace !== null && yr >= latestY) {
+            currentTrend.push(round2(latestT * Math.pow(1 + trendPace, yr - latestY)));
+          } else {
+            currentTrend.push(yr < (latestY ?? Infinity) && nominalMap.has(yr) ? nominalMap.get(yr) : null);
+          }
+        }
+
+        makeChart('trajectory', 'trajectoryChart', {
+          type: 'line',
+          data: {
+            labels,
+            datasets: [
+              { label: 'Required path', data: required, borderColor: COLORS.green, borderDash: [6, 5], tension: 0.25, pointRadius: 0 },
+              { label: 'IMF series', data: imf, borderColor: COLORS.blue, tension: 0.25, pointRadius: 0 },
+              { label: 'Current trend', data: currentTrend, borderColor: COLORS.saffron, tension: 0.25, pointRadius: 0, fill: { target: 1, above: 'rgba(239, 68, 68, 0.16)' } }
+            ]
+          },
+          options: chartOptions('USD trillion'),
+          plugins: [todayLinePlugin]
+        });
+      }
+
       function renderHero() {
         const g = DATA.gdp || {};
         const targetT = num(g.targetT) !== null ? g.targetT : TARGET_GDP_T;
         const reached = num(g.percentReached);
+        const nominal = (DATA.deepDive && DATA.deepDive.nominal) || [];
+        const reality = computeRealityCheck(nominal, getReferenceYear(), targetT);
+        const latestY = reality.latestActualYear ?? num(g.currentYear);
+        const latestT = reality.latestActualT ?? num(g.currentT);
+        const reqCagr = latestT !== null && latestY !== null && TARGET_YEAR > latestY
+          ? Math.pow(targetT / latestT, 1 / (TARGET_YEAR - latestY)) - 1
+          : num(g.requiredCagr);
+        const heroPace = getHeroPace(g, reality, reqCagr);
 
         $('gauge').style.setProperty('--pct', Math.max(0, Math.min(100, reached || 0)));
         $('gaugeValue').textContent = reached === null ? '—' : `${fmt(reached, 1)}%`;
@@ -1558,55 +2353,58 @@
 
         $('gdpCurrent').textContent = trillion(g.currentT);
         $('gdpTarget').textContent = trillion(targetT);
-        $('gdpFreshness').textContent = g.freshness || 'Unavailable';
+        $('gdpFreshness').textContent = formatDate(g.freshness) || 'Unavailable';
         $('gdpFreshness').className = `meta-tag ${tagClass(g.freshness)}`;
 
-        $('requiredGrowth').textContent = pct(g.requiredCagr);
-        $('actualGrowth').textContent = pct(g.actualCagr);
-        $('actualGrowthBox').className = `growth-box ${g.status === 'behind' ? 'bad' : ''}`;
+        $('requiredGrowth').textContent = pct(num(g.requiredCagr) !== null ? g.requiredCagr : reqCagr);
+        $('actualGrowth').textContent = pct(heroPace.cagr);
+        $('actualGrowthPeriod').textContent = heroPace.periodLabel || '—';
+        $('actualGrowthBox').className = `growth-box ${heroPace.status === 'behind' ? 'bad' : ''}`;
 
-        $('etaYear').textContent = g.etaYear || '—';
-        const delta = num(g.yearsVs2047);
+        $('etaLabel').textContent = heroPace.etaLabel;
+        $('etaYear').textContent = heroPace.etaYear !== null ? heroPace.etaYear : '—';
+        const delta = num(heroPace.yearsVs2047);
         $('etaDelta').textContent = delta === null
-          ? 'Needs 5+ years of IMF actual observations'
-          : `${formatDelta2047(delta)}${g.actualCagrPeriod ? ` (${g.actualCagrPeriod})` : ''}`;
+          ? 'IMF outlook unavailable'
+          : formatDelta2047(delta);
 
-        $('statusBadge').textContent = statusName(g.status);
-        $('statusBadge').className = `status-badge ${statusClass(g.status)}`;
+        $('statusBadge').textContent = statusName(heroPace.status);
+        $('statusBadge').className = `status-badge ${statusClass(heroPace.status)}`;
 
-        const deadline = new Date(g.deadlineIso || '2047-01-01T00:00:00+05:30');
-        const now = new Date();
-        if (!Number.isNaN(deadline.getTime())) {
-          let months = (deadline.getFullYear() - now.getFullYear()) * 12 + (deadline.getMonth() - now.getMonth());
-          let days = deadline.getDate() - now.getDate();
+        function computeDeadlineCountdown(deadlineIso, nowDate) {
+          const deadline = new Date(deadlineIso || '2047-01-01T00:00:00+05:30');
+          const now = nowDate instanceof Date ? nowDate : new Date();
+          if (Number.isNaN(deadline.getTime())) return null;
+          const IST_MS = 5.5 * 3600 * 1000;
+          const dlIst = new Date(deadline.getTime() + IST_MS);
+          const nowIst = new Date(now.getTime() + IST_MS);
+          let months = (dlIst.getUTCFullYear() - nowIst.getUTCFullYear()) * 12 + (dlIst.getUTCMonth() - nowIst.getUTCMonth());
+          let days = dlIst.getUTCDate() - nowIst.getUTCDate();
           if (days < 0) {
             months -= 1;
-            const prevMonth = new Date(deadline.getFullYear(), deadline.getMonth(), 0);
-            days += prevMonth.getDate();
+            const prevMonth = new Date(Date.UTC(dlIst.getUTCFullYear(), dlIst.getUTCMonth(), 0));
+            days += prevMonth.getUTCDate();
           }
-          $('countdownYears').textContent = Math.max(0, Math.floor(months / 12));
-          $('countdownMonths').textContent = Math.max(0, months % 12);
-          $('countdownDays').textContent = Math.max(0, days);
+          return {
+            years: Math.max(0, Math.floor(months / 12)),
+            months: Math.max(0, months % 12),
+            days: Math.max(0, days)
+          };
+        }
+        window.__BHARAT_COMPUTE_COUNTDOWN = computeDeadlineCountdown;
+
+        const cd = computeDeadlineCountdown(g.deadlineIso || '2047-01-01T00:00:00+05:30', new Date());
+        if (cd) {
+          $('countdownYears').textContent = cd.years;
+          $('countdownMonths').textContent = cd.months;
+          $('countdownDays').textContent = cd.days;
         } else {
           $('countdownYears').textContent = '—';
           $('countdownMonths').textContent = '—';
           $('countdownDays').textContent = '—';
         }
 
-        const traj = DATA.trajectory || {};
-        $('trajectoryNote').textContent = traj.sourceNote || '—';
-        makeChart('trajectory', 'trajectoryChart', {
-          type: 'line',
-          data: {
-            labels: traj.labels || [],
-            datasets: [
-              { label: 'Required path', data: traj.required || [], borderColor: COLORS.green, borderDash: [6, 5], tension: 0.25, pointRadius: 0 },
-              { label: 'IMF series', data: traj.imf || [], borderColor: COLORS.blue, tension: 0.25, pointRadius: 0 },
-              { label: 'Current trend', data: traj.currentTrend || [], borderColor: COLORS.saffron, tension: 0.25, pointRadius: 0, fill: { target: 1, above: 'rgba(239, 68, 68, 0.16)' } }
-            ]
-          },
-          options: chartOptions('USD trillion')
-        });
+        renderTrajectoryChart();
       }
 
       function renderRealityAndMilestones() {
@@ -1840,7 +2638,7 @@
                       <div class="strategy-action">${esc(s.strategy || '')}</div>
                       <div class="strategy-meta" style="margin-top:6px">
                         <span class="${isOld ? 'old-flag' : ''}">${dataYear !== null ? (isOld ? `⚠ Old data (${dataYear})` : `Data year: ${dataYear}`) : 'Data year: —'}</span>
-                        <span>${esc(s.freshness || '—')}</span>
+                        <span>${esc(formatDate(s.freshness) || '—')}</span>
                       </div>
                     </div>
                   </button>
@@ -1858,11 +2656,40 @@
       function openStrategy(id) {
         const s = (DATA.strategies || []).find((x) => String(x.id) === String(id));
         if (!s) return;
+        const freshnessText = formatDate(s.freshness) || '—';
+        const noteText = s.note ? formatDate(s.note) : '';
         $('strategyModalTitle').textContent = s.name;
-        $('strategyModalMeta').textContent = `${s.kpi} · ${s.freshness || '—'}${s.note ? ` · ${s.note}` : ''}`;
+        $('strategyModalMeta').textContent = `${s.kpi} · ${freshnessText}${noteText ? ` · ${noteText}` : ''}`;
         $('strategyModal').classList.add('open');
 
         const points = (s.series || []).filter((p) => p && num(p.value) !== null);
+        if (points.length < 2) {
+          destroyChart('strategy');
+          $('strategyChartWrap').hidden = true;
+          const unit = extractKpiUnit(s.kpi);
+          const latestVal = num(s.current) !== null ? s.current : (points.length === 1 ? num(points[0].value) : null);
+          const valDigits = latestVal !== null && (Math.abs(latestVal) >= 100 || unit === 'states') ? 0 : 1;
+          const valStr = latestVal === null
+            ? '—'
+            : unit === '%'
+              ? `${fmt(latestVal, valDigits)}%`
+              : unit
+                ? `${fmt(latestVal, valDigits)} ${unit}`
+                : fmt(latestVal, valDigits);
+          const extractedDate = extractFormattedDate(s.freshness);
+          const dateStr = extractedDate || (points.length === 1 && num(points[0].year) !== null ? String(points[0].year) : freshnessText);
+          const sourceStr = [s.source, s.note].map((v) => String(v || '').trim()).filter(Boolean).map(formatDate).join(' — ') || '—';
+          $('strategyModalEmpty').innerHTML = `
+            <p class="modal-empty-primary">Latest official figure: <strong>${esc(valStr)}</strong> · ${esc(dateStr)} · Source: ${esc(sourceStr)}</p>
+            <p class="modal-empty-sub">History not tracked yet — trend appears once 2+ years of data exist.</p>
+          `;
+          $('strategyModalEmpty').hidden = false;
+          try { window.dispatchEvent(new CustomEvent('bharat:strategy-opened', { detail: s })); } catch (_) {}
+          return;
+        }
+
+        $('strategyModalEmpty').hidden = true;
+        $('strategyChartWrap').hidden = false;
         makeChart('strategy', 'strategyChart', {
           type: 'line',
           data: {
@@ -1871,6 +2698,7 @@
           },
           options: chartOptions(s.kpi)
         });
+        try { window.dispatchEvent(new CustomEvent('bharat:strategy-opened', { detail: s })); } catch (_) {}
       }
 
       function spark(points) {
@@ -1897,21 +2725,32 @@
 
         $('monthlyPulse').innerHTML = rows.map((m) => {
           const isBlank = m.value === null || m.value === undefined || String(m.value).trim() === '';
-          const isOlder = !isBlank && isMonthlyPeriodOlderThan(m.period, 2, now);
-          const valueHtml = isBlank
-            ? '<span class="pulse-awaiting">Awaiting verified figure</span>'
+          const isOlder = isMonthlyPeriodOlderThan(m.period, 2, now);
+          const isUpiOrGst = /^(?:upi|gst)\b/i.test(String(m.metric || '').trim());
+          const latestLabel = String(formatDate(m.period) || m.period || '').trim();
+          const hideStaleUpiGst = isUpiOrGst && isOlder;
+          const awaitingMsg = hideStaleUpiGst && latestLabel
+            ? `awaiting verified figure (latest: ${latestLabel})`
+            : 'Awaiting verified figure';
+          const valueHtml = isBlank || hideStaleUpiGst
+            ? (hideStaleUpiGst
+                ? `<span class="pulse-value">—</span>`
+                : `<span class="pulse-awaiting">${esc(awaitingMsg)}</span>`)
             : `<span class="pulse-value">${esc(m.value)} <small style="font-size:13px;font-weight:600;color:var(--muted)">${esc(m.unit || '')}</small></span>`;
+          const subLine = hideStaleUpiGst
+            ? `<span class="pulse-awaiting">${esc(awaitingMsg)}</span>`
+            : `${esc(formatDate(m.period) || 'Period not set')} · ${esc(m.yoy || 'YoY —')}`;
 
           return `
             <article class="pulse-card">
               <div class="pulse-card-top">
                 <div class="pulse-name">${esc(m.metric)}</div>
-                ${isOlder ? '<span class="older-flag">⚠ older figure</span>' : ''}
+                ${!isBlank && isOlder && !hideStaleUpiGst ? '<span class="older-flag">⚠ older figure</span>' : ''}
               </div>
               <div class="pulse-val-row">
                 <div>
                   ${valueHtml}
-                  <div class="pulse-sub">${esc(m.period || 'Period not set')} · ${esc(m.yoy || 'YoY —')}</div>
+                  <div class="pulse-sub">${subLine}</div>
                 </div>
                 ${spark(m.history)}
               </div>
@@ -1934,17 +2773,27 @@
             <tbody>
               ${rows.map((m) => {
                 const isBlank = m.value === null || m.value === undefined || String(m.value).trim() === '';
-                const isOlder = !isBlank && isMonthlyPeriodOlderThan(m.period, 2, now);
-                const valCell = isBlank
-                  ? '<span class="pulse-awaiting">Awaiting verified figure</span>'
-                  : `<strong>${esc(m.value)}</strong> ${esc(m.unit || '')}`;
-                const periodCell = `${esc(dash(m.period))}${isOlder ? ' <span class="older-flag">⚠ older figure</span>' : ''}`;
+                const isOlder = isMonthlyPeriodOlderThan(m.period, 2, now);
+                const isUpiOrGst = /^(?:upi|gst)\b/i.test(String(m.metric || '').trim());
+                const periodDisplay = formatDate(m.period);
+                const latestLabel = String(periodDisplay || m.period || '').trim();
+                const hideStaleUpiGst = isUpiOrGst && isOlder;
+                const awaitingMsg = hideStaleUpiGst && latestLabel
+                  ? `awaiting verified figure (latest: ${latestLabel})`
+                  : 'Awaiting verified figure';
+                const valCell = hideStaleUpiGst
+                  ? `<strong>—</strong><br><span class="pulse-awaiting">${esc(awaitingMsg)}</span>`
+                  : isBlank
+                    ? `<span class="pulse-awaiting">${esc(awaitingMsg)}</span>`
+                    : `<strong>${esc(m.value)}</strong> ${esc(m.unit || '')}`;
+                const periodCell = `${esc(dash(periodDisplay))}${!isBlank && isOlder && !hideStaleUpiGst ? ' <span class="older-flag">⚠ older figure</span>' : ''}`;
+                const freshnessDisplay = formatDate(m.freshness) || 'Source';
                 const srcCell = m.sourceUrl
-                  ? `<a href="${safeHref(m.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(m.freshness || 'Source')}</a>`
-                  : esc(m.freshness || '—');
+                  ? `<a href="${safeHref(m.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(freshnessDisplay)}</a>`
+                  : esc(formatDate(m.freshness) || '—');
                 return `
                   <tr>
-                    <td><strong>${esc(m.metric)}</strong>${m.note ? `<br><small class="neutral">${esc(m.note)}</small>` : ''}</td>
+                    <td><strong>${esc(m.metric)}</strong>${m.note ? `<br><small class="neutral">${esc(formatDate(m.note))}</small>` : ''}</td>
                     <td class="num-col">${valCell}</td>
                     <td>${periodCell}</td>
                     <td>${esc(dash(m.yoy))}</td>
@@ -2082,7 +2931,7 @@
                       <td class="num-col">${fmt(m.price, 2)}</td>
                       <td class="num-col ${cls}">${chg === null ? '—' : `${chg > 0 ? '+' : ''}${fmt(chg, 2)}%`}</td>
                       <td class="num-col">${compact(m.marketCap)}</td>
-                      <td>${esc(m.freshness || '—')}</td>
+                      <td>${esc(formatDate(m.freshness) || '—')}</td>
                     </tr>
                   `;
                 }).join('')}
@@ -2113,7 +2962,7 @@
                     </div>
                     <p style="margin-top:8px">${esc(r.detail || '—')}</p>
                   </div>
-                  <span class="meta-tag ${tagClass(r.freshness)}">${esc(r.freshness || 'Unavailable')}</span>
+                  <span class="meta-tag ${tagClass(r.freshness)}">${esc(formatDate(r.freshness) || 'Unavailable')}</span>
                 </article>
               `;
             }).join('')
@@ -2129,7 +2978,7 @@
                 <div class="news-item">
                   <a href="${safeHref(n.url)}" target="_blank" rel="noopener noreferrer">${esc(n.title)}</a>
                   <div class="news-meta">
-                    ${esc(n.publisher || 'Publisher unavailable')} · ${esc(n.publishedAt || 'Date unavailable')}
+                    ${esc(n.publisher || 'Publisher unavailable')} · ${esc(formatDate(n.publishedAt) || 'Date unavailable')}
                     <span class="${sentCls}" style="margin-left:8px;font-weight:700">${esc(n.sentiment || 'unclassified')}</span>
                   </div>
                   ${n.summary ? `<div class="news-meta">${esc(n.summary)}</div>` : ''}
@@ -2170,6 +3019,10 @@
         renderRisks();
         renderNews();
         renderMethodology();
+        try {
+          window.__BHARAT_LAST_DATA = DATA;
+          window.dispatchEvent(new CustomEvent('bharat:data-rendered', { detail: DATA }));
+        } catch (_) {}
       }
 
       function showBanner(isError, title, message) {
@@ -2215,8 +3068,1449 @@
         window.addEventListener('keydown', (e) => {
           if (e.key === 'Escape') $('strategyModal').classList.remove('open');
         });
+        $('trajToggleGroup').querySelectorAll('[data-traj-range]').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            trajectoryRange = btn.dataset.trajRange || '10yr';
+            $('trajToggleGroup').querySelectorAll('[data-traj-range]').forEach((b) => {
+              const isActive = b === btn;
+              b.classList.toggle('active', isActive);
+              b.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+            });
+            renderTrajectoryChart();
+          });
+        });
         loadDashboard();
       });
+    })();
+  </script>
+
+  <script>
+    /* === BHARAT-O-METER === */
+    (function () {
+      'use strict';
+
+      try {
+        const SITE_URL = 'https://devanshnegi.github.io/bharat2047';
+        const TARGET_T = 47;
+        const TARGET_YEAR = 2047;
+        const IST_OFFSET_MS = 5.5 * 3600 * 1000;
+        const PAGE_LOAD_MS = Date.now();
+        const MONTHS = {
+          jan: 0, january: 0, feb: 1, february: 1, mar: 2, march: 2, apr: 3, april: 3,
+          may: 4, jun: 5, june: 5, jul: 6, july: 6, aug: 7, august: 7,
+          sep: 8, sept: 8, september: 8, oct: 9, october: 9, nov: 10, november: 10, dec: 11, december: 11
+        };
+
+        const el = (id) => document.getElementById(id);
+        const n = (v) => (typeof v === 'number' && Number.isFinite(v) ? v : null);
+        const usdIntFmt = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
+        const usdPcFmt = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
+        const inrCrFmt = new Intl.NumberFormat('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        const inrIntFmt = new Intl.NumberFormat('en-IN', { maximumFractionDigits: 0 });
+
+        let latestPayload = null;
+        let tickTimer = null;
+        let lastCrossedTenth = null;
+        let milestoneDismissed = false;
+        let lastSnapshot = {
+          gdpNowT: null,
+          pppNowT: null,
+          reqPct: null,
+          actPct: null,
+          etaYear: null,
+          gapUsd: null,
+          gapRatePerSecUsd: null,
+          pctReached: null,
+          missionScore: null,
+          upiTodayCr: null,
+          marketCapDisplay: '—',
+          shareTexts: {}
+        };
+
+        function midYearMs(year) {
+          return Date.UTC(year, 6, 1, 0, 0, 0) - IST_OFFSET_MS;
+        }
+
+        function getIstParts(utcMs) {
+          const d = new Date(utcMs + IST_OFFSET_MS);
+          const y = d.getUTCFullYear();
+          const m = d.getUTCMonth();
+          const day = d.getUTCDate();
+          const hr = d.getUTCHours();
+          const min = d.getUTCMinutes();
+          const sec = d.getUTCSeconds();
+
+          const yearStartMs = Date.UTC(y, 0, 1, 0, 0, 0) - IST_OFFSET_MS;
+          const nextYearStartMs = Date.UTC(y + 1, 0, 1, 0, 0, 0) - IST_OFFSET_MS;
+          const midnightMs = Date.UTC(y, m, day, 0, 0, 0) - IST_OFFSET_MS;
+
+          return {
+            year: y,
+            month: m,
+            day,
+            hr,
+            min,
+            sec,
+            secInYear: (nextYearStartMs - yearStartMs) / 1000,
+            yearFraction: Math.max(0, Math.min(1, (utcMs - yearStartMs) / (nextYearStartMs - yearStartMs))),
+            secSinceMidnight: Math.max(0, (utcMs - midnightMs) / 1000)
+          };
+        }
+
+        function parsePeriodMonthYear(period) {
+          const s = String(period || '').trim();
+          if (!s) return null;
+          let y = null;
+          let m = null;
+          const iso = s.match(/\b(20\d{2})[-/](\d{1,2})(?:[-/]\d{1,2})?\b/);
+          if (iso) {
+            y = Number(iso[1]);
+            m = Number(iso[2]) - 1;
+          } else {
+            const m1 = s.match(/\b(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\b[\s,.-]*(20\d{2})/i);
+            if (m1) {
+              m = MONTHS[m1[1].toLowerCase()];
+              y = Number(m1[2]);
+            } else {
+              const m2 = s.match(/\b(20\d{2})[\s,.-]*(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\b/i);
+              if (m2) {
+                y = Number(m2[1]);
+                m = MONTHS[m2[2].toLowerCase()];
+              }
+            }
+          }
+          if (y === null || m === null || m < 0 || m > 11) return null;
+          return { year: y, month: m };
+        }
+
+        function isPeriodOlderThan(period, maxMonths, istNowParts) {
+          const ym = parsePeriodMonthYear(period);
+          if (!ym) return false;
+          return (istNowParts.year - ym.year) * 12 + (istNowParts.month - ym.month) > maxMonths;
+        }
+
+        function parseMonthlyRupeeRow(row, istNowParts) {
+          if (!row) return { ok: false, label: 'awaiting verified figure' };
+          let periodText = row.period ? String(row.period).trim() : '';
+          // Month without a year (e.g. "July"): assume its most recent occurrence in IST
+          if (periodText && !/20\d{2}/.test(periodText)) {
+            const mm = periodText.toLowerCase().match(/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/);
+            if (mm) {
+              const mIdx = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'].indexOf(mm[1]);
+              const ist = new Date(Date.now() + 5.5 * 3600 * 1000);
+              const yr = mIdx > ist.getUTCMonth() ? ist.getUTCFullYear() - 1 : ist.getUTCFullYear();
+              periodText = periodText + ' ' + yr;
+            }
+          }
+          if (isPeriodOlderThan(periodText, 2, istNowParts)) {
+            return {
+              ok: false,
+              label: periodText ? `awaiting verified figure (latest: ${periodText})` : 'awaiting verified figure'
+            };
+          }
+          const rawVal = row.value === null || row.value === undefined ? '' : String(row.value).trim();
+          if (!rawVal) return { ok: false, label: 'awaiting verified figure' };
+          const numMatch = rawVal.match(/([+-]?\d[\d,]*(?:\.\d+)?)/);
+          if (!numMatch) return { ok: false, label: 'awaiting verified figure' };
+          const numeric = parseFloat(numMatch[1].replace(/,/g, ''));
+          if (!Number.isFinite(numeric) || numeric <= 0) return { ok: false, label: 'awaiting verified figure' };
+
+          const unitHay = `${rawVal} ${row.unit || ''}`.toLowerCase();
+          let multiplier = null;
+          if (/lakh\s*(?:cr|crore)/i.test(unitHay)) multiplier = 1e12;
+          else if (/(?:\bcr\b|crore)/i.test(unitHay)) multiplier = 1e7;
+          else if (/(?:\brs\.?\b|\binr\b|₹)/i.test(unitHay)) multiplier = 1;
+          if (multiplier === null) return { ok: false, label: 'awaiting verified figure' };
+
+          const ym = parsePeriodMonthYear(periodText);
+          const secInMonth = ym
+            ? (Date.UTC(ym.year, ym.month + 1, 1) - Date.UTC(ym.year, ym.month, 1)) / 1000
+            : 30 * 86400;
+          return {
+            ok: true,
+            totalRupees: numeric * multiplier,
+            secInMonth,
+            periodText: periodText || 'latest'
+          };
+        }
+
+        function parseNumberFromVal(raw) {
+          if (typeof raw === 'number' && Number.isFinite(raw)) return raw;
+          if (raw === null || raw === undefined) return null;
+          const m = String(raw).trim().match(/([+-]?\d[\d,]*(?:\.\d+)?)/);
+          if (!m) return null;
+          const v = parseFloat(m[1].replace(/,/g, ''));
+          return Number.isFinite(v) ? v : null;
+        }
+
+        function computeSeriesPace(series, refYear, fallbackCagr) {
+          const pts = (series || [])
+            .filter((p) => p && n(p.year) !== null && n(p.value) !== null && p.value > 0)
+            .sort((a, b) => a.year - b.year);
+          const actuals = pts.filter((p) => p.year < refYear);
+          const projs = pts.filter((p) => p.year >= refYear);
+          const latest = actuals.length ? actuals[actuals.length - 1] : (pts[pts.length - 1] || null);
+          const lastProj = projs.length ? projs[projs.length - 1] : null;
+          let pace = null;
+          if (latest && lastProj && lastProj.year > latest.year) {
+            pace = Math.pow(lastProj.value / latest.value, 1 / (lastProj.year - latest.year)) - 1;
+          } else {
+            const p10 = latest ? actuals.filter((p) => p.year <= latest.year - 10).slice(-1)[0] || null : null;
+            if (p10 && latest && latest.year > p10.year) {
+              pace = Math.pow(latest.value / p10.value, 1 / (latest.year - p10.year)) - 1;
+            } else {
+              pace = fallbackCagr;
+            }
+          }
+          return { pts, latest, lastProj, pace };
+        }
+
+        function interpolateMidYear(series, pace, nowMs, istYear) {
+          const pts = (series || [])
+            .filter((p) => p && n(p.year) !== null && n(p.value) !== null && p.value > 0)
+            .sort((a, b) => a.year - b.year);
+          if (!pts.length) return null;
+
+          const ext = pts.map((p) => ({ year: p.year, value: p.value, extrapolated: false }));
+          const last = ext[ext.length - 1];
+          const safePace = n(pace) !== null ? pace : 0;
+          let y = last.year;
+          const needYear = Math.max(istYear + 2, new Date(nowMs).getUTCFullYear() + 2);
+          while (y < needYear) {
+            y += 1;
+            const prev = ext[ext.length - 1];
+            ext.push({ year: y, value: prev.value * (1 + safePace), extrapolated: true });
+          }
+
+          let p0 = ext[0];
+          let p1 = ext[1] || ext[0];
+          for (let i = 0; i < ext.length - 1; i++) {
+            const tA = midYearMs(ext[i].year);
+            const tB = midYearMs(ext[i + 1].year);
+            if (nowMs >= tA && nowMs <= tB) {
+              p0 = ext[i];
+              p1 = ext[i + 1];
+              break;
+            }
+          }
+          if (nowMs < midYearMs(ext[0].year) && ext.length >= 2) {
+            p0 = ext[0];
+            p1 = ext[1];
+          }
+
+          const t0 = midYearMs(p0.year);
+          const t1 = midYearMs(p1.year);
+          const secBetween = Math.max(1, (t1 - t0) / 1000);
+          const ratePerSecUsd = ((p1.value - p0.value) * 1e12) / secBetween;
+          const valUsd = p0.value * 1e12 + ratePerSecUsd * ((nowMs - t0) / 1000);
+
+          return {
+            valUsd,
+            valT: valUsd / 1e12,
+            ratePerSecUsd,
+            y0: p0.year,
+            y1: p1.year,
+            extrapolated: Boolean(p1.extrapolated)
+          };
+        }
+
+        function findStrategy(data, regex, refYear) {
+          const list = (data && data.strategies) || [];
+          const s = list.find((item) => item && regex.test(String(item.name || '')));
+          if (!s) return null;
+          const pts = (s.series || [])
+            .filter((p) => p && n(p.year) !== null && n(p.value) !== null)
+            .sort((a, b) => a.year - b.year);
+          const actuals = pts.filter((p) => (refYear ? p.year < refYear : true) && !/projection|forecast/i.test(String(p.classification || '')));
+          const curr = n(s.current);
+          let chosen = null;
+          if (curr !== null && actuals.length) {
+            chosen = [...actuals].reverse().find((p) => Math.abs(p.value - curr) < 1e-4) || actuals[actuals.length - 1];
+          } else if (actuals.length) {
+            chosen = actuals[actuals.length - 1];
+          } else if (curr !== null && pts.length) {
+            chosen = [...pts].reverse().find((p) => Math.abs(p.value - curr) < 1e-4) || pts[pts.length - 1];
+          } else if (pts.length) {
+            chosen = pts[pts.length - 1];
+          }
+          const val = curr !== null ? curr : (chosen ? chosen.value : null);
+          const yr = chosen ? chosen.year : null;
+          return { current: val, year: yr, name: s.name };
+        }
+
+        function computeIstCountdown(utcMs, deadlineIso) {
+          const ist = getIstParts(utcMs);
+          if (ist.year >= 2047) return '0y 0m 0d · 00:00:00';
+          const nowDate = new Date(utcMs);
+          let cd = typeof window.__BHARAT_COMPUTE_COUNTDOWN === 'function'
+            ? window.__BHARAT_COMPUTE_COUNTDOWN(deadlineIso, nowDate)
+            : null;
+          if (!cd) {
+            const deadline = new Date(deadlineIso || '2047-01-01T00:00:00+05:30');
+            let months = (deadline.getFullYear() - nowDate.getFullYear()) * 12 + (deadline.getMonth() - nowDate.getMonth());
+            let days = deadline.getDate() - nowDate.getDate();
+            if (days < 0) {
+              months -= 1;
+              const prevMonth = new Date(deadline.getFullYear(), deadline.getMonth(), 0);
+              days += prevMonth.getDate();
+            }
+            cd = {
+              years: Math.max(0, Math.floor(months / 12)),
+              months: Math.max(0, months % 12),
+              days: Math.max(0, days)
+            };
+          }
+
+          const sec = (60 - ist.sec) % 60;
+          const min = (60 - ist.min - (ist.sec > 0 ? 1 : 0)) % 60;
+          const hr = (24 - ist.hr - (ist.min > 0 || ist.sec > 0 ? 1 : 0)) % 24;
+
+          const pad = (v) => String(Math.max(0, v)).padStart(2, '0');
+          return `${cd.years}y ${cd.months}m ${cd.days}d · ${pad(hr)}:${pad(min)}:${pad(sec)}`;
+        }
+
+        function triggerMilestoneCelebration(crossedT) {
+          try {
+            const banner = el('bomMilestoneBanner');
+            const textEl = el('bomMilestoneText');
+            if (!banner || !textEl) return;
+            textEl.textContent = `🇮🇳 India just crossed $${crossedT.toFixed(1)} trillion!`;
+            if (!milestoneDismissed) banner.hidden = false;
+
+            const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (reduced) return;
+
+            const box = document.createElement('div');
+            box.className = 'bom-confetti';
+            const colors = ['#F4A340', '#FFFFFF', '#22C55E', '#38BDF8'];
+            for (let i = 0; i < 28; i++) {
+              const p = document.createElement('span');
+              p.className = 'bom-confetti-piece';
+              p.style.left = `${(i * 3.5 + (i % 3) * 1.1) % 98}%`;
+              p.style.background = colors[i % colors.length];
+              p.style.animationDelay = `${(i % 7) * 0.12}s`;
+              box.appendChild(p);
+            }
+            document.body.appendChild(box);
+            setTimeout(() => { try { box.remove(); } catch (_) {} }, 3800);
+          } catch (_) {}
+        }
+
+        function buildMainShareText() {
+          const nomStr = lastSnapshot.gdpNowT !== null ? `$${lastSnapshot.gdpNowT.toFixed(2)}` : '—';
+          const pppStr = lastSnapshot.pppNowT !== null ? `$${lastSnapshot.pppNowT.toFixed(2)}` : '—';
+          const reqStr = lastSnapshot.reqPct !== null ? `${(lastSnapshot.reqPct * 100).toFixed(1)}%` : '—';
+          const actStr = lastSnapshot.actPct !== null ? `${(lastSnapshot.actPct * 100).toFixed(1)}%` : '—';
+          const etaStr = lastSnapshot.etaYear !== null ? String(lastSnapshot.etaYear) : '—';
+          const gapRate = lastSnapshot.gapRatePerSecUsd;
+          const gapVerb = gapRate !== null && gapRate < 0 ? 'narrows' : 'widens';
+          const gapRateStr = gapRate !== null ? `$${usdIntFmt.format(Math.round(Math.abs(gapRate)))}` : '—';
+          return `India's economy is now ~${nomStr} trillion (nominal) / ${pppStr} trillion (PPP) 🇮🇳 To hit $47T by 2047 it needs ~${reqStr}/yr; current pace ~${actStr} → ETA ${etaStr}. The gap ${gapVerb} by ${gapRateStr} every second. Track it live: ${SITE_URL} #Bharat2047`;
+        }
+
+        function updateShareLinks() {
+          try {
+            const text = buildMainShareText();
+            const wa = el('bomShareWa');
+            const x = el('bomShareX');
+            const li = el('bomShareLi');
+            if (wa) wa.href = `https://wa.me/?text=${encodeURIComponent(text)}`;
+            if (x) x.href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
+            if (li) li.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(SITE_URL)}`;
+          } catch (_) {}
+        }
+
+        function renderMarketStrip(data) {
+          try {
+            const markets = (data && data.markets) || [];
+            const monthly = (data && data.monthly) || [];
+            const findMkt = (symRe) => markets.find((m) => m && symRe.test(`${m.symbol || ''} ${m.company || ''}`));
+
+            const nifty = findMkt(/NIFTY_50|Nifty 50/i);
+            const sensex = findMkt(/SENSEX|Sensex/i);
+            const usdinr = findMkt(/USDINR|USD \/ INR/i);
+
+            const fmtDelta = (pct) => {
+              const v = n(pct);
+              if (v === null) return { text: '—', cls: 'bom-strip-delta' };
+              const arrow = v >= 0 ? '▲' : '▼';
+              const sign = v >= 0 ? '+' : '';
+              return {
+                text: `${arrow} ${sign}${v.toFixed(2)}%`,
+                cls: `bom-strip-delta ${v >= 0 ? 'positive' : 'negative'}`
+              };
+            };
+
+            if (el('bomStripNifty')) el('bomStripNifty').textContent = nifty && n(nifty.price) !== null ? nifty.price.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : '—';
+            if (el('bomStripNiftyChange')) {
+              const d = fmtDelta(nifty && nifty.changePct);
+              el('bomStripNiftyChange').textContent = d.text;
+              el('bomStripNiftyChange').className = d.cls;
+            }
+
+            if (el('bomStripSensex')) el('bomStripSensex').textContent = sensex && n(sensex.price) !== null ? sensex.price.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : '—';
+            if (el('bomStripSensexChange')) {
+              const d = fmtDelta(sensex && sensex.changePct);
+              el('bomStripSensexChange').textContent = d.text;
+              el('bomStripSensexChange').className = d.cls;
+            }
+
+            if (el('bomStripUsd')) el('bomStripUsd').textContent = usdinr && n(usdinr.price) !== null ? usdinr.price.toFixed(2) : '—';
+            if (el('bomStripUsdChange')) {
+              const d = fmtDelta(usdinr && usdinr.changePct);
+              el('bomStripUsdChange').textContent = d.text;
+              el('bomStripUsdChange').className = d.cls;
+            }
+
+            // #16 Indian stock market value
+            const capRow = monthly.find((m) => m && /total\s*market\s*cap/i.test(m.metric || ''));
+            const niftyBaseRow = monthly.find((m) => m && /nifty\s*at\s*market\s*cap\s*date/i.test(m.metric || ''));
+            const baseCapT = capRow ? parseNumberFromVal(capRow.value) : null;
+            const baseNifty = niftyBaseRow ? parseNumberFromVal(niftyBaseRow.value) : null;
+            const currNifty = nifty ? n(nifty.price) : null;
+
+            if (baseCapT !== null && baseCapT > 0 && baseNifty !== null && baseNifty > 0 && currNifty !== null && currNifty > 0) {
+              const estT = baseCapT * (currNifty / baseNifty);
+              const disp = `$${estT.toFixed(2)}T`;
+              lastSnapshot.marketCapDisplay = disp;
+              if (el('bomMarketCap')) el('bomMarketCap').textContent = disp;
+              if (el('bomMarketCapChange')) {
+                const d = fmtDelta(nifty && nifty.changePct);
+                el('bomMarketCapChange').textContent = d.text;
+                el('bomMarketCapChange').className = d.cls;
+              }
+              const rawDate = capRow.period ? String(capRow.period).trim() : 'base date';
+              const dateLabel = typeof window.formatDate === 'function' ? window.formatDate(rawDate) : rawDate;
+              if (el('bomMarketCapSub')) {
+                el('bomMarketCapSub').textContent = `Estimate tracking Nifty 50 · base $${baseCapT.toFixed(2)}T on ${dateLabel}`;
+              }
+            } else {
+              lastSnapshot.marketCapDisplay = '—';
+              if (el('bomMarketCap')) el('bomMarketCap').textContent = '—';
+              if (el('bomMarketCapChange')) {
+                el('bomMarketCapChange').textContent = '—';
+                el('bomMarketCapChange').className = 'bom-strip-delta';
+              }
+              if (el('bomMarketCapSub')) el('bomMarketCapSub').textContent = 'awaiting verified figure';
+            }
+          } catch (_) {}
+        }
+
+        function tick() {
+          try {
+            if (!latestPayload) return;
+            const nowMs = Date.now();
+            const ist = getIstParts(nowMs);
+            const g = latestPayload.gdp || {};
+            const targetT = n(g.targetT) !== null ? g.targetT : TARGET_T;
+            const dd = latestPayload.deepDive || {};
+
+            const nomInfo = computeSeriesPace(dd.nominal, ist.year, n(g.actualCagr));
+            const pppInfo = computeSeriesPace(dd.ppp, ist.year, nomInfo.pace);
+
+            const nom = interpolateMidYear(dd.nominal, nomInfo.pace, nowMs, ist.year);
+            const ppp = interpolateMidYear(dd.ppp, pppInfo.pace, nowMs, ist.year);
+
+            const reqCagr = nomInfo.latest && TARGET_YEAR > nomInfo.latest.year
+              ? Math.pow(targetT / nomInfo.latest.value, 1 / (TARGET_YEAR - nomInfo.latest.year)) - 1
+              : n(g.requiredCagr);
+            const etaYear = nomInfo.latest && nomInfo.pace > 0
+              ? Math.ceil(nomInfo.latest.year + Math.log(targetT / nomInfo.latest.value) / Math.log(1 + nomInfo.pace))
+              : n(g.etaYear);
+
+            // Row 1 source label
+            const monthly = latestPayload.monthly || [];
+            const upiRow = monthly.find((m) => m && /upi/i.test(m.metric || ''));
+            const upiParsed = parseMonthlyRupeeRow(upiRow, ist);
+
+            if (el('bomEconSourceLabel')) {
+              const imfWin = nom ? `${nom.y0}–${nom.y1}` : 'IMF';
+              const upiSrc = upiParsed.ok ? ` & ${upiParsed.periodText} UPI` : '';
+              el('bomEconSourceLabel').textContent = `ⓘ Live estimate · based on IMF ${imfWin} (1 July mid-year)${upiSrc}`;
+            }
+
+            // Counter 1: Nominal GDP right now
+            let gapUsd = null;
+            let gapRatePerSecUsd = null;
+            if (nom) {
+              if (el('bomGdpNow')) el('bomGdpNow').textContent = `$${usdIntFmt.format(Math.round(nom.valUsd))}`;
+              if (el('bomGdpNowSub')) {
+                el('bomGdpNowSub').textContent = `+$${usdIntFmt.format(Math.round(nom.ratePerSecUsd))} every second · ${(nom.valT / targetT * 100).toFixed(2)}% of $${targetT}T`;
+              }
+
+              // Counter 3: Added today (IST)
+              const addedTodayUsd = nom.ratePerSecUsd * ist.secSinceMidnight;
+              if (el('bomGdpToday')) el('bomGdpToday').textContent = `+$${usdIntFmt.format(Math.round(addedTodayUsd))}`;
+
+              // While you were here
+              const sessionUsd = nom.ratePerSecUsd * Math.max(0, (nowMs - PAGE_LOAD_MS) / 1000);
+              if (el('bomGdpSession')) el('bomGdpSession').textContent = `+$${usdIntFmt.format(Math.round(sessionUsd))}`;
+
+              // Counter 4: Gap to $47T path
+              if (nomInfo.latest && reqCagr !== null) {
+                const tBase = midYearMs(nomInfo.latest.year);
+                const msPerTargetYear = (midYearMs(TARGET_YEAR) - tBase) / (TARGET_YEAR - nomInfo.latest.year);
+                const reqAt = (ms) => nomInfo.latest.value * 1e12 * Math.pow(1 + reqCagr, (ms - tBase) / msPerTargetYear);
+                const reqNowUsd = reqAt(nowMs);
+                const reqPerSecUsd = reqAt(nowMs + 1000) - reqNowUsd;
+                gapUsd = reqNowUsd - nom.valUsd;
+                gapRatePerSecUsd = reqPerSecUsd - nom.ratePerSecUsd;
+
+                const gapEl = el('bomGdpGap');
+                const gapSubEl = el('bomGdpGapSub');
+                if (gapEl) {
+                  if (gapUsd > 0) {
+                    gapEl.textContent = `-$${usdIntFmt.format(Math.round(gapUsd))}`;
+                    gapEl.className = 'bom-val negative';
+                  } else {
+                    gapEl.textContent = `+$${usdIntFmt.format(Math.round(Math.abs(gapUsd)))}`;
+                    gapEl.className = 'bom-val positive';
+                  }
+                }
+                if (gapSubEl) {
+                  const verb = gapRatePerSecUsd >= 0 ? 'widens' : 'narrows';
+                  gapSubEl.textContent = `Gap ${verb} by $${usdIntFmt.format(Math.round(Math.abs(gapRatePerSecUsd)))} every second`;
+                }
+              }
+
+              // Tricolour bar + pin
+              const pct = Math.max(0, Math.min(100, (nom.valT / targetT) * 100));
+              const fill = el('bomTricolourFill');
+              const pin = el('bomHerePin');
+              if (fill) fill.style.width = `${pct.toFixed(2)}%`;
+              if (pin) {
+                pin.textContent = `📍 India is here ($${nom.valT.toFixed(2)}T)`;
+                const halfW = Math.ceil((pin.offsetWidth || 152) / 2) + 2;
+                pin.style.left = `clamp(${halfW}px, ${pct.toFixed(2)}%, calc(100% - ${halfW}px))`;
+              }
+
+              // Milestone $0.1T celebration
+              const currTenth = Math.floor(nom.valT * 10);
+              const dailyIncT = (nom.ratePerSecUsd * 86400) / 1e12;
+              const dayAgoTenth = Math.floor((nom.valT - dailyIncT) * 10);
+              if (lastCrossedTenth === null) {
+                if (currTenth > dayAgoTenth) triggerMilestoneCelebration(currTenth / 10);
+                lastCrossedTenth = currTenth;
+              } else if (currTenth > lastCrossedTenth) {
+                triggerMilestoneCelebration(currTenth / 10);
+                lastCrossedTenth = currTenth;
+              }
+            } else {
+              ['bomGdpNow', 'bomGdpToday', 'bomGdpGap'].forEach((id) => { if (el(id)) el(id).textContent = '—'; });
+            }
+
+            // Counter 2: PPP GDP right now
+            if (ppp) {
+              if (el('bomPppNow')) el('bomPppNow').textContent = `$${usdIntFmt.format(Math.round(ppp.valUsd))}`;
+              if (el('bomPppNowSub')) el('bomPppNowSub').textContent = `+$${usdIntFmt.format(Math.round(ppp.ratePerSecUsd))} every second`;
+            } else if (el('bomPppNow')) {
+              el('bomPppNow').textContent = '—';
+            }
+
+            // Counter 5: UPI payments today
+            let upiTodayCr = null;
+            if (upiParsed.ok) {
+              const upiPerSecRupees = upiParsed.totalRupees / upiParsed.secInMonth;
+              upiTodayCr = (upiPerSecRupees * ist.secSinceMidnight) / 1e7;
+              const upiPerSecLakhs = upiPerSecRupees / 1e5;
+              if (el('bomUpiToday')) el('bomUpiToday').textContent = `₹${inrCrFmt.format(upiTodayCr)} cr`;
+              if (el('bomUpiRate')) el('bomUpiRate').textContent = `≈ ₹${inrCrFmt.format(upiPerSecLakhs)} lakh every second · based on ${upiParsed.periodText}`;
+            } else {
+              if (el('bomUpiToday')) el('bomUpiToday').textContent = '—';
+              if (el('bomUpiRate')) el('bomUpiRate').textContent = upiParsed.label || 'awaiting verified figure';
+            }
+
+            // Counter 6: Countdown to 2047 (reuses hero countdown calculation)
+            if (el('bomCountdown')) el('bomCountdown').textContent = computeIstCountdown(nowMs, g.deadlineIso);
+
+            // Reference year for latest actuals
+            const refYear = latestPayload.generatedAt && !Number.isNaN(new Date(latestPayload.generatedAt).getTime())
+              ? new Date(latestPayload.generatedAt).getFullYear()
+              : ist.year;
+
+            // ROW 2: THIS YEAR SO FAR (7–12)
+            const expStrat = findStrategy(latestPayload, /goods\s*\+\s*services\s*exports/i, refYear);
+            if (expStrat && expStrat.current !== null && expStrat.current > 0) {
+              const ytdExpUsd = expStrat.current * 1e9 * ist.yearFraction;
+              if (el('bomYtdExports')) el('bomYtdExports').textContent = `$${usdIntFmt.format(Math.round(ytdExpUsd))}`;
+              if (el('bomYtdExportsSub')) el('bomYtdExportsSub').textContent = `Annual pace $${Math.round(expStrat.current)}B/yr · ${expStrat.year || 'latest'}`;
+            }
+
+            const invStrat = findStrategy(latestPayload, /^investment$/i, refYear);
+            if (invStrat && invStrat.current !== null && nom) {
+              const ytdInvUsd = (invStrat.current / 100) * nom.valUsd * ist.yearFraction;
+              if (el('bomYtdInvestment')) el('bomYtdInvestment').textContent = `$${usdIntFmt.format(Math.round(ytdInvUsd))}`;
+              if (el('bomYtdInvestmentSub')) el('bomYtdInvestmentSub').textContent = `${invStrat.current.toFixed(1)}% of GDP · ${invStrat.year || 'latest'}`;
+            }
+
+            const mfgStrat = findStrategy(latestPayload, /^manufacturing$/i, refYear);
+            if (mfgStrat && mfgStrat.current !== null && nom) {
+              const ytdMfgUsd = (mfgStrat.current / 100) * nom.valUsd * ist.yearFraction;
+              if (el('bomYtdMfg')) el('bomYtdMfg').textContent = `$${usdIntFmt.format(Math.round(ytdMfgUsd))}`;
+              if (el('bomYtdMfgSub')) el('bomYtdMfgSub').textContent = `${mfgStrat.current.toFixed(1)}% of GDP · ${mfgStrat.year || 'latest'}`;
+            }
+
+            const rndStrat = findStrategy(latestPayload, /research\s*(?:&|and)\s*development/i, refYear);
+            if (rndStrat && rndStrat.current !== null && nom) {
+              const ytdRndUsd = (rndStrat.current / 100) * nom.valUsd * ist.yearFraction;
+              if (el('bomYtdRnd')) el('bomYtdRnd').textContent = `$${usdIntFmt.format(Math.round(ytdRndUsd))}`;
+              if (el('bomYtdRndSub')) el('bomYtdRndSub').textContent = `${rndStrat.current.toFixed(2)}% of GDP · ${rndStrat.year || 'latest'}`;
+            }
+
+            const debtStrat = findStrategy(latestPayload, /government\s*debt/i, refYear);
+            if (debtStrat && debtStrat.current !== null && nom) {
+              const debtUsd = (debtStrat.current / 100) * nom.valUsd;
+              if (el('bomDebtStock')) el('bomDebtStock').textContent = `$${usdIntFmt.format(Math.round(debtUsd))}`;
+              if (el('bomDebtStockSub')) el('bomDebtStockSub').textContent = `${debtStrat.current.toFixed(1)}% of GDP · ${debtStrat.year || 'latest'}`;
+            }
+
+            // Counter 12: Indians added today — hide tile entirely when population growth can't be computed
+            const pcSeriesRaw = Array.isArray(dd.perCapitaSeries)
+              ? dd.perCapitaSeries
+              : (Array.isArray(dd.perCapita) ? dd.perCapita : (Array.isArray(dd.ngdpdpc) ? dd.ngdpdpc : []));
+            const pcByYear = new Map();
+            pcSeriesRaw.forEach((p) => { if (p && n(p.year) !== null && n(p.value) > 0) pcByYear.set(p.year, p.value); });
+            if (dd.perCapita && !Array.isArray(dd.perCapita) && n(dd.perCapita.year) !== null && n(dd.perCapita.value) > 0) {
+              if (!pcByYear.has(dd.perCapita.year)) pcByYear.set(dd.perCapita.year, dd.perCapita.value);
+            }
+            const nomByYear = new Map((dd.nominal || []).filter((p) => p && n(p.year) !== null && n(p.value) > 0).map((p) => [p.year, p.value]));
+            const pppByYear = new Map((dd.ppp || []).filter((p) => p && n(p.year) !== null && n(p.value) > 0).map((p) => [p.year, p.value]));
+            const popY0 = ist.year;
+            const popY1 = ist.year + 1;
+            let popShown = false;
+            if (pcByYear.has(popY0) && pcByYear.has(popY1) && nomByYear.has(popY0) && nomByYear.has(popY1)) {
+              const pop0 = (nomByYear.get(popY0) * 1e12) / pcByYear.get(popY0);
+              const pop1 = (nomByYear.get(popY1) * 1e12) / pcByYear.get(popY1);
+              const popPerSec = (pop1 - pop0) / Math.max(1, (midYearMs(popY1) - midYearMs(popY0)) / 1000);
+              if (popPerSec > 0) {
+                popShown = true;
+                const addedPopToday = popPerSec * ist.secSinceMidnight;
+                if (el('bomPopCard')) el('bomPopCard').hidden = false;
+                if (el('bomPopToday')) el('bomPopToday').textContent = `+${inrIntFmt.format(Math.floor(addedPopToday))}`;
+                if (el('bomPopTodaySub')) el('bomPopTodaySub').textContent = `≈ 1 person every ${(1 / popPerSec).toFixed(1)} seconds · derived from IMF data`;
+              }
+            }
+            if (!popShown && el('bomPopCard')) {
+              el('bomPopCard').hidden = true;
+            }
+
+            // ROW 3: TWO WAYS TO MEASURE INDIA (13 & 14)
+            const race = (latestPayload.globalRace || []).slice();
+            const nomSorted = [...race].sort((a, b) => (n(b.nominalT) ?? -1) - (n(a.nominalT) ?? -1));
+            const pppSorted = [...race].sort((a, b) => (n(b.pppT) ?? -1) - (n(a.pppT) ?? -1));
+            const nomRankIdx = nomSorted.findIndex((c) => c && (c.code === 'IND' || /india/i.test(c.country || '')));
+            const pppRankIdx = pppSorted.findIndex((c) => c && (c.code === 'IND' || /india/i.test(c.country || '')));
+            const nomRank = nomRankIdx >= 0 ? `#${nomRankIdx + 1}` : '—';
+            const pppRank = pppRankIdx >= 0 ? `#${pppRankIdx + 1}` : '—';
+
+            if (el('bomCompareTotals')) {
+              el('bomCompareTotals').textContent = nom && ppp ? `$${nom.valT.toFixed(2)}T vs $${ppp.valT.toFixed(2)}T` : '—';
+            }
+            if (el('bomCompareTotalsSub')) {
+              el('bomCompareTotalsSub').textContent = `${nomRank} nominal · ${pppRank} PPP among ${race.length || 6} tracked economies`;
+            }
+
+            // #14 Per person: use the SAME IMF year for both nominal & PPP
+            const calYear = nowMs ? ist.year : new Date().getFullYear();
+            let pcSameYear = null;
+            if (pcByYear.has(calYear) && nomByYear.has(calYear) && pppByYear.has(calYear)) {
+              pcSameYear = calYear;
+            } else {
+              const candidateYears = Array.from(pcByYear.keys())
+                .filter((yr) => nomByYear.has(yr) && pppByYear.has(yr))
+                .sort((a, b) => b - a);
+              if (candidateYears.length) pcSameYear = candidateYears[0];
+            }
+            if (pcSameYear !== null) {
+              const nomPcSame = pcByYear.get(pcSameYear);
+              const nomSameUsd = nomByYear.get(pcSameYear) * 1e12;
+              const pppSameUsd = pppByYear.get(pcSameYear) * 1e12;
+              const impliedPopSame = nomSameUsd / nomPcSame;
+              const pppPcSame = pppSameUsd / impliedPopSame;
+              const ratio = pppPcSame / nomPcSame;
+              if (el('bomComparePerCapita')) {
+                el('bomComparePerCapita').textContent = `$${usdPcFmt.format(nomPcSame)} vs $${usdPcFmt.format(pppPcSame)}`;
+              }
+              if (el('bomComparePerCapitaSub')) {
+                el('bomComparePerCapitaSub').textContent = `${pcSameYear} · IMF · ×${ratio.toFixed(1)} higher PPP`;
+              }
+            } else {
+              if (el('bomComparePerCapita')) el('bomComparePerCapita').textContent = '—';
+              if (el('bomComparePerCapitaSub')) el('bomComparePerCapitaSub').textContent = 'Awaiting IMF NGDPDPC data';
+            }
+
+            lastSnapshot = {
+              gdpNowT: nom ? nom.valT : null,
+              pppNowT: ppp ? ppp.valT : null,
+              reqPct: reqCagr,
+              actPct: nomInfo.pace,
+              etaYear,
+              gapUsd,
+              gapRatePerSecUsd,
+              pctReached: nom ? (nom.valT / targetT) * 100 : n(g.percentReached),
+              missionScore: n(g.missionScore),
+              upiTodayCr,
+              marketCapDisplay: lastSnapshot.marketCapDisplay || '—',
+              shareTexts: {
+                gdpNow: `🇮🇳 India nominal GDP right now: ${el('bomGdpNow')?.textContent || '—'} (~$${nom ? nom.valT.toFixed(2) : '—'}T) · ${el('bomGdpNowSub')?.textContent || ''}. Track live: ${SITE_URL} #Bharat2047`,
+                pppNow: `🇮🇳 India PPP GDP right now: ${el('bomPppNow')?.textContent || '—'} (~$${ppp ? ppp.valT.toFixed(2) : '—'}T) · ${el('bomPppNowSub')?.textContent || ''}. Track live: ${SITE_URL} #Bharat2047`,
+                gdpToday: `Added to India's GDP today (IST): ${el('bomGdpToday')?.textContent || '—'} 🇮🇳 Track live: ${SITE_URL} #Bharat2047`,
+                gdpGap: `Gap to India's $47T path right now: ${el('bomGdpGap')?.textContent || '—'} (${el('bomGdpGapSub')?.textContent || ''}). ${SITE_URL} #Bharat2047`,
+                upiToday: `💳 UPI payments in India today: ${el('bomUpiToday')?.textContent || '—'} (${el('bomUpiRate')?.textContent || ''}) ${SITE_URL} #Bharat2047`,
+                countdown: `⏳ Time left to 2047: ${el('bomCountdown')?.textContent || '—'} · Track India's $47T mission: ${SITE_URL} #Bharat2047`
+              }
+            };
+            updateShareLinks();
+          } catch (err) {
+            console.warn('Bharat-O-Meter tick skipped:', err);
+          }
+        }
+
+        function shareTextOrCopy(text, btn) {
+          try {
+            const isMobile = window.innerWidth <= 768;
+            if (isMobile && navigator.share) {
+              navigator.share({ title: 'BHARAT 2047 · Mission Control', text, url: SITE_URL }).catch(() => {});
+              return;
+            }
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(text).then(() => {
+                if (!btn) return;
+                const orig = btn.textContent;
+                btn.textContent = '✓';
+                setTimeout(() => { btn.textContent = orig; }, 1400);
+              }).catch(() => {});
+            }
+          } catch (_) {}
+        }
+
+        function downloadCardPng() {
+          try {
+            const canvas = document.createElement('canvas');
+            canvas.width = 1080;
+            canvas.height = 1080;
+            const ctx = canvas.getContext('2d');
+            if (!ctx) return;
+
+            const grad = ctx.createLinearGradient(0, 0, 1080, 1080);
+            grad.addColorStop(0, '#071426');
+            grad.addColorStop(1, '#0B1A2E');
+            ctx.fillStyle = grad;
+            ctx.fillRect(0, 0, 1080, 1080);
+
+            ctx.fillStyle = '#F4A340';
+            ctx.fillRect(0, 0, 360, 12);
+            ctx.fillStyle = '#FFFFFF';
+            ctx.fillRect(360, 0, 360, 12);
+            ctx.fillStyle = '#22C55E';
+            ctx.fillRect(720, 0, 360, 12);
+
+            const fontFam = '"Segoe UI", Arial, sans-serif';
+            const todayStr = new Intl.DateTimeFormat('en-IN', {
+              timeZone: 'Asia/Kolkata', day: 'numeric', month: 'short', year: 'numeric'
+            }).format(new Date()).replace(/,/g, '');
+
+            ctx.fillStyle = '#F8FAFC';
+            ctx.font = `800 44px ${fontFam}`;
+            ctx.fillText('BHARAT', 72, 98);
+            ctx.fillStyle = '#F4A340';
+            ctx.fillText('2047', 265, 98);
+
+            ctx.fillStyle = '#B6C7D9';
+            ctx.font = `600 24px ${fontFam}`;
+            ctx.fillText(`Mission Control · ${todayStr}`, 72, 140);
+
+            // Top hero GDP box (Nominal + PPP)
+            ctx.fillStyle = '#10243E';
+            ctx.strokeStyle = 'rgba(132, 178, 220, 0.45)';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.roundRect ? ctx.roundRect(72, 172, 936, 250, 20) : ctx.rect(72, 172, 936, 250);
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.fillStyle = '#B6C7D9';
+            ctx.font = `700 20px ${fontFam}`;
+            ctx.fillText('INDIA NOMINAL GDP RIGHT NOW', 108, 218);
+
+            ctx.fillStyle = '#F8FAFC';
+            ctx.font = `800 56px ${fontFam}`;
+            ctx.fillText(el('bomGdpNow')?.textContent || '—', 108, 286);
+
+            const pctStr = lastSnapshot.pctReached !== null ? `${lastSnapshot.pctReached.toFixed(1)}% of $47T target` : '—';
+            ctx.fillStyle = '#4ADE80';
+            ctx.font = `700 26px ${fontFam}`;
+            ctx.fillText(pctStr, 108, 336);
+
+            ctx.fillStyle = '#B6C7D9';
+            ctx.font = `700 24px ${fontFam}`;
+            ctx.fillText(`PPP GDP: ${el('bomPppNow')?.textContent || '—'}`, 108, 388);
+
+            const stats = [
+              ['REQUIRED vs ACTUAL PACE', `${lastSnapshot.reqPct !== null ? (lastSnapshot.reqPct * 100).toFixed(1) + '%' : '—'} vs ${lastSnapshot.actPct !== null ? (lastSnapshot.actPct * 100).toFixed(1) + '%' : '—'}`, '#86EFAC'],
+              ['PACE-BASED ETA (IMF)', lastSnapshot.etaYear !== null ? String(lastSnapshot.etaYear) : '—', '#F4A340'],
+              ['GAP TO $47T PATH', el('bomGdpGap')?.textContent || '—', '#FCA5A5'],
+              ['MISSION SCORE', lastSnapshot.missionScore !== null ? `${Math.round(lastSnapshot.missionScore)}/100` : '—', '#38BDF8'],
+              ['UPI PAYMENTS TODAY', el('bomUpiToday')?.textContent || '—', '#F8FAFC'],
+              ['STOCK MARKET VALUE', lastSnapshot.marketCapDisplay || '—', '#FDE68A']
+            ];
+            stats.forEach(([label, val, col], idx) => {
+              const colIdx = idx % 2;
+              const rowIdx = Math.floor(idx / 2);
+              const bx = 72 + colIdx * 480;
+              const by = 450 + rowIdx * 172;
+              ctx.fillStyle = '#0D1E35';
+              ctx.strokeStyle = 'rgba(110, 152, 192, 0.32)';
+              ctx.beginPath();
+              ctx.roundRect ? ctx.roundRect(bx, by, 456, 148, 16) : ctx.rect(bx, by, 456, 148);
+              ctx.fill();
+              ctx.stroke();
+              ctx.fillStyle = '#B6C7D9';
+              ctx.font = `700 18px ${fontFam}`;
+              ctx.fillText(label, bx + 28, by + 44);
+              ctx.fillStyle = col;
+              ctx.font = `800 34px ${fontFam}`;
+              ctx.fillText(val, bx + 28, by + 104);
+            });
+
+            ctx.fillStyle = '#8CA3BA';
+            ctx.font = `600 23px ${fontFam}`;
+            ctx.fillText(SITE_URL, 72, 1020);
+
+            const a = document.createElement('a');
+            a.download = 'bharat-2047-card.png';
+            a.href = canvas.toDataURL('image/png');
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+          } catch (err) {
+            console.warn('Card PNG generation failed:', err);
+          }
+        }
+
+        function initControls() {
+          const closeBtn = el('bomMilestoneClose');
+          if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+              milestoneDismissed = true;
+              const b = el('bomMilestoneBanner');
+              if (b) b.hidden = true;
+            });
+          }
+
+          const nativeBtn = el('bomNativeShareBtn');
+          if (nativeBtn && typeof navigator.share === 'function') {
+            nativeBtn.hidden = false;
+            nativeBtn.addEventListener('click', () => {
+              navigator.share({ title: 'BHARAT 2047', text: buildMainShareText(), url: SITE_URL }).catch(() => {});
+            });
+          }
+
+          const copyBtn = el('bomCopyLinkBtn');
+          if (copyBtn) {
+            copyBtn.addEventListener('click', () => {
+              const text = buildMainShareText();
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(() => {
+                  copyBtn.textContent = 'Copied!';
+                  setTimeout(() => { copyBtn.textContent = 'Copy link'; }, 1600);
+                }).catch(() => {});
+              }
+            });
+          }
+
+          const dlBtn = el('bomDownloadCardBtn');
+          if (dlBtn) dlBtn.addEventListener('click', downloadCardPng);
+
+          document.querySelectorAll('[data-bom-share]').forEach((btn) => {
+            btn.addEventListener('click', () => {
+              const key = btn.getAttribute('data-bom-share');
+              const txt = (lastSnapshot.shareTexts && lastSnapshot.shareTexts[key]) || buildMainShareText();
+              shareTextOrCopy(txt, btn);
+            });
+          });
+        }
+
+        function startWithData(data) {
+          latestPayload = data;
+          renderMarketStrip(data);
+          tick();
+          if (!tickTimer) tickTimer = setInterval(tick, 1000);
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+          try {
+            initControls();
+            if (window.__BHARAT_LAST_DATA) startWithData(window.__BHARAT_LAST_DATA);
+          } catch (_) {}
+        });
+
+        window.addEventListener('bharat:data-rendered', (e) => {
+          try { startWithData(e.detail || window.__BHARAT_LAST_DATA); } catch (_) {}
+        });
+      } catch (err) {
+        console.warn('BHARAT-O-METER init skipped:', err);
+      }
+    })();
+  </script>
+
+  <script>
+    /* === GRAPHS === */
+    (function () {
+      'use strict';
+
+      try {
+        const TARGET_YEAR = 2047;
+        const MONTHS = {
+          jan: 0, january: 0, feb: 1, february: 1, mar: 2, march: 2, apr: 3, april: 3,
+          may: 4, jun: 5, june: 5, jul: 6, july: 6, aug: 7, august: 7,
+          sep: 8, sept: 8, september: 8, oct: 9, october: 9, nov: 10, november: 10, dec: 11, december: 11
+        };
+        const COLORS = {
+          saffron: '#F4A340', green: '#22C55E', amber: '#F59E0B', red: '#EF4444',
+          blue: '#38BDF8', violet: '#A78BFA', muted: '#B6C7D9', grid: 'rgba(129, 165, 192, 0.2)'
+        };
+
+        const graphCharts = {};
+        const revealed = new Set();
+        let currentData = null;
+        let globalMetric = 'nominal';
+        let observer = null;
+
+        const el = (id) => document.getElementById(id);
+        const n = (v) => (typeof v === 'number' && Number.isFinite(v) ? v : null);
+
+        function destroyGraph(key) {
+          if (graphCharts[key]) {
+            try { graphCharts[key].destroy(); } catch (_) {}
+            delete graphCharts[key];
+          }
+        }
+
+        function baseOptions(yTitle, xTitle) {
+          return {
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: { duration: 300 },
+            plugins: {
+              legend: { labels: { color: '#E2ECF5', boxWidth: 12, font: { size: 12 } } },
+              tooltip: { mode: 'index', intersect: false }
+            },
+            scales: {
+              x: {
+                title: { display: Boolean(xTitle), text: xTitle || '', color: COLORS.muted, font: { size: 12 } },
+                ticks: { color: COLORS.muted, font: { size: 11 } },
+                grid: { color: COLORS.grid }
+              },
+              y: {
+                title: { display: Boolean(yTitle), text: yTitle || '', color: COLORS.muted, font: { size: 12 } },
+                ticks: { color: COLORS.muted, font: { size: 11 } },
+                grid: { color: COLORS.grid }
+              }
+            }
+          };
+        }
+
+        function createGraph(key, canvasId, config) {
+          destroyGraph(key);
+          if (typeof window.Chart !== 'function') return;
+          const canvas = el(canvasId);
+          if (!canvas) return;
+          try {
+            graphCharts[key] = new window.Chart(canvas, config);
+          } catch (err) {
+            console.warn('Graph render skipped for', canvasId, err);
+          }
+        }
+
+        // 1. Strategy card inline SVG sparklines
+        function enhanceStrategyCards(data) {
+          try {
+            const list = (data && data.strategies) || [];
+            const byId = new Map(list.map((s) => [String(s.id), s]));
+            document.querySelectorAll('[data-strategy]').forEach((btn) => {
+              const s = byId.get(String(btn.getAttribute('data-strategy')));
+              if (!s) return;
+              const existing = btn.querySelector('.strat-spark-box');
+              if (existing) existing.remove();
+
+              const pts = (s.series || [])
+                .filter((p) => p && n(p.year) !== null && n(p.value) !== null)
+                .sort((a, b) => a.year - b.year);
+              const paceEl = btn.querySelector('.strategy-pace');
+              if (!paceEl || !paceEl.parentNode) return;
+
+              const box = document.createElement('div');
+              box.className = 'strat-spark-box';
+              if (pts.length >= 2) {
+                const status = String(s.status || '').toLowerCase();
+                const stroke = status === 'green' ? COLORS.green : status === 'amber' ? COLORS.amber : COLORS.red;
+                const vals = pts.map((p) => p.value);
+                const min = Math.min(...vals);
+                const max = Math.max(...vals);
+                const span = max - min || 1;
+                const d = pts.map((p, i) => {
+                  const x = 4 + (i * 112) / (pts.length - 1);
+                  const y = 27 - ((p.value - min) / span) * 22;
+                  return `${i === 0 ? 'M' : 'L'}${x.toFixed(1)} ${y.toFixed(1)}`;
+                }).join(' ');
+                const lastPt = pts[pts.length - 1];
+                const lastY = 27 - ((lastPt.value - min) / span) * 22;
+                box.innerHTML = `
+                  <svg class="strat-spark-svg" viewBox="0 0 120 32" aria-hidden="true">
+                    <path d="${d}" fill="none" stroke="${stroke}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="116" cy="${lastY.toFixed(1)}" r="2.6" fill="${stroke}"/>
+                  </svg>
+                  <div class="strat-spark-years"><span>${pts[0].year}</span><span>${lastPt.year}</span></div>
+                `;
+              } else {
+                box.innerHTML = `<span class="strat-spark-empty">Trend appears once 2+ years exist</span>`;
+              }
+              paceEl.parentNode.insertBefore(box, paceEl);
+            });
+          } catch (_) {}
+        }
+
+        // 2. Strategy modal: target dashed line + faint dotted needed path to 2047
+        function enhanceStrategyModal(s) {
+          try {
+            if (!s || typeof window.Chart !== 'function') return;
+            const points = (s.series || [])
+              .filter((p) => p && n(p.year) !== null && n(p.value) !== null)
+              .sort((a, b) => a.year - b.year);
+            if (points.length < 2) return;
+
+            const canvas = el('strategyChart');
+            if (!canvas) return;
+            const existing = window.Chart.getChart(canvas);
+            if (existing) existing.destroy();
+
+            const minYear = points[0].year;
+            const latest = points[points.length - 1];
+            const target = n(s.target);
+            const maxYear = target !== null ? Math.max(TARGET_YEAR, latest.year) : latest.year;
+
+            const datasets = [
+              {
+                label: s.name || 'Actual',
+                data: points.map((p) => ({ x: p.year, y: p.value })),
+                borderColor: COLORS.saffron,
+                backgroundColor: COLORS.saffron,
+                tension: 0.25,
+                pointRadius: 3
+              }
+            ];
+
+            if (target !== null) {
+              datasets.push({
+                label: '2047 Target',
+                data: [{ x: minYear, y: target }, { x: maxYear, y: target }],
+                borderColor: COLORS.green,
+                borderDash: [6, 5],
+                borderWidth: 2,
+                pointRadius: 0,
+                fill: false
+              });
+              if (latest.year < maxYear) {
+                datasets.push({
+                  label: 'Needed path to 2047',
+                  data: [{ x: latest.year, y: latest.value }, { x: maxYear, y: target }],
+                  borderColor: 'rgba(125, 211, 252, 0.55)',
+                  borderDash: [2, 4],
+                  borderWidth: 1.8,
+                  pointRadius: 0,
+                  fill: false
+                });
+              }
+            }
+
+            const opts = baseOptions(s.kpi || '', 'Year');
+            opts.scales.x = {
+              type: 'linear',
+              min: minYear,
+              max: maxYear,
+              ticks: {
+                color: COLORS.muted,
+                maxTicksLimit: 8,
+                font: { size: 11 },
+                callback: (v) => String(Math.round(v))
+              },
+              grid: { color: COLORS.grid }
+            };
+
+            new window.Chart(canvas, {
+              type: 'line',
+              data: { datasets },
+              options: opts
+            });
+          } catch (err) {
+            console.warn('Strategy modal chart enhancement skipped:', err);
+          }
+        }
+
+        // 3. Monthly Pulse: remove flat placeholder line when history <2 numeric points
+        function enhanceMonthlyCards(data) {
+          try {
+            const rows = (data && data.monthly) || [];
+            const cards = document.querySelectorAll('#monthlyPulse .pulse-card');
+            cards.forEach((card, idx) => {
+              const row = rows[idx];
+              if (!row) return;
+              const vals = (row.history || []).map((p) => n(p && p.value)).filter((v) => v !== null);
+              if (vals.length < 2) {
+                const svg = card.querySelector('svg.spark');
+                if (svg) svg.remove();
+              }
+            });
+          } catch (_) {}
+        }
+
+        function computeScenarios(data) {
+          const g = (data && data.gdp) || {};
+          const targetT = n(g.targetT) !== null ? g.targetT : 47;
+          const refYear = data && data.generatedAt && !Number.isNaN(new Date(data.generatedAt).getTime())
+            ? new Date(data.generatedAt).getFullYear()
+            : new Date().getFullYear();
+          const nominal = ((data && data.deepDive && data.deepDive.nominal) || [])
+            .filter((p) => p && n(p.year) !== null && n(p.value) !== null && p.value > 0)
+            .sort((a, b) => a.year - b.year);
+          const actuals = nominal.filter((p) => p.year < refYear);
+          const projections = nominal.filter((p) => p.year >= refYear);
+          const latest = actuals.length ? actuals[actuals.length - 1] : null;
+          const byYear = new Map(nominal.map((p) => [p.year, p.value]));
+
+          const paceEta = (startPt, endPt) => {
+            if (!startPt || !endPt || !latest || endPt.year <= startPt.year || startPt.value <= 0 || endPt.value <= 0) {
+              return { cagr: null, eta: null };
+            }
+            const cagr = Math.pow(endPt.value / startPt.value, 1 / (endPt.year - startPt.year)) - 1;
+            const eta = cagr > 0 ? Math.ceil(latest.year + Math.log(targetT / latest.value) / Math.log(1 + cagr)) : null;
+            return { cagr, eta };
+          };
+
+          const p10 = latest ? actuals.filter((p) => p.year <= latest.year - 10).slice(-1)[0] || null : null;
+          const p5 = latest ? actuals.filter((p) => p.year <= latest.year - 5).slice(-1)[0] || null : null;
+          const lastProj = projections.length ? projections[projections.length - 1] : null;
+
+          return {
+            targetT,
+            byYear,
+            latest,
+            ten: paceEta(p10, latest),
+            five: paceEta(p5, latest),
+            imf: paceEta(latest, lastProj),
+            imfEnd: lastProj
+          };
+        }
+
+        // 4. Reality Check ETA bar chart vs 2047 line
+        function renderRealityEtaChart(data) {
+          const wrap = el('realityEtaWrap');
+          const empty = el('realityEtaEmpty');
+          if (!wrap || !empty) return;
+          const sc = computeScenarios(data);
+          const items = [
+            { label: '10-yr pace', eta: sc.ten.eta, color: COLORS.blue },
+            { label: '5-yr pace (COVID low)', eta: sc.five.eta, color: COLORS.amber },
+            { label: 'IMF outlook pace', eta: sc.imf.eta, color: COLORS.saffron }
+          ].filter((x) => x.eta !== null);
+
+          if (items.length < 2) {
+            destroyGraph('realityEta');
+            wrap.hidden = true;
+            empty.hidden = false;
+            return;
+          }
+          empty.hidden = true;
+          wrap.hidden = false;
+
+          const minEta = Math.min(TARGET_YEAR, ...items.map((x) => x.eta));
+          const maxEta = Math.max(TARGET_YEAR, ...items.map((x) => x.eta));
+
+          const refLinePlugin = {
+            id: 'ref2047Line',
+            afterDatasetsDraw(chart) {
+              const yScale = chart.scales && chart.scales.y;
+              const area = chart.chartArea;
+              if (!yScale || !area) return;
+              const y = yScale.getPixelForValue(TARGET_YEAR);
+              if (!Number.isFinite(y)) return;
+              const ctx = chart.ctx;
+              ctx.save();
+              ctx.beginPath();
+              ctx.setLineDash([6, 4]);
+              ctx.lineWidth = 2;
+              ctx.strokeStyle = COLORS.green;
+              ctx.moveTo(area.left, y);
+              ctx.lineTo(area.right, y);
+              ctx.stroke();
+              ctx.setLineDash([]);
+              ctx.fillStyle = '#86EFAC';
+              ctx.font = '700 11px "Segoe UI", Arial, sans-serif';
+              ctx.fillText('2047 Target', area.left + 8, Math.max(area.top + 12, y - 6));
+              ctx.restore();
+            }
+          };
+
+          const opts = baseOptions('Projected year', '');
+          opts.plugins.legend = { display: false };
+          opts.scales.y.min = Math.max(2025, minEta - 4);
+          opts.scales.y.max = maxEta + 3;
+
+          createGraph('realityEta', 'realityEtaChart', {
+            type: 'bar',
+            data: {
+              labels: items.map((x) => x.label),
+              datasets: [{
+                label: 'Projected ETA year',
+                data: items.map((x) => x.eta),
+                backgroundColor: items.map((x) => x.color),
+                borderRadius: 6,
+                maxBarThickness: 64
+              }]
+            },
+            options: opts,
+            plugins: [refLinePlugin]
+          });
+        }
+
+        // 5. Milestones grouped bar chart
+        function renderMilestonesChart(data) {
+          const wrap = el('milestonesChartWrap');
+          const empty = el('milestonesChartEmpty');
+          if (!wrap || !empty) return;
+          const sc = computeScenarios(data);
+          const years = [2030, 2035, 2040, 2047];
+          const g = (data && data.gdp) || {};
+          const reqCagr = sc.latest && TARGET_YEAR > sc.latest.year
+            ? Math.pow(sc.targetT / sc.latest.value, 1 / (TARGET_YEAR - sc.latest.year)) - 1
+            : n(g.requiredCagr);
+
+          if (!sc.latest || reqCagr === null) {
+            destroyGraph('milestonesBar');
+            wrap.hidden = true;
+            empty.hidden = false;
+            return;
+          }
+          empty.hidden = true;
+          wrap.hidden = false;
+
+          const neededData = years.map((yr) => Number((sc.latest.value * Math.pow(1 + reqCagr, yr - sc.latest.year)).toFixed(2)));
+          const imfData = years.map((yr) => {
+            if (sc.byYear.has(yr)) return Number(sc.byYear.get(yr).toFixed(2));
+            if (sc.imfEnd && sc.imf.cagr !== null && yr > sc.imfEnd.year) {
+              return Number((sc.imfEnd.value * Math.pow(1 + sc.imf.cagr, yr - sc.imfEnd.year)).toFixed(2));
+            }
+            return null;
+          });
+          const pace10Data = years.map((yr) => (sc.ten.cagr !== null ? Number((sc.latest.value * Math.pow(1 + sc.ten.cagr, yr - sc.latest.year)).toFixed(2)) : null));
+
+          createGraph('milestonesBar', 'milestonesBarChart', {
+            type: 'bar',
+            data: {
+              labels: years.map(String),
+              datasets: [
+                { label: 'Needed (Required Path)', data: neededData, backgroundColor: COLORS.green, borderRadius: 4 },
+                { label: 'IMF Outlook', data: imfData, backgroundColor: COLORS.blue, borderRadius: 4 },
+                { label: '10-Yr Pace', data: pace10Data, backgroundColor: COLORS.saffron, borderRadius: 4 }
+              ]
+            },
+            options: baseOptions('USD trillion', 'Milestone year')
+          });
+        }
+
+        // 6. Global Race horizontal bar chart with Nominal / PPP toggle
+        function renderGlobalRaceChart(data) {
+          const wrap = el('globalChartWrap');
+          const empty = el('globalChartEmpty');
+          if (!wrap || !empty) return;
+          const rows = [...((data && data.globalRace) || [])]
+            .filter((r) => r && n(globalMetric === 'ppp' ? r.pppT : r.nominalT) !== null)
+            .sort((a, b) => (globalMetric === 'ppp' ? b.pppT - a.pppT : b.nominalT - a.nominalT));
+
+          if (rows.length < 2) {
+            destroyGraph('globalRace');
+            wrap.hidden = true;
+            empty.hidden = false;
+            return;
+          }
+          empty.hidden = true;
+          wrap.hidden = false;
+
+          const opts = baseOptions('', 'USD trillion');
+          opts.indexAxis = 'y';
+          opts.plugins.legend = { display: false };
+
+          createGraph('globalRace', 'globalRaceChart', {
+            type: 'bar',
+            data: {
+              labels: rows.map((r) => r.country),
+              datasets: [{
+                label: globalMetric === 'ppp' ? 'PPP GDP ($T)' : 'Nominal GDP ($T)',
+                data: rows.map((r) => (globalMetric === 'ppp' ? r.pppT : r.nominalT)),
+                backgroundColor: rows.map((r) => (r.code === 'IND' || r.country === 'India' ? COLORS.saffron : COLORS.blue)),
+                borderRadius: 5
+              }]
+            },
+            options: opts
+          });
+        }
+
+        // 7. Deep Dive: add per-capita line chart if 2+ numeric points exist
+        function renderDeepPerCapitaChart(data) {
+          const wrap = el('deepPerCapitaWrap');
+          const empty = el('deepPerCapitaEmpty');
+          if (!wrap || !empty) return;
+          const d = (data && data.deepDive) || {};
+          const rawSeries = Array.isArray(d.perCapitaSeries)
+            ? d.perCapitaSeries
+            : (d.perCapita && Array.isArray(d.perCapita.series) ? d.perCapita.series : (Array.isArray(d.perCapita) ? d.perCapita : []));
+          const pts = rawSeries
+            .filter((p) => p && n(p.year) !== null && n(p.value) !== null)
+            .sort((a, b) => a.year - b.year);
+
+          if (pts.length < 2) {
+            destroyGraph('deepPerCapita');
+            wrap.hidden = true;
+            empty.hidden = false;
+            return;
+          }
+          empty.hidden = true;
+          wrap.hidden = false;
+
+          createGraph('deepPerCapita', 'deepPerCapitaChart', {
+            type: 'line',
+            data: {
+              labels: pts.map((p) => p.year),
+              datasets: [{
+                label: 'GDP per capita (USD)',
+                data: pts.map((p) => p.value),
+                borderColor: COLORS.saffron,
+                tension: 0.25,
+                pointRadius: 2
+              }]
+            },
+            options: baseOptions('USD per person', 'Year')
+          });
+        }
+
+        // 8. Markets horizontal bar chart (displayed companies only, ₹ lakh crore)
+        function renderMarketsChart(data) {
+          const wrap = el('marketsChartWrap');
+          const empty = el('marketsChartEmpty');
+          if (!wrap || !empty) return;
+          const companies = ((data && data.markets) || [])
+            .filter((m) => m && m.kind === 'company' && n(m.marketCap) !== null && m.marketCap > 0)
+            .sort((a, b) => b.marketCap - a.marketCap);
+
+          if (companies.length < 2) {
+            destroyGraph('marketsCap');
+            wrap.hidden = true;
+            empty.hidden = false;
+            return;
+          }
+          empty.hidden = true;
+          wrap.hidden = false;
+
+          const opts = baseOptions('', '₹ lakh crore (displayed companies only)');
+          opts.indexAxis = 'y';
+          opts.plugins.legend = { display: false };
+
+          createGraph('marketsCap', 'marketsCapChart', {
+            type: 'bar',
+            data: {
+              labels: companies.map((c) => c.company),
+              datasets: [{
+                label: 'Market cap (₹ lakh crore)',
+                data: companies.map((c) => Number((c.marketCap / 1e12).toFixed(2))),
+                backgroundColor: COLORS.saffron,
+                borderRadius: 5
+              }]
+            },
+            options: opts
+          });
+        }
+
+        const RENDERERS = {
+          realityEtaCard: renderRealityEtaChart,
+          milestonesChartCard: renderMilestonesChart,
+          deepPerCapitaCard: renderDeepPerCapitaChart,
+          globalChartCard: renderGlobalRaceChart,
+          marketsChartCard: renderMarketsChart
+        };
+
+        function setupLazyObserver() {
+          if (observer) return;
+          const cardIds = Object.keys(RENDERERS);
+          if (typeof IntersectionObserver !== 'function') {
+            cardIds.forEach((id) => revealed.add(id));
+            return;
+          }
+          observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              const id = entry.target && entry.target.id;
+              if (!id || revealed.has(id)) return;
+              revealed.add(id);
+              observer.unobserve(entry.target);
+              if (currentData && RENDERERS[id]) {
+                try { RENDERERS[id](currentData); } catch (_) {}
+              }
+            });
+          }, { rootMargin: '180px 0px' });
+
+          cardIds.forEach((id) => {
+            const node = el(id);
+            if (node) observer.observe(node);
+          });
+        }
+
+        function refreshAllGraphs(data) {
+          currentData = data;
+          enhanceStrategyCards(data);
+          enhanceMonthlyCards(data);
+          revealed.forEach((id) => {
+            if (RENDERERS[id]) {
+              try { RENDERERS[id](data); } catch (_) {}
+            }
+          });
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+          try {
+            setupLazyObserver();
+            const gToggle = el('globalChartToggle');
+            if (gToggle) {
+              gToggle.querySelectorAll('[data-global-metric]').forEach((btn) => {
+                btn.addEventListener('click', () => {
+                  globalMetric = btn.getAttribute('data-global-metric') || 'nominal';
+                  gToggle.querySelectorAll('[data-global-metric]').forEach((b) => {
+                    const active = b === btn;
+                    b.classList.toggle('active', active);
+                    b.setAttribute('aria-pressed', active ? 'true' : 'false');
+                  });
+                  revealed.add('globalChartCard');
+                  if (currentData) renderGlobalRaceChart(currentData);
+                });
+              });
+            }
+            if (window.__BHARAT_LAST_DATA) refreshAllGraphs(window.__BHARAT_LAST_DATA);
+          } catch (_) {}
+        });
+
+        window.addEventListener('bharat:data-rendered', (e) => {
+          try {
+            setupLazyObserver();
+            refreshAllGraphs(e.detail || window.__BHARAT_LAST_DATA);
+          } catch (_) {}
+        });
+
+        window.addEventListener('bharat:strategy-opened', (e) => {
+          try { enhanceStrategyModal(e.detail); } catch (_) {}
+        });
+      } catch (err) {
+        console.warn('GRAPHS init skipped:', err);
+      }
     })();
   </script>
 </body>
