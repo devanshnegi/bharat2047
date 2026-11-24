@@ -1,0 +1,2223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>BHARAT 2047 · Mission Control — India’s $47T GDP Tracker</title>
+  <meta name="description" content="Independent daily tracker monitoring India’s nominal GDP trajectory toward $47 trillion by 2047, structural reform scorecards, global race, and macro pulse.">
+
+  <!-- Open Graph / WhatsApp / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://devanshnegi.github.io/bharat2047/">
+  <meta property="og:title" content="BHARAT 2047 · India’s journey to $47 trillion">
+  <meta property="og:description" content="Independent daily tracker monitoring India’s path to $47T nominal GDP by 2047 — pace-based ETAs, 20 reform strategies, global race, and monthly macro pulse.">
+  <meta property="og:image" content="https://devanshnegi.github.io/bharat2047/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BHARAT 2047 · India's journey to $47 trillion">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BHARAT 2047 · India’s journey to $47 trillion">
+  <meta name="twitter:description" content="Independent daily tracker monitoring India’s path to $47T nominal GDP by 2047 — pace-based ETAs, 20 reform strategies, and macro pulse.">
+  <meta name="twitter:image" content="https://devanshnegi.github.io/bharat2047/og.png">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
+  <style>
+    :root {
+      --navy: #0B1A2E;
+      --ink: #071324;
+      --panel: #10243E;
+      --panel-alt: #0D1E35;
+      --border: rgba(110, 152, 192, 0.28);
+      --border-strong: rgba(132, 178, 220, 0.48);
+      --text: #F8FAFC;
+      --muted: #B6C7D9;
+      --subtle: #8CA3BA;
+      --saffron: #F4A340;
+      --green: #22C55E;
+      --green-soft: rgba(34, 197, 94, 0.14);
+      --red: #EF4444;
+      --red-soft: rgba(239, 68, 68, 0.15);
+      --amber: #F59E0B;
+      --amber-soft: rgba(245, 158, 11, 0.16);
+      --blue: #38BDF8;
+      --violet: #A78BFA;
+      --radius: 14px;
+      --shadow: 0 10px 28px rgba(3, 10, 20, 0.28);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; background: var(--navy); }
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Segoe UI", Arial, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      background:
+        radial-gradient(960px 520px at 10% -8%, rgba(27, 77, 122, 0.45) 0%, transparent 70%),
+        linear-gradient(180deg, #071426 0%, var(--navy) 45%, #081526 100%);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    button, input { font: inherit; color: inherit; }
+    a { color: #7DD3FC; text-underline-offset: 3px; }
+    a:hover { color: #BAE6FD; }
+    :focus-visible { outline: 2px solid var(--saffron); outline-offset: 2px; }
+    .num { font-variant-numeric: tabular-nums; }
+
+    .shell {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 20px 56px;
+    }
+
+    /* Top bar */
+    .topbar {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px 20px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      background: rgba(7, 20, 38, 0.94);
+      backdrop-filter: blur(12px);
+    }
+    @media (min-width: 960px) {
+      .topbar { position: sticky; top: 0; z-index: 30; }
+    }
+    .brand-group { display: flex; align-items: center; gap: 12px; }
+    .flag {
+      width: 46px;
+      height: 26px;
+      border-radius: 58% 10% 58% 10%;
+      background: linear-gradient(160deg, var(--saffron) 0 33%, #FFFFFF 33% 66%, var(--green) 66%);
+      transform: skewX(-14deg);
+      flex-shrink: 0;
+      box-shadow: 0 0 16px rgba(244, 163, 64, 0.28);
+    }
+    .brand-title {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+    .brand-title em { color: var(--saffron); font-style: normal; }
+    .mission-sub {
+      padding-left: 16px;
+      border-left: 1px solid var(--border-strong);
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.25;
+    }
+    .daily-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: 1px solid rgba(34, 197, 94, 0.55);
+      background: rgba(34, 197, 94, 0.12);
+      color: #86EFAC;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+    }
+    .updated-text {
+      color: var(--muted);
+      font-size: 13px;
+      font-variant-numeric: tabular-nums;
+    }
+    .top-spacer { flex: 1; }
+    .tickers {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(124px, 1fr));
+      gap: 10px;
+    }
+    .ticker {
+      border: 1px solid var(--border);
+      background: var(--panel-alt);
+      border-radius: 10px;
+      padding: 8px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .ticker-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .ticker strong {
+      font-size: 16px;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .positive { color: #4ADE80 !important; }
+    .negative { color: #F87171 !important; }
+    .neutral { color: var(--muted) !important; }
+
+    /* Error / Loading Banner */
+    .status-banner {
+      margin-top: 18px;
+      padding: 16px 20px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(244, 163, 64, 0.45);
+      background: rgba(244, 163, 64, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .status-banner[hidden] { display: none; }
+    .status-banner.error {
+      border-color: rgba(239, 68, 68, 0.55);
+      background: rgba(239, 68, 68, 0.12);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 9px 18px;
+      border-radius: 10px;
+      border: 1px solid var(--border-strong);
+      background: #173456;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+    .btn:hover { background: #1F446E; border-color: var(--saffron); }
+
+    /* Quick section nav */
+    .section-nav {
+      display: flex;
+      gap: 18px;
+      overflow-x: auto;
+      padding: 12px 0 4px;
+      border-bottom: 1px solid rgba(110, 152, 192, 0.14);
+      scrollbar-width: thin;
+    }
+    .section-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      white-space: nowrap;
+      padding: 6px 2px;
+      border-bottom: 2px solid transparent;
+    }
+    .section-nav a:hover { color: var(--text); border-bottom-color: var(--saffron); }
+
+    /* Cards & typography */
+    .card {
+      min-width: 0;
+      background: linear-gradient(155deg, rgba(18, 42, 69, 0.94), rgba(11, 29, 50, 0.96));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+    .card-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .card-title {
+      margin: 0;
+      font-size: 19px;
+      font-weight: 750;
+      line-height: 1.25;
+      color: var(--text);
+    }
+    .meta-tag {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      padding: 4px 9px;
+      border-radius: 7px;
+      border: 1px solid var(--border);
+      background: rgba(7, 20, 38, 0.55);
+      white-space: nowrap;
+    }
+    .meta-tag.warn { border-color: rgba(245, 158, 11, 0.55); color: #FCD34D; background: var(--amber-soft); }
+    .meta-tag.bad { border-color: rgba(239, 68, 68, 0.55); color: #FCA5A5; background: var(--red-soft); }
+    .meta-tag.good { border-color: rgba(34, 197, 94, 0.5); color: #86EFAC; background: var(--green-soft); }
+
+    .section { margin-top: 32px; scroll-margin-top: 84px; }
+    .section-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .section-header h2 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+    .section-header p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      max-width: 72ch;
+    }
+
+    /* Hero section */
+    .hero-grid {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1.08fr 1fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+    .gdp-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .gdp-core {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      align-items: center;
+      gap: 22px;
+    }
+    .gauge {
+      width: 210px;
+      aspect-ratio: 1;
+      margin: 0 auto;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: conic-gradient(var(--green) calc(var(--pct) * 1%), #2E4864 0);
+      position: relative;
+      box-shadow: 0 0 28px rgba(34, 197, 94, 0.14);
+    }
+    .gauge::before {
+      content: "";
+      position: absolute;
+      inset: 17px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 35%, #1A3C5E, #09182B 70%);
+      border: 1px solid var(--border);
+    }
+    .gauge-inner { position: relative; z-index: 1; text-align: center; padding: 0 14px; }
+    .gauge-mark { color: var(--saffron); font-size: 18px; margin-bottom: 2px; }
+    .gauge-value {
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+    }
+    .gauge-sub { margin-top: 6px; font-size: 12px; color: var(--muted); line-height: 1.3; }
+
+    .gdp-stats {
+      display: grid;
+      gap: 12px;
+      border-left: 1px solid var(--border);
+      padding-left: 20px;
+    }
+    .stat-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .label-muted { font-size: 13px; color: var(--muted); }
+    .big-num {
+      font-size: clamp(24px, 2.3vw, 32px);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-top: 2px;
+      font-variant-numeric: tabular-nums;
+    }
+    .growths { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .growth-box {
+      padding: 11px 13px;
+      border-radius: 10px;
+      border: 1px solid rgba(34, 197, 94, 0.45);
+      background: rgba(22, 101, 52, 0.24);
+    }
+    .growth-box.bad {
+      border-color: rgba(239, 68, 68, 0.5);
+      background: rgba(127, 29, 29, 0.26);
+    }
+    .growth-box b {
+      display: block;
+      font-size: 21px;
+      margin-top: 3px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .status-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+    .status-badge {
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      border: 1px solid var(--red);
+      background: linear-gradient(135deg, #B91C1C, #5B141D);
+      color: #FFFFFF;
+    }
+    .status-badge.on_track,
+    .status-badge.ahead {
+      border-color: var(--green);
+      background: linear-gradient(135deg, #15803D, #0F3E28);
+    }
+    .status-badge.unknown {
+      border-color: var(--border-strong);
+      background: #233D58;
+    }
+    .countdown { display: flex; align-items: center; gap: 8px; }
+    .countdown-label { font-size: 13px; font-weight: 700; color: var(--muted); margin-right: 4px; }
+    .count-box {
+      min-width: 56px;
+      padding: 6px 10px;
+      border-radius: 9px;
+      border: 1px solid var(--border);
+      background: var(--panel-alt);
+      text-align: center;
+    }
+    .count-box b { display: block; font-size: 20px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+    .count-box small { display: block; font-size: 11px; color: var(--subtle); margin-top: 2px; }
+
+    .chart-card { display: flex; flex-direction: column; }
+    .chart-wrap { position: relative; width: 100%; min-height: 290px; flex: 1; }
+    .chart-note { margin-top: 10px; font-size: 13px; color: var(--muted); }
+
+    /* Reality Check & Milestones */
+    .reality-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+    .reality-card {
+      background: var(--panel-alt);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .reality-label { font-size: 13px; font-weight: 700; color: var(--saffron); text-transform: uppercase; letter-spacing: 0.04em; }
+    .reality-eta { font-size: 32px; font-weight: 800; line-height: 1.1; font-variant-numeric: tabular-nums; }
+    .reality-delta { font-size: 15px; font-weight: 700; }
+    .reality-meta { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+    .reality-note { font-size: 13px; color: #FCD34D; margin-top: 2px; }
+
+    /* Macro context 4-card grid */
+    .context-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .kpi-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 6px;
+    }
+    .kpi-box {
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: var(--panel-alt);
+      border: 1px solid var(--border);
+    }
+    .kpi-box span { display: block; font-size: 13px; color: var(--muted); }
+    .kpi-box b { display: block; font-size: 24px; margin-top: 4px; font-variant-numeric: tabular-nums; }
+    .kpi-box small { display: block; font-size: 12px; color: var(--subtle); margin-top: 4px; }
+    .callout-note {
+      margin-top: 12px;
+      padding: 10px 13px;
+      border-radius: 9px;
+      background: rgba(244, 163, 64, 0.1);
+      border: 1px solid rgba(244, 163, 64, 0.35);
+      font-size: 13px;
+      color: #FDE68A;
+    }
+
+    /* Priorities & Global race */
+    .priority-list { display: grid; gap: 10px; }
+    .priority-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: var(--panel-alt);
+      border: 1px solid var(--border);
+    }
+    .priority-rank {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(239, 68, 68, 0.25);
+      border: 1px solid rgba(239, 68, 68, 0.55);
+      color: #FECACA;
+      font-weight: 800;
+      font-size: 14px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+    .priority-item b { display: block; font-size: 15px; }
+    .priority-item span { display: block; font-size: 13px; color: var(--muted); margin-top: 2px; }
+    .score-pill { font-size: 14px; color: #7DD3FC; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .score-pill b { font-size: 22px; color: var(--text); margin-left: 6px; }
+
+    .race-lines { display: grid; gap: 10px; margin-top: 8px; }
+    .race-line {
+      display: grid;
+      grid-template-columns: 26px 130px 1fr 78px;
+      gap: 10px;
+      align-items: center;
+      font-size: 14px;
+      font-variant-numeric: tabular-nums;
+    }
+    .race-line.is-india { color: #FDE68A; font-weight: 700; }
+    .bar-base { height: 10px; border-radius: 99px; background: #1E3752; overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 99px; background: linear-gradient(90deg, #F4A340, #FBBF24); }
+    .race-line.is-india .bar-fill { background: linear-gradient(90deg, #22C55E, #4ADE80); }
+
+    .focus-banner {
+      margin-top: 16px;
+      padding: 14px 18px;
+      border-radius: 12px;
+      border: 1px solid rgba(244, 163, 64, 0.48);
+      background: rgba(134, 87, 25, 0.24);
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .news-ticker {
+      margin-top: 10px;
+      overflow: hidden;
+      white-space: nowrap;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 9px 12px;
+      background: var(--panel-alt);
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .news-ticker span { display: inline-block; animation: marquee 34s linear infinite; }
+    @media (prefers-reduced-motion: reduce) { .news-ticker span { animation: none; white-space: normal; } }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    /* Strategies */
+    .strategy-groups { display: grid; gap: 22px; }
+    .pillar-title {
+      margin: 0 0 10px;
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--saffron);
+      letter-spacing: 0.02em;
+    }
+    .strategy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 12px;
+    }
+    .strategy-btn {
+      text-align: left;
+      width: 100%;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 16px;
+      transition: transform 0.16s ease, border-color 0.16s ease;
+    }
+    .strategy-btn:hover { transform: translateY(-2px); border-color: #7DD3FC; }
+    .strategy-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+    .strategy-top h3 { margin: 0; font-size: 17px; font-weight: 750; line-height: 1.25; }
+    .strategy-state { font-size: 12px; font-weight: 800; letter-spacing: 0.04em; white-space: nowrap; }
+    .strategy-kpi { font-size: 13px; color: var(--muted); }
+    .strategy-vals {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+      font-variant-numeric: tabular-nums;
+    }
+    .strategy-curr { font-size: 24px; font-weight: 800; line-height: 1.1; }
+    .strategy-curr small { font-size: 13px; font-weight: 600; color: var(--muted); margin-left: 3px; }
+    .strategy-targ { font-size: 13px; color: var(--muted); text-align: right; }
+    .strategy-targ b { color: var(--text); }
+    .progress-track { height: 9px; border-radius: 99px; background: #223B55; overflow: hidden; }
+    .progress-fill { height: 100%; border-radius: 99px; background: var(--red); }
+    .progress-fill.amber { background: linear-gradient(90deg, #F59E0B, #FBBF24); }
+    .progress-fill.green { background: linear-gradient(90deg, #22C55E, #4ADE80); }
+    .strategy-pace {
+      font-size: 13px;
+      line-height: 1.35;
+      color: #DCEAF6;
+      padding: 8px 10px;
+      border-radius: 8px;
+      background: var(--panel-alt);
+      border: 1px solid rgba(110, 152, 192, 0.2);
+      font-variant-numeric: tabular-nums;
+    }
+    .strategy-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      color: var(--subtle);
+    }
+    .old-flag { color: #FCD34D; font-weight: 700; }
+    .strategy-action { font-size: 13px; color: var(--muted); line-height: 1.35; }
+
+    /* Tables */
+    .table-wrap { overflow-x: auto; }
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      font-variant-numeric: tabular-nums;
+    }
+    .data-table th {
+      text-align: left;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      padding: 11px 10px;
+      border-bottom: 1px solid var(--border-strong);
+      white-space: nowrap;
+    }
+    .data-table td {
+      padding: 11px 10px;
+      border-bottom: 1px solid rgba(110, 152, 192, 0.18);
+      vertical-align: middle;
+    }
+    .data-table tr:last-child td { border-bottom: 0; }
+    .data-table td.num-col, .data-table th.num-col { text-align: right; }
+
+    /* Monthly pulse cards + table */
+    .pulse-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .pulse-card {
+      background: var(--panel-alt);
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .pulse-card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+    .pulse-name { font-size: 15px; font-weight: 750; }
+    .pulse-val-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 8px; margin-top: 4px; }
+    .pulse-value { font-size: 22px; font-weight: 800; font-variant-numeric: tabular-nums; }
+    .pulse-awaiting { font-size: 14px; font-weight: 600; color: #FCD34D; }
+    .pulse-sub { font-size: 12px; color: var(--muted); }
+    .older-flag { color: #FCD34D; font-weight: 700; font-size: 12px; }
+    .spark { width: 72px; height: 24px; flex-shrink: 0; }
+
+    /* Two-column sections */
+    .two-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 16px; }
+    .scenario-controls { display: grid; gap: 16px; }
+    .control-row {
+      display: grid;
+      grid-template-columns: 170px 1fr 68px;
+      align-items: center;
+      gap: 12px;
+    }
+    .control-row label { font-size: 14px; color: var(--text); font-weight: 600; }
+    .control-row input[type="range"] { accent-color: var(--saffron); width: 100%; height: 28px; cursor: pointer; }
+    .control-row output { text-align: right; font-weight: 800; color: #FCD34D; font-variant-numeric: tabular-nums; }
+    .scenario-result { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 18px; }
+    .result-box {
+      padding: 12px;
+      border-radius: 10px;
+      background: var(--panel-alt);
+      border: 1px solid var(--border);
+    }
+    .result-box span { display: block; font-size: 12px; color: var(--muted); }
+    .result-box b { display: block; font-size: 22px; margin-top: 4px; font-variant-numeric: tabular-nums; }
+
+    .deep-metrics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .metric-box {
+      padding: 13px;
+      border-radius: 10px;
+      background: var(--panel-alt);
+      border: 1px solid var(--border);
+    }
+    .metric-box span { display: block; font-size: 12px; color: var(--muted); }
+    .metric-box b { display: block; font-size: 21px; margin-top: 4px; font-variant-numeric: tabular-nums; }
+
+    .market-subtotal {
+      margin-top: 12px;
+      padding: 11px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(244, 163, 64, 0.42);
+      background: rgba(111, 71, 25, 0.28);
+      font-size: 13px;
+      color: #FDE68A;
+    }
+
+    .risk-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+    .risk-card { display: flex; flex-direction: column; justify-content: space-between; gap: 10px; padding: 16px; }
+    .risk-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+    .risk-state { font-size: 12px; font-weight: 800; text-transform: uppercase; }
+    .risk-card p { margin: 0; font-size: 13px; color: var(--muted); line-height: 1.45; }
+
+    .news-item { padding: 12px 0; border-bottom: 1px solid rgba(110, 152, 192, 0.2); }
+    .news-item:last-child { border-bottom: 0; }
+    .news-item a { font-size: 15px; font-weight: 700; text-decoration: none; color: #BAE6FD; }
+    .news-item a:hover { text-decoration: underline; }
+    .news-meta { font-size: 13px; color: var(--muted); margin-top: 4px; }
+    .brief { font-size: 15px; line-height: 1.65; color: #E2ECF5; white-space: pre-wrap; }
+
+    .method-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .method-card h3 { margin: 0 0 6px; font-size: 16px; }
+    .method-card p { margin: 0; font-size: 14px; color: var(--muted); }
+    .method-card small { display: block; margin-top: 8px; font-size: 12px; color: var(--subtle); }
+
+    .site-footer {
+      margin-top: 42px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    /* Modal */
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      display: none;
+      place-items: center;
+      padding: 16px;
+      background: rgba(3, 10, 20, 0.82);
+    }
+    .modal.open { display: grid; }
+    .modal-card {
+      position: relative;
+      width: min(760px, 100%);
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .modal-close {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--panel-alt);
+      color: var(--text);
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .modal-meta { font-size: 13px; color: var(--muted); padding-right: 44px; }
+    .modal-chart-wrap { position: relative; height: 320px; width: 100%; }
+
+    .empty { color: var(--muted); font-size: 14px; padding: 12px 0; }
+
+    /* Responsive breakpoints */
+    @media (max-width: 1120px) {
+      .hero-grid, .two-grid, .context-grid { grid-template-columns: 1fr; }
+      .risk-grid { grid-template-columns: repeat(2, 1fr); }
+      .method-grid { grid-template-columns: repeat(2, 1fr); }
+      .reality-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 720px) {
+      .shell { padding: 0 12px 44px; overflow-x: clip; }
+      .mission-sub { display: none; }
+      .tickers { width: 100%; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+      .ticker { padding: 7px 8px; min-width: 0; }
+      .ticker-head { font-size: 11px; gap: 4px; }
+      .ticker strong { font-size: 14px; }
+      .card { padding: 15px; }
+      .gdp-core { grid-template-columns: 1fr; gap: 16px; }
+      .gdp-stats { border-left: 0; border-top: 1px solid var(--border); padding-left: 0; padding-top: 16px; }
+      .stat-pair { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .gauge { width: 185px; }
+      .gauge-value { font-size: 34px; }
+      .growths, .kpi-split, .scenario-result, .deep-metrics, .risk-grid, .method-grid { grid-template-columns: 1fr; }
+      .control-row { grid-template-columns: 1fr; gap: 6px; }
+      .control-row output { text-align: left; }
+      .race-line { grid-template-columns: 24px 104px 1fr 68px; font-size: 13px; }
+      .chart-wrap { min-height: 240px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar" aria-label="Dashboard header">
+      <div class="brand-group">
+        <span class="flag" aria-hidden="true"></span>
+        <h1 class="brand-title">BHARAT <em>2047</em></h1>
+        <div class="mission-sub">Mission Control<br>India’s $47T GDP mission</div>
+      </div>
+      <span class="daily-badge">UPDATED DAILY</span>
+      <div id="navUpdated" class="updated-text">Loading latest snapshot…</div>
+      <div class="top-spacer"></div>
+      <div class="tickers" aria-label="Market snapshots">
+        <div class="ticker">
+          <div class="ticker-head"><span>USD/INR</span><span id="tickerUsdChange" class="num">—</span></div>
+          <strong id="tickerUsd">—</strong>
+        </div>
+        <div class="ticker">
+          <div class="ticker-head"><span>Nifty 50</span><span id="tickerNiftyChange" class="num">—</span></div>
+          <strong id="tickerNifty">—</strong>
+        </div>
+        <div class="ticker">
+          <div class="ticker-head"><span>Sensex</span><span id="tickerSensexChange" class="num">—</span></div>
+          <strong id="tickerSensex">—</strong>
+        </div>
+      </div>
+    </header>
+
+    <div id="dataStatusBanner" class="status-banner" role="status" hidden>
+      <div>
+        <strong id="dataStatusTitle">Unable to load dashboard data</strong>
+        <div id="dataStatusMessage" class="updated-text" style="margin-top:4px"></div>
+      </div>
+      <button id="retryLoadBtn" type="button" class="btn">Retry loading data</button>
+    </div>
+
+    <nav class="section-nav" aria-label="Dashboard sections">
+      <a href="#mission-control">Mission Control</a>
+      <a href="#reality-check">Reality Check</a>
+      <a href="#milestones">2030–2047 Milestones</a>
+      <a href="#strategies">20 Strategies</a>
+      <a href="#monthly">Monthly Pulse</a>
+      <a href="#scenario">Scenario Simulator</a>
+      <a href="#deep-dive">Deep Dive</a>
+      <a href="#global">Global Race</a>
+      <a href="#markets">Markets</a>
+      <a href="#risks">Risk Radar</a>
+      <a href="#signals">News</a>
+      <a href="#methodology">Methodology</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="section" id="mission-control">
+      <div class="hero-grid">
+        <article class="card gdp-card">
+          <div>
+            <div class="card-head">
+              <h2 class="card-title">India GDP Progress to $<span data-target>47</span> Trillion</h2>
+              <span id="gdpFreshness" class="meta-tag">—</span>
+            </div>
+            <div class="gdp-core">
+              <div id="gauge" class="gauge" style="--pct:0">
+                <div class="gauge-inner">
+                  <div class="gauge-mark" aria-hidden="true">◆</div>
+                  <div id="gaugeValue" class="gauge-value">—</div>
+                  <div id="gaugeSub" class="gauge-sub">of mission target</div>
+                </div>
+              </div>
+              <div class="gdp-stats">
+                <div class="stat-pair">
+                  <div>
+                    <div class="label-muted">Current GDP (nominal)</div>
+                    <div id="gdpCurrent" class="big-num">—</div>
+                  </div>
+                  <div>
+                    <div class="label-muted">2047 target</div>
+                    <div id="gdpTarget" class="big-num">—</div>
+                  </div>
+                </div>
+                <div>
+                  <div class="label-muted">5-Year pace-based ETA</div>
+                  <div id="etaYear" class="big-num">—</div>
+                  <div id="etaDelta" class="label-muted" style="margin-top:2px">—</div>
+                </div>
+                <div class="growths">
+                  <div class="growth-box">
+                    <div class="label-muted">Required USD CAGR</div>
+                    <b id="requiredGrowth">—</b>
+                  </div>
+                  <div id="actualGrowthBox" class="growth-box bad">
+                    <div class="label-muted">Actual USD CAGR</div>
+                    <b id="actualGrowth">—</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="status-row">
+            <div id="statusBadge" class="status-badge unknown">AWAITING DATA</div>
+            <div class="countdown" aria-label="Countdown to 2047">
+              <span class="countdown-label">To 2047</span>
+              <div class="count-box"><b id="countdownYears">—</b><small>YRS</small></div>
+              <div class="count-box"><b id="countdownMonths">—</b><small>MOS</small></div>
+              <div class="count-box"><b id="countdownDays">—</b><small>DAYS</small></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card chart-card">
+          <div class="card-head">
+            <h2 class="card-title">GDP Path to $<span data-target>47</span> Trillion (Nominal)</h2>
+            <span class="meta-tag">IMF annual</span>
+          </div>
+          <div class="chart-wrap"><canvas id="trajectoryChart" aria-label="GDP trajectory chart"></canvas></div>
+          <div id="trajectoryNote" class="chart-note">—</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Reality Check -->
+    <section class="section" id="reality-check">
+      <div class="section-header">
+        <div>
+          <h2>Reality check: Three pace scenarios to $47T</h2>
+          <p>Computed directly from IMF nominal GDP actuals (years before the current calendar year) and IMF projections.</p>
+        </div>
+        <span class="meta-tag">Client-side math</span>
+      </div>
+      <div id="realityCards" class="reality-grid"></div>
+    </section>
+
+    <!-- Milestones 2030 / 2035 / 2040 / 2047 -->
+    <section class="section" id="milestones">
+      <div class="section-header">
+        <div>
+          <h2>2030 – 2047 Milestones</h2>
+          <p>Comparing the required $47T compound path against IMF outlook projections and the trailing 10-year USD pace.</p>
+        </div>
+        <span class="meta-tag">Checkpoint gap</span>
+      </div>
+      <article class="card">
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th class="num-col">Needed (Required Path)</th>
+                <th class="num-col">IMF Outlook</th>
+                <th class="num-col">10-Yr Pace</th>
+                <th>Verdict (vs IMF Outlook)</th>
+              </tr>
+            </thead>
+            <tbody id="milestonesBody"></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <!-- Macro Context: Per-capita, Rupee drag, Priorities & Global Race summary -->
+    <section class="section" id="macro-context">
+      <div class="context-grid">
+        <article class="card">
+          <div class="card-head">
+            <h2 class="card-title">Per-capita GDP reality</h2>
+            <span class="meta-tag">UN pop. assumption</span>
+          </div>
+          <div class="kpi-split">
+            <div class="kpi-box">
+              <span>Today (IMF nominal)</span>
+              <b id="perCapitaToday">—</b>
+              <small id="perCapitaTodayMeta">—</small>
+            </div>
+            <div class="kpi-box">
+              <span>Needed in 2047 ($47T / 1.64bn)</span>
+              <b id="perCapitaNeeded">—</b>
+              <small id="perCapitaMultiple">—</small>
+            </div>
+          </div>
+          <div class="callout-note">
+            Assumes UN World Population Prospects 2047 estimate of <strong>1.64 billion people</strong> ($47T ÷ 1.64bn = $28,659 per person).
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h2 class="card-title">Rupee drag on USD GDP</h2>
+            <span class="meta-tag">FX sensitivity</span>
+          </div>
+          <div class="kpi-split">
+            <div class="kpi-box">
+              <span>Implied annual INR depreciation</span>
+              <b id="rupeeDragValue">—</b>
+              <small>Over trailing actual CAGR window</small>
+            </div>
+            <div class="kpi-box">
+              <span>Growth bridge (INR → USD)</span>
+              <b id="rupeeDragBridge">—</b>
+              <small id="rupeeDragSub">Real + Inflation vs USD CAGR</small>
+            </div>
+          </div>
+          <div class="callout-note">
+            Rule of thumb: <strong>each 1%/yr rupee fall ≈ $9T of the 2047 target</strong>. Currency stability directly compounds USD GDP.
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h2 class="card-title">Top 3 priorities to fix</h2>
+            <div class="score-pill">Mission score <b id="missionScore">—</b></div>
+          </div>
+          <div id="priorityList" class="priority-list"></div>
+          <div id="weeklyFocus" class="focus-banner">Waiting for source-backed priorities.</div>
+          <div class="news-ticker" aria-label="Latest headline ticker"><span id="headlineTicker">No current headlines loaded.</span></div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h2 class="card-title">Global race · Nominal GDP</h2>
+            <span id="globalGapSummary" class="meta-tag good">—</span>
+          </div>
+          <div id="globalRace" class="race-lines"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 20 Strategies Scorecard -->
+    <section class="section" id="strategies">
+      <div class="section-header">
+        <div>
+          <h2>20 strategies scorecard</h2>
+          <p>Tap any card to inspect its historical trend. Data older than 3 years is flagged; pace shows annual movement required vs recent trajectory.</p>
+        </div>
+        <span class="meta-tag">5 pillars</span>
+      </div>
+      <div id="strategyGroups" class="strategy-groups"></div>
+    </section>
+
+    <!-- Monthly Pulse -->
+    <section class="section" id="monthly">
+      <div class="section-header">
+        <div>
+          <h2>Monthly macro pulse</h2>
+          <p>High-frequency indicators. Figures older than 2 months are flagged; blanks await verified releases.</p>
+        </div>
+        <span class="meta-tag warn">Verify auto-extracted</span>
+      </div>
+      <div id="monthlyPulse" class="pulse-grid"></div>
+      <article class="card">
+        <div id="monthlyExpanded" class="table-wrap"></div>
+      </article>
+    </section>
+
+    <!-- Scenario Simulator -->
+    <section class="section" id="scenario">
+      <div class="section-header">
+        <div>
+          <h2>Scenario simulator</h2>
+          <p>Adjust real growth, inflation, and INR depreciation to test how fast India reaches $47 trillion.</p>
+        </div>
+        <span class="meta-tag">Interactive what-if</span>
+      </div>
+      <div class="two-grid">
+        <article class="card">
+          <div class="card-head">
+            <h2 class="card-title">Growth and currency assumptions</h2>
+            <span class="meta-tag">Live calculation</span>
+          </div>
+          <div class="scenario-controls">
+            <div class="control-row">
+              <label for="scenarioReal">Real GDP growth</label>
+              <input id="scenarioReal" type="range" min="0" max="12" step="0.1">
+              <output id="scenarioRealOut">—</output>
+            </div>
+            <div class="control-row">
+              <label for="scenarioInflation">Domestic inflation</label>
+              <input id="scenarioInflation" type="range" min="0" max="12" step="0.1">
+              <output id="scenarioInflationOut">—</output>
+            </div>
+            <div class="control-row">
+              <label for="scenarioRupee">INR depreciation vs USD</label>
+              <input id="scenarioRupee" type="range" min="-5" max="12" step="0.1">
+              <output id="scenarioRupeeOut">—</output>
+            </div>
+          </div>
+          <div class="scenario-result">
+            <div class="result-box"><span>Scenario USD CAGR</span><b id="scenarioCagr">—</b></div>
+            <div class="result-box"><span>Scenario ETA</span><b id="scenarioEta">—</b></div>
+            <div class="result-box"><span>vs 2047</span><b id="scenarioDelta">—</b></div>
+          </div>
+        </article>
+        <article class="card chart-card">
+          <div class="card-head">
+            <h2 class="card-title">Scenario GDP path</h2>
+            <span class="meta-tag">USD trillion</span>
+          </div>
+          <div class="chart-wrap"><canvas id="scenarioChart" aria-label="Scenario GDP path chart"></canvas></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GDP Deep Dive -->
+    <section class="section" id="deep-dive">
+      <div class="section-header">
+        <div>
+          <h2>GDP deep dive</h2>
+          <p>Annual IMF nominal and purchasing-power-parity (PPP) series alongside structural macro shares.</p>
+        </div>
+        <span class="meta-tag">IMF &amp; World Bank</span>
+      </div>
+      <div class="two-grid">
+        <article class="card chart-card">
+          <div class="card-head">
+            <h2 class="card-title">Nominal and PPP GDP</h2>
+            <span class="meta-tag">USD trillion</span>
+          </div>
+          <div class="chart-wrap"><canvas id="deepDiveChart" aria-label="Nominal and PPP GDP chart"></canvas></div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <h2 class="card-title">Macro and sector context</h2>
+            <span class="meta-tag">Latest available</span>
+          </div>
+          <div id="deepMetrics" class="deep-metrics"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Global Race Full Table -->
+    <section class="section" id="global">
+      <div class="section-header">
+        <div>
+          <h2>Global race comparison</h2>
+          <p>IMF nominal and PPP GDP across major economies, ranked by nominal USD GDP.</p>
+        </div>
+        <span class="meta-tag">Annual IMF</span>
+      </div>
+      <article class="card">
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Country</th>
+                <th class="num-col">Nominal GDP</th>
+                <th class="num-col">PPP GDP</th>
+                <th>Freshness</th>
+              </tr>
+            </thead>
+            <tbody id="globalTable"></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <!-- Markets & India Inc -->
+    <section class="section" id="markets">
+      <div class="section-header">
+        <div>
+          <h2>Markets &amp; India Inc</h2>
+          <p>Market snapshots sourced from Google Finance formulas in the underlying data sheet.</p>
+        </div>
+        <span class="meta-tag">Formula-backed</span>
+      </div>
+      <article class="card">
+        <div id="marketTable" class="table-wrap"></div>
+        <div id="marketSubtotal" class="market-subtotal">—</div>
+      </article>
+    </section>
+
+    <!-- Risk Radar -->
+    <section class="section" id="risks">
+      <div class="section-header">
+        <div>
+          <h2>Risk radar</h2>
+          <p>Only source-backed risks are rated; unconfigured series remain explicitly marked unavailable.</p>
+        </div>
+        <span class="meta-tag">Evidence first</span>
+      </div>
+      <div id="riskGrid" class="risk-grid"></div>
+    </section>
+
+    <!-- News & Signals -->
+    <section class="section" id="signals">
+      <div class="section-header">
+        <div>
+          <h2>News &amp; signals</h2>
+          <p>Curated India economy headlines (reference encyclopedias filtered out) and weekly summary.</p>
+        </div>
+        <span class="meta-tag">Review sources</span>
+      </div>
+      <div class="two-grid">
+        <article class="card">
+          <div class="card-head">
+            <h2 class="card-title">Latest signals</h2>
+            <span class="meta-tag">Google News RSS</span>
+          </div>
+          <div id="newsList"></div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <h2 class="card-title">Weekly brief</h2>
+            <span class="meta-tag">AI-assisted summary</span>
+          </div>
+          <div id="weeklyBrief" class="brief">No weekly brief is available yet.</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Methodology & Sources -->
+    <section class="section" id="methodology">
+      <div class="section-header">
+        <div>
+          <h2>Methodology &amp; sources</h2>
+          <p>Data origins, update frequencies, and explicit limitations.</p>
+        </div>
+        <span class="meta-tag">Transparent</span>
+      </div>
+      <div id="methodologyGrid" class="method-grid"></div>
+    </section>
+
+    <footer class="site-footer">
+      <div><strong>BHARAT 2047 · Mission Control</strong> — Independent tracker, not an official GoI dashboard.</div>
+      <div>Verify every macroeconomic figure against original IMF, World Bank, RBI, and MoSPI releases.</div>
+    </footer>
+  </main>
+
+  <div id="strategyModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="strategyModalTitle">
+    <article class="card modal-card">
+      <button id="strategyModalClose" type="button" class="modal-close" aria-label="Close strategy chart">×</button>
+      <h2 id="strategyModalTitle" style="margin:0">Strategy</h2>
+      <div id="strategyModalMeta" class="modal-meta"></div>
+      <div class="modal-chart-wrap"><canvas id="strategyChart" aria-label="Strategy historical chart"></canvas></div>
+    </article>
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      const TARGET_GDP_T = 47;
+      const TARGET_YEAR = 2047;
+      const UN_2047_POP_BN = 1.64;
+      const BLOCKED_NEWS_RE = /(?:britannica|wikipedia|investopedia)/i;
+      const MONTHS = {
+        jan: 0, january: 0, feb: 1, february: 1, mar: 2, march: 2, apr: 3, april: 3,
+        may: 4, jun: 5, june: 5, jul: 6, july: 6, aug: 7, august: 7,
+        sep: 8, sept: 8, september: 8, oct: 9, october: 9, nov: 10, november: 10, dec: 11, december: 11
+      };
+      const COLORS = {
+        saffron: '#F4A340', green: '#22C55E', red: '#EF4444',
+        violet: '#A78BFA', blue: '#38BDF8', muted: '#B6C7D9', grid: 'rgba(129, 165, 192, 0.2)'
+      };
+
+      const charts = {};
+      let DATA = createEmptyPayload();
+
+      const $ = (id) => document.getElementById(id);
+      const num = (v) => (typeof v === 'number' && Number.isFinite(v) ? v : null);
+      const esc = (v) => String(v ?? '').replace(/[&<>'"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#039;', '"': '&quot;' }[c]));
+      const safeHref = (v) => (/^https?:\/\//i.test(String(v || '').trim()) ? String(v).trim() : '#');
+      const dash = (v) => (v === null || v === undefined || String(v).trim() === '' ? '—' : v);
+      const fmt = (v, d = 1) => (num(v) === null ? '—' : new Intl.NumberFormat('en-IN', { maximumFractionDigits: d, minimumFractionDigits: d }).format(v));
+      const fmtInt = (v) => (num(v) === null ? '—' : new Intl.NumberFormat('en-IN', { maximumFractionDigits: 0 }).format(v));
+      const pct = (v) => (num(v) === null ? '—' : `${fmt(v * 100, 1)}%`);
+      const trillion = (v) => (num(v) === null ? '—' : `$${fmt(v, 2)}T`);
+      const compact = (v) => (num(v) === null ? '—' : new Intl.NumberFormat('en-IN', { notation: 'compact', maximumFractionDigits: 2 }).format(v));
+
+      function createEmptyPayload() {
+        return {
+          generatedAt: null,
+          sourceStatus: { staleCount: 0 },
+          gdp: { targetT: TARGET_GDP_T, deadlineIso: '2047-01-01T00:00:00+05:30' },
+          trajectory: { labels: [], required: [], imf: [], currentTrend: [], sourceNote: '' },
+          strategies: [],
+          topPriorities: [],
+          monthly: [],
+          markets: [],
+          globalRace: [],
+          deepDive: { nominal: [], ppp: [], real: [] },
+          risks: [],
+          news: [],
+          weeklyBrief: '',
+          methodology: []
+        };
+      }
+
+      function destroyChart(name) {
+        if (charts[name]) {
+          charts[name].destroy();
+          delete charts[name];
+        }
+      }
+
+      function makeChart(name, canvasId, config) {
+        destroyChart(name);
+        if (typeof window.Chart !== 'function') return;
+        const canvas = $(canvasId);
+        if (!canvas) return;
+        try {
+          charts[name] = new window.Chart(canvas, config);
+        } catch (err) {
+          console.warn('Chart render skipped for', canvasId, err);
+        }
+      }
+
+      function chartOptions(yTitle) {
+        return {
+          responsive: true,
+          maintainAspectRatio: false,
+          animation: { duration: 350 },
+          plugins: {
+            legend: { labels: { color: '#E2ECF5', boxWidth: 12, font: { size: 12 } } },
+            tooltip: { mode: 'index', intersect: false }
+          },
+          scales: {
+            x: { ticks: { color: COLORS.muted, maxTicksLimit: 8, font: { size: 12 } }, grid: { color: COLORS.grid } },
+            y: {
+              title: { display: Boolean(yTitle), text: yTitle || '', color: COLORS.muted, font: { size: 12 } },
+              ticks: { color: COLORS.muted, font: { size: 12 } },
+              grid: { color: COLORS.grid }
+            }
+          }
+        };
+      }
+
+      function tagClass(text) {
+        const s = String(text || '').toLowerCase();
+        if (s.includes('stale') || s.includes('unavailable')) return 'bad';
+        if (s.includes('manual') || s.includes('verify') || s.includes('old')) return 'warn';
+        if (s.includes('updated') || s.includes('live')) return 'good';
+        return '';
+      }
+
+      function statusName(status) {
+        return { ahead: 'AHEAD', on_track: 'ON TRACK', behind: 'BEHIND', unknown: 'AWAITING DATA' }[status] || 'AWAITING DATA';
+      }
+
+      function statusClass(status) {
+        return status === 'on_track' || status === 'ahead' ? status : status === 'behind' ? 'behind' : 'unknown';
+      }
+
+      function market(symbol) {
+        return (DATA.markets || []).find((m) => m && m.symbol === symbol) || {};
+      }
+
+      function getReferenceYear() {
+        if (DATA.generatedAt) {
+          const d = new Date(DATA.generatedAt);
+          if (!Number.isNaN(d.getTime())) return d.getFullYear();
+        }
+        return new Date().getFullYear();
+      }
+
+      function computeEtaYear(currentT, currentYear, cagr, targetT) {
+        if (currentT === null || currentYear === null || cagr === null) return null;
+        if (currentT <= 0 || targetT <= 0 || cagr <= 0) return null;
+        if (currentT >= targetT) return currentYear;
+        return Math.ceil(currentYear + Math.log(targetT / currentT) / Math.log(1 + cagr));
+      }
+
+      function computeRealityCheck(nominal, referenceYear, targetT) {
+        const valid = (nominal || [])
+          .filter((p) => p && num(p.year) !== null && num(p.value) !== null && p.value > 0)
+          .sort((a, b) => a.year - b.year);
+        const actuals = valid.filter((p) => p.year < referenceYear);
+        const projections = valid.filter((p) => p.year >= referenceYear);
+        const latest = actuals.length ? actuals[actuals.length - 1] : null;
+
+        function buildPace(label, startPt, endPt, note) {
+          if (!startPt || !endPt || endPt.year <= startPt.year || startPt.value <= 0 || endPt.value <= 0) {
+            return { label, startYear: null, endYear: null, cagr: null, etaYear: null, yearsVs2047: null, note };
+          }
+          const cagr = Math.pow(endPt.value / startPt.value, 1 / (endPt.year - startPt.year)) - 1;
+          const etaYear = latest ? computeEtaYear(latest.value, latest.year, cagr, targetT) : null;
+          return {
+            label,
+            startYear: startPt.year,
+            endYear: endPt.year,
+            cagr,
+            etaYear,
+            yearsVs2047: etaYear !== null ? TARGET_YEAR - etaYear : null,
+            note
+          };
+        }
+
+        const p10 = latest ? actuals.filter((p) => p.year <= latest.year - 10).slice(-1)[0] || null : null;
+        const p5 = latest ? actuals.filter((p) => p.year <= latest.year - 5).slice(-1)[0] || null : null;
+        const lastProj = projections.length ? projections[projections.length - 1] : null;
+
+        return {
+          latestActualYear: latest ? latest.year : null,
+          latestActualT: latest ? latest.value : null,
+          tenYear: buildPace('10-yr pace', p10, latest, 'Trailing 10-year USD growth'),
+          fiveYear: buildPace('5-yr pace', p5, latest, 'Note: starts at COVID low'),
+          imfOutlook: buildPace('IMF outlook pace', latest, lastProj, 'Latest actual → last IMF projection year')
+        };
+      }
+
+      function formatDelta2047(delta) {
+        if (num(delta) === null) return '—';
+        if (delta === 0) return 'Right on 2047';
+        if (delta > 0) return `${delta} yr${delta === 1 ? '' : 's'} early vs 2047`;
+        const late = Math.abs(delta);
+        return `${late} yr${late === 1 ? '' : 's'} late vs 2047`;
+      }
+
+      function extractKpiUnit(kpi) {
+        const s = String(kpi || '');
+        const paren = s.match(/\(([^)]+)\)/);
+        if (paren) {
+          const inner = paren[1].trim();
+          if (inner === '%' || inner === '% of total') return '%';
+          return inner;
+        }
+        if (/trillion/i.test(s) && /states/i.test(s)) return 'states';
+        if (/%/.test(s)) return '%';
+        return '';
+      }
+
+      function formatValueWithUnit(val, unit, digits) {
+        if (num(val) === null) return '—';
+        const d = typeof digits === 'number' ? digits : (Math.abs(val) >= 100 || unit === 'states' ? 0 : 1);
+        const formatted = fmt(val, d);
+        if (!unit) return formatted;
+        return unit === '%' ? `${formatted}%` : `${formatted} <small>${esc(unit)}</small>`;
+      }
+
+      function formatTargetWithUnit(val, unit) {
+        if (num(val) === null) return '—';
+        const d = Math.abs(val) >= 100 || unit === 'states' || Number.isInteger(val) ? 0 : 1;
+        const formatted = fmt(val, d);
+        if (!unit) return formatted;
+        return unit === '%' ? `${formatted}%` : `${formatted} ${esc(unit)}`;
+      }
+
+      function getStrategyDataYear(series, freshness) {
+        const pts = (series || []).filter((p) => p && num(p.year) !== null && num(p.value) !== null).sort((a, b) => a.year - b.year);
+        if (pts.length) return pts[pts.length - 1].year;
+        const match = String(freshness || '').match(/\b(20\d{2})\b/);
+        return match ? Number(match[1]) : null;
+      }
+
+      function formatPaceDelta(val, unit) {
+        const sign = val > 0 ? '+' : val < 0 ? '-' : '';
+        const abs = Math.abs(val);
+        const digits = abs >= 10 ? 1 : 2;
+        const u = unit === '%' || unit === '% GDP' ? '%' : unit ? ` ${unit}` : '';
+        return `${sign}${abs.toFixed(digits)}${u}/yr`;
+      }
+
+      function computeStrategyPace(s, currentCalendarYear) {
+        const current = num(s.current);
+        const target = num(s.target);
+        const direction = String(s.direction || 'higher').toLowerCase();
+        const unit = extractKpiUnit(s.kpi);
+        const dataYear = getStrategyDataYear(s.series, s.freshness);
+        const baseYear = dataYear !== null ? dataYear : currentCalendarYear;
+        const yearsLeft = Math.max(1, TARGET_YEAR - baseYear);
+
+        if (current === null || target === null) return 'Pace: awaiting verified data';
+
+        const pts = (s.series || [])
+          .filter((p) => p && num(p.year) !== null && num(p.value) !== null)
+          .sort((a, b) => a.year - b.year);
+
+        let recentPace = null;
+        if (pts.length >= 2) {
+          const end = pts[pts.length - 1];
+          const start = pts[Math.max(0, pts.length - 5)];
+          if (end.year > start.year) recentPace = (end.value - start.value) / (end.year - start.year);
+        }
+
+        const isReached =
+          (direction === 'higher' && current >= target) ||
+          (direction === 'lower' && current <= target) ||
+          (direction === 'band' && current >= 2 && current <= 6);
+
+        if (isReached) {
+          const recentPart = recentPace !== null ? ` · recent pace ${formatPaceDelta(recentPace, unit)}` : '';
+          return direction === 'band'
+            ? `In 2–6% target band · reached${recentPart}`
+            : `Target reached${recentPart}`;
+        }
+
+        const neededPerYr = (target - current) / yearsLeft;
+        const needsText = `Needs ${formatPaceDelta(neededPerYr, unit)}`;
+        if (recentPace === null) return `${needsText} · recent pace unavailable`;
+
+        const recentText = `recent pace ${formatPaceDelta(recentPace, unit)}`;
+        const eps = 0.0001;
+        let movingToward = false;
+        if (direction === 'higher') movingToward = recentPace > eps;
+        else if (direction === 'lower') movingToward = recentPace < -eps;
+        else if (direction === 'band') movingToward = (current > 6 && recentPace < -eps) || (current < 2 && recentPace > eps);
+
+        if (Math.abs(recentPace) <= eps) return `${needsText} · ${recentText} → flat`;
+        if (!movingToward) return `${needsText} · ${recentText} → moving away`;
+
+        const eta = Math.ceil(baseYear + Math.abs(target - current) / Math.abs(recentPace));
+        return `${needsText} · ${recentText} → target in ${eta > 2100 ? '2100+' : eta}`;
+      }
+
+      function isMonthlyPeriodOlderThan(period, maxMonths, now) {
+        const s = String(period || '').trim();
+        if (!s) return false;
+        let y = null;
+        let m = null;
+        const isoMatch = s.match(/\b(20\d{2})[-/](\d{1,2})(?:[-/]\d{1,2})?\b/);
+        if (isoMatch) {
+          y = Number(isoMatch[1]);
+          m = Number(isoMatch[2]) - 1;
+        } else {
+          const mMatch = s.match(/\b(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\b[\s,.-]*(20\d{2})/i);
+          if (mMatch) {
+            m = MONTHS[mMatch[1].toLowerCase()];
+            y = Number(mMatch[2]);
+          } else {
+            const rMatch = s.match(/\b(20\d{2})[\s,.-]*(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\b/i);
+            if (rMatch) {
+              y = Number(rMatch[1]);
+              m = MONTHS[rMatch[2].toLowerCase()];
+            }
+          }
+        }
+        if (y === null || m === null || m < 0 || m > 11) return false;
+        return (now.getFullYear() - y) * 12 + (now.getMonth() - m) > maxMonths;
+      }
+
+      function filterNews(items) {
+        return (items || []).filter((n) => {
+          if (!n) return false;
+          const hay = `${n.url || ''} ${n.publisher || ''} ${n.title || ''}`;
+          return !BLOCKED_NEWS_RE.test(hay);
+        });
+      }
+
+      function renderTop() {
+        const g = DATA.gdp || {};
+        const targetT = num(g.targetT) !== null ? g.targetT : TARGET_GDP_T;
+        document.querySelectorAll('[data-target]').forEach((el) => { el.textContent = fmt(targetT, 0); });
+
+        if (DATA.generatedAt && !Number.isNaN(new Date(DATA.generatedAt).getTime())) {
+          const ist = new Date(DATA.generatedAt).toLocaleString('en-IN', {
+            timeZone: 'Asia/Kolkata',
+            dateStyle: 'medium',
+            timeStyle: 'short'
+          });
+          const staleCount = DATA.sourceStatus && DATA.sourceStatus.staleCount ? ` · ${DATA.sourceStatus.staleCount} stale` : '';
+          $('navUpdated').textContent = `Last updated: ${ist} IST${staleCount}`;
+        } else {
+          $('navUpdated').textContent = 'Last updated: —';
+        }
+
+        [
+          ['CURRENCY:USDINR', 'tickerUsd', 'tickerUsdChange'],
+          ['INDEXNSE:NIFTY_50', 'tickerNifty', 'tickerNiftyChange'],
+          ['INDEXBOM:SENSEX', 'tickerSensex', 'tickerSensexChange']
+        ].forEach(([symbol, valueId, changeId]) => {
+          const m = market(symbol);
+          $(valueId).textContent = fmt(m.price, 2);
+          const v = num(m.changePct);
+          $(changeId).textContent = v === null ? '—' : `${v > 0 ? '+' : ''}${fmt(v, 2)}%`;
+          $(changeId).className = `num ${v > 0 ? 'positive' : v < 0 ? 'negative' : 'neutral'}`;
+        });
+      }
+
+      function renderHero() {
+        const g = DATA.gdp || {};
+        const targetT = num(g.targetT) !== null ? g.targetT : TARGET_GDP_T;
+        const reached = num(g.percentReached);
+
+        $('gauge').style.setProperty('--pct', Math.max(0, Math.min(100, reached || 0)));
+        $('gaugeValue').textContent = reached === null ? '—' : `${fmt(reached, 1)}%`;
+        $('gaugeSub').textContent = g.currentYear ? `of $${fmt(targetT, 0)}T · ${g.currentYear} actual` : 'of mission target';
+
+        $('gdpCurrent').textContent = trillion(g.currentT);
+        $('gdpTarget').textContent = trillion(targetT);
+        $('gdpFreshness').textContent = g.freshness || 'Unavailable';
+        $('gdpFreshness').className = `meta-tag ${tagClass(g.freshness)}`;
+
+        $('requiredGrowth').textContent = pct(g.requiredCagr);
+        $('actualGrowth').textContent = pct(g.actualCagr);
+        $('actualGrowthBox').className = `growth-box ${g.status === 'behind' ? 'bad' : ''}`;
+
+        $('etaYear').textContent = g.etaYear || '—';
+        const delta = num(g.yearsVs2047);
+        $('etaDelta').textContent = delta === null
+          ? 'Needs 5+ years of IMF actual observations'
+          : `${formatDelta2047(delta)}${g.actualCagrPeriod ? ` (${g.actualCagrPeriod})` : ''}`;
+
+        $('statusBadge').textContent = statusName(g.status);
+        $('statusBadge').className = `status-badge ${statusClass(g.status)}`;
+
+        const deadline = new Date(g.deadlineIso || '2047-01-01T00:00:00+05:30');
+        const now = new Date();
+        if (!Number.isNaN(deadline.getTime())) {
+          let months = (deadline.getFullYear() - now.getFullYear()) * 12 + (deadline.getMonth() - now.getMonth());
+          let days = deadline.getDate() - now.getDate();
+          if (days < 0) {
+            months -= 1;
+            const prevMonth = new Date(deadline.getFullYear(), deadline.getMonth(), 0);
+            days += prevMonth.getDate();
+          }
+          $('countdownYears').textContent = Math.max(0, Math.floor(months / 12));
+          $('countdownMonths').textContent = Math.max(0, months % 12);
+          $('countdownDays').textContent = Math.max(0, days);
+        } else {
+          $('countdownYears').textContent = '—';
+          $('countdownMonths').textContent = '—';
+          $('countdownDays').textContent = '—';
+        }
+
+        const traj = DATA.trajectory || {};
+        $('trajectoryNote').textContent = traj.sourceNote || '—';
+        makeChart('trajectory', 'trajectoryChart', {
+          type: 'line',
+          data: {
+            labels: traj.labels || [],
+            datasets: [
+              { label: 'Required path', data: traj.required || [], borderColor: COLORS.green, borderDash: [6, 5], tension: 0.25, pointRadius: 0 },
+              { label: 'IMF series', data: traj.imf || [], borderColor: COLORS.blue, tension: 0.25, pointRadius: 0 },
+              { label: 'Current trend', data: traj.currentTrend || [], borderColor: COLORS.saffron, tension: 0.25, pointRadius: 0, fill: { target: 1, above: 'rgba(239, 68, 68, 0.16)' } }
+            ]
+          },
+          options: chartOptions('USD trillion')
+        });
+      }
+
+      function renderRealityAndMilestones() {
+        const g = DATA.gdp || {};
+        const targetT = num(g.targetT) !== null ? g.targetT : TARGET_GDP_T;
+        const nominal = (DATA.deepDive && DATA.deepDive.nominal) || [];
+        const reality = computeRealityCheck(nominal, getReferenceYear(), targetT);
+
+        const cards = [reality.tenYear, reality.fiveYear, reality.imfOutlook];
+        $('realityCards').innerHTML = cards.map((c) => {
+          const delta = num(c.yearsVs2047);
+          const deltaCls = delta === null ? 'neutral' : delta >= 0 ? 'positive' : 'negative';
+          const span = c.startYear && c.endYear ? `${c.startYear}–${c.endYear}` : 'Series unavailable';
+          return `
+            <article class="reality-card">
+              <div class="reality-label">${esc(c.label)} · ${esc(span)}</div>
+              <div class="reality-eta">${c.etaYear !== null ? esc(c.etaYear) : '—'}</div>
+              <div class="reality-delta ${deltaCls}">${esc(formatDelta2047(delta))}</div>
+              <div class="reality-meta">Nominal USD CAGR: <strong>${esc(pct(c.cagr))}</strong></div>
+              <div class="reality-note">${esc(c.note)}</div>
+            </article>
+          `;
+        }).join('');
+
+        // Milestones 2030 / 2035 / 2040 / 2047
+        const byYear = new Map();
+        nominal.forEach((p) => {
+          if (p && num(p.year) !== null && num(p.value) !== null) byYear.set(p.year, p.value);
+        });
+        const latestY = reality.latestActualYear;
+        const latestT = reality.latestActualT;
+        const reqCagr = latestT !== null && latestY !== null && TARGET_YEAR > latestY
+          ? Math.pow(targetT / latestT, 1 / (TARGET_YEAR - latestY)) - 1
+          : num(g.requiredCagr);
+        const imfEndY = reality.imfOutlook.endYear;
+        const imfEndT = imfEndY !== null ? byYear.get(imfEndY) : null;
+        const imfCagr = reality.imfOutlook.cagr;
+        const cagr10 = reality.tenYear.cagr;
+
+        const milestoneYears = [2030, 2035, 2040, 2047];
+        $('milestonesBody').innerHTML = milestoneYears.map((yr) => {
+          const neededT = latestT !== null && latestY !== null && reqCagr !== null ? latestT * Math.pow(1 + reqCagr, yr - latestY) : null;
+          let imfT = null;
+          let imfExtrapolated = false;
+          if (byYear.has(yr)) {
+            imfT = byYear.get(yr);
+          } else if (imfEndT !== null && imfEndY !== null && imfCagr !== null && yr > imfEndY) {
+            imfT = imfEndT * Math.pow(1 + imfCagr, yr - imfEndY);
+            imfExtrapolated = true;
+          }
+          const pace10T = latestT !== null && latestY !== null && cagr10 !== null ? latestT * Math.pow(1 + cagr10, yr - latestY) : null;
+
+          let verdictHtml = '<span class="neutral">—</span>';
+          if (neededT !== null && imfT !== null) {
+            const diff = imfT - neededT;
+            if (diff >= -0.05) {
+              verdictHtml = '<span class="positive"><strong>On track</strong></span>';
+            } else {
+              verdictHtml = `<span class="negative"><strong>Short by $${fmt(Math.abs(diff), 2)}T</strong></span>`;
+            }
+          }
+
+          return `
+            <tr>
+              <td><strong>${yr}</strong></td>
+              <td class="num-col">${trillion(neededT)}</td>
+              <td class="num-col">${trillion(imfT)}${imfExtrapolated ? ' <small class="neutral">(extrap.)</small>' : ''}</td>
+              <td class="num-col">${trillion(pace10T)}</td>
+              <td>${verdictHtml}</td>
+            </tr>
+          `;
+        }).join('');
+      }
+
+      function renderMacroContext() {
+        const g = DATA.gdp || {};
+        const d = DATA.deepDive || {};
+        const targetT = num(g.targetT) !== null ? g.targetT : TARGET_GDP_T;
+
+        // Per-capita
+        const pcVal = d.perCapita && num(d.perCapita.value) !== null ? d.perCapita.value : null;
+        const pcYear = d.perCapita && d.perCapita.year ? d.perCapita.year : null;
+        const needed2047 = (targetT * 1e12) / (UN_2047_POP_BN * 1e9);
+        const multiple = pcVal && pcVal > 0 ? needed2047 / pcVal : null;
+
+        $('perCapitaToday').textContent = pcVal !== null ? `$${fmtInt(pcVal)}` : '—';
+        $('perCapitaTodayMeta').textContent = pcYear ? `IMF ${pcYear} nominal per capita` : 'Nominal USD per person';
+        $('perCapitaNeeded').textContent = `$${fmtInt(needed2047)}`;
+        $('perCapitaMultiple').textContent = multiple !== null ? `${fmt(multiple, 1)}× today’s level` : 'UN 1.64bn projection';
+
+        // Rupee drag
+        const rupee = num(g.impliedRupeeChange);
+        const real = num(g.realGrowth);
+        const inf = num(g.inflation);
+        const act = num(g.actualCagr);
+        $('rupeeDragValue').textContent = rupee === null ? '—' : `${rupee > 0 ? '+' : ''}${fmt(rupee, 2)}%/yr`;
+        $('rupeeDragBridge').textContent = real !== null && inf !== null && act !== null
+          ? `${fmt(real, 1)}% + ${fmt(inf, 1)}% → ${fmt(act * 100, 1)}%`
+          : '—';
+        $('rupeeDragSub').textContent = 'Real + Inflation → USD CAGR';
+
+        // Priorities & Mission Score
+        $('missionScore').textContent = num(g.missionScore) === null ? '—' : `${fmt(g.missionScore, 0)}/100`;
+        const p = DATA.topPriorities || [];
+        $('priorityList').innerHTML = p.length
+          ? p.slice(0, 3).map((s, i) => `
+              <div class="priority-item">
+                <div class="priority-rank">${i + 1}</div>
+                <div>
+                  <b>${esc(s.name)}</b>
+                  <span>${esc(s.strategy || 'Action required')}</span>
+                </div>
+              </div>
+            `).join('')
+          : '<div class="empty">Priorities appear after strategy data is available.</div>';
+
+        const focusText = p.length
+          ? `Focus on ${p.slice(0, 3).map((s) => s.name).join(', ')} to close the 2047 growth gap.`
+          : 'Awaiting source-backed strategy priorities.';
+        $('weeklyFocus').textContent = focusText;
+
+        const cleanNews = filterNews(DATA.news);
+        const headlines = cleanNews.map((n) => n.title).filter(Boolean).join('   •   ');
+        $('headlineTicker').textContent = headlines ? `${headlines}   •   ${headlines}` : 'No current headlines loaded.';
+      }
+
+      function renderGlobal() {
+        const rows = [...(DATA.globalRace || [])].sort((a, b) => (num(b.nominalT) ?? -Infinity) - (num(a.nominalT) ?? -Infinity));
+        const max = Math.max(...rows.map((r) => num(r.nominalT) || 0), 1);
+
+        const idx = rows.findIndex((r) => r.code === 'IND' || r.country === 'India');
+        const shortName = { GBR: 'UK', USA: 'US', CHN: 'China', JPN: 'Japan', DEU: 'Germany' };
+        if (idx === -1) {
+          $('globalGapSummary').textContent = 'Rank unavailable';
+          $('globalGapSummary').className = 'meta-tag';
+        } else if (idx === 0) {
+          $('globalGapSummary').textContent = 'Rank #1 globally';
+          $('globalGapSummary').className = 'meta-tag good';
+        } else {
+          const india = rows[idx];
+          const above = rows[idx - 1];
+          const label = shortName[above.code] || above.country;
+          if (num(above.nominalT) !== null && num(india.nominalT) !== null) {
+            const gap = Math.max(0, above.nominalT - india.nominalT);
+            $('globalGapSummary').textContent = `Rank #${idx + 1} · $${fmt(gap, 2)}T behind ${label}`;
+          } else {
+            $('globalGapSummary').textContent = `Rank #${idx + 1} · behind ${label}`;
+          }
+          $('globalGapSummary').className = 'meta-tag warn';
+        }
+
+        $('globalRace').innerHTML = rows.length
+          ? rows.slice(0, 6).map((r, i) => {
+              const isIndia = r.code === 'IND' || r.country === 'India';
+              const w = Math.max(0, ((num(r.nominalT) || 0) / max) * 100);
+              return `
+                <div class="race-line ${isIndia ? 'is-india' : ''}">
+                  <b>#${i + 1}</b>
+                  <span>${esc(r.country)}</span>
+                  <div class="bar-base"><div class="bar-fill" style="width:${w}%"></div></div>
+                  <b style="text-align:right">${trillion(r.nominalT)}</b>
+                </div>
+              `;
+            }).join('')
+          : '<div class="empty">No IMF global comparison data.</div>';
+
+        $('globalTable').innerHTML = rows.length
+          ? rows.map((r, i) => `
+              <tr>
+                <td><strong>#${i + 1}</strong></td>
+                <td><strong>${esc(r.country)}</strong></td>
+                <td class="num-col">${trillion(r.nominalT)}</td>
+                <td class="num-col">${trillion(r.pppT)}</td>
+                <td>${esc(r.freshness || '—')}</td>
+              </tr>
+            `).join('')
+          : '<tr><td colspan="5" class="empty">No global comparison rows loaded.</td></tr>';
+      }
+
+      function renderStrategies() {
+        const list = DATA.strategies || [];
+        if (!list.length) {
+          $('strategyGroups').innerHTML = '<div class="empty">No strategy records available.</div>';
+          return;
+        }
+        const nowYear = new Date().getFullYear();
+        const groups = {};
+        list.forEach((s) => {
+          const pillar = s.pillar || 'Other';
+          if (!groups[pillar]) groups[pillar] = [];
+          groups[pillar].push(s);
+        });
+
+        $('strategyGroups').innerHTML = Object.entries(groups).map(([pillar, items]) => `
+          <div>
+            <h3 class="pillar-title">${esc(pillar)}</h3>
+            <div class="strategy-grid">
+              ${items.map((s) => {
+                const status = s.status || 'unknown';
+                const p = num(s.progress);
+                const unit = extractKpiUnit(s.kpi);
+                const dataYear = getStrategyDataYear(s.series, s.freshness);
+                const isOld = dataYear !== null && (nowYear - dataYear) > 3;
+                const paceLine = computeStrategyPace(s, nowYear);
+                const stateColor = status === 'green' ? 'positive' : status === 'red' ? 'negative' : 'neutral';
+                const trendArrow = s.trend === 'up' ? '↑' : s.trend === 'down' ? '↓' : '→';
+
+                return `
+                  <button type="button" class="card strategy-btn" data-strategy="${esc(s.id)}">
+                    <div>
+                      <div class="strategy-top">
+                        <h3>${esc(s.name)}</h3>
+                        <span class="strategy-state ${stateColor}">${esc(status.toUpperCase())} ${trendArrow}</span>
+                      </div>
+                      <div class="strategy-kpi">${esc(s.kpi)}</div>
+                    </div>
+
+                    <div>
+                      <div class="strategy-vals">
+                        <div class="strategy-curr">${formatValueWithUnit(s.current, unit)}</div>
+                        <div class="strategy-targ">Target <b>${formatTargetWithUnit(s.target, unit)}</b></div>
+                      </div>
+                      <div class="progress-track">
+                        <div class="progress-fill ${esc(status)}" style="width:${p === null ? 0 : Math.max(0, Math.min(100, p * 100))}%"></div>
+                      </div>
+                    </div>
+
+                    <div class="strategy-pace">${esc(paceLine)}</div>
+
+                    <div>
+                      <div class="strategy-action">${esc(s.strategy || '')}</div>
+                      <div class="strategy-meta" style="margin-top:6px">
+                        <span class="${isOld ? 'old-flag' : ''}">${dataYear !== null ? (isOld ? `⚠ Old data (${dataYear})` : `Data year: ${dataYear}`) : 'Data year: —'}</span>
+                        <span>${esc(s.freshness || '—')}</span>
+                      </div>
+                    </div>
+                  </button>
+                `;
+              }).join('')}
+            </div>
+          </div>
+        `).join('');
+
+        document.querySelectorAll('[data-strategy]').forEach((card) => {
+          card.addEventListener('click', () => openStrategy(card.dataset.strategy));
+        });
+      }
+
+      function openStrategy(id) {
+        const s = (DATA.strategies || []).find((x) => String(x.id) === String(id));
+        if (!s) return;
+        $('strategyModalTitle').textContent = s.name;
+        $('strategyModalMeta').textContent = `${s.kpi} · ${s.freshness || '—'}${s.note ? ` · ${s.note}` : ''}`;
+        $('strategyModal').classList.add('open');
+
+        const points = (s.series || []).filter((p) => p && num(p.value) !== null);
+        makeChart('strategy', 'strategyChart', {
+          type: 'line',
+          data: {
+            labels: points.map((p) => p.year),
+            datasets: [{ label: s.name, data: points.map((p) => p.value), borderColor: COLORS.saffron, tension: 0.25, pointRadius: 3 }]
+          },
+          options: chartOptions(s.kpi)
+        });
+      }
+
+      function spark(points) {
+        const values = (points || []).map((p) => num(p && p.value)).filter((v) => v !== null);
+        if (values.length < 2) {
+          return '<svg class="spark" viewBox="0 0 72 24" aria-hidden="true"><path d="M2 12H70" stroke="#64748B" stroke-width="1.5"/></svg>';
+        }
+        const slice = values.slice(-12);
+        const min = Math.min(...slice);
+        const max = Math.max(...slice);
+        const scale = max - min || 1;
+        const d = slice.map((v, i) => `${i ? 'L' : 'M'}${(2 + (i * 68) / (slice.length - 1)).toFixed(1)} ${(21 - ((v - min) / scale) * 18).toFixed(1)}`).join(' ');
+        return `<svg class="spark" viewBox="0 0 72 24" aria-hidden="true"><path d="${d}" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round"/></svg>`;
+      }
+
+      function renderMonthly() {
+        const rows = DATA.monthly || [];
+        const now = new Date();
+        if (!rows.length) {
+          $('monthlyPulse').innerHTML = '<div class="empty">No monthly indicators loaded yet.</div>';
+          $('monthlyExpanded').innerHTML = '<div class="empty">No monthly data available.</div>';
+          return;
+        }
+
+        $('monthlyPulse').innerHTML = rows.map((m) => {
+          const isBlank = m.value === null || m.value === undefined || String(m.value).trim() === '';
+          const isOlder = !isBlank && isMonthlyPeriodOlderThan(m.period, 2, now);
+          const valueHtml = isBlank
+            ? '<span class="pulse-awaiting">Awaiting verified figure</span>'
+            : `<span class="pulse-value">${esc(m.value)} <small style="font-size:13px;font-weight:600;color:var(--muted)">${esc(m.unit || '')}</small></span>`;
+
+          return `
+            <article class="pulse-card">
+              <div class="pulse-card-top">
+                <div class="pulse-name">${esc(m.metric)}</div>
+                ${isOlder ? '<span class="older-flag">⚠ older figure</span>' : ''}
+              </div>
+              <div class="pulse-val-row">
+                <div>
+                  ${valueHtml}
+                  <div class="pulse-sub">${esc(m.period || 'Period not set')} · ${esc(m.yoy || 'YoY —')}</div>
+                </div>
+                ${spark(m.history)}
+              </div>
+            </article>
+          `;
+        }).join('');
+
+        $('monthlyExpanded').innerHTML = `
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th class="num-col">Latest value</th>
+                <th>Period</th>
+                <th>YoY / Change</th>
+                <th>Method</th>
+                <th>Source / Freshness</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows.map((m) => {
+                const isBlank = m.value === null || m.value === undefined || String(m.value).trim() === '';
+                const isOlder = !isBlank && isMonthlyPeriodOlderThan(m.period, 2, now);
+                const valCell = isBlank
+                  ? '<span class="pulse-awaiting">Awaiting verified figure</span>'
+                  : `<strong>${esc(m.value)}</strong> ${esc(m.unit || '')}`;
+                const periodCell = `${esc(dash(m.period))}${isOlder ? ' <span class="older-flag">⚠ older figure</span>' : ''}`;
+                const srcCell = m.sourceUrl
+                  ? `<a href="${safeHref(m.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(m.freshness || 'Source')}</a>`
+                  : esc(m.freshness || '—');
+                return `
+                  <tr>
+                    <td><strong>${esc(m.metric)}</strong>${m.note ? `<br><small class="neutral">${esc(m.note)}</small>` : ''}</td>
+                    <td class="num-col">${valCell}</td>
+                    <td>${periodCell}</td>
+                    <td>${esc(dash(m.yoy))}</td>
+                    <td>${esc(dash(m.mode))}</td>
+                    <td>${srcCell}</td>
+                  </tr>
+                `;
+              }).join('')}
+            </tbody>
+          </table>
+        `;
+      }
+
+      function renderScenario() {
+        const g = DATA.gdp || {};
+        const targetT = num(g.targetT) !== null ? g.targetT : TARGET_GDP_T;
+        const defaults = {
+          real: num(g.realGrowth) !== null ? g.realGrowth : 6.5,
+          inflation: num(g.inflation) !== null ? g.inflation : 4.5,
+          rupee: num(g.impliedRupeeChange) !== null ? g.impliedRupeeChange : 2.0
+        };
+
+        [['scenarioReal', defaults.real], ['scenarioInflation', defaults.inflation], ['scenarioRupee', defaults.rupee]].forEach(([id, v]) => {
+          $(id).value = v.toFixed(1);
+        });
+
+        function update() {
+          const real = Number($('scenarioReal').value);
+          const inf = Number($('scenarioInflation').value);
+          const fx = Number($('scenarioRupee').value);
+
+          $('scenarioRealOut').textContent = `${fmt(real, 1)}%`;
+          $('scenarioInflationOut').textContent = `${fmt(inf, 1)}%`;
+          $('scenarioRupeeOut').textContent = `${fmt(fx, 1)}%`;
+
+          const cagr = ((1 + real / 100) * (1 + inf / 100)) / (1 + fx / 100) - 1;
+          const current = num(g.currentT);
+          const year = num(g.currentYear) !== null ? g.currentYear : new Date().getFullYear() - 1;
+          const eta = current && cagr > 0 ? computeEtaYear(current, year, cagr, targetT) : null;
+
+          $('scenarioCagr').textContent = pct(cagr);
+          $('scenarioEta').textContent = eta !== null ? String(eta) : '—';
+          $('scenarioDelta').textContent = eta !== null ? formatDelta2047(TARGET_YEAR - eta) : '—';
+
+          const labels = [];
+          const path = [];
+          const reqPath = [];
+          const reqCagr = num(g.requiredCagr);
+          for (let y = year; y <= 2050; y++) {
+            labels.push(y);
+            path.push(current ? current * Math.pow(1 + cagr, y - year) : null);
+            reqPath.push(current && reqCagr !== null ? current * Math.pow(1 + reqCagr, y - year) : null);
+          }
+
+          makeChart('scenario', 'scenarioChart', {
+            type: 'line',
+            data: {
+              labels,
+              datasets: [
+                { label: 'Scenario path', data: path, borderColor: COLORS.saffron, tension: 0.25, pointRadius: 0 },
+                { label: 'Required path', data: reqPath, borderColor: COLORS.green, borderDash: [6, 5], tension: 0.25, pointRadius: 0 }
+              ]
+            },
+            options: chartOptions('USD trillion')
+          });
+        }
+
+        ['scenarioReal', 'scenarioInflation', 'scenarioRupee'].forEach((id) => {
+          $(id).oninput = update;
+        });
+        update();
+      }
+
+      function renderDeepDive() {
+        const d = DATA.deepDive || {};
+        const g = DATA.gdp || {};
+        const labels = Array.from(new Set([...(d.nominal || []), ...(d.ppp || [])].map((p) => p.year))).sort((a, b) => a - b);
+        const lookup = (pts, y) => {
+          const pt = (pts || []).find((x) => x.year === y);
+          return pt ? pt.value : null;
+        };
+
+        makeChart('deep', 'deepDiveChart', {
+          type: 'line',
+          data: {
+            labels,
+            datasets: [
+              { label: 'Nominal GDP', data: labels.map((y) => lookup(d.nominal, y)), borderColor: COLORS.saffron, tension: 0.22, pointRadius: 0 },
+              { label: 'PPP GDP', data: labels.map((y) => lookup(d.ppp, y)), borderColor: COLORS.violet, tension: 0.22, pointRadius: 0 }
+            ]
+          },
+          options: chartOptions('USD trillion')
+        });
+
+        const cards = [
+          ['GDP per capita', d.perCapita && num(d.perCapita.value) !== null ? `$${fmtInt(d.perCapita.value)}` : '—', d.perCapita && d.perCapita.year ? `USD per person (${d.perCapita.year})` : 'USD per person'],
+          ['Current account balance', d.currentAccount && num(d.currentAccount.value) !== null ? `${fmt(d.currentAccount.value, 2)}%` : '—', d.currentAccount && d.currentAccount.year ? `% of GDP (${d.currentAccount.year})` : '% of GDP'],
+          ['Manufacturing share', d.manufacturing && num(d.manufacturing.value) !== null ? `${fmt(d.manufacturing.value, 1)}%` : '—', d.manufacturing && d.manufacturing.period ? `World Bank (${d.manufacturing.period})` : ''],
+          ['Gross fixed investment', d.investment && num(d.investment.value) !== null ? `${fmt(d.investment.value, 1)}%` : '—', d.investment && d.investment.period ? `World Bank (${d.investment.period})` : ''],
+          ['Exports (% GDP)', d.exports && num(d.exports.value) !== null ? `${fmt(d.exports.value, 1)}%` : '—', d.exports && d.exports.period ? `World Bank (${d.exports.period})` : ''],
+          ['Actual CAGR period', dash(g.actualCagrPeriod), 'Trailing 5-year IMF window']
+        ];
+
+        $('deepMetrics').innerHTML = cards.map(([name, val, sub]) => `
+          <div class="metric-box">
+            <span>${esc(name)}</span>
+            <b>${esc(val)}</b>
+            <span>${esc(sub)}</span>
+          </div>
+        `).join('');
+      }
+
+      function renderMarkets() {
+        const rows = DATA.markets || [];
+        const companies = rows.filter((m) => m && m.kind === 'company');
+        $('marketTable').innerHTML = rows.length
+          ? `
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Company / instrument</th>
+                  <th class="num-col">Price</th>
+                  <th class="num-col">Change</th>
+                  <th class="num-col">Market cap</th>
+                  <th>Freshness</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${rows.map((m) => {
+                  const chg = num(m.changePct);
+                  const cls = chg > 0 ? 'positive' : chg < 0 ? 'negative' : 'neutral';
+                  return `
+                    <tr>
+                      <td><strong>${esc(m.company)}</strong><br><small class="neutral">${esc(m.symbol)}</small></td>
+                      <td class="num-col">${fmt(m.price, 2)}</td>
+                      <td class="num-col ${cls}">${chg === null ? '—' : `${chg > 0 ? '+' : ''}${fmt(chg, 2)}%`}</td>
+                      <td class="num-col">${compact(m.marketCap)}</td>
+                      <td>${esc(m.freshness || '—')}</td>
+                    </tr>
+                  `;
+                }).join('')}
+              </tbody>
+            </table>
+          `
+          : '<div class="empty">No market rows loaded.</div>';
+
+        const caps = companies.map((m) => num(m.marketCap)).filter((v) => v !== null);
+        $('marketSubtotal').textContent = caps.length
+          ? `Displayed-company market-cap subtotal: ${compact(caps.reduce((a, b) => a + b, 0))}. This is a subset subtotal, not total India Inc market cap.`
+          : 'No usable Google Finance market-cap values are available.';
+      }
+
+      function renderRisks() {
+        const rows = DATA.risks || [];
+        $('riskGrid').innerHTML = rows.length
+          ? rows.map((r) => {
+              const state = String(r.state || 'unknown').toLowerCase();
+              const stateCls = state === 'green' ? 'positive' : state === 'red' ? 'negative' : state === 'amber' ? 'warn' : 'neutral';
+              const stateLabel = state === 'unknown' ? 'Unavailable' : state.toUpperCase();
+              return `
+                <article class="card risk-card">
+                  <div>
+                    <div class="risk-head">
+                      <strong>${esc(r.name)}</strong>
+                      <span class="risk-state ${stateCls}">${esc(stateLabel)}</span>
+                    </div>
+                    <p style="margin-top:8px">${esc(r.detail || '—')}</p>
+                  </div>
+                  <span class="meta-tag ${tagClass(r.freshness)}">${esc(r.freshness || 'Unavailable')}</span>
+                </article>
+              `;
+            }).join('')
+          : '<div class="empty">No risk indicators loaded.</div>';
+      }
+
+      function renderNews() {
+        const rows = filterNews(DATA.news);
+        $('newsList').innerHTML = rows.length
+          ? rows.map((n) => {
+              const sentCls = n.sentiment === 'positive' ? 'positive' : n.sentiment === 'negative' ? 'negative' : 'neutral';
+              return `
+                <div class="news-item">
+                  <a href="${safeHref(n.url)}" target="_blank" rel="noopener noreferrer">${esc(n.title)}</a>
+                  <div class="news-meta">
+                    ${esc(n.publisher || 'Publisher unavailable')} · ${esc(n.publishedAt || 'Date unavailable')}
+                    <span class="${sentCls}" style="margin-left:8px;font-weight:700">${esc(n.sentiment || 'unclassified')}</span>
+                  </div>
+                  ${n.summary ? `<div class="news-meta">${esc(n.summary)}</div>` : ''}
+                </div>
+              `;
+            }).join('')
+          : '<div class="empty">No headline signals available.</div>';
+
+        $('weeklyBrief').textContent = DATA.weeklyBrief && String(DATA.weeklyBrief).trim()
+          ? DATA.weeklyBrief
+          : 'No weekly brief is available yet.';
+      }
+
+      function renderMethodology() {
+        const rows = DATA.methodology || [];
+        $('methodologyGrid').innerHTML = rows.length
+          ? rows.map((m) => `
+              <article class="card method-card">
+                <h3>${esc(m.name)}</h3>
+                <p>${esc(m.source)}</p>
+                <small>${esc(m.frequency)}</small>
+              </article>
+            `).join('')
+          : '<div class="empty">No methodology notes loaded.</div>';
+      }
+
+      function renderAll() {
+        renderTop();
+        renderHero();
+        renderRealityAndMilestones();
+        renderMacroContext();
+        renderGlobal();
+        renderStrategies();
+        renderMonthly();
+        renderScenario();
+        renderDeepDive();
+        renderMarkets();
+        renderRisks();
+        renderNews();
+        renderMethodology();
+      }
+
+      function showBanner(isError, title, message) {
+        const banner = $('dataStatusBanner');
+        banner.className = `status-banner${isError ? ' error' : ''}`;
+        $('dataStatusTitle').textContent = title;
+        $('dataStatusMessage').textContent = message;
+        banner.hidden = false;
+      }
+
+      function hideBanner() {
+        $('dataStatusBanner').hidden = true;
+      }
+
+      async function loadDashboard() {
+        try {
+          const url = `./data.json?t=${Date.now()}`;
+          const res = await fetch(url, { cache: 'no-store' });
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          const json = await res.json();
+          if (!json || typeof json !== 'object') throw new Error('Invalid JSON structure');
+          DATA = Object.assign(createEmptyPayload(), json);
+          hideBanner();
+          renderAll();
+        } catch (err) {
+          console.warn('Could not load ./data.json:', err);
+          DATA = createEmptyPayload();
+          renderAll();
+          showBanner(
+            true,
+            'Dashboard data is not available yet',
+            'Could not load ./data.json. If you just set up GitHub Pages, run the "Update Bharat 2047 Data" workflow once in GitHub Actions so data.json is created.'
+          );
+        }
+      }
+
+      window.addEventListener('DOMContentLoaded', () => {
+        $('retryLoadBtn').addEventListener('click', loadDashboard);
+        $('strategyModalClose').addEventListener('click', () => $('strategyModal').classList.remove('open'));
+        $('strategyModal').addEventListener('click', (e) => {
+          if (e.target === $('strategyModal')) $('strategyModal').classList.remove('open');
+        });
+        window.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') $('strategyModal').classList.remove('open');
+        });
+        loadDashboard();
+      });
+    })();
+  </script>
+</body>
+</html>
