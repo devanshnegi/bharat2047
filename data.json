@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-24T13:36:17.356Z",
+  "generatedAt": "2026-11-24T13:52:47.124Z",
   "appName": "BHARAT 2047 · Mission Control",
   "sourceStatus": {
-    "updatedAt": "2026-11-24T13:36:17.356Z",
+    "updatedAt": "2026-11-24T13:52:47.126Z",
     "staleCount": 0,
     "dataCount": 53
   },
@@ -196,7 +196,7 @@
       "trend": "up",
       "priority": 0.5995051364398305,
       "status": "amber",
-      "strategy": "Sustain industrial momentum.",
+      "strategy": "Factory share rising: deepen supply chains and MSME scale-up.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
       "dataYear": 2025,
@@ -268,7 +268,7 @@
       "trend": "up",
       "priority": 0.9126,
       "status": "red",
-      "strategy": "Enter an official series and accelerate capacity.",
+      "strategy": "Scale PLI and component manufacturing to cut import dependence.",
       "freshness": "Manual · 24 Nov 2026",
       "note": "MeitY Annual Reports / PIB (₹ lakh crore; USD converted at FY avg ₹/$, approx; FY22 official $87.1bn). Latest FY2025-26: ₹13.11 lakh cr",
       "dataYear": 2026,
@@ -330,7 +330,7 @@
       "trend": "up",
       "priority": 0.7343347306012382,
       "status": "red",
-      "strategy": "Broaden export capacity and market access.",
+      "strategy": "Broaden export base: FTAs, services exports, logistics and trade finance.",
       "freshness": "Derived · Updated just now / Updated just now",
       "note": "Derived from latest available World Bank exports share × IMF nominal GDP; source years may differ.",
       "dataYear": 2025,
@@ -402,7 +402,7 @@
       "trend": "flat",
       "priority": 0,
       "status": "green",
-      "strategy": "Target range reached.",
+      "strategy": "Target met. Keep logistics costs falling.",
       "freshness": "Manual · 24 Nov 2026",
       "note": "DPIIT–NCAER Assessment of Logistics Cost in India (FY2023-24), first official estimate",
       "dataYear": 2024,
@@ -429,7 +429,7 @@
       "trend": "down",
       "priority": 0.13663140702105178,
       "status": "green",
-      "strategy": "Target range reached.",
+      "strategy": "Close to target. Sustain momentum.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
       "dataYear": 2025,
@@ -501,7 +501,7 @@
       "trend": "down",
       "priority": 0.16457142857142845,
       "status": "green",
-      "strategy": "Target range reached.",
+      "strategy": "Close to target. Sustain momentum.",
       "freshness": "Manual · 24 Nov 2026",
       "note": "Economic Survey 2025-26 Stat. Appendix Table 2.4; FY2025-26 RE, Union Budget 2026-27",
       "dataYear": 2026,
@@ -563,7 +563,7 @@
       "trend": "up",
       "priority": 0.7875530705294921,
       "status": "red",
-      "strategy": "Improve FDI conditions.",
+      "strategy": "Reverse FDI decline: simpler rules, stable taxes, faster dispute resolution.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
       "dataYear": 2025,
@@ -635,7 +635,7 @@
       "trend": "up",
       "priority": 0.6716335207519127,
       "status": "red",
-      "strategy": "Strengthen productive credit access.",
+      "strategy": "Deepen finance: expand MSME credit, bond markets and fintech lending.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
       "dataYear": 2025,
@@ -707,7 +707,7 @@
       "trend": "up",
       "priority": 0.38665000000000005,
       "status": "amber",
-      "strategy": "Keep participation rising.",
+      "strategy": "Participation rising: expand formal jobs for women.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
       "dataYear": 2025,
@@ -779,7 +779,7 @@
       "trend": "up",
       "priority": 1.0076,
       "status": "red",
-      "strategy": "Enter an official series and expand skilling.",
+      "strategy": "Massively scale vocational training linked to industry and apprenticeships.",
       "freshness": "Manual · 24 Nov 2026",
       "note": "MoSPI PLFS (age 15–59, formal vocational/technical training); 2025 = Jan–Dec calendar cycle",
       "dataYear": 2025,
@@ -826,7 +826,7 @@
       "trend": "up",
       "priority": 0.44000000000000006,
       "status": "amber",
-      "strategy": "Maintain education progress.",
+      "strategy": "Enrolment rising: focus on quality and employability.",
       "freshness": "Manual · 24 Nov 2026",
       "note": "AISHE Final Reports (age 18–23); latest 2023-24",
       "dataYear": 2024,
@@ -878,7 +878,7 @@
       "trend": "down",
       "priority": 0.63191215824,
       "status": "amber",
-      "strategy": "Maintain health investment.",
+      "strategy": "Health spend rising: strengthen primary care and insurance.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
       "dataYear": 2023,
@@ -950,7 +950,7 @@
       "trend": "down",
       "priority": 0.8126519999999999,
       "status": "red",
-      "strategy": "Increase R&D intensity.",
+      "strategy": "Boost R&D: private R&D incentives, research funding, deep-tech missions.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
       "dataYear": 2020,
@@ -1022,7 +1022,7 @@
       "trend": "flat",
       "priority": 0.41300000000000003,
       "status": "amber",
-      "strategy": "Maintain digital growth.",
+      "strategy": "Digital economy growing: widen adoption beyond metros.",
       "freshness": "Manual · 24 Nov 2026",
       "note": "MeitY, Estimation and Measurement of India's Digital Economy (2022-23 baseline)",
       "dataYear": 2023,
@@ -1049,7 +1049,7 @@
       "trend": "down",
       "priority": 0.4750036596502085,
       "status": "amber",
-      "strategy": "Maintain structural transformation.",
+      "strategy": "Shift under way: raise farm productivity and rural non-farm jobs.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
       "dataYear": 2025,
@@ -1121,7 +1121,7 @@
       "trend": "up",
       "priority": 0.4051807371267333,
       "status": "amber",
-      "strategy": "Maintain urban development.",
+      "strategy": "Urbanisation rising: invest in tier-2 and tier-3 cities.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
       "dataYear": 2025,
@@ -1193,7 +1193,7 @@
       "trend": "down",
       "priority": 0,
       "status": "green",
-      "strategy": "Price-stability range reached.",
+      "strategy": "Inside the 2–6% band. Maintain price stability.",
       "freshness": "Updated just now",
       "note": "IMF DataMapper v2 · Actual through 2025 (IMF projects 4.0 by 2031)",
       "dataYear": 2025,
@@ -1445,7 +1445,7 @@
       "trend": "down",
       "priority": 0.54675,
       "status": "red",
-      "strategy": "Strengthen debt sustainability.",
+      "strategy": "Cut debt: fiscal consolidation, better revenue, quality spending.",
       "freshness": "Updated just now",
       "note": "IMF DataMapper v2 · Actual through 2025 (IMF projects 75.1 by 2031)",
       "dataYear": 2025,
@@ -1642,7 +1642,7 @@
       "trend": "up",
       "priority": 0.36135,
       "status": "amber",
-      "strategy": "Maintain clean-power rollout.",
+      "strategy": "Strong pace: add storage and grid capacity.",
       "freshness": "Manual · 24 Nov 2026",
       "note": "MNRE / PIB (incl. large hydro, as of 31 March); latest 299.25 GW as of 30 Sep 2026",
       "dataYear": 2026,
@@ -1689,7 +1689,7 @@
       "trend": "flat",
       "priority": 0.9,
       "status": "red",
-      "strategy": "Enter an official count and deepen state growth.",
+      "strategy": "Help leading states scale: industrial clusters, ports and investment.",
       "freshness": "Manual · 24 Nov 2026",
       "note": "MoSPI / Economic Survey of Maharashtra: largest state ~$0.6T (FY2025-26 AE)",
       "dataYear": 2026,
@@ -1753,7 +1753,7 @@
       "trend": "up",
       "priority": 1.0076,
       "status": "red",
-      "strategy": "Enter an official series and expand skilling.",
+      "strategy": "Massively scale vocational training linked to industry and apprenticeships.",
       "freshness": "Manual · 24 Nov 2026",
       "note": "MoSPI PLFS (age 15–59, formal vocational/technical training); 2025 = Jan–Dec calendar cycle",
       "dataYear": 2025,
@@ -1800,7 +1800,7 @@
       "trend": "up",
       "priority": 0.9126,
       "status": "red",
-      "strategy": "Enter an official series and accelerate capacity.",
+      "strategy": "Scale PLI and component manufacturing to cut import dependence.",
       "freshness": "Manual · 24 Nov 2026",
       "note": "MeitY Annual Reports / PIB (₹ lakh crore; USD converted at FY avg ₹/$, approx; FY22 official $87.1bn). Latest FY2025-26: ₹13.11 lakh cr",
       "dataYear": 2026,
@@ -1862,7 +1862,7 @@
       "trend": "flat",
       "priority": 0.9,
       "status": "red",
-      "strategy": "Enter an official count and deepen state growth.",
+      "strategy": "Help leading states scale: industrial clusters, ports and investment.",
       "freshness": "Manual · 24 Nov 2026",
       "note": "MoSPI / Economic Survey of Maharashtra: largest state ~$0.6T (FY2025-26 AE)",
       "dataYear": 2026,
@@ -1915,11 +1915,11 @@
       "metric": "GST collections",
       "value": 2.31,
       "unit": "lakh crore",
-      "period": "October",
+      "period": "Oct 2026",
       "yoy": "+22.9%",
       "yoyValue": 22.9,
       "sourceUrl": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQODNiZU51MjhpS1FISUp0V3MwaWFnOW42UkJSeHdwM1pEamxPQU1XUm05ZWRSWUZaakVGX1liaVFlMnh2OHN3eThKOUkxWEFCaG4ySl9GUXFsY2NCdGhaVUU1TkhOcDFsdEx1WGptVlRBMExHZXpHekFtSlFsQm14VUtEYkhIeG1YcDhHMTg3NFNSSjJOY2tmQ29zRjdYS1BSRDVpTDkxYm1NbG5SRWRfMUJxSTRDNjNuN3pJajlmbk5TU3o4emZBZWJBdEp3M2RuVEdVSG0zOVZKOTlU0gHiAUFVX3lxTE1NbjYwY09heVd2ejdYaG1GdEpnaFpxZV92Rk1ZakpyLTF6WDhZWDRUZzFWaWhQMTVkcDE5bHlWdTRxeVhDZng0TlpFU0RhdXRHNmVpMmtqQjFROEE4RzBNYk1XTnpISVluendoUXk3c01meDdid3VwX0NoM2FNaDJETmZHQXg4TVRDRWVpbDNnNkZEU1BJQzAtcllxdlZZclFXS1JMcEwwOHFTcnpXdFcxTDZvRDdLUUdlak4ya2Z4U1kyaWhBWDJyZ20xbDYyeGNfZlVXRmY1b1BUZzVuSEJnZ0E?oc=5",
-      "freshness": "Stale · extraction failed",
+      "freshness": "Auto-extracted · verify",
       "mode": "auto-extracted · verify",
       "history": [
         {
@@ -1933,9 +1933,16 @@
           "value": "2.31",
           "yoy": "22.9%",
           "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQODNiZU51MjhpS1FISUp0V3MwaWFnOW42UkJSeHdwM1pEamxPQU1XUm05ZWRSWUZaakVGX1liaVFlMnh2OHN3eThKOUkxWEFCaG4ySl9GUXFsY2NCdGhaVUU1TkhOcDFsdEx1WGptVlRBMExHZXpHekFtSlFsQm14VUtEYkhIeG1YcDhHMTg3NFNSSjJOY2tmQ29zRjdYS1BSRDVpTDkxYm1NbG5SRWRfMUJxSTRDNjNuN3pJajlmbk5TU3o4emZBZWJBdEp3M2RuVEdVSG0zOVZKOTlU0gHiAUFVX3lxTE1NbjYwY09heVd2ejdYaG1GdEpnaFpxZV92Rk1ZakpyLTF6WDhZWDRUZzFWaWhQMTVkcDE5bHlWdTRxeVhDZng0TlpFU0RhdXRHNmVpMmtqQjFROEE4RzBNYk1XTnpISVluendoUXk3c01meDdid3VwX0NoM2FNaDJETmZHQXg4TVRDRWVpbDNnNkZEU1BJQzAtcllxdlZZclFXS1JMcEwwOHFTcnpXdFcxTDZvRDdLUUdlak4ya2Z4U1kyaWhBWDJyZ20xbDYyeGNfZlVXRmY1b1BUZzVuSEJnZ0E?oc=5"
+        },
+        {
+          "date": "2026-11-24T13:47:23.541Z",
+          "period": "Oct 2026",
+          "value": 2.31,
+          "yoy": "+22.9%",
+          "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQODNiZU51MjhpS1FISUp0V3MwaWFnOW42UkJSeHdwM1pEamxPQU1XUm05ZWRSWUZaakVGX1liaVFlMnh2OHN3eThKOUkxWEFCaG4ySl9GUXFsY2NCdGhaVUU1TkhOcDFsdEx1WGptVlRBMExHZXpHekFtSlFsQm14VUtEYkhIeG1YcDhHMTg3NFNSSjJOY2tmQ29zRjdYS1BSRDVpTDkxYm1NbG5SRWRfMUJxSTRDNjNuN3pJajlmbk5TU3o4emZBZWJBdEp3M2RuVEdVSG0zOVZKOTlU0gHiAUFVX3lxTE1NbjYwY09heVd2ejdYaG1GdEpnaFpxZV92Rk1ZakpyLTF6WDhZWDRUZzFWaWhQMTVkcDE5bHlWdTRxeVhDZng0TlpFU0RhdXRHNmVpMmtqQjFROEE4RzBNYk1XTnpISVluendoUXk3c01meDdid3VwX0NoM2FNaDJETmZHQXg4TVRDRWVpbDNnNkZEU1BJQzAtcllxdlZZclFXS1JMcEwwOHFTcnpXdFcxTDZvRDdLUUdlak4ya2Z4U1kyaWhBWDJyZ20xbDYyeGNfZlVXRmY1b1BUZzVuSEJnZ0E?oc=5"
         }
       ],
-      "note": "AI extraction did not return a validated figure (HTTP 404 on gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com)."
+      "note": "Gemini (gemini-flash-lite-latest) extracted from news RSS items; confidence: high. Verify source link."
     },
     {
       "metric": "Merchandise exports",
@@ -1948,7 +1955,7 @@
       "freshness": "Unavailable · verify manually",
       "mode": "auto-extracted · verify",
       "history": [],
-      "note": "AI extraction did not return a validated figure (HTTP 404 on gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com)."
+      "note": "AI extraction did not return a validated figure (missing numeric value)."
     },
     {
       "metric": "IIP",
@@ -1974,7 +1981,7 @@
           "source_url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQWnh2SFduZDVKYUVramJKYk5zdU5sTThxN3Z5SWNhdWpPR3czcURETXFMdWhPWXVmYjBmckMwQkEwQU1FMDM4eDhVNEVQQzVPVFIxcEM0QlJMeFA4ZVFnMmJIaEVoUkJXaGFQUDFnTXlwS1U1cDdnSTZqNWRfUlh0RFVLWERkcUUtNnp3Q0VVZmxpczNuUEhoTjFoN09ZbXBRS1Zxa0xRaTV5VmM4WlhVcmRNVXJXNG9ZUW1WeTYxaTlHeGh4SHJhUzYyQ2FtNmpQNVlFUm5aa3gxcTl3dGxrYVI4cVVDZEZxVVZj?oc=5"
         }
       ],
-      "note": "AI extraction did not return a validated figure (HTTP 404 on gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com)."
+      "note": "AI extraction did not return a validated figure (missing numeric value)."
     },
     {
       "metric": "CPI inflation",
@@ -2006,7 +2013,7 @@
           "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9EdUdEdEtPVlU4VEhnSE4zTTlUVjhMQS1JeUk2cW82bXU5aF8yaERBb2UwNk9MQlh1RlJYN3hoRTlqMUw2aWNHMTlsX2JlQzhYSE5QaHNoRl9kcWRMUUNtNGtOZ1hSMngxdHFSOGJMY0bSAXZBVV95cUxNRDlBMEtuV1RtX3ZEMU81ZUY3TnEyYXA5dW83d3h0c1NhSmNKRnRHempoNWdIY1lyR3RTSHZ3ZXl0R1BnSGNpNlpYWFBpTGc0R3JKTlI0c1hZSjIzeFowaFEwSlBHWUVlTUMwQ011UkRxOTNVOW5R?oc=5"
         }
       ],
-      "note": "AI extraction did not return a validated figure (HTTP 404 on gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com)."
+      "note": "AI extraction did not return a validated figure (missing numeric value)."
     },
     {
       "metric": "UPI value",
@@ -2036,13 +2043,13 @@
     },
     {
       "metric": "Manufacturing PMI",
-      "value": 56,
-      "unit": "",
-      "period": "November",
+      "value": 56.3,
+      "unit": "index",
+      "period": "Nov 2026",
       "yoy": "",
       "yoyValue": null,
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNSWptdC1pLXBhdWFCZTZMV0ZNN1hxNkpzcWZaV1JKMjI3dE41Q1pxSGMwcDl6d3FUaWRKai1jTVIweVNEUGNqbklWVmJ6bWltbVhPbER2OVpEYllVc01WY3F0SGZ1b3BSTGpuRUYwQ01zaU5GQmRhc2pQUFJuVEFob1Rzc1pBS042Yl9Qekp0Tmw3SDBVdEhaUGlscDNVb01EZEVIaEwzMlQwMlZ2RGk1Vi1jckNoV2FFZVNEcS1JcllyQUF2c2FMUmVpTFM5U2w1Q21YUTlzVUbSAd8BQVVfeXFMT2Fkbll6eTluTFg4NkozbDlja0ptdTBuVVRHRm8wQWItX2hHSnJxQlVfR2JkalBGcmlLRVNvdVh6c3drelZmS09ScDJWY3VQcnVEQnk5Umx3MnpfQnVJWWZiVDJMU0JIaGVsZ3JFMFZubmFvVU00U0VYMlRZdENLTi1WMFNiOHFjaWlpcUFXUmdvaU44Y19LUzVnUlV5ZU9ZUFVlbS12eU1GMnRfRnNwWXY5VnJmaHZKUWtKYkZRU1hNaVlnRlBtcjgxcG9ENmZHNUhlSHhaM09rUklSalQyUQ?oc=5",
-      "freshness": "Stale · extraction failed",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQcTFaSnFPdHNIeDBRTi1neWVnaVVMNld3OG5YQTBBYWVOZUkteHZrcGhfYzFDNklIcWNBcDZlSTM5Z2sxNUZfZnZaRDk1Vkc1MExhRjc1NlRTZzc3WWFJUUF3ZGNIdndxaS1uU1UxNXFHUFIzZEM4MVJMa0xqV0NnTEIza0R0Umpua1JZVHRtTnNLNkNkVDUyMG50YzFTQ0ZuQk10OEtpQ2Y4SjdjTjV0VFdUOExrLUpZYjlsVWREejdwNi1XWUxHTXZtNC0xTk5BS3Vpano2bmJTdkN0Mm5mWmFPNHBiR0HSAfQBQVVfeXFMTVhVZFJlcFZ1eXhYeERXR0g5cGtUb0tBX3QtLU9ONS1oOWVTLUd3T0tFVWpTbG1uSkIxY1ZaZzdKanVTV09QdTZUalFRSGIzYm9rc2dfRW9BNW9vQkZxOHdDY3R6N2VLZzc1aGFnR0tHajlyZVN2SEwwRGxiMWs0WHJnNEp5aGpnak5QYXJLSm9RNDdoeFNlWk4tNjdVVzMwSG9hQlNnSXY1Z0pQZUpsNjF1b3UxVTRrTzRpc3I2LTVRbUttLXZqMWx4aGd6cWt2bGlIME96VmlUc3VScmY3WDRuRC02S0lHc19ickN3Qk5XTi1BOA?oc=5",
+      "freshness": "Auto-extracted · verify",
       "mode": "auto-extracted · verify",
       "history": [
         {
@@ -2050,19 +2057,26 @@
           "value": 56,
           "yoy": null,
           "source_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNSWptdC1pLXBhdWFCZTZMV0ZNN1hxNkpzcWZaV1JKMjI3dE41Q1pxSGMwcDl6d3FUaWRKai1jTVIweVNEUGNqbklWVmJ6bWltbVhPbER2OVpEYllVc01WY3F0SGZ1b3BSTGpuRUYwQ01zaU5GQmRhc2pQUFJuVEFob1Rzc1pBS042Yl9Qekp0Tmw3SDBVdEhaUGlscDNVb01EZEVIaEwzMlQwMlZ2RGk1Vi1jckNoV2FFZVNEcS1JcllyQUF2c2FMUmVpTFM5U2w1Q21YUTlzVUbSAd8BQVVfeXFMT2Fkbll6eTluTFg4NkozbDlja0ptdTBuVVRHRm8wQWItX2hHSnJxQlVfR2JkalBGcmlLRVNvdVh6c3drelZmS09ScDJWY3VQcnVEQnk5Umx3MnpfQnVJWWZiVDJMU0JIaGVsZ3JFMFZubmFvVU00U0VYMlRZdENLTi1WMFNiOHFjaWlpcUFXUmdvaU44Y19LUzVnUlV5ZU9ZUFVlbS12eU1GMnRfRnNwWXY5VnJmaHZKUWtKYkZRU1hNaVlnRlBtcjgxcG9ENmZHNUhlSHhaM09rUklSalQyUQ?oc=5"
+        },
+        {
+          "date": "2026-11-24T13:47:23.541Z",
+          "period": "Nov 2026",
+          "value": 56.3,
+          "yoy": null,
+          "source_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQcTFaSnFPdHNIeDBRTi1neWVnaVVMNld3OG5YQTBBYWVOZUkteHZrcGhfYzFDNklIcWNBcDZlSTM5Z2sxNUZfZnZaRDk1Vkc1MExhRjc1NlRTZzc3WWFJUUF3ZGNIdndxaS1uU1UxNXFHUFIzZEM4MVJMa0xqV0NnTEIza0R0Umpua1JZVHRtTnNLNkNkVDUyMG50YzFTQ0ZuQk10OEtpQ2Y4SjdjTjV0VFdUOExrLUpZYjlsVWREejdwNi1XWUxHTXZtNC0xTk5BS3Vpano2bmJTdkN0Mm5mWmFPNHBiR0HSAfQBQVVfeXFMTVhVZFJlcFZ1eXhYeERXR0g5cGtUb0tBX3QtLU9ONS1oOWVTLUd3T0tFVWpTbG1uSkIxY1ZaZzdKanVTV09QdTZUalFRSGIzYm9rc2dfRW9BNW9vQkZxOHdDY3R6N2VLZzc1aGFnR0tHajlyZVN2SEwwRGxiMWs0WHJnNEp5aGpnak5QYXJLSm9RNDdoeFNlWk4tNjdVVzMwSG9hQlNnSXY1Z0pQZUpsNjF1b3UxVTRrTzRpc3I2LTVRbUttLXZqMWx4aGd6cWt2bGlIME96VmlUc3VScmY3WDRuRC02S0lHc19ickN3Qk5XTi1BOA?oc=5"
         }
       ],
-      "note": "AI extraction did not return a validated figure (HTTP 404 on gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com)."
+      "note": "Gemini (gemini-flash-lite-latest) extracted from news RSS items; confidence: high. Verify source link."
     },
     {
       "metric": "Forex reserves",
       "value": 725.727,
       "unit": "billion USD",
-      "period": "",
+      "period": "Nov 2026",
       "yoy": "",
       "yoyValue": null,
       "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVnZIWEVmaXZCbzF3elowTTJwM1NfTkhMdjFyRTdNZWRpQ25rLWNwZEc3V1JxRFBjck9pSU5ka0R5Y0FTWFlDQmxpWFF4ZW1LU284a3RNanA1QzJjQlJqYUtNWVFUNlU5NDMyUlRza2xZdWVZUTBFZUhkemlFYjVTcGp3X1pWNzVLeEFVY1pJVjBGOHZ5UFNyXzRjTlZJdnYtWjNFNmFUUQ?oc=5",
-      "freshness": "Stale · extraction failed",
+      "freshness": "Auto-extracted · verify",
       "mode": "auto-extracted · verify",
       "history": [
         {
@@ -2082,19 +2096,26 @@
           "value": 725.727,
           "yoy": null,
           "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVnZIWEVmaXZCbzF3elowTTJwM1NfTkhMdjFyRTdNZWRpQ25rLWNwZEc3V1JxRFBjck9pSU5ka0R5Y0FTWFlDQmxpWFF4ZW1LU284a3RNanA1QzJjQlJqYUtNWVFUNlU5NDMyUlRza2xZdWVZUTBFZUhkemlFYjVTcGp3X1pWNzVLeEFVY1pJVjBGOHZ5UFNyXzRjTlZJdnYtWjNFNmFUUQ?oc=5"
+        },
+        {
+          "date": "2026-11-24T13:47:23.541Z",
+          "period": "Nov 2026",
+          "value": 725.727,
+          "yoy": null,
+          "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVnZIWEVmaXZCbzF3elowTTJwM1NfTkhMdjFyRTdNZWRpQ25rLWNwZEc3V1JxRFBjck9pSU5ka0R5Y0FTWFlDQmxpWFF4ZW1LU284a3RNanA1QzJjQlJqYUtNWVFUNlU5NDMyUlRza2xZdWVZUTBFZUhkemlFYjVTcGp3X1pWNzVLeEFVY1pJVjBGOHZ5UFNyXzRjTlZJdnYtWjNFNmFUUQ?oc=5"
         }
       ],
-      "note": "AI extraction did not return a validated figure (HTTP 404 on gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com)."
+      "note": "Gemini (gemini-flash-lite-latest) extracted from news RSS items; confidence: high. Verify source link."
     },
     {
       "metric": "Power demand",
       "value": 11.7,
       "unit": "%",
-      "period": "7MFY2027",
+      "period": "Oct 2026",
       "yoy": "",
       "yoyValue": null,
       "sourceUrl": "https://news.google.com/rss/articles/CBMizgJBVV95cUxOUzZkR1pjZjhHLWJEcHVhbXAtbk9mY2FYQnptV2twOW9vRllDNDBaSmdXaGtONWFZeWYtcDU0Z213cHdLQjNmRmMtMDB0cUUwVFUyVll6eVE3dkxoVTB5Ry11UWc5MktROGE3NEw1SGdyYXpjWDZKVVVNaVlISDhYQWZKUUUzSWxUSGRYcDdLODZjX3JReHlSRkladHJtclZoU2ljT1dMaG9kSEttMTVxb0tpR0NhS2p2R0ZPNGN2RTl4UmJ5NFVoYXlDTWs2SExMOEdEeXAxMUgwdVhPYUFNSFVqNmdnc0o1bC1IVURLWDQyMDJPcDU0bllhLTJYRkZDNWJXbnNLR1dOak9nYXljaXhyWGZ1bmpUMzYyamVVSGo2aEE2V2hvTWU5ellPTzZlc2tXVDJHZzNGd0hHcXNRMFpFWnVVTV81N0ZBZUFB?oc=5",
-      "freshness": "Stale · extraction failed",
+      "freshness": "Auto-extracted · verify",
       "mode": "auto-extracted · verify",
       "history": [
         {
@@ -2120,9 +2141,16 @@
           "value": 11.7,
           "yoy": null,
           "source_url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxOUzZkR1pjZjhHLWJEcHVhbXAtbk9mY2FYQnptV2twOW9vRllDNDBaSmdXaGtONWFZeWYtcDU0Z213cHdLQjNmRmMtMDB0cUUwVFUyVll6eVE3dkxoVTB5Ry11UWc5MktROGE3NEw1SGdyYXpjWDZKVVVNaVlISDhYQWZKUUUzSWxUSGRYcDdLODZjX3JReHlSRkladHJtclZoU2ljT1dMaG9kSEttMTVxb0tpR0NhS2p2R0ZPNGN2RTl4UmJ5NFVoYXlDTWs2SExMOEdEeXAxMUgwdVhPYUFNSFVqNmdnc0o1bC1IVURLWDQyMDJPcDU0bllhLTJYRkZDNWJXbnNLR1dOak9nYXljaXhyWGZ1bmpUMzYyamVVSGo2aEE2V2hvTWU5ellPTzZlc2tXVDJHZzNGd0hHcXNRMFpFWnVVTV81N0ZBZUFB?oc=5"
+        },
+        {
+          "date": "2026-11-24T13:47:23.541Z",
+          "period": "Oct 2026",
+          "value": 11.7,
+          "yoy": null,
+          "source_url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxOUzZkR1pjZjhHLWJEcHVhbXAtbk9mY2FYQnptV2twOW9vRllDNDBaSmdXaGtONWFZeWYtcDU0Z213cHdLQjNmRmMtMDB0cUUwVFUyVll6eVE3dkxoVTB5Ry11UWc5MktROGE3NEw1SGdyYXpjWDZKVVVNaVlISDhYQWZKUUUzSWxUSGRYcDdLODZjX3JReHlSRkladHJtclZoU2ljT1dMaG9kSEttMTVxb0tpR0NhS2p2R0ZPNGN2RTl4UmJ5NFVoYXlDTWs2SExMOEdEeXAxMUgwdVhPYUFNSFVqNmdnc0o1bC1IVURLWDQyMDJPcDU0bllhLTJYRkZDNWJXbnNLR1dOak9nYXljaXhyWGZ1bmpUMzYyamVVSGo2aEE2V2hvTWU5ellPTzZlc2tXVDJHZzNGd0hHcXNRMFpFWnVVTV81N0ZBZUFB?oc=5"
         }
       ],
-      "note": "AI extraction did not return a validated figure (HTTP 404 on gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com)."
+      "note": "Gemini (gemini-flash-lite-latest) extracted from news RSS items; confidence: high. Verify source link."
     },
     {
       "metric": "Total market cap",
@@ -2156,7 +2184,7 @@
       "symbol": "CURRENCY:USDINR",
       "company": "USD / INR",
       "kind": "currency",
-      "price": 92.92375000000001,
+      "price": 92.9067,
       "changePct": null,
       "marketCap": null,
       "freshness": "Live · GOOGLEFINANCE",
@@ -2198,7 +2226,7 @@
       "kind": "company",
       "price": 817.8,
       "changePct": -3.33,
-      "marketCap": 12868101756363.994,
+      "marketCap": 12865740668537.188,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2218,7 +2246,7 @@
       "kind": "company",
       "price": 1585.5,
       "changePct": -3.32,
-      "marketCap": 11736947133548.031,
+      "marketCap": 11734793594236.207,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2238,7 +2266,7 @@
       "kind": "company",
       "price": 1103.4,
       "changePct": 0.49,
-      "marketCap": 4455629956321.162,
+      "marketCap": 4454812420537.733,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -4749,10 +4777,10 @@
       "title": "Private capital–fueled economic growth might be knocking on India’s doors soon - Deloitte",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbVNEUF9teW9VSlNOTVBOOXNjbVkybkFnOTVDNkljbWpGTld4Z1BhS243VUhJcHJqMjh3UWJDRkQwYlhTam9fMzQwTTRuejFnMlJrUjNteUVmZE5LeUc4ODVPRHhFYVlQNGU4S3RwX1dKc01XTTB4VTR0STVNbVVMN0F5WndKRnNiSlpUcUlCV2pIY2ZiVUdBb09XMA?oc=5",
       "publisher": "Deloitte",
-      "strategyId": "Unclassified",
-      "sentiment": "unclassified",
-      "confidence": "",
-      "summary": "",
+      "strategyId": 5,
+      "sentiment": "positive",
+      "confidence": "medium",
+      "summary": "Deloitte reports private capital-fueled economic growth might soon arrive in India.",
       "freshness": "News RSS · 19 Oct 2026"
     },
     {
@@ -4762,8 +4790,8 @@
       "publisher": "Reserve Bank of India",
       "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "",
-      "summary": "",
+      "confidence": "low",
+      "summary": "Reserve Bank of India publishes its bulletin.",
       "freshness": "News RSS · 25 Aug 2026"
     },
     {
@@ -4773,8 +4801,8 @@
       "publisher": "www.pib.gov.in",
       "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "",
-      "summary": "",
+      "confidence": "low",
+      "summary": "Economic Survey 2025-26 published on the official PIB website.",
       "freshness": "News RSS · 30 Jan 2026"
     },
     {
@@ -4784,8 +4812,8 @@
       "publisher": "McKinsey & Company",
       "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "",
-      "summary": "",
+      "confidence": "low",
+      "summary": "McKinsey releases its Global Economics Intelligence executive summary for September 2026.",
       "freshness": "News RSS · 29 Oct 2026"
     },
     {
@@ -4795,8 +4823,8 @@
       "publisher": "IBEF",
       "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "",
-      "summary": "",
+      "confidence": "low",
+      "summary": "IBEF provides analysis and key findings for the Economic Survey 2025-26.",
       "freshness": "News RSS · 30 Jan 2026"
     },
     {
@@ -4804,10 +4832,10 @@
       "title": "INDIA’S GDP GROWTH FOR FY26 IS ESTIMATED AT 7.4 PER CENT DRIVEN BY THE DOUBLE ENGINE OF CONSUMPTION AND INVESTMENT - www.pib.gov.in",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5CWTd0TUk4dE10bk1WUHVBcFc3eXZPVkJwQ2dCRndwSzQwUl8xQ2RqdDJwUlE4N1NaSnA5X1NnLWdCd1RDZFNBWGxzLU5aRFRHTWNvejBNVnhzZndDU0hfSFpfamhETEhB?oc=5",
       "publisher": "www.pib.gov.in",
-      "strategyId": "Unclassified",
-      "sentiment": "unclassified",
-      "confidence": "",
-      "summary": "",
+      "strategyId": 5,
+      "sentiment": "positive",
+      "confidence": "high",
+      "summary": "India's FY26 GDP growth is estimated at 7.4 percent driven by consumption and investment.",
       "freshness": "News RSS · 29 Jan 2026"
     },
     {
@@ -4815,10 +4843,10 @@
       "title": "Southeast Asia quarterly economic review: Tech tailwinds drive a two-speed region - McKinsey & Company",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPa2VLay02a3U1UnFDWmZpbUw3TGlYSU5ydGtDWW5kT0NrbVVDVzU0MXVENG9fYlNXaVFMT1lfYjdFbnpZRkhqcS0tTkNkbUFGazktNnpIa0pZa0hxaUZnOTZpWHE5VEJhVnRic0xZU2Rvd2FrS1RoQXd0ckl0U0xieUZyeHlmRWZCcjNsTTNsazZ2QzlRUnNLcmYteC1oMUE?oc=5",
       "publisher": "McKinsey & Company",
-      "strategyId": "Unclassified",
-      "sentiment": "unclassified",
-      "confidence": "",
-      "summary": "",
+      "strategyId": 14,
+      "sentiment": "positive",
+      "confidence": "medium",
+      "summary": "McKinsey's Southeast Asia review highlights tech tailwinds driving a two-speed region.",
       "freshness": "News RSS · 4 Sep 2026"
     },
     {
@@ -4826,10 +4854,10 @@
       "title": "Economic Survey 2026 Highlights: 7.4% GDP Growth, Inflation Trends & UPSC Insights - INSIGHTS IAS",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQR0ZBSzB4aWx5U1QzM044d2dZZzFYempIb2cteVhGaHJ6YWlaTE5RY2VlNXE2UUJPbXpueVlGMWpZUG5lWktOaVRsb01vZmEwTExtT01RMmdoblZRNHdtU0FQSVp0TEpIM3lnSWpWUjZvelNWRDRxTnNsQV9nWVJjdEJPU3kwSUxTUXJRb3JLcw?oc=5",
       "publisher": "INSIGHTS IAS",
-      "strategyId": "Unclassified",
-      "sentiment": "unclassified",
-      "confidence": "",
-      "summary": "",
+      "strategyId": 17,
+      "sentiment": "positive",
+      "confidence": "medium",
+      "summary": "Economic Survey 2026 highlights 7.4 percent GDP growth and inflation trends.",
       "freshness": "News RSS · 29 Jan 2026"
     },
     {
@@ -4837,10 +4865,10 @@
       "title": "Vietnam's Economy in 2025: GDP, FDI, and Trade - Vietnam Briefing",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdFQ2ZlJuaXJ2ZEFpaE9vQjdVY1pJUGg1UEUtRGV1eEVwelRxQUoxY0ZBMmY1aW1uaEliSWdHRDZEZ0d0RmJEV0VsalVNNXl2RDUzTlNxZG1fQmVQZHhZMURGSHFWR3NyYi14X1k3TXBIdEFwbmFHRXZpdXltZVhlNDZWY0FlUUtaUnc?oc=5",
       "publisher": "Vietnam Briefing",
-      "strategyId": "Unclassified",
+      "strategyId": 7,
       "sentiment": "unclassified",
-      "confidence": "",
-      "summary": "",
+      "confidence": "medium",
+      "summary": "Vietnam Briefing covers Vietnam's economy in 2025 focusing on GDP, FDI, and trade.",
       "freshness": "News RSS · 22 Jan 2026"
     },
     {
@@ -4850,8 +4878,8 @@
       "publisher": "Federal Reserve (.gov)",
       "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "",
-      "summary": "",
+      "confidence": "low",
+      "summary": "Federal Reserve publishes material on India and the global economy.",
       "freshness": "News RSS · 8 Apr 2026"
     },
     {
@@ -4861,8 +4889,8 @@
       "publisher": "PIB",
       "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "",
-      "summary": "",
+      "confidence": "low",
+      "summary": "Press Information Bureau provides press note details.",
       "freshness": "News RSS · 29 Dec 2025"
     },
     {
@@ -4871,9 +4899,9 @@
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1BWDZOV3dxSzh5TVpZanFlWklUY3ZKZjRSRzIzdURVb0V4Z3NnbzZjdk1iX2N6MGhLUkh1XzQyZUhJNnFlRE1LaEpaNUFvOFFFVld4ZnZ4M2syTTlkSFpucGVURFZNYWtfVlF3T29BZkJ2VnVq?oc=5",
       "publisher": "EY",
       "strategyId": "Unclassified",
-      "sentiment": "unclassified",
-      "confidence": "",
-      "summary": "",
+      "sentiment": "neutral",
+      "confidence": "low",
+      "summary": "EY releases midyear global economic outlook addressing risk and opportunity in a supply shock world.",
       "freshness": "News RSS · 17 Jun 2026"
     },
     {
@@ -4883,8 +4911,8 @@
       "publisher": "Econofact",
       "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "",
-      "summary": "",
+      "confidence": "low",
+      "summary": "Econofact examines India's path to becoming one of the world's largest economies.",
       "freshness": "News RSS · 14 Jul 2025"
     },
     {
@@ -4894,8 +4922,8 @@
       "publisher": "Deloitte",
       "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "",
-      "summary": "",
+      "confidence": "low",
+      "summary": "Deloitte shares what is happening this week in economics.",
       "freshness": "News RSS · 10 Nov 2026"
     },
     {
@@ -4905,12 +4933,12 @@
       "publisher": "pib.gov.in",
       "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "",
-      "summary": "",
+      "confidence": "low",
+      "summary": "PIB provides a backgrounder document.",
       "freshness": "News RSS · 6 Jul 2025"
     }
   ],
-  "weeklyBrief": "What moved: Nominal GDP stands at $3.91T (2025) with real growth at 7.8% and inflation at 2% Latest monthly prints include UPI value (31.53 lakh crore, October 2026) and Total market cap (5.45 USD trillion, November 2026).\n\nWhy it matters: Current USD CAGR (8.36%, 2020–2025) trails the 11.97% pace needed for $47T by 2047, implying an ETA of 2056 (Mission Score: 54/100).\n\nTop 3 priorities: 1. Formally skilled workforce; 2. Electronics production; 3. States with $1T GSDP.",
+  "weeklyBrief": "**Weekly Economic Brief**\n\n**What Moved:**\nRecent metrics",
   "methodology": [
     {
       "name": "GDP and macroeconomic series",
