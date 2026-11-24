@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-24T12:54:11.385Z",
+  "generatedAt": "2026-11-24T13:36:17.356Z",
   "appName": "BHARAT 2047 · Mission Control",
   "sourceStatus": {
-    "updatedAt": "2026-11-24T12:54:11.385Z",
+    "updatedAt": "2026-11-24T13:36:17.356Z",
     "staleCount": 0,
     "dataCount": 53
   },
@@ -199,6 +199,7 @@
       "strategy": "Sustain industrial momentum.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
+      "dataYear": 2025,
       "series": [
         {
           "year": 2016,
@@ -268,8 +269,9 @@
       "priority": 0.9126,
       "status": "red",
       "strategy": "Enter an official series and accelerate capacity.",
-      "freshness": "Manual · Tue Nov 24 2026 00:00:00 GMT+0530 (India Standard Time)",
+      "freshness": "Manual · 24 Nov 2026",
       "note": "MeitY Annual Reports / PIB (₹ lakh crore; USD converted at FY avg ₹/$, approx; FY22 official $87.1bn). Latest FY2025-26: ₹13.11 lakh cr",
+      "dataYear": 2026,
       "series": [
         {
           "year": 2019,
@@ -325,13 +327,65 @@
       "direction": "higher",
       "weight": 1.3,
       "progress": 0.43512713030673983,
-      "trend": "flat",
+      "trend": "up",
       "priority": 0.7343347306012382,
       "status": "red",
       "strategy": "Broaden export capacity and market access.",
       "freshness": "Derived · Updated just now / Updated just now",
       "note": "Derived from latest available World Bank exports share × IMF nominal GDP; source years may differ.",
-      "series": []
+      "dataYear": 2025,
+      "series": [
+        {
+          "year": 2016,
+          "value": 434.3403668874214,
+          "classification": "derived"
+        },
+        {
+          "year": 2017,
+          "value": 491.0477949333497,
+          "classification": "derived"
+        },
+        {
+          "year": 2018,
+          "value": 529.5407944094038,
+          "classification": "derived"
+        },
+        {
+          "year": 2019,
+          "value": 519.0324894586812,
+          "classification": "derived"
+        },
+        {
+          "year": 2020,
+          "value": 488.8802539242117,
+          "classification": "derived"
+        },
+        {
+          "year": 2021,
+          "value": 661.4212350494338,
+          "classification": "derived"
+        },
+        {
+          "year": 2022,
+          "value": 783.0670015651704,
+          "classification": "derived"
+        },
+        {
+          "year": 2023,
+          "value": 785.0340277618021,
+          "classification": "derived"
+        },
+        {
+          "year": 2024,
+          "value": 829.5558448940442,
+          "classification": "derived"
+        },
+        {
+          "year": 2025,
+          "value": 870.2542606134797,
+          "classification": "derived"
+        }
+      ]
     },
     {
       "id": "4",
@@ -349,8 +403,9 @@
       "priority": 0,
       "status": "green",
       "strategy": "Target range reached.",
-      "freshness": "Manual · Tue Nov 24 2026 00:00:00 GMT+0530 (India Standard Time)",
+      "freshness": "Manual · 24 Nov 2026",
       "note": "DPIIT–NCAER Assessment of Logistics Cost in India (FY2023-24), first official estimate",
+      "dataYear": 2024,
       "series": [
         {
           "year": 2024,
@@ -377,6 +432,7 @@
       "strategy": "Target range reached.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
+      "dataYear": 2025,
       "series": [
         {
           "year": 2016,
@@ -446,8 +502,9 @@
       "priority": 0.16457142857142845,
       "status": "green",
       "strategy": "Target range reached.",
-      "freshness": "Manual · Tue Nov 24 2026 00:00:00 GMT+0530 (India Standard Time)",
+      "freshness": "Manual · 24 Nov 2026",
       "note": "Economic Survey 2025-26 Stat. Appendix Table 2.4; FY2025-26 RE, Union Budget 2026-27",
+      "dataYear": 2026,
       "series": [
         {
           "year": 2019,
@@ -509,6 +566,7 @@
       "strategy": "Improve FDI conditions.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
+      "dataYear": 2025,
       "series": [
         {
           "year": 2016,
@@ -580,6 +638,7 @@
       "strategy": "Strengthen productive credit access.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
+      "dataYear": 2025,
       "series": [
         {
           "year": 2016,
@@ -651,6 +710,7 @@
       "strategy": "Keep participation rising.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
+      "dataYear": 2025,
       "series": [
         {
           "year": 2016,
@@ -720,8 +780,9 @@
       "priority": 1.0076,
       "status": "red",
       "strategy": "Enter an official series and expand skilling.",
-      "freshness": "Manual · Tue Nov 24 2026 00:00:00 GMT+0530 (India Standard Time)",
+      "freshness": "Manual · 24 Nov 2026",
       "note": "MoSPI PLFS (age 15–59, formal vocational/technical training); 2025 = Jan–Dec calendar cycle",
+      "dataYear": 2025,
       "series": [
         {
           "year": 2018,
@@ -766,8 +827,9 @@
       "priority": 0.44000000000000006,
       "status": "amber",
       "strategy": "Maintain education progress.",
-      "freshness": "Manual · Tue Nov 24 2026 00:00:00 GMT+0530 (India Standard Time)",
+      "freshness": "Manual · 24 Nov 2026",
       "note": "AISHE Final Reports (age 18–23); latest 2023-24",
+      "dataYear": 2024,
       "series": [
         {
           "year": 2019,
@@ -819,6 +881,7 @@
       "strategy": "Maintain health investment.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
+      "dataYear": 2023,
       "series": [
         {
           "year": 2014,
@@ -890,6 +953,7 @@
       "strategy": "Increase R&D intensity.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
+      "dataYear": 2020,
       "series": [
         {
           "year": 2011,
@@ -959,8 +1023,9 @@
       "priority": 0.41300000000000003,
       "status": "amber",
       "strategy": "Maintain digital growth.",
-      "freshness": "Manual · Tue Nov 24 2026 00:00:00 GMT+0530 (India Standard Time)",
+      "freshness": "Manual · 24 Nov 2026",
       "note": "MeitY, Estimation and Measurement of India's Digital Economy (2022-23 baseline)",
+      "dataYear": 2023,
       "series": [
         {
           "year": 2023,
@@ -987,6 +1052,7 @@
       "strategy": "Maintain structural transformation.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
+      "dataYear": 2025,
       "series": [
         {
           "year": 2016,
@@ -1058,6 +1124,7 @@
       "strategy": "Maintain urban development.",
       "freshness": "Updated just now",
       "note": "World Bank indicator API",
+      "dataYear": 2025,
       "series": [
         {
           "year": 2016,
@@ -1123,12 +1190,13 @@
       "direction": "band",
       "weight": 0.9,
       "progress": 1,
-      "trend": "flat",
+      "trend": "down",
       "priority": 0,
       "status": "green",
       "strategy": "Price-stability range reached.",
       "freshness": "Updated just now",
-      "note": "IMF DataMapper v2",
+      "note": "IMF DataMapper v2 · Actual through 2025 (IMF projects 4.0 by 2031)",
+      "dataYear": 2025,
       "series": [
         {
           "year": 1980,
@@ -1359,36 +1427,6 @@
           "year": 2025,
           "value": 2,
           "classification": "historical / estimate"
-        },
-        {
-          "year": 2026,
-          "value": 5,
-          "classification": "estimate / projection"
-        },
-        {
-          "year": 2027,
-          "value": 4.4,
-          "classification": "estimate / projection"
-        },
-        {
-          "year": 2028,
-          "value": 3.9,
-          "classification": "estimate / projection"
-        },
-        {
-          "year": 2029,
-          "value": 4,
-          "classification": "estimate / projection"
-        },
-        {
-          "year": 2030,
-          "value": 4,
-          "classification": "estimate / projection"
-        },
-        {
-          "year": 2031,
-          "value": 4,
-          "classification": "estimate / projection"
         }
       ]
     },
@@ -1409,7 +1447,8 @@
       "status": "red",
       "strategy": "Strengthen debt sustainability.",
       "freshness": "Updated just now",
-      "note": "IMF DataMapper v2",
+      "note": "IMF DataMapper v2 · Actual through 2025 (IMF projects 75.1 by 2031)",
+      "dataYear": 2025,
       "series": [
         {
           "year": 1991,
@@ -1585,36 +1624,6 @@
           "year": 2025,
           "value": 84.3,
           "classification": "historical / estimate"
-        },
-        {
-          "year": 2026,
-          "value": 83.1,
-          "classification": "estimate / projection"
-        },
-        {
-          "year": 2027,
-          "value": 81.3,
-          "classification": "estimate / projection"
-        },
-        {
-          "year": 2028,
-          "value": 79.8,
-          "classification": "estimate / projection"
-        },
-        {
-          "year": 2029,
-          "value": 78.4,
-          "classification": "estimate / projection"
-        },
-        {
-          "year": 2030,
-          "value": 77,
-          "classification": "estimate / projection"
-        },
-        {
-          "year": 2031,
-          "value": 75.1,
-          "classification": "estimate / projection"
         }
       ]
     },
@@ -1634,8 +1643,9 @@
       "priority": 0.36135,
       "status": "amber",
       "strategy": "Maintain clean-power rollout.",
-      "freshness": "Manual · Tue Nov 24 2026 00:00:00 GMT+0530 (India Standard Time)",
+      "freshness": "Manual · 24 Nov 2026",
       "note": "MNRE / PIB (incl. large hydro, as of 31 March); latest 299.25 GW as of 30 Sep 2026",
+      "dataYear": 2026,
       "series": [
         {
           "year": 2022,
@@ -1680,8 +1690,9 @@
       "priority": 0.9,
       "status": "red",
       "strategy": "Enter an official count and deepen state growth.",
-      "freshness": "Manual · Tue Nov 24 2026 00:00:00 GMT+0530 (India Standard Time)",
+      "freshness": "Manual · 24 Nov 2026",
       "note": "MoSPI / Economic Survey of Maharashtra: largest state ~$0.6T (FY2025-26 AE)",
+      "dataYear": 2026,
       "series": [
         {
           "year": 2019,
@@ -1743,8 +1754,9 @@
       "priority": 1.0076,
       "status": "red",
       "strategy": "Enter an official series and expand skilling.",
-      "freshness": "Manual · Tue Nov 24 2026 00:00:00 GMT+0530 (India Standard Time)",
+      "freshness": "Manual · 24 Nov 2026",
       "note": "MoSPI PLFS (age 15–59, formal vocational/technical training); 2025 = Jan–Dec calendar cycle",
+      "dataYear": 2025,
       "series": [
         {
           "year": 2018,
@@ -1789,8 +1801,9 @@
       "priority": 0.9126,
       "status": "red",
       "strategy": "Enter an official series and accelerate capacity.",
-      "freshness": "Manual · Tue Nov 24 2026 00:00:00 GMT+0530 (India Standard Time)",
+      "freshness": "Manual · 24 Nov 2026",
       "note": "MeitY Annual Reports / PIB (₹ lakh crore; USD converted at FY avg ₹/$, approx; FY22 official $87.1bn). Latest FY2025-26: ₹13.11 lakh cr",
+      "dataYear": 2026,
       "series": [
         {
           "year": 2019,
@@ -1850,8 +1863,9 @@
       "priority": 0.9,
       "status": "red",
       "strategy": "Enter an official count and deepen state growth.",
-      "freshness": "Manual · Tue Nov 24 2026 00:00:00 GMT+0530 (India Standard Time)",
+      "freshness": "Manual · 24 Nov 2026",
       "note": "MoSPI / Economic Survey of Maharashtra: largest state ~$0.6T (FY2025-26 AE)",
+      "dataYear": 2026,
       "series": [
         {
           "year": 2019,
@@ -1902,7 +1916,8 @@
       "value": 2.31,
       "unit": "lakh crore",
       "period": "October",
-      "yoy": 0.229,
+      "yoy": "+22.9%",
+      "yoyValue": 22.9,
       "sourceUrl": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQODNiZU51MjhpS1FISUp0V3MwaWFnOW42UkJSeHdwM1pEamxPQU1XUm05ZWRSWUZaakVGX1liaVFlMnh2OHN3eThKOUkxWEFCaG4ySl9GUXFsY2NCdGhaVUU1TkhOcDFsdEx1WGptVlRBMExHZXpHekFtSlFsQm14VUtEYkhIeG1YcDhHMTg3NFNSSjJOY2tmQ29zRjdYS1BSRDVpTDkxYm1NbG5SRWRfMUJxSTRDNjNuN3pJajlmbk5TU3o4emZBZWJBdEp3M2RuVEdVSG0zOVZKOTlU0gHiAUFVX3lxTE1NbjYwY09heVd2ejdYaG1GdEpnaFpxZV92Rk1ZakpyLTF6WDhZWDRUZzFWaWhQMTVkcDE5bHlWdTRxeVhDZng0TlpFU0RhdXRHNmVpMmtqQjFROEE4RzBNYk1XTnpISVluendoUXk3c01meDdid3VwX0NoM2FNaDJETmZHQXg4TVRDRWVpbDNnNkZEU1BJQzAtcllxdlZZclFXS1JMcEwwOHFTcnpXdFcxTDZvRDdLUUdlak4ya2Z4U1kyaWhBWDJyZ20xbDYyeGNfZlVXRmY1b1BUZzVuSEJnZ0E?oc=5",
       "freshness": "Stale · extraction failed",
       "mode": "auto-extracted · verify",
@@ -1920,7 +1935,7 @@
           "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQODNiZU51MjhpS1FISUp0V3MwaWFnOW42UkJSeHdwM1pEamxPQU1XUm05ZWRSWUZaakVGX1liaVFlMnh2OHN3eThKOUkxWEFCaG4ySl9GUXFsY2NCdGhaVUU1TkhOcDFsdEx1WGptVlRBMExHZXpHekFtSlFsQm14VUtEYkhIeG1YcDhHMTg3NFNSSjJOY2tmQ29zRjdYS1BSRDVpTDkxYm1NbG5SRWRfMUJxSTRDNjNuN3pJajlmbk5TU3o4emZBZWJBdEp3M2RuVEdVSG0zOVZKOTlU0gHiAUFVX3lxTE1NbjYwY09heVd2ejdYaG1GdEpnaFpxZV92Rk1ZakpyLTF6WDhZWDRUZzFWaWhQMTVkcDE5bHlWdTRxeVhDZng0TlpFU0RhdXRHNmVpMmtqQjFROEE4RzBNYk1XTnpISVluendoUXk3c01meDdid3VwX0NoM2FNaDJETmZHQXg4TVRDRWVpbDNnNkZEU1BJQzAtcllxdlZZclFXS1JMcEwwOHFTcnpXdFcxTDZvRDdLUUdlak4ya2Z4U1kyaWhBWDJyZ20xbDYyeGNfZlVXRmY1b1BUZzVuSEJnZ0E?oc=5"
         }
       ],
-      "note": "News was found but the AI did not return a verifiable value."
+      "note": "AI extraction did not return a validated figure (HTTP 404 on gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com)."
     },
     {
       "metric": "Merchandise exports",
@@ -1928,11 +1943,12 @@
       "unit": "",
       "period": "",
       "yoy": "",
+      "yoyValue": null,
       "sourceUrl": "",
       "freshness": "Unavailable · verify manually",
       "mode": "auto-extracted · verify",
       "history": [],
-      "note": "News was found but the AI did not return a verifiable value."
+      "note": "AI extraction did not return a validated figure (HTTP 404 on gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com)."
     },
     {
       "metric": "IIP",
@@ -1940,6 +1956,7 @@
       "unit": "%",
       "period": "June",
       "yoy": "",
+      "yoyValue": null,
       "sourceUrl": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQWnh2SFduZDVKYUVramJKYk5zdU5sTThxN3Z5SWNhdWpPR3czcURETXFMdWhPWXVmYjBmckMwQkEwQU1FMDM4eDhVNEVQQzVPVFIxcEM0QlJMeFA4ZVFnMmJIaEVoUkJXaGFQUDFnTXlwS1U1cDdnSTZqNWRfUlh0RFVLWERkcUUtNnp3Q0VVZmxpczNuUEhoTjFoN09ZbXBRS1Zxa0xRaTV5VmM4WlhVcmRNVXJXNG9ZUW1WeTYxaTlHeGh4SHJhUzYyQ2FtNmpQNVlFUm5aa3gxcTl3dGxrYVI4cVVDZEZxVVZj?oc=5",
       "freshness": "Stale · extraction failed",
       "mode": "auto-extracted · verify",
@@ -1957,7 +1974,7 @@
           "source_url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQWnh2SFduZDVKYUVramJKYk5zdU5sTThxN3Z5SWNhdWpPR3czcURETXFMdWhPWXVmYjBmckMwQkEwQU1FMDM4eDhVNEVQQzVPVFIxcEM0QlJMeFA4ZVFnMmJIaEVoUkJXaGFQUDFnTXlwS1U1cDdnSTZqNWRfUlh0RFVLWERkcUUtNnp3Q0VVZmxpczNuUEhoTjFoN09ZbXBRS1Zxa0xRaTV5VmM4WlhVcmRNVXJXNG9ZUW1WeTYxaTlHeGh4SHJhUzYyQ2FtNmpQNVlFUm5aa3gxcTl3dGxrYVI4cVVDZEZxVVZj?oc=5"
         }
       ],
-      "note": "News was found but the AI did not return a verifiable value."
+      "note": "AI extraction did not return a validated figure (HTTP 404 on gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com)."
     },
     {
       "metric": "CPI inflation",
@@ -1965,8 +1982,9 @@
       "unit": "%",
       "period": "August",
       "yoy": "",
+      "yoyValue": null,
       "sourceUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9EdUdEdEtPVlU4VEhnSE4zTTlUVjhMQS1JeUk2cW82bXU5aF8yaERBb2UwNk9MQlh1RlJYN3hoRTlqMUw2aWNHMTlsX2JlQzhYSE5QaHNoRl9kcWRMUUNtNGtOZ1hSMngxdHFSOGJMY0bSAXZBVV95cUxNRDlBMEtuV1RtX3ZEMU81ZUY3TnEyYXA5dW83d3h0c1NhSmNKRnRHempoNWdIY1lyR3RTSHZ3ZXl0R1BnSGNpNlpYWFBpTGc0R3JKTlI0c1hZSjIzeFowaFEwSlBHWUVlTUMwQ011UkRxOTNVOW5R?oc=5",
-      "freshness": "Auto-extracted · verify",
+      "freshness": "Stale · extraction failed",
       "mode": "auto-extracted · verify",
       "history": [
         {
@@ -1988,16 +2006,17 @@
           "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9EdUdEdEtPVlU4VEhnSE4zTTlUVjhMQS1JeUk2cW82bXU5aF8yaERBb2UwNk9MQlh1RlJYN3hoRTlqMUw2aWNHMTlsX2JlQzhYSE5QaHNoRl9kcWRMUUNtNGtOZ1hSMngxdHFSOGJMY0bSAXZBVV95cUxNRDlBMEtuV1RtX3ZEMU81ZUY3TnEyYXA5dW83d3h0c1NhSmNKRnRHempoNWdIY1lyR3RTSHZ3ZXl0R1BnSGNpNlpYWFBpTGc0R3JKTlI0c1hZSjIzeFowaFEwSlBHWUVlTUMwQ011UkRxOTNVOW5R?oc=5"
         }
       ],
-      "note": "Gemini extracted only from the listed Google News RSS items. Check the linked source before use."
+      "note": "AI extraction did not return a validated figure (HTTP 404 on gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com)."
     },
     {
       "metric": "UPI value",
       "value": 31.53,
       "unit": "lakh crore",
-      "period": "2026-09-30T18:30:00.000Z",
-      "yoy": 0.156,
+      "period": "October 2026",
+      "yoy": "+15.6%",
+      "yoyValue": 15.6,
       "sourceUrl": "https://www.npci.org.in/what-we-do/upi/product-statistics",
-      "freshness": "Manual · Thu Oct 01 2026 00:00:00 GMT+0530 (India Standard Time)",
+      "freshness": "Manual · October 2026",
       "mode": "Manual",
       "history": [
         {
@@ -2021,6 +2040,7 @@
       "unit": "",
       "period": "November",
       "yoy": "",
+      "yoyValue": null,
       "sourceUrl": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNSWptdC1pLXBhdWFCZTZMV0ZNN1hxNkpzcWZaV1JKMjI3dE41Q1pxSGMwcDl6d3FUaWRKai1jTVIweVNEUGNqbklWVmJ6bWltbVhPbER2OVpEYllVc01WY3F0SGZ1b3BSTGpuRUYwQ01zaU5GQmRhc2pQUFJuVEFob1Rzc1pBS042Yl9Qekp0Tmw3SDBVdEhaUGlscDNVb01EZEVIaEwzMlQwMlZ2RGk1Vi1jckNoV2FFZVNEcS1JcllyQUF2c2FMUmVpTFM5U2w1Q21YUTlzVUbSAd8BQVVfeXFMT2Fkbll6eTluTFg4NkozbDlja0ptdTBuVVRHRm8wQWItX2hHSnJxQlVfR2JkalBGcmlLRVNvdVh6c3drelZmS09ScDJWY3VQcnVEQnk5Umx3MnpfQnVJWWZiVDJMU0JIaGVsZ3JFMFZubmFvVU00U0VYMlRZdENLTi1WMFNiOHFjaWlpcUFXUmdvaU44Y19LUzVnUlV5ZU9ZUFVlbS12eU1GMnRfRnNwWXY5VnJmaHZKUWtKYkZRU1hNaVlnRlBtcjgxcG9ENmZHNUhlSHhaM09rUklSalQyUQ?oc=5",
       "freshness": "Stale · extraction failed",
       "mode": "auto-extracted · verify",
@@ -2032,7 +2052,7 @@
           "source_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNSWptdC1pLXBhdWFCZTZMV0ZNN1hxNkpzcWZaV1JKMjI3dE41Q1pxSGMwcDl6d3FUaWRKai1jTVIweVNEUGNqbklWVmJ6bWltbVhPbER2OVpEYllVc01WY3F0SGZ1b3BSTGpuRUYwQ01zaU5GQmRhc2pQUFJuVEFob1Rzc1pBS042Yl9Qekp0Tmw3SDBVdEhaUGlscDNVb01EZEVIaEwzMlQwMlZ2RGk1Vi1jckNoV2FFZVNEcS1JcllyQUF2c2FMUmVpTFM5U2w1Q21YUTlzVUbSAd8BQVVfeXFMT2Fkbll6eTluTFg4NkozbDlja0ptdTBuVVRHRm8wQWItX2hHSnJxQlVfR2JkalBGcmlLRVNvdVh6c3drelZmS09ScDJWY3VQcnVEQnk5Umx3MnpfQnVJWWZiVDJMU0JIaGVsZ3JFMFZubmFvVU00U0VYMlRZdENLTi1WMFNiOHFjaWlpcUFXUmdvaU44Y19LUzVnUlV5ZU9ZUFVlbS12eU1GMnRfRnNwWXY5VnJmaHZKUWtKYkZRU1hNaVlnRlBtcjgxcG9ENmZHNUhlSHhaM09rUklSalQyUQ?oc=5"
         }
       ],
-      "note": "News was found but the AI did not return a verifiable value."
+      "note": "AI extraction did not return a validated figure (HTTP 404 on gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com)."
     },
     {
       "metric": "Forex reserves",
@@ -2040,8 +2060,9 @@
       "unit": "billion USD",
       "period": "",
       "yoy": "",
+      "yoyValue": null,
       "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVnZIWEVmaXZCbzF3elowTTJwM1NfTkhMdjFyRTdNZWRpQ25rLWNwZEc3V1JxRFBjck9pSU5ka0R5Y0FTWFlDQmxpWFF4ZW1LU284a3RNanA1QzJjQlJqYUtNWVFUNlU5NDMyUlRza2xZdWVZUTBFZUhkemlFYjVTcGp3X1pWNzVLeEFVY1pJVjBGOHZ5UFNyXzRjTlZJdnYtWjNFNmFUUQ?oc=5",
-      "freshness": "Auto-extracted · verify",
+      "freshness": "Stale · extraction failed",
       "mode": "auto-extracted · verify",
       "history": [
         {
@@ -2063,7 +2084,7 @@
           "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVnZIWEVmaXZCbzF3elowTTJwM1NfTkhMdjFyRTdNZWRpQ25rLWNwZEc3V1JxRFBjck9pSU5ka0R5Y0FTWFlDQmxpWFF4ZW1LU284a3RNanA1QzJjQlJqYUtNWVFUNlU5NDMyUlRza2xZdWVZUTBFZUhkemlFYjVTcGp3X1pWNzVLeEFVY1pJVjBGOHZ5UFNyXzRjTlZJdnYtWjNFNmFUUQ?oc=5"
         }
       ],
-      "note": "Gemini extracted only from the listed Google News RSS items. Check the linked source before use."
+      "note": "AI extraction did not return a validated figure (HTTP 404 on gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com)."
     },
     {
       "metric": "Power demand",
@@ -2071,8 +2092,9 @@
       "unit": "%",
       "period": "7MFY2027",
       "yoy": "",
+      "yoyValue": null,
       "sourceUrl": "https://news.google.com/rss/articles/CBMizgJBVV95cUxOUzZkR1pjZjhHLWJEcHVhbXAtbk9mY2FYQnptV2twOW9vRllDNDBaSmdXaGtONWFZeWYtcDU0Z213cHdLQjNmRmMtMDB0cUUwVFUyVll6eVE3dkxoVTB5Ry11UWc5MktROGE3NEw1SGdyYXpjWDZKVVVNaVlISDhYQWZKUUUzSWxUSGRYcDdLODZjX3JReHlSRkladHJtclZoU2ljT1dMaG9kSEttMTVxb0tpR0NhS2p2R0ZPNGN2RTl4UmJ5NFVoYXlDTWs2SExMOEdEeXAxMUgwdVhPYUFNSFVqNmdnc0o1bC1IVURLWDQyMDJPcDU0bllhLTJYRkZDNWJXbnNLR1dOak9nYXljaXhyWGZ1bmpUMzYyamVVSGo2aEE2V2hvTWU5ellPTzZlc2tXVDJHZzNGd0hHcXNRMFpFWnVVTV81N0ZBZUFB?oc=5",
-      "freshness": "Auto-extracted · verify",
+      "freshness": "Stale · extraction failed",
       "mode": "auto-extracted · verify",
       "history": [
         {
@@ -2100,16 +2122,17 @@
           "source_url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxOUzZkR1pjZjhHLWJEcHVhbXAtbk9mY2FYQnptV2twOW9vRllDNDBaSmdXaGtONWFZeWYtcDU0Z213cHdLQjNmRmMtMDB0cUUwVFUyVll6eVE3dkxoVTB5Ry11UWc5MktROGE3NEw1SGdyYXpjWDZKVVVNaVlISDhYQWZKUUUzSWxUSGRYcDdLODZjX3JReHlSRkladHJtclZoU2ljT1dMaG9kSEttMTVxb0tpR0NhS2p2R0ZPNGN2RTl4UmJ5NFVoYXlDTWs2SExMOEdEeXAxMUgwdVhPYUFNSFVqNmdnc0o1bC1IVURLWDQyMDJPcDU0bllhLTJYRkZDNWJXbnNLR1dOak9nYXljaXhyWGZ1bmpUMzYyamVVSGo2aEE2V2hvTWU5ellPTzZlc2tXVDJHZzNGd0hHcXNRMFpFWnVVTV81N0ZBZUFB?oc=5"
         }
       ],
-      "note": "Gemini extracted only from the listed Google News RSS items. Check the linked source before use."
+      "note": "AI extraction did not return a validated figure (HTTP 404 on gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com)."
     },
     {
       "metric": "Total market cap",
       "value": 5.45,
       "unit": "USD trillion",
-      "period": "2026-10-31T18:30:00.000Z",
+      "period": "November 2026",
       "yoy": "",
+      "yoyValue": null,
       "sourceUrl": "",
-      "freshness": "Manual · Sun Nov 01 2026 00:00:00 GMT+0530 (India Standard Time)",
+      "freshness": "Manual · November 2026",
       "mode": "Manual",
       "history": [],
       "note": ""
@@ -2118,10 +2141,11 @@
       "metric": "Nifty at market cap date",
       "value": 25349.65,
       "unit": "index",
-      "period": "2026-11-23T18:30:00.000Z",
+      "period": "24 Nov 2026",
       "yoy": "",
+      "yoyValue": null,
       "sourceUrl": "",
-      "freshness": "Manual · Tue Nov 24 2026 00:00:00 GMT+0530 (India Standard Time)",
+      "freshness": "Manual · 24 Nov 2026",
       "mode": "Manual",
       "history": [],
       "note": ""
@@ -2132,7 +2156,7 @@
       "symbol": "CURRENCY:USDINR",
       "company": "USD / INR",
       "kind": "currency",
-      "price": 92.81315000000001,
+      "price": 92.92375000000001,
       "changePct": null,
       "marketCap": null,
       "freshness": "Live · GOOGLEFINANCE",
@@ -2174,7 +2198,7 @@
       "kind": "company",
       "price": 817.8,
       "changePct": -3.33,
-      "marketCap": 12852785843540.266,
+      "marketCap": 12868101756363.994,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2194,7 +2218,7 @@
       "kind": "company",
       "price": 1585.5,
       "changePct": -3.32,
-      "marketCap": 11722977547161.662,
+      "marketCap": 11736947133548.031,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2214,7 +2238,7 @@
       "kind": "company",
       "price": 1103.4,
       "changePct": 0.49,
-      "marketCap": 4450326762324.265,
+      "marketCap": 4455629956321.162,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2265,42 +2289,1086 @@
       "country": "United States",
       "nominalT": 30.8613,
       "pppT": 30.8613,
-      "freshness": "Updated just now"
+      "freshness": "Updated just now",
+      "nominalSeries": [
+        {
+          "year": 2015,
+          "value": 18.295,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2016,
+          "value": 18.8049,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2017,
+          "value": 19.612099999999998,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2018,
+          "value": 20.656525000000002,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2019,
+          "value": 21.539975,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2020,
+          "value": 21.375275000000002,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2021,
+          "value": 23.745849999999997,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2022,
+          "value": 26.059725,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2023,
+          "value": 27.825875,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2024,
+          "value": 29.381025,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2025,
+          "value": 30.8613,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2026,
+          "value": 32.642373,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2027,
+          "value": 34.441607000000005,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2028,
+          "value": 35.877138,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2029,
+          "value": 37.24598,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2030,
+          "value": 38.604620000000004,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2031,
+          "value": 39.960668,
+          "classification": "estimate / projection"
+        }
+      ],
+      "pppSeries": [
+        {
+          "year": 2015,
+          "value": 18.295,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2016,
+          "value": 18.8049,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2017,
+          "value": 19.612099999999998,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2018,
+          "value": 20.656525000000002,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2019,
+          "value": 21.539975,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2020,
+          "value": 21.375275000000002,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2021,
+          "value": 23.745849999999997,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2022,
+          "value": 26.059725,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2023,
+          "value": 27.825875,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2024,
+          "value": 29.381025,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2025,
+          "value": 30.8613,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2026,
+          "value": 32.642373,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2027,
+          "value": 34.441607000000005,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2028,
+          "value": 35.877138,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2029,
+          "value": 37.24598,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2030,
+          "value": 38.604620000000004,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2031,
+          "value": 39.960668,
+          "classification": "estimate / projection"
+        }
+      ]
     },
     {
       "code": "CHN",
       "country": "China",
       "nominalT": 19.626191,
       "pppT": 41.260875,
-      "freshness": "Updated just now"
+      "freshness": "Updated just now",
+      "nominalSeries": [
+        {
+          "year": 2015,
+          "value": 11.279165,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2016,
+          "value": 11.45978,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2017,
+          "value": 12.550474,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2018,
+          "value": 14.144681,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2019,
+          "value": 14.581031000000001,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2020,
+          "value": 15.0033,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2021,
+          "value": 18.194575,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2022,
+          "value": 18.346879,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2023,
+          "value": 18.367061000000003,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2024,
+          "value": 18.928994,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2025,
+          "value": 19.626191,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2026,
+          "value": 21.546402999999998,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2027,
+          "value": 22.939132,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2028,
+          "value": 24.234521,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2029,
+          "value": 25.657940999999997,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2030,
+          "value": 27.081473000000003,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2031,
+          "value": 28.553669000000003,
+          "classification": "estimate / projection"
+        }
+      ],
+      "pppSeries": [
+        {
+          "year": 2015,
+          "value": 17.883962,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2016,
+          "value": 19.277150000000002,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2017,
+          "value": 20.974552,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2018,
+          "value": 22.862470000000002,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2019,
+          "value": 24.777566,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2020,
+          "value": 25.777239,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2021,
+          "value": 29.43824,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2022,
+          "value": 32.522058,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2023,
+          "value": 35.555608,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2024,
+          "value": 38.289661,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2025,
+          "value": 41.260875,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2026,
+          "value": 44.554951,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2027,
+          "value": 47.798799,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2028,
+          "value": 50.739356,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2029,
+          "value": 53.598093,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2030,
+          "value": 56.423955,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2031,
+          "value": 59.287313999999995,
+          "classification": "estimate / projection"
+        }
+      ]
     },
     {
       "code": "DEU",
       "country": "Germany",
       "nominalT": 5.115594,
       "pppT": 6.2551499999999995,
-      "freshness": "Updated just now"
+      "freshness": "Updated just now",
+      "nominalSeries": [
+        {
+          "year": 2015,
+          "value": 3.433391,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2016,
+          "value": 3.546502,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2017,
+          "value": 3.778421,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2018,
+          "value": 4.076826,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2019,
+          "value": 3.983116,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2020,
+          "value": 3.969002,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2021,
+          "value": 4.394541,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2022,
+          "value": 4.226711,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2023,
+          "value": 4.602049,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2024,
+          "value": 4.746909,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2025,
+          "value": 5.115594,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2026,
+          "value": 5.471299,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2027,
+          "value": 5.661302,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2028,
+          "value": 5.822319,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2029,
+          "value": 5.9905,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2030,
+          "value": 6.154086,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2031,
+          "value": 6.301487,
+          "classification": "estimate / projection"
+        }
+      ],
+      "pppSeries": [
+        {
+          "year": 2015,
+          "value": 4.153577,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2016,
+          "value": 4.28928,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2017,
+          "value": 4.492398000000001,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2018,
+          "value": 4.691809,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2019,
+          "value": 4.956676000000001,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2020,
+          "value": 4.920052,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2021,
+          "value": 5.289378,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2022,
+          "value": 5.772989,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2023,
+          "value": 5.928497,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2024,
+          "value": 6.080786,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2025,
+          "value": 6.2551499999999995,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2026,
+          "value": 6.5509949999999995,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2027,
+          "value": 6.830629,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2028,
+          "value": 7.045214,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2029,
+          "value": 7.242945,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2030,
+          "value": 7.426095999999999,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2031,
+          "value": 7.600337000000001,
+          "classification": "estimate / projection"
+        }
+      ]
     },
     {
       "code": "JPN",
       "country": "Japan",
       "nominalT": 4.453094,
       "pppT": 7.032894000000001,
-      "freshness": "Updated just now"
+      "freshness": "Updated just now",
+      "nominalSeries": [
+        {
+          "year": 2015,
+          "value": 4.534438,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2016,
+          "value": 5.110357,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2017,
+          "value": 5.038232,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2018,
+          "value": 5.154293,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2019,
+          "value": 5.245755,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2020,
+          "value": 5.189197,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2021,
+          "value": 5.227016,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2022,
+          "value": 4.444939000000001,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2023,
+          "value": 4.389312,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2024,
+          "value": 4.20763,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2025,
+          "value": 4.453094,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2026,
+          "value": 4.3419859999999995,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2027,
+          "value": 4.46761,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2028,
+          "value": 4.647178,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2029,
+          "value": 4.7718370000000006,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2030,
+          "value": 4.879015000000001,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2031,
+          "value": 4.999053,
+          "classification": "estimate / projection"
+        }
+      ],
+      "pppSeries": [
+        {
+          "year": 2015,
+          "value": 5.112912000000001,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2016,
+          "value": 5.197882,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2017,
+          "value": 5.376868,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2018,
+          "value": 5.464294,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2019,
+          "value": 5.539374,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2020,
+          "value": 5.49993,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2021,
+          "value": 5.812995,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2022,
+          "value": 6.305422999999999,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2023,
+          "value": 6.600435,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2024,
+          "value": 6.773954,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2025,
+          "value": 7.032894000000001,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2026,
+          "value": 7.324055,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2027,
+          "value": 7.605148,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2028,
+          "value": 7.809035,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2029,
+          "value": 8.004105,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2030,
+          "value": 8.20058,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2031,
+          "value": 8.391950999999999,
+          "classification": "estimate / projection"
+        }
+      ]
     },
     {
       "code": "GBR",
       "country": "United Kingdom",
       "nominalT": 4.012224,
       "pppT": 4.569342,
-      "freshness": "Updated just now"
+      "freshness": "Updated just now",
+      "nominalSeries": [
+        {
+          "year": 2015,
+          "value": 2.947612,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2016,
+          "value": 2.7179070000000003,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2017,
+          "value": 2.7080520000000003,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2018,
+          "value": 2.909489,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2019,
+          "value": 2.890766,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2020,
+          "value": 2.73494,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2021,
+          "value": 3.209353,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2022,
+          "value": 3.204984,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2023,
+          "value": 3.4398299999999997,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2024,
+          "value": 3.713618,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2025,
+          "value": 4.012224,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2026,
+          "value": 4.268446,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2027,
+          "value": 4.488949,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2028,
+          "value": 4.699727,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2029,
+          "value": 4.933478,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2030,
+          "value": 5.182192,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2031,
+          "value": 5.442279,
+          "classification": "estimate / projection"
+        }
+      ],
+      "pppSeries": [
+        {
+          "year": 2015,
+          "value": 2.829972,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2016,
+          "value": 2.920171,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2017,
+          "value": 3.071,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2018,
+          "value": 3.167165,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2019,
+          "value": 3.3799479999999997,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2020,
+          "value": 3.26229,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2021,
+          "value": 3.6174020000000002,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2022,
+          "value": 4.070327,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2023,
+          "value": 4.241668,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2024,
+          "value": 4.398775,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2025,
+          "value": 4.569342,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2026,
+          "value": 4.7831019999999995,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2027,
+          "value": 4.993908,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2028,
+          "value": 5.176361,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2029,
+          "value": 5.3512889999999995,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2030,
+          "value": 5.527491,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2031,
+          "value": 5.703175,
+          "classification": "estimate / projection"
+        }
+      ]
     },
     {
       "code": "IND",
       "country": "India",
       "nominalT": 3.908964,
       "pppT": 17.351185,
-      "freshness": "Updated just now"
+      "freshness": "Updated just now",
+      "nominalSeries": [
+        {
+          "year": 2015,
+          "value": 2.0832930000000003,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2016,
+          "value": 2.267121,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2017,
+          "value": 2.613101,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2018,
+          "value": 2.657293,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2019,
+          "value": 2.780889,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2020,
+          "value": 2.6167849999999997,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2021,
+          "value": 3.090875,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2022,
+          "value": 3.257327,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2023,
+          "value": 3.511702,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2024,
+          "value": 3.7597739999999997,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2025,
+          "value": 3.908964,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2026,
+          "value": 4.060207,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2027,
+          "value": 4.521197,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2028,
+          "value": 4.995622999999999,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2029,
+          "value": 5.542035,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2030,
+          "value": 6.129559,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2031,
+          "value": 6.744026,
+          "classification": "estimate / projection"
+        }
+      ],
+      "pppSeries": [
+        {
+          "year": 2015,
+          "value": 6.930719,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2016,
+          "value": 7.574236,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2017,
+          "value": 8.233798,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2018,
+          "value": 9.074933999999999,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2019,
+          "value": 9.741183000000001,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2020,
+          "value": 9.558907999999999,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2021,
+          "value": 11.109772000000001,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2022,
+          "value": 12.808899,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2023,
+          "value": 14.262514,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2024,
+          "value": 15.680146,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2025,
+          "value": 17.351185,
+          "classification": "historical / estimate"
+        },
+        {
+          "year": 2026,
+          "value": 19.192617,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2027,
+          "value": 21.185319,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2028,
+          "value": 23.125324,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2029,
+          "value": 25.181096,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2030,
+          "value": 27.39944,
+          "classification": "estimate / projection"
+        },
+        {
+          "year": 2031,
+          "value": 29.772046,
+          "classification": "estimate / projection"
+        }
+      ]
     }
   ],
   "deepDive": {
@@ -3095,6 +4163,530 @@
       "value": 2670.302,
       "classification": "historical / estimate"
     },
+    "perCapitaSeries": [
+      {
+        "year": 1980,
+        "value": 270.85,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1981,
+        "value": 274.483,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1982,
+        "value": 277.705,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1983,
+        "value": 295.94,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1984,
+        "value": 280.633,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1985,
+        "value": 302.233,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1986,
+        "value": 314.154,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1987,
+        "value": 344.731,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1988,
+        "value": 355.933,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1989,
+        "value": 349.917,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1990,
+        "value": 371.086,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1991,
+        "value": 305.574,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1992,
+        "value": 319.184,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1993,
+        "value": 302.884,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1994,
+        "value": 347.734,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1995,
+        "value": 375.175,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1996,
+        "value": 401.052,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1997,
+        "value": 416.255,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1998,
+        "value": 413.657,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1999,
+        "value": 441.928,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2000,
+        "value": 442.751,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2001,
+        "value": 450.357,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2002,
+        "value": 469.149,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2003,
+        "value": 544.143,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2004,
+        "value": 624.258,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2005,
+        "value": 710.489,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2006,
+        "value": 801.669,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2007,
+        "value": 1021.887,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2008,
+        "value": 992.519,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2009,
+        "value": 1094.95,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2010,
+        "value": 1347.519,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2011,
+        "value": 1445.461,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2012,
+        "value": 1425.874,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2013,
+        "value": 1425.932,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2014,
+        "value": 1542.64,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2015,
+        "value": 1568.715,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2016,
+        "value": 1686.916,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2017,
+        "value": 1921.882,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2018,
+        "value": 1933.056,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2019,
+        "value": 2002.036,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2020,
+        "value": 1865.644,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2021,
+        "value": 2185.593,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2022,
+        "value": 2285.165,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2023,
+        "value": 2441.956,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2024,
+        "value": 2591.275,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2025,
+        "value": 2670.302,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2026,
+        "value": 2749.652,
+        "classification": "estimate / projection"
+      },
+      {
+        "year": 2027,
+        "value": 3036.062,
+        "classification": "estimate / projection"
+      },
+      {
+        "year": 2028,
+        "value": 3327.237,
+        "classification": "estimate / projection"
+      },
+      {
+        "year": 2029,
+        "value": 3661.919,
+        "classification": "estimate / projection"
+      },
+      {
+        "year": 2030,
+        "value": 4019.017,
+        "classification": "estimate / projection"
+      },
+      {
+        "year": 2031,
+        "value": 4389.097,
+        "classification": "estimate / projection"
+      }
+    ],
+    "pppPerCapitaSeries": [
+      {
+        "year": 1980,
+        "value": 525.4274681742494,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1981,
+        "value": 595.5257790973995,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1982,
+        "value": 639.206704576699,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1983,
+        "value": 696.1705807037,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1984,
+        "value": 731.4900774252629,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1985,
+        "value": 775.9992761861939,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1986,
+        "value": 810.5137281942689,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1987,
+        "value": 844.0583960855471,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1988,
+        "value": 936.6370990562995,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1989,
+        "value": 1008.4679733484662,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1990,
+        "value": 1079.933221899252,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1991,
+        "value": 1104.0644693285944,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1992,
+        "value": 1166.0310591304951,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1993,
+        "value": 1224.3933469056017,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1994,
+        "value": 1306.821081830265,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1995,
+        "value": 1406.673250185272,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1996,
+        "value": 1510.1005911804982,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1997,
+        "value": 1567.2274236526048,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1998,
+        "value": 1650.5893817095339,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 1999,
+        "value": 1787.6912784201243,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2000,
+        "value": 1863.0656121700442,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2001,
+        "value": 1959.8999670175515,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2002,
+        "value": 2028.9848313505706,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2003,
+        "value": 2193.303675771473,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2004,
+        "value": 2389.6676733535264,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2005,
+        "value": 2616.8410134814753,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2006,
+        "value": 2869.7509557909516,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2007,
+        "value": 3125.8688308326537,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2008,
+        "value": 3237.5079911685343,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2009,
+        "value": 3463.13517138899,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2010,
+        "value": 3748.169034832584,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2011,
+        "value": 3969.36689607647,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2012,
+        "value": 4205.703786193616,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2013,
+        "value": 4490.1950562414595,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2014,
+        "value": 4845.428954870426,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2015,
+        "value": 5218.8160071986995,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2016,
+        "value": 5635.826184917347,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2017,
+        "value": 6055.788952603058,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2018,
+        "value": 6601.588766577114,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2019,
+        "value": 7012.9368876600265,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2020,
+        "value": 6815.049519449248,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2021,
+        "value": 7855.846617801108,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2022,
+        "value": 8986.032929249963,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2023,
+        "value": 9917.82094192047,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2024,
+        "value": 10806.918268531566,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2025,
+        "value": 11852.98815948932,
+        "classification": "historical / estimate"
+      },
+      {
+        "year": 2026,
+        "value": 12997.617540013109,
+        "classification": "estimate / projection"
+      },
+      {
+        "year": 2027,
+        "value": 14226.308204172037,
+        "classification": "estimate / projection"
+      },
+      {
+        "year": 2028,
+        "value": 15402.169789391235,
+        "classification": "estimate / projection"
+      },
+      {
+        "year": 2029,
+        "value": 16638.49720963942,
+        "classification": "estimate / projection"
+      },
+      {
+        "year": 2030,
+        "value": 17965.21008289177,
+        "classification": "estimate / projection"
+      },
+      {
+        "year": 2031,
+        "value": 19376.022242865314,
+        "classification": "estimate / projection"
+      }
+    ],
     "currentAccount": {
       "year": 2025,
       "value": -0.7,
@@ -3103,19 +4695,19 @@
     "manufacturing": {
       "value": 13.4710550684648,
       "unit": "percent",
-      "period": 2025,
+      "period": "2025",
       "freshness": "Updated just now"
     },
     "investment": {
       "value": 31.6790977460161,
       "unit": "percent",
-      "period": 2025,
+      "period": "2025",
       "freshness": "Updated just now"
     },
     "exports": {
       "value": 22.2630410669804,
       "unit": "percent",
-      "period": 2025,
+      "period": "2025",
       "freshness": "Updated just now"
     }
   },
@@ -3135,13 +4727,13 @@
     {
       "name": "Government debt",
       "state": "red",
-      "detail": "IMF general government gross debt: 84.3%",
+      "detail": "IMF general government gross debt (2025): 84.3%",
       "freshness": "Updated just now"
     },
     {
       "name": "Inflation",
       "state": "green",
-      "detail": "IMF average consumer-price inflation: 2.0%",
+      "detail": "IMF average consumer-price inflation (2025): 2.0%",
       "freshness": "Updated just now"
     },
     {
@@ -3153,18 +4745,7 @@
   ],
   "news": [
     {
-      "publishedAt": "Sat, 14 Nov 2026 08:00:00 GMT",
-      "title": "economy of India - Britannica",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5SS2pBNG9wV0pOcy1CUHpzWng3WGZEc0h6RHVodi1UUE81NWhZZ2JmTWROR0IzZTBHQXZUdUJyMTlfVHlXMFBneW1VcjVfNnl2Wmlnb1FubWh6SkctX3c?oc=5",
-      "publisher": "Britannica",
-      "strategyId": "Unclassified",
-      "sentiment": "unclassified",
-      "confidence": "",
-      "summary": "",
-      "freshness": "News RSS · Sat, 14 Nov 2026 08:00:00 GMT"
-    },
-    {
-      "publishedAt": "Mon, 19 Oct 2026 07:00:00 GMT",
+      "publishedAt": "19 Oct 2026",
       "title": "Private capital–fueled economic growth might be knocking on India’s doors soon - Deloitte",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbVNEUF9teW9VSlNOTVBOOXNjbVkybkFnOTVDNkljbWpGTld4Z1BhS243VUhJcHJqMjh3UWJDRkQwYlhTam9fMzQwTTRuejFnMlJrUjNteUVmZE5LeUc4ODVPRHhFYVlQNGU4S3RwX1dKc01XTTB4VTR0STVNbVVMN0F5WndKRnNiSlpUcUlCV2pIY2ZiVUdBb09XMA?oc=5",
       "publisher": "Deloitte",
@@ -3172,10 +4753,10 @@
       "sentiment": "unclassified",
       "confidence": "",
       "summary": "",
-      "freshness": "News RSS · Mon, 19 Oct 2026 07:00:00 GMT"
+      "freshness": "News RSS · 19 Oct 2026"
     },
     {
-      "publishedAt": "Tue, 25 Aug 2026 07:00:00 GMT",
+      "publishedAt": "25 Aug 2026",
       "title": "RBI Bulletin - Reserve Bank of India",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeVRxOF9YZ19OZXF5bVJLN0xrbzMxTnlLUEZ4dUcyVVdoZUZrX2dWYnVxdnh0ZFZsZ21KUHRLT3dCXzVndUY1VFF0alR6RGllRjRmZmJQM21uXy1SZnlDSnZNd0VkcGNIYms1UWlEZldUVTlaSUV2RE50a0kwd3ZzemJfRUFtWUNG?oc=5",
       "publisher": "Reserve Bank of India",
@@ -3183,10 +4764,10 @@
       "sentiment": "unclassified",
       "confidence": "",
       "summary": "",
-      "freshness": "News RSS · Tue, 25 Aug 2026 07:00:00 GMT"
+      "freshness": "News RSS · 25 Aug 2026"
     },
     {
-      "publishedAt": "Fri, 30 Jan 2026 08:00:00 GMT",
+      "publishedAt": "30 Jan 2026",
       "title": "Economic Survey 2025-26 - www.pib.gov.in",
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9RNS1udk00TUloVkRKRlNleUthQWUzRXpUdHRwdUhlcVc0YmRGSTd3eHNucUFYdnNEaXRRZjY3NjlOUzc0OFlNRzFscHpSamZQVlFlUXkxclhfVzVETC1oc1ZVVjB3MF9xVjdpb2RvU0ZKYm5pd3JmUkxn?oc=5",
       "publisher": "www.pib.gov.in",
@@ -3194,10 +4775,10 @@
       "sentiment": "unclassified",
       "confidence": "",
       "summary": "",
-      "freshness": "News RSS · Fri, 30 Jan 2026 08:00:00 GMT"
+      "freshness": "News RSS · 30 Jan 2026"
     },
     {
-      "publishedAt": "Thu, 29 Oct 2026 07:00:00 GMT",
+      "publishedAt": "29 Oct 2026",
       "title": "Global Economics Intelligence executive summary (September 2026) - McKinsey & Company",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSmgzTkdja3YzVE1LaEtHbGFYak1oUU9Pei1CR1AwOW4wak5uY3hRQk0wb1o1SWhObGhxTUZDaEZqSUZ0TjdqUS1Ed3hwclZJRi1YV0RLQzZIY3paTzR3R2l0dkp5TkhLYVdXbm5NREhjc0lSazNjRmhJNlc4Y0Z5c2d0MWZ0WWNqNVhWRjFIRUdnWHJvaEYzdmp6NnV3cXd3bjdybm9EVTN4TEgwdUJsVA?oc=5",
       "publisher": "McKinsey & Company",
@@ -3205,10 +4786,10 @@
       "sentiment": "unclassified",
       "confidence": "",
       "summary": "",
-      "freshness": "News RSS · Thu, 29 Oct 2026 07:00:00 GMT"
+      "freshness": "News RSS · 29 Oct 2026"
     },
     {
-      "publishedAt": "Fri, 30 Jan 2026 08:24:25 GMT",
+      "publishedAt": "30 Jan 2026",
       "title": "Economic Survey 2025-26, Analysis and Key Findings - IBEF",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE53QUFEVlZfajZUaVMwU2RuVTV0emZINlBIWWtmdENwWUEyQXBMNFZBc2NCRllSNmRBMzV0WDA5UDRYaEI0VUphWmsxb2hGS2Nzb1pMM2plcGlmUGtDc3VaeEdn?oc=5",
       "publisher": "IBEF",
@@ -3216,10 +4797,10 @@
       "sentiment": "unclassified",
       "confidence": "",
       "summary": "",
-      "freshness": "News RSS · Fri, 30 Jan 2026 08:24:25 GMT"
+      "freshness": "News RSS · 30 Jan 2026"
     },
     {
-      "publishedAt": "Thu, 29 Jan 2026 08:00:00 GMT",
+      "publishedAt": "29 Jan 2026",
       "title": "INDIA’S GDP GROWTH FOR FY26 IS ESTIMATED AT 7.4 PER CENT DRIVEN BY THE DOUBLE ENGINE OF CONSUMPTION AND INVESTMENT - www.pib.gov.in",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5CWTd0TUk4dE10bk1WUHVBcFc3eXZPVkJwQ2dCRndwSzQwUl8xQ2RqdDJwUlE4N1NaSnA5X1NnLWdCd1RDZFNBWGxzLU5aRFRHTWNvejBNVnhzZndDU0hfSFpfamhETEhB?oc=5",
       "publisher": "www.pib.gov.in",
@@ -3227,10 +4808,10 @@
       "sentiment": "unclassified",
       "confidence": "",
       "summary": "",
-      "freshness": "News RSS · Thu, 29 Jan 2026 08:00:00 GMT"
+      "freshness": "News RSS · 29 Jan 2026"
     },
     {
-      "publishedAt": "Fri, 04 Sep 2026 07:00:00 GMT",
+      "publishedAt": "4 Sep 2026",
       "title": "Southeast Asia quarterly economic review: Tech tailwinds drive a two-speed region - McKinsey & Company",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPa2VLay02a3U1UnFDWmZpbUw3TGlYSU5ydGtDWW5kT0NrbVVDVzU0MXVENG9fYlNXaVFMT1lfYjdFbnpZRkhqcS0tTkNkbUFGazktNnpIa0pZa0hxaUZnOTZpWHE5VEJhVnRic0xZU2Rvd2FrS1RoQXd0ckl0U0xieUZyeHlmRWZCcjNsTTNsazZ2QzlRUnNLcmYteC1oMUE?oc=5",
       "publisher": "McKinsey & Company",
@@ -3238,10 +4819,10 @@
       "sentiment": "unclassified",
       "confidence": "",
       "summary": "",
-      "freshness": "News RSS · Fri, 04 Sep 2026 07:00:00 GMT"
+      "freshness": "News RSS · 4 Sep 2026"
     },
     {
-      "publishedAt": "Thu, 29 Jan 2026 08:00:00 GMT",
+      "publishedAt": "29 Jan 2026",
       "title": "Economic Survey 2026 Highlights: 7.4% GDP Growth, Inflation Trends & UPSC Insights - INSIGHTS IAS",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQR0ZBSzB4aWx5U1QzM044d2dZZzFYempIb2cteVhGaHJ6YWlaTE5RY2VlNXE2UUJPbXpueVlGMWpZUG5lWktOaVRsb01vZmEwTExtT01RMmdoblZRNHdtU0FQSVp0TEpIM3lnSWpWUjZvelNWRDRxTnNsQV9nWVJjdEJPU3kwSUxTUXJRb3JLcw?oc=5",
       "publisher": "INSIGHTS IAS",
@@ -3249,10 +4830,10 @@
       "sentiment": "unclassified",
       "confidence": "",
       "summary": "",
-      "freshness": "News RSS · Thu, 29 Jan 2026 08:00:00 GMT"
+      "freshness": "News RSS · 29 Jan 2026"
     },
     {
-      "publishedAt": "Thu, 22 Jan 2026 08:00:00 GMT",
+      "publishedAt": "22 Jan 2026",
       "title": "Vietnam's Economy in 2025: GDP, FDI, and Trade - Vietnam Briefing",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdFQ2ZlJuaXJ2ZEFpaE9vQjdVY1pJUGg1UEUtRGV1eEVwelRxQUoxY0ZBMmY1aW1uaEliSWdHRDZEZ0d0RmJEV0VsalVNNXl2RDUzTlNxZG1fQmVQZHhZMURGSHFWR3NyYi14X1k3TXBIdEFwbmFHRXZpdXltZVhlNDZWY0FlUUtaUnc?oc=5",
       "publisher": "Vietnam Briefing",
@@ -3260,10 +4841,10 @@
       "sentiment": "unclassified",
       "confidence": "",
       "summary": "",
-      "freshness": "News RSS · Thu, 22 Jan 2026 08:00:00 GMT"
+      "freshness": "News RSS · 22 Jan 2026"
     },
     {
-      "publishedAt": "Wed, 08 Apr 2026 07:00:00 GMT",
+      "publishedAt": "8 Apr 2026",
       "title": "The Fed - India and the Global Economy - Federal Reserve (.gov)",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOb0VMUUhBOFYyVmlaTDhuVGlRdG9zMUZUQkdpNXVmZE84UXNrcHRET1lYSVF0TGdnenctM0FQUzJCcWFGMXBFVVprSGtlUVh0b2toZUVFbDB6cTZSX0lRYS02MVlmdDc1Y3A2cE9jaExwUG9Nb3psTWNEVkw2SGxTandiRUxJdDU3WkZTWFhxOGhCN09nWm1zZ2lPYktCeTQ?oc=5",
       "publisher": "Federal Reserve (.gov)",
@@ -3271,10 +4852,10 @@
       "sentiment": "unclassified",
       "confidence": "",
       "summary": "",
-      "freshness": "News RSS · Wed, 08 Apr 2026 07:00:00 GMT"
+      "freshness": "News RSS · 8 Apr 2026"
     },
     {
-      "publishedAt": "Mon, 29 Dec 2025 08:00:00 GMT",
+      "publishedAt": "29 Dec 2025",
       "title": "Press Note Details: Press Information Bureau - PIB",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaFBjUHNNT3FFLXFGam1uaHM0RkdyVlFfb2xZa0VmbmRMZkR2bVdNTDJrbWxkYTBMQzBfMmpuY2NBdl9PdmZTV000M1hBSUVLa0d4WXJGRU1ibGxXZXQ4Z1hJakp1a2E5aXAtdjgtSUEzVWtNTTg2UXZQWW5veFg3bEJmVFN5d3BzVFE?oc=5",
       "publisher": "PIB",
@@ -3282,10 +4863,10 @@
       "sentiment": "unclassified",
       "confidence": "",
       "summary": "",
-      "freshness": "News RSS · Mon, 29 Dec 2025 08:00:00 GMT"
+      "freshness": "News RSS · 29 Dec 2025"
     },
     {
-      "publishedAt": "Wed, 17 Jun 2026 07:00:00 GMT",
+      "publishedAt": "17 Jun 2026",
       "title": "Midyear Global Economic Outlook: risk and opportunity in a supply shock world - EY",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1BWDZOV3dxSzh5TVpZanFlWklUY3ZKZjRSRzIzdURVb0V4Z3NnbzZjdk1iX2N6MGhLUkh1XzQyZUhJNnFlRE1LaEpaNUFvOFFFVld4ZnZ4M2syTTlkSFpucGVURFZNYWtfVlF3T29BZkJ2VnVq?oc=5",
       "publisher": "EY",
@@ -3293,10 +4874,10 @@
       "sentiment": "unclassified",
       "confidence": "",
       "summary": "",
-      "freshness": "News RSS · Wed, 17 Jun 2026 07:00:00 GMT"
+      "freshness": "News RSS · 17 Jun 2026"
     },
     {
-      "publishedAt": "Mon, 14 Jul 2025 07:00:00 GMT",
+      "publishedAt": "14 Jul 2025",
       "title": "India’s Path To Becoming One of the World’s Largest Economies - Econofact",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTkgyLXdZN0pwV2NoTXlEc1BYcURIR1AzU01fWGZsTXVMMFJIZmJSU3JGRnFPSEZLb2swTU1jY28wdUstb19OUDF4TmpTaUtHbjhnNExuS2h3dko5b0NPcXV1Xy1mdFFvamNxekJUdlFMelhQN1RNSllYMkI4T1hzb3VvWnJvWFc4?oc=5",
       "publisher": "Econofact",
@@ -3304,10 +4885,10 @@
       "sentiment": "unclassified",
       "confidence": "",
       "summary": "",
-      "freshness": "News RSS · Mon, 14 Jul 2025 07:00:00 GMT"
+      "freshness": "News RSS · 14 Jul 2025"
     },
     {
-      "publishedAt": "Tue, 10 Nov 2026 08:00:00 GMT",
+      "publishedAt": "10 Nov 2026",
       "title": "What’s happening this week in economics? - Deloitte",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcV9VYnV0R0RPcWN0d2g1SHJIVlNmaVA1TV9nXzRKdVlFcWtSMjQ1T1B0djE4dDNRanZvSVFGX0ZBNUd6cnZkVnAtenFuMnFzdU9zYzg5cFdkTVRxU1F5YVVXVFhVWGdhd2RsTDBkNS1Xcm9ub1FnMFp5NnB3WVBYa3JJa1FVbG5IT0ZRRHphTUhtNThkenVJS1ZrdWNDdw?oc=5",
       "publisher": "Deloitte",
@@ -3315,10 +4896,21 @@
       "sentiment": "unclassified",
       "confidence": "",
       "summary": "",
-      "freshness": "News RSS · Tue, 10 Nov 2026 08:00:00 GMT"
+      "freshness": "News RSS · 10 Nov 2026"
+    },
+    {
+      "publishedAt": "6 Jul 2025",
+      "title": "PIB Backgrounder - pib.gov.in",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSHRpNjZKY1hVMnVMWHJHOHNyTU11RTBtVXNPcGJLODhCMXJMRXdvZEZGMW94ZE81UGEyZ0NaWk9PUzhTM2tzcXFGbzgyQlpZeEJFdE00ekNUZ0NQNENFM0MtaEtfclZINldlal9FYk1vNnAwYkNsay1PYzdLY0liaUk4U0NLYjEzc1Fz?oc=5",
+      "publisher": "pib.gov.in",
+      "strategyId": "Unclassified",
+      "sentiment": "unclassified",
+      "confidence": "",
+      "summary": "",
+      "freshness": "News RSS · 6 Jul 2025"
     }
   ],
-  "weeklyBrief": "**Weekly Economic Brief**\n\n**What Moved:** \nReal GDP growth registers at 7.8% with inflation at 2.0%. Electronics production reached USD 149 billion, while formally skilled workforce stands at 4.2%. States with $1T GSDP remain at zero. \n\n**Why It Matters:** \nThe economy tracks behind its 2047 target trajectory, with current actual CAGR (2020–2025) at 8.36% against a required 11.97% CAGR, projecting an ETA year of 2056 based on current trends. \n\n**Highest-Priority Strategies:**\n1. Formally skilled workforce\n2. Electronics production\n3. States with $1T GSDP\n\n*(Note: Causal links between external sentiment headlines and dashboard metrics are unavailable.)*",
+  "weeklyBrief": "What moved: Nominal GDP stands at $3.91T (2025) with real growth at 7.8% and inflation at 2% Latest monthly prints include UPI value (31.53 lakh crore, October 2026) and Total market cap (5.45 USD trillion, November 2026).\n\nWhy it matters: Current USD CAGR (8.36%, 2020–2025) trails the 11.97% pace needed for $47T by 2047, implying an ETA of 2056 (Mission Score: 54/100).\n\nTop 3 priorities: 1. Formally skilled workforce; 2. Electronics production; 3. States with $1T GSDP.",
   "methodology": [
     {
       "name": "GDP and macroeconomic series",
@@ -3337,7 +4929,7 @@
     },
     {
       "name": "Monthly pulse and news",
-      "source": "Google News RSS, optional Gemini extraction/tagging",
+      "source": "Google News RSS (official sources prioritised), Gemini structured JSON extraction",
       "frequency": "Daily refresh; auto-extracted values require verification"
     },
     {
@@ -3345,5 +4937,48 @@
       "source": "This is an independent educational dashboard, not an official Government of India dashboard or investment advice.",
       "frequency": "Always"
     }
-  ]
+  ],
+  "overtakes": [
+    {
+      "code": "USA",
+      "country": "United States",
+      "latestGapT": 26.952336,
+      "alreadyAhead": false,
+      "imfProjectedYear": null,
+      "extrapolatedYear": 2069
+    },
+    {
+      "code": "CHN",
+      "country": "China",
+      "latestGapT": 15.717227,
+      "alreadyAhead": false,
+      "imfProjectedYear": null,
+      "extrapolatedYear": 2082
+    },
+    {
+      "code": "JPN",
+      "country": "Japan",
+      "latestGapT": 0.5441300000000001,
+      "alreadyAhead": false,
+      "imfProjectedYear": 2027,
+      "extrapolatedYear": 2027
+    },
+    {
+      "code": "DEU",
+      "country": "Germany",
+      "latestGapT": 1.20663,
+      "alreadyAhead": false,
+      "imfProjectedYear": 2031,
+      "extrapolatedYear": 2031
+    },
+    {
+      "code": "GBR",
+      "country": "United Kingdom",
+      "latestGapT": 0.10326000000000021,
+      "alreadyAhead": true,
+      "imfProjectedYear": 2022,
+      "extrapolatedYear": 2022
+    }
+  ],
+  "weekOnWeek": null
 }
