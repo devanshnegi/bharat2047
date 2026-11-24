@@ -1183,7 +1183,7 @@
           <div class="bom-grid">
             <article class="card bom-card">
               <div class="bom-card-top">
-                <div class="bom-card-label">🇮🇳 India&#39;s output so far this year <span class="bom-tag">Estimate</span></div>
+                <div class="bom-card-label">🇮🇳 India&#39;s GDP this year (IMF) <span class="bom-tag">Estimate</span></div>
                 <button type="button" class="bom-share-btn" data-bom-share="gdpNow" aria-label="Share India nominal GDP right now">↗</button>
               </div>
               <div id="bomGdpNow" class="bom-val">—</div>
@@ -1192,7 +1192,7 @@
 
             <article class="card bom-card">
               <div class="bom-card-top">
-                <div class="bom-card-label">PPP output so far this year <span class="bom-tag">Estimate</span></div>
+                <div class="bom-card-label">India&#39;s PPP GDP this year (IMF) <span class="bom-tag">Estimate</span></div>
                 <button type="button" class="bom-share-btn" data-bom-share="pppNow" aria-label="Share PPP GDP right now">↗</button>
               </div>
               <div id="bomPppNow" class="bom-val">—</div>
@@ -3510,9 +3510,9 @@
             let gapUsd = null;
             let gapRatePerSecUsd = null;
             if (nom) {
-              if (el('bomGdpNow')) el('bomGdpNow').textContent = `$${usdIntFmt.format(Math.round(nom.ytdUsd))}`;
+              if (el('bomGdpNow')) el('bomGdpNow').textContent = `$${usdIntFmt.format(Math.round(nom.valUsd))}`;
               if (el('bomGdpNowSub')) {
-                el('bomGdpNowSub').textContent = `+$${usdIntFmt.format(Math.round(nom.ratePerSecUsd))} every second · IMF ${ist.year} GDP: $${nom.valT.toFixed(2)}T (${(nom.valT / targetT * 100).toFixed(2)}% of $${targetT}T)`;
+                el('bomGdpNowSub').textContent = `Produced so far in ${ist.year}: $${usdIntFmt.format(Math.round(nom.ytdUsd))} · +$${usdIntFmt.format(Math.round(nom.ratePerSecUsd))}/sec · ${(nom.valT / targetT * 100).toFixed(2)}% of $${targetT}T`;
               }
 
               // Counter 3: Added today (IST)
@@ -3573,8 +3573,8 @@
 
             // Counter 2: PPP GDP right now
             if (ppp) {
-              if (el('bomPppNow')) el('bomPppNow').textContent = `$${usdIntFmt.format(Math.round(ppp.ytdUsd))}`;
-              if (el('bomPppNowSub')) el('bomPppNowSub').textContent = `+$${usdIntFmt.format(Math.round(ppp.ratePerSecUsd))} every second · IMF ${ist.year} PPP: $${ppp.valT.toFixed(2)}T`;
+              if (el('bomPppNow')) el('bomPppNow').textContent = `$${usdIntFmt.format(Math.round(ppp.valUsd))}`;
+              if (el('bomPppNowSub')) el('bomPppNowSub').textContent = `Produced so far in ${ist.year}: $${usdIntFmt.format(Math.round(ppp.ytdUsd))} · +$${usdIntFmt.format(Math.round(ppp.ratePerSecUsd))}/sec`;
             } else if (el('bomPppNow')) {
               el('bomPppNow').textContent = '—';
             }
@@ -3724,8 +3724,8 @@
               upiTodayCr,
               marketCapDisplay: lastSnapshot.marketCapDisplay || '—',
               shareTexts: {
-                gdpNow: `🇮🇳 India's GDP ${new Date().getFullYear()} (IMF): ~$${nom ? nom.valT.toFixed(2) : '—'}T · output so far this year: ${el('bomGdpNow')?.textContent || '—'} · ${el('bomGdpNowSub')?.textContent || ''}. Track live: ${SITE_URL} #Bharat2047`,
-                pppNow: `🇮🇳 India's PPP GDP ${new Date().getFullYear()} (IMF): ~$${ppp ? ppp.valT.toFixed(2) : '—'}T · so far this year: ${el('bomPppNow')?.textContent || '—'} · ${el('bomPppNowSub')?.textContent || ''}. Track live: ${SITE_URL} #Bharat2047`,
+                gdpNow: `🇮🇳 India's GDP ${new Date().getFullYear()} (IMF): ~$${nom ? nom.valT.toFixed(2) : '—'}T · produced so far this year: $${nom ? (nom.ytdUsd / 1e12).toFixed(2) : '—'}T · ${el('bomGdpNowSub')?.textContent || ''}. Track live: ${SITE_URL} #Bharat2047`,
+                pppNow: `🇮🇳 India's PPP GDP ${new Date().getFullYear()} (IMF): ~$${ppp ? ppp.valT.toFixed(2) : '—'}T · so far this year: $${ppp ? (ppp.ytdUsd / 1e12).toFixed(2) : '—'}T · ${el('bomPppNowSub')?.textContent || ''}. Track live: ${SITE_URL} #Bharat2047`,
                 gdpToday: `India's economic output today so far (IST, estimate): ${el('bomGdpToday')?.textContent || '—'} 🇮🇳 Track live: ${SITE_URL} #Bharat2047`,
                 gdpGap: `Gap to India's $47T path right now: ${el('bomGdpGap')?.textContent || '—'} (${el('bomGdpGapSub')?.textContent || ''}). ${SITE_URL} #Bharat2047`,
                 upiToday: `💳 UPI payments in India today: ${el('bomUpiToday')?.textContent || '—'} (${el('bomUpiRate')?.textContent || ''}) ${SITE_URL} #Bharat2047`,
