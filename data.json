@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-24T13:52:47.124Z",
+  "generatedAt": "2026-11-24T14:09:30.793Z",
   "appName": "BHARAT 2047 · Mission Control",
   "sourceStatus": {
-    "updatedAt": "2026-11-24T13:52:47.126Z",
+    "updatedAt": "2026-11-24T14:09:30.793Z",
     "staleCount": 0,
     "dataCount": 53
   },
@@ -2184,7 +2184,7 @@
       "symbol": "CURRENCY:USDINR",
       "company": "USD / INR",
       "kind": "currency",
-      "price": 92.9067,
+      "price": 92.90855,
       "changePct": null,
       "marketCap": null,
       "freshness": "Live · GOOGLEFINANCE",
@@ -2226,7 +2226,7 @@
       "kind": "company",
       "price": 817.8,
       "changePct": -3.33,
-      "marketCap": 12865740668537.188,
+      "marketCap": 12865996856952.414,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2246,7 +2246,7 @@
       "kind": "company",
       "price": 1585.5,
       "changePct": -3.32,
-      "marketCap": 11734793594236.207,
+      "marketCap": 11735027262724.588,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2266,7 +2266,7 @@
       "kind": "company",
       "price": 1103.4,
       "changePct": 0.49,
-      "marketCap": 4454812420537.733,
+      "marketCap": 4454901126766.435,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -4938,7 +4938,7 @@
       "freshness": "News RSS · 6 Jul 2025"
     }
   ],
-  "weeklyBrief": "**Weekly Economic Brief**\n\n**What Moved:**\nRecent metrics",
+  "weeklyBrief": "What moved: The current economy registers at 3.91 for the year 2025, operating with an actual compound annual growth rate of 8.36 percent over the 2020–2025 period, alongside a mission score of 54 out of 100.\n\nWhy it matters: Reaching the 47 trillion dollar goal by 2047 requires an acceleration from the current trajectory, as the required compound annual growth rate stands at 11.97 percent, placing the estimated arrival year at 2056 with a status of behind.\n\nTop priorities: The three mandatory strategic focus areas are Formally skilled workforce, Electronics production, and States with 1T GSDP.",
   "methodology": [
     {
       "name": "GDP and macroeconomic series",
