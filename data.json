@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-24T21:38:10.201Z",
+  "generatedAt": "2026-11-25T05:51:18.615Z",
   "appName": "BHARAT 2047 · Mission Control",
   "sourceStatus": {
-    "updatedAt": "2026-11-24T21:38:10.201Z",
+    "updatedAt": "2026-11-25T05:51:18.619Z",
     "staleCount": 0,
     "dataCount": 53
   },
@@ -1940,22 +1940,37 @@
           "value": 2.31,
           "yoy": "+22.9%",
           "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQODNiZU51MjhpS1FISUp0V3MwaWFnOW42UkJSeHdwM1pEamxPQU1XUm05ZWRSWUZaakVGX1liaVFlMnh2OHN3eThKOUkxWEFCaG4ySl9GUXFsY2NCdGhaVUU1TkhOcDFsdEx1WGptVlRBMExHZXpHekFtSlFsQm14VUtEYkhIeG1YcDhHMTg3NFNSSjJOY2tmQ29zRjdYS1BSRDVpTDkxYm1NbG5SRWRfMUJxSTRDNjNuN3pJajlmbk5TU3o4emZBZWJBdEp3M2RuVEdVSG0zOVZKOTlU0gHiAUFVX3lxTE1NbjYwY09heVd2ejdYaG1GdEpnaFpxZV92Rk1ZakpyLTF6WDhZWDRUZzFWaWhQMTVkcDE5bHlWdTRxeVhDZng0TlpFU0RhdXRHNmVpMmtqQjFROEE4RzBNYk1XTnpISVluendoUXk3c01meDdid3VwX0NoM2FNaDJETmZHQXg4TVRDRWVpbDNnNkZEU1BJQzAtcllxdlZZclFXS1JMcEwwOHFTcnpXdFcxTDZvRDdLUUdlak4ya2Z4U1kyaWhBWDJyZ20xbDYyeGNfZlVXRmY1b1BUZzVuSEJnZ0E?oc=5"
+        },
+        {
+          "date": "2026-11-25T01:43:50.621Z",
+          "period": "Oct 2026",
+          "value": 2.31,
+          "yoy": "+22.9%",
+          "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQODNiZU51MjhpS1FISUp0V3MwaWFnOW42UkJSeHdwM1pEamxPQU1XUm05ZWRSWUZaakVGX1liaVFlMnh2OHN3eThKOUkxWEFCaG4ySl9GUXFsY2NCdGhaVUU1TkhOcDFsdEx1WGptVlRBMExHZXpHekFtSlFsQm14VUtEYkhIeG1YcDhHMTg3NFNSSjJOY2tmQ29zRjdYS1BSRDVpTDkxYm1NbG5SRWRfMUJxSTRDNjNuN3pJajlmbk5TU3o4emZBZWJBdEp3M2RuVEdVSG0zOVZKOTlU0gHiAUFVX3lxTE1NbjYwY09heVd2ejdYaG1GdEpnaFpxZV92Rk1ZakpyLTF6WDhZWDRUZzFWaWhQMTVkcDE5bHlWdTRxeVhDZng0TlpFU0RhdXRHNmVpMmtqQjFROEE4RzBNYk1XTnpISVluendoUXk3c01meDdid3VwX0NoM2FNaDJETmZHQXg4TVRDRWVpbDNnNkZEU1BJQzAtcllxdlZZclFXS1JMcEwwOHFTcnpXdFcxTDZvRDdLUUdlak4ya2Z4U1kyaWhBWDJyZ20xbDYyeGNfZlVXRmY1b1BUZzVuSEJnZ0E?oc=5"
         }
       ],
       "note": "Gemini (gemini-flash-lite-latest) extracted from news RSS items; confidence: high. Verify source link."
     },
     {
       "metric": "Merchandise exports",
-      "value": "",
-      "unit": "",
-      "period": "",
-      "yoy": "",
-      "yoyValue": null,
-      "sourceUrl": "",
-      "freshness": "Unavailable · verify manually",
+      "value": 89.99,
+      "unit": "USD bn",
+      "period": "Oct 2026",
+      "yoy": "+29.9%",
+      "yoyValue": 29.9,
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxORlQ4eEFNUWktZ1RzLUYyY2RiXzVpT2hkZ1ZRNjhzVGk1Tl91c1Z3Y3ZHekxDZWJLSU9fcW56TTNTNVNBWGpCS2V0VUxJVXFXM0hLQ3dkUlgyLTdVVUYyWnZqZmp1SHlXdlBPTWlCUk9CZkRsX2NjaXZlTnZEaFlvNnRIWXlUblZKYUxSdE1iczQ3bGtzbkNzQ3p3SkM1S3Z1Z19XZWh6T0RQMWxlNTYyb25tU2d6dGtOX1I0Q1RuNzZBdGxJZGlTTzlYcTU4RmtBbXI5eGpUT1VPTHBOS0gtVjZoRjdQcGo3TTNvMXIxUWhuc0t2azl6RklSRFjSAYICQVVfeXFMTlJfRUlLYUtraVVyN1JoWnM2dUFYbG0yQURaVDBGdTN2eml2Q1JWNUtfSWEzNWpYVUJYTnY1YTh6RzVBOGk1VExVLUJqOU41Yjg4ZHl6UE84X0N3c1NMQ1lJWDJNZzBOOE85MlYwZFFIOVllcTFQcEo3N05yamx1Smd5dnctY3RGQnE5TjZRRnBIQllKOWphd3lmd3c5dDlyNTUwcXBodVpFYkUwZmtfbElJb01zcXRNdHVQcW9taDk3MjhNUGpGNGFGV0RWcHJNN3pWQVFhRV9mdHJGQklRVy1ETFRENUk3T2d0RWx4WDRkdV9fOW9NMVBUQTdQWUZzYmRB?oc=5",
+      "freshness": "Auto-extracted · verify",
       "mode": "auto-extracted · verify",
-      "history": [],
-      "note": "AI extraction did not return a validated figure (missing numeric value)."
+      "history": [
+        {
+          "date": "2026-11-25T01:43:50.621Z",
+          "period": "Oct 2026",
+          "value": 89.99,
+          "yoy": "+29.9%",
+          "source_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxORlQ4eEFNUWktZ1RzLUYyY2RiXzVpT2hkZ1ZRNjhzVGk1Tl91c1Z3Y3ZHekxDZWJLSU9fcW56TTNTNVNBWGpCS2V0VUxJVXFXM0hLQ3dkUlgyLTdVVUYyWnZqZmp1SHlXdlBPTWlCUk9CZkRsX2NjaXZlTnZEaFlvNnRIWXlUblZKYUxSdE1iczQ3bGtzbkNzQ3p3SkM1S3Z1Z19XZWh6T0RQMWxlNTYyb25tU2d6dGtOX1I0Q1RuNzZBdGxJZGlTTzlYcTU4RmtBbXI5eGpUT1VPTHBOS0gtVjZoRjdQcGo3TTNvMXIxUWhuc0t2azl6RklSRFjSAYICQVVfeXFMTlJfRUlLYUtraVVyN1JoWnM2dUFYbG0yQURaVDBGdTN2eml2Q1JWNUtfSWEzNWpYVUJYTnY1YTh6RzVBOGk1VExVLUJqOU41Yjg4ZHl6UE84X0N3c1NMQ1lJWDJNZzBOOE85MlYwZFFIOVllcTFQcEo3N05yamx1Smd5dnctY3RGQnE5TjZRRnBIQllKOWphd3lmd3c5dDlyNTUwcXBodVpFYkUwZmtfbElJb01zcXRNdHVQcW9taDk3MjhNUGpGNGFGV0RWcHJNN3pWQVFhRV9mdHJGQklRVy1ETFRENUk3T2d0RWx4WDRkdV9fOW9NMVBUQTdQWUZzYmRB?oc=5"
+        }
+      ],
+      "note": "Gemini (gemini-flash-lite-latest) extracted from news RSS items; confidence: high. Verify source link."
     },
     {
       "metric": "IIP",
@@ -2043,12 +2058,12 @@
     },
     {
       "metric": "Manufacturing PMI",
-      "value": 56.3,
+      "value": 56,
       "unit": "index",
       "period": "Nov 2026",
       "yoy": "",
       "yoyValue": null,
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQcTFaSnFPdHNIeDBRTi1neWVnaVVMNld3OG5YQTBBYWVOZUkteHZrcGhfYzFDNklIcWNBcDZlSTM5Z2sxNUZfZnZaRDk1Vkc1MExhRjc1NlRTZzc3WWFJUUF3ZGNIdndxaS1uU1UxNXFHUFIzZEM4MVJMa0xqV0NnTEIza0R0Umpua1JZVHRtTnNLNkNkVDUyMG50YzFTQ0ZuQk10OEtpQ2Y4SjdjTjV0VFdUOExrLUpZYjlsVWREejdwNi1XWUxHTXZtNC0xTk5BS3Vpano2bmJTdkN0Mm5mWmFPNHBiR0HSAfQBQVVfeXFMTVhVZFJlcFZ1eXhYeERXR0g5cGtUb0tBX3QtLU9ONS1oOWVTLUd3T0tFVWpTbG1uSkIxY1ZaZzdKanVTV09QdTZUalFRSGIzYm9rc2dfRW9BNW9vQkZxOHdDY3R6N2VLZzc1aGFnR0tHajlyZVN2SEwwRGxiMWs0WHJnNEp5aGpnak5QYXJLSm9RNDdoeFNlWk4tNjdVVzMwSG9hQlNnSXY1Z0pQZUpsNjF1b3UxVTRrTzRpc3I2LTVRbUttLXZqMWx4aGd6cWt2bGlIME96VmlUc3VScmY3WDRuRC02S0lHc19ickN3Qk5XTi1BOA?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNSWptdC1pLXBhdWFCZTZMV0ZNN1hxNkpzcWZaV1JKMjI3dE41Q1pxSGMwcDl6d3FUaWRKai1jTVIweVNEUGNqbklWVmJ6bWltbVhPbER2OVpEYllVc01WY3F0SGZ1b3BSTGpuRUYwQ01zaU5GQmRhc2pQUFJuVEFob1Rzc1pBS042Yl9Qekp0Tmw3SDBVdEhaUGlscDNVb01EZEVIaEwzMlQwMlZ2RGk1Vi1jckNoV2FFZVNEcS1JcllyQUF2c2FMUmVpTFM5U2w1Q21YUTlzVUbSAd8BQVVfeXFMT2Fkbll6eTluTFg4NkozbDlja0ptdTBuVVRHRm8wQWItX2hHSnJxQlVfR2JkalBGcmlLRVNvdVh6c3drelZmS09ScDJWY3VQcnVEQnk5Umx3MnpfQnVJWWZiVDJMU0JIaGVsZ3JFMFZubmFvVU00U0VYMlRZdENLTi1WMFNiOHFjaWlpcUFXUmdvaU44Y19LUzVnUlV5ZU9ZUFVlbS12eU1GMnRfRnNwWXY5VnJmaHZKUWtKYkZRU1hNaVlnRlBtcjgxcG9ENmZHNUhlSHhaM09rUklSalQyUQ?oc=5",
       "freshness": "Auto-extracted · verify",
       "mode": "auto-extracted · verify",
       "history": [
@@ -2064,18 +2079,25 @@
           "value": 56.3,
           "yoy": null,
           "source_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQcTFaSnFPdHNIeDBRTi1neWVnaVVMNld3OG5YQTBBYWVOZUkteHZrcGhfYzFDNklIcWNBcDZlSTM5Z2sxNUZfZnZaRDk1Vkc1MExhRjc1NlRTZzc3WWFJUUF3ZGNIdndxaS1uU1UxNXFHUFIzZEM4MVJMa0xqV0NnTEIza0R0Umpua1JZVHRtTnNLNkNkVDUyMG50YzFTQ0ZuQk10OEtpQ2Y4SjdjTjV0VFdUOExrLUpZYjlsVWREejdwNi1XWUxHTXZtNC0xTk5BS3Vpano2bmJTdkN0Mm5mWmFPNHBiR0HSAfQBQVVfeXFMTVhVZFJlcFZ1eXhYeERXR0g5cGtUb0tBX3QtLU9ONS1oOWVTLUd3T0tFVWpTbG1uSkIxY1ZaZzdKanVTV09QdTZUalFRSGIzYm9rc2dfRW9BNW9vQkZxOHdDY3R6N2VLZzc1aGFnR0tHajlyZVN2SEwwRGxiMWs0WHJnNEp5aGpnak5QYXJLSm9RNDdoeFNlWk4tNjdVVzMwSG9hQlNnSXY1Z0pQZUpsNjF1b3UxVTRrTzRpc3I2LTVRbUttLXZqMWx4aGd6cWt2bGlIME96VmlUc3VScmY3WDRuRC02S0lHc19ickN3Qk5XTi1BOA?oc=5"
+        },
+        {
+          "date": "2026-11-25T01:43:50.621Z",
+          "period": "Nov 2026",
+          "value": 56,
+          "yoy": null,
+          "source_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNSWptdC1pLXBhdWFCZTZMV0ZNN1hxNkpzcWZaV1JKMjI3dE41Q1pxSGMwcDl6d3FUaWRKai1jTVIweVNEUGNqbklWVmJ6bWltbVhPbER2OVpEYllVc01WY3F0SGZ1b3BSTGpuRUYwQ01zaU5GQmRhc2pQUFJuVEFob1Rzc1pBS042Yl9Qekp0Tmw3SDBVdEhaUGlscDNVb01EZEVIaEwzMlQwMlZ2RGk1Vi1jckNoV2FFZVNEcS1JcllyQUF2c2FMUmVpTFM5U2w1Q21YUTlzVUbSAd8BQVVfeXFMT2Fkbll6eTluTFg4NkozbDlja0ptdTBuVVRHRm8wQWItX2hHSnJxQlVfR2JkalBGcmlLRVNvdVh6c3drelZmS09ScDJWY3VQcnVEQnk5Umx3MnpfQnVJWWZiVDJMU0JIaGVsZ3JFMFZubmFvVU00U0VYMlRZdENLTi1WMFNiOHFjaWlpcUFXUmdvaU44Y19LUzVnUlV5ZU9ZUFVlbS12eU1GMnRfRnNwWXY5VnJmaHZKUWtKYkZRU1hNaVlnRlBtcjgxcG9ENmZHNUhlSHhaM09rUklSalQyUQ?oc=5"
         }
       ],
       "note": "Gemini (gemini-flash-lite-latest) extracted from news RSS items; confidence: high. Verify source link."
     },
     {
       "metric": "Forex reserves",
-      "value": 725.727,
+      "value": 705.34,
       "unit": "billion USD",
       "period": "Nov 2026",
       "yoy": "",
       "yoyValue": null,
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVnZIWEVmaXZCbzF3elowTTJwM1NfTkhMdjFyRTdNZWRpQ25rLWNwZEc3V1JxRFBjck9pSU5ka0R5Y0FTWFlDQmxpWFF4ZW1LU284a3RNanA1QzJjQlJqYUtNWVFUNlU5NDMyUlRza2xZdWVZUTBFZUhkemlFYjVTcGp3X1pWNzVLeEFVY1pJVjBGOHZ5UFNyXzRjTlZJdnYtWjNFNmFUUQ?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbEJINXd3ZmhDcF9IQXBZMmVCNFFGcHFGM2NZcW9nWkpDZHdlMVBzYXlfSWdJQ3J4eHJfYi1NNkFYOGduRDVrTk5TYXlXSW1iUlJKM0lxQ2J3WklabUVFRGJxSnpiV1N5ODRuMTNDdXA2LWRpc3NVaS00ajd5YlRodHByMW1mZnRQNDBZOEVadUo4WU56NGhtR3p6eVhwTG53bS1hZmVmcjZyQQ?oc=5",
       "freshness": "Auto-extracted · verify",
       "mode": "auto-extracted · verify",
       "history": [
@@ -2103,6 +2125,13 @@
           "value": 725.727,
           "yoy": null,
           "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVnZIWEVmaXZCbzF3elowTTJwM1NfTkhMdjFyRTdNZWRpQ25rLWNwZEc3V1JxRFBjck9pSU5ka0R5Y0FTWFlDQmxpWFF4ZW1LU284a3RNanA1QzJjQlJqYUtNWVFUNlU5NDMyUlRza2xZdWVZUTBFZUhkemlFYjVTcGp3X1pWNzVLeEFVY1pJVjBGOHZ5UFNyXzRjTlZJdnYtWjNFNmFUUQ?oc=5"
+        },
+        {
+          "date": "2026-11-25T01:43:50.621Z",
+          "period": "Nov 2026",
+          "value": 705.34,
+          "yoy": null,
+          "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbEJINXd3ZmhDcF9IQXBZMmVCNFFGcHFGM2NZcW9nWkpDZHdlMVBzYXlfSWdJQ3J4eHJfYi1NNkFYOGduRDVrTk5TYXlXSW1iUlJKM0lxQ2J3WklabUVFRGJxSnpiV1N5ODRuMTNDdXA2LWRpc3NVaS00ajd5YlRodHByMW1mZnRQNDBZOEVadUo4WU56NGhtR3p6eVhwTG53bS1hZmVmcjZyQQ?oc=5"
         }
       ],
       "note": "Gemini (gemini-flash-lite-latest) extracted from news RSS items; confidence: high. Verify source link."
@@ -2115,7 +2144,7 @@
       "yoy": "",
       "yoyValue": null,
       "sourceUrl": "https://news.google.com/rss/articles/CBMizgJBVV95cUxOUzZkR1pjZjhHLWJEcHVhbXAtbk9mY2FYQnptV2twOW9vRllDNDBaSmdXaGtONWFZeWYtcDU0Z213cHdLQjNmRmMtMDB0cUUwVFUyVll6eVE3dkxoVTB5Ry11UWc5MktROGE3NEw1SGdyYXpjWDZKVVVNaVlISDhYQWZKUUUzSWxUSGRYcDdLODZjX3JReHlSRkladHJtclZoU2ljT1dMaG9kSEttMTVxb0tpR0NhS2p2R0ZPNGN2RTl4UmJ5NFVoYXlDTWs2SExMOEdEeXAxMUgwdVhPYUFNSFVqNmdnc0o1bC1IVURLWDQyMDJPcDU0bllhLTJYRkZDNWJXbnNLR1dOak9nYXljaXhyWGZ1bmpUMzYyamVVSGo2aEE2V2hvTWU5ellPTzZlc2tXVDJHZzNGd0hHcXNRMFpFWnVVTV81N0ZBZUFB?oc=5",
-      "freshness": "Auto-extracted · verify",
+      "freshness": "Stale · extraction failed",
       "mode": "auto-extracted · verify",
       "history": [
         {
@@ -2150,7 +2179,7 @@
           "source_url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxOUzZkR1pjZjhHLWJEcHVhbXAtbk9mY2FYQnptV2twOW9vRllDNDBaSmdXaGtONWFZeWYtcDU0Z213cHdLQjNmRmMtMDB0cUUwVFUyVll6eVE3dkxoVTB5Ry11UWc5MktROGE3NEw1SGdyYXpjWDZKVVVNaVlISDhYQWZKUUUzSWxUSGRYcDdLODZjX3JReHlSRkladHJtclZoU2ljT1dMaG9kSEttMTVxb0tpR0NhS2p2R0ZPNGN2RTl4UmJ5NFVoYXlDTWs2SExMOEdEeXAxMUgwdVhPYUFNSFVqNmdnc0o1bC1IVURLWDQyMDJPcDU0bllhLTJYRkZDNWJXbnNLR1dOak9nYXljaXhyWGZ1bmpUMzYyamVVSGo2aEE2V2hvTWU5ellPTzZlc2tXVDJHZzNGd0hHcXNRMFpFWnVVTV81N0ZBZUFB?oc=5"
         }
       ],
-      "note": "Gemini (gemini-flash-lite-latest) extracted from news RSS items; confidence: high. Verify source link."
+      "note": "AI extraction did not return a validated figure (missing numeric value)."
     },
     {
       "metric": "Total market cap",
@@ -2184,7 +2213,7 @@
       "symbol": "CURRENCY:USDINR",
       "company": "USD / INR",
       "kind": "currency",
-      "price": 92.74375,
+      "price": 92.41535,
       "changePct": null,
       "marketCap": null,
       "freshness": "Live · GOOGLEFINANCE",
@@ -2194,8 +2223,8 @@
       "symbol": "INDEXNSE:NIFTY_50",
       "company": "Nifty 50",
       "kind": "index",
-      "price": 25349.65,
-      "changePct": -1.75,
+      "price": 25933.45,
+      "changePct": 2.3,
       "marketCap": null,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
@@ -2204,8 +2233,8 @@
       "symbol": "INDEXBOM:SENSEX",
       "company": "Sensex",
       "kind": "index",
-      "price": 82435.99,
-      "changePct": -1.77,
+      "price": 84453.14,
+      "changePct": 2.45,
       "marketCap": null,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
@@ -2214,9 +2243,9 @@
       "symbol": "NSE:RELIANCE",
       "company": "Reliance Industries",
       "kind": "company",
-      "price": 1351,
-      "changePct": -1.92,
-      "marketCap": 18297404450000,
+      "price": 1385.2,
+      "changePct": 2.53,
+      "marketCap": 18741201127384,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2224,9 +2253,9 @@
       "symbol": "NSE:HDFCBANK",
       "company": "HDFC Bank",
       "kind": "company",
-      "price": 817.8,
-      "changePct": -3.33,
-      "marketCap": 12831932209284.514,
+      "price": 849.75,
+      "changePct": 3.91,
+      "marketCap": 1212008376803363,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2234,9 +2263,9 @@
       "symbol": "NSE:TCS",
       "company": "TCS",
       "kind": "company",
-      "price": 2460,
-      "changePct": 3.53,
-      "marketCap": 8892401349418,
+      "price": 2519.3,
+      "changePct": 2.41,
+      "marketCap": 9115046755764,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2244,9 +2273,9 @@
       "symbol": "NSE:ICICIBANK",
       "company": "ICICI Bank",
       "kind": "company",
-      "price": 1585.5,
-      "changePct": -3.32,
-      "marketCap": 11538967568975.826,
+      "price": 1648.9,
+      "changePct": 4,
+      "marketCap": 1094865260804332.8,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2254,9 +2283,9 @@
       "symbol": "NSE:BHARTIARTL",
       "company": "Bharti Airtel",
       "kind": "company",
-      "price": 2128.5,
-      "changePct": -1.54,
-      "marketCap": 12763239030000,
+      "price": 2139.1,
+      "changePct": 0.5,
+      "marketCap": 13345450236184,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2264,9 +2293,9 @@
       "symbol": "NSE:INFY",
       "company": "Infosys",
       "kind": "company",
-      "price": 1103.4,
-      "changePct": 0.49,
-      "marketCap": 4616904873782.644,
+      "price": 1141.4,
+      "changePct": 3.44,
+      "marketCap": 436922078735239.2,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2274,9 +2303,9 @@
       "symbol": "NSE:SBIN",
       "company": "State Bank of India",
       "kind": "company",
-      "price": 1132.65,
-      "changePct": -2.79,
-      "marketCap": 10440750663343,
+      "price": 1144,
+      "changePct": 1,
+      "marketCap": 10565075965121,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2284,9 +2313,9 @@
       "symbol": "NSE:ITC",
       "company": "ITC",
       "kind": "company",
-      "price": 301,
-      "changePct": 0.64,
-      "marketCap": 3766870520000,
+      "price": 311.7,
+      "changePct": 3.55,
+      "marketCap": 3900776036765,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2294,9 +2323,9 @@
       "symbol": "NSE:LT",
       "company": "Larsen & Toubro",
       "kind": "company",
-      "price": 4099.9,
-      "changePct": -2.59,
-      "marketCap": 5640725832000,
+      "price": 4167.4,
+      "changePct": 1.65,
+      "marketCap": 5731964912888,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2304,9 +2333,9 @@
       "symbol": "NSE:HINDUNILVR",
       "company": "Hindustan Unilever",
       "kind": "company",
-      "price": 2019.1,
-      "changePct": -1.63,
-      "marketCap": 4746283819275,
+      "price": 2085.9,
+      "changePct": 3.31,
+      "marketCap": 4899056526000,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     }
@@ -4777,44 +4806,44 @@
       "title": "Private capital–fueled economic growth might be knocking on India’s doors soon - Deloitte",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbVNEUF9teW9VSlNOTVBOOXNjbVkybkFnOTVDNkljbWpGTld4Z1BhS243VUhJcHJqMjh3UWJDRkQwYlhTam9fMzQwTTRuejFnMlJrUjNteUVmZE5LeUc4ODVPRHhFYVlQNGU4S3RwX1dKc01XTTB4VTR0STVNbVVMN0F5WndKRnNiSlpUcUlCV2pIY2ZiVUdBb09XMA?oc=5",
       "publisher": "Deloitte",
-      "strategyId": 5,
-      "sentiment": "positive",
-      "confidence": "medium",
-      "summary": "Deloitte reports private capital-fueled economic growth might soon arrive in India.",
+      "strategyId": "Unclassified",
+      "sentiment": "unclassified",
+      "confidence": "",
+      "summary": "",
       "freshness": "News RSS · 19 Oct 2026"
     },
     {
-      "publishedAt": "25 Aug 2026",
-      "title": "RBI Bulletin - Reserve Bank of India",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeVRxOF9YZ19OZXF5bVJLN0xrbzMxTnlLUEZ4dUcyVVdoZUZrX2dWYnVxdnh0ZFZsZ21KUHRLT3dCXzVndUY1VFF0alR6RGllRjRmZmJQM21uXy1SZnlDSnZNd0VkcGNIYms1UWlEZldUVTlaSUV2RE50a0kwd3ZzemJfRUFtWUNG?oc=5",
-      "publisher": "Reserve Bank of India",
-      "strategyId": "Unclassified",
-      "sentiment": "unclassified",
-      "confidence": "low",
-      "summary": "Reserve Bank of India publishes its bulletin.",
-      "freshness": "News RSS · 25 Aug 2026"
-    },
-    {
       "publishedAt": "30 Jan 2026",
-      "title": "Economic Survey 2025-26 - www.pib.gov.in",
+      "title": "Economic Survey 2025-26 - पीआईबी",
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9RNS1udk00TUloVkRKRlNleUthQWUzRXpUdHRwdUhlcVc0YmRGSTd3eHNucUFYdnNEaXRRZjY3NjlOUzc0OFlNRzFscHpSamZQVlFlUXkxclhfVzVETC1oc1ZVVjB3MF9xVjdpb2RvU0ZKYm5pd3JmUkxn?oc=5",
-      "publisher": "www.pib.gov.in",
+      "publisher": "पीआईबी",
       "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "low",
-      "summary": "Economic Survey 2025-26 published on the official PIB website.",
+      "confidence": "",
+      "summary": "",
       "freshness": "News RSS · 30 Jan 2026"
     },
     {
-      "publishedAt": "29 Oct 2026",
-      "title": "Global Economics Intelligence executive summary (September 2026) - McKinsey & Company",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSmgzTkdja3YzVE1LaEtHbGFYak1oUU9Pei1CR1AwOW4wak5uY3hRQk0wb1o1SWhObGhxTUZDaEZqSUZ0TjdqUS1Ed3hwclZJRi1YV0RLQzZIY3paTzR3R2l0dkp5TkhLYVdXbm5NREhjc0lSazNjRmhJNlc4Y0Z5c2d0MWZ0WWNqNVhWRjFIRUdnWHJvaEYzdmp6NnV3cXd3bjdybm9EVTN4TEgwdUJsVA?oc=5",
+      "publishedAt": "4 Sep 2026",
+      "title": "Southeast Asia quarterly economic review: Tech tailwinds drive a two-speed region - McKinsey & Company",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPa2VLay02a3U1UnFDWmZpbUw3TGlYSU5ydGtDWW5kT0NrbVVDVzU0MXVENG9fYlNXaVFMT1lfYjdFbnpZRkhqcS0tTkNkbUFGazktNnpIa0pZa0hxaUZnOTZpWHE5VEJhVnRic0xZU2Rvd2FrS1RoQXd0ckl0U0xieUZyeHlmRWZCcjNsTTNsazZ2QzlRUnNLcmYteC1oMUE?oc=5",
       "publisher": "McKinsey & Company",
       "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "low",
-      "summary": "McKinsey releases its Global Economics Intelligence executive summary for September 2026.",
-      "freshness": "News RSS · 29 Oct 2026"
+      "confidence": "",
+      "summary": "",
+      "freshness": "News RSS · 4 Sep 2026"
+    },
+    {
+      "publishedAt": "1 Sep 2026",
+      "title": "India's GDP grows 7.8% in Q1: Factors powering the economy despite global turmoil - The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOeng5MG9YTU5qNDk0VlBVa1dMcGdTajFZR1ZDRDZGYTN0aHRKMHJKTlJxUHhZV0hyU25DaGNwNjU2MFRXNEI0SDhOemV5NE5XR2MxdkFVUG5XRngzQXdLSS1kOW9RVTJfODlleTRmMG0tbDRUYVBhSWZCOG0xNnpEX0g4R2YzdERFZmQwZFNFTFAzbTliQkYzaXp6Uk0xdkU0Mzk1MDJnMWZjSUlJRk81dk43QnRJSmptSk9hS0lRcWdYMnQ2VTJXc0pQYkdUVFlVdWpNRUlHT0pva1RmZGJTVXppb3hjRmx3UlpTbEVkQlJKVTlkVWMw0gH8AUFVX3lxTFA3QXZYRG1QMUs1VTlJT3hiS2JORGVPZWYwbkgyZWtXRmFxTnZXSmpzZ1hMeWVxd250aGExZUlvM0tHQkNZMVZGeVV1YXFwZ1phbGxXZHBNbFlud3BMSGRPaVZuZWFmNVNWcFlUa2NFa0QySWRZSG8wLTljVTNLUXo1eHZpSG9PS2RaM2Jadlp3ZjIwY3gtWGdGX1o1TGJUbDNWenhCck92OEd6Yk5uOGJfdVd1U0c2ZDBlTGpUU2lFQjBzV2M3aFFsTWRTU3VTRm42eFc3NThrTjhYUnE1NkNKeVNFM0VQeVBMdVFrNGZpTW1YR3pJcHhCSDhIZQ?oc=5",
+      "publisher": "The Times of India",
+      "strategyId": "Unclassified",
+      "sentiment": "unclassified",
+      "confidence": "",
+      "summary": "",
+      "freshness": "News RSS · 1 Sep 2026"
     },
     {
       "publishedAt": "30 Jan 2026",
@@ -4823,41 +4852,41 @@
       "publisher": "IBEF",
       "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "low",
-      "summary": "IBEF provides analysis and key findings for the Economic Survey 2025-26.",
+      "confidence": "",
+      "summary": "",
       "freshness": "News RSS · 30 Jan 2026"
     },
     {
       "publishedAt": "29 Jan 2026",
-      "title": "INDIA’S GDP GROWTH FOR FY26 IS ESTIMATED AT 7.4 PER CENT DRIVEN BY THE DOUBLE ENGINE OF CONSUMPTION AND INVESTMENT - www.pib.gov.in",
+      "title": "INDIA’S GDP GROWTH FOR FY26 IS ESTIMATED AT 7.4 PER CENT DRIVEN BY THE DOUBLE ENGINE OF CONSUMPTION AND INVESTMENT - पीआईबी",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5CWTd0TUk4dE10bk1WUHVBcFc3eXZPVkJwQ2dCRndwSzQwUl8xQ2RqdDJwUlE4N1NaSnA5X1NnLWdCd1RDZFNBWGxzLU5aRFRHTWNvejBNVnhzZndDU0hfSFpfamhETEhB?oc=5",
-      "publisher": "www.pib.gov.in",
-      "strategyId": 5,
-      "sentiment": "positive",
-      "confidence": "high",
-      "summary": "India's FY26 GDP growth is estimated at 7.4 percent driven by consumption and investment.",
+      "publisher": "पीआईबी",
+      "strategyId": "Unclassified",
+      "sentiment": "unclassified",
+      "confidence": "",
+      "summary": "",
       "freshness": "News RSS · 29 Jan 2026"
     },
     {
-      "publishedAt": "4 Sep 2026",
-      "title": "Southeast Asia quarterly economic review: Tech tailwinds drive a two-speed region - McKinsey & Company",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPa2VLay02a3U1UnFDWmZpbUw3TGlYSU5ydGtDWW5kT0NrbVVDVzU0MXVENG9fYlNXaVFMT1lfYjdFbnpZRkhqcS0tTkNkbUFGazktNnpIa0pZa0hxaUZnOTZpWHE5VEJhVnRic0xZU2Rvd2FrS1RoQXd0ckl0U0xieUZyeHlmRWZCcjNsTTNsazZ2QzlRUnNLcmYteC1oMUE?oc=5",
+      "publishedAt": "29 Oct 2026",
+      "title": "Global Economics Intelligence executive summary (September 2026) - McKinsey & Company",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSmgzTkdja3YzVE1LaEtHbGFYak1oUU9Pei1CR1AwOW4wak5uY3hRQk0wb1o1SWhObGhxTUZDaEZqSUZ0TjdqUS1Ed3hwclZJRi1YV0RLQzZIY3paTzR3R2l0dkp5TkhLYVdXbm5NREhjc0lSazNjRmhJNlc4Y0Z5c2d0MWZ0WWNqNVhWRjFIRUdnWHJvaEYzdmp6NnV3cXd3bjdybm9EVTN4TEgwdUJsVA?oc=5",
       "publisher": "McKinsey & Company",
-      "strategyId": 14,
-      "sentiment": "positive",
-      "confidence": "medium",
-      "summary": "McKinsey's Southeast Asia review highlights tech tailwinds driving a two-speed region.",
-      "freshness": "News RSS · 4 Sep 2026"
+      "strategyId": "Unclassified",
+      "sentiment": "unclassified",
+      "confidence": "",
+      "summary": "",
+      "freshness": "News RSS · 29 Oct 2026"
     },
     {
       "publishedAt": "29 Jan 2026",
       "title": "Economic Survey 2026 Highlights: 7.4% GDP Growth, Inflation Trends & UPSC Insights - INSIGHTS IAS",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQR0ZBSzB4aWx5U1QzM044d2dZZzFYempIb2cteVhGaHJ6YWlaTE5RY2VlNXE2UUJPbXpueVlGMWpZUG5lWktOaVRsb01vZmEwTExtT01RMmdoblZRNHdtU0FQSVp0TEpIM3lnSWpWUjZvelNWRDRxTnNsQV9nWVJjdEJPU3kwSUxTUXJRb3JLcw?oc=5",
       "publisher": "INSIGHTS IAS",
-      "strategyId": 17,
-      "sentiment": "positive",
-      "confidence": "medium",
-      "summary": "Economic Survey 2026 highlights 7.4 percent GDP growth and inflation trends.",
+      "strategyId": "Unclassified",
+      "sentiment": "unclassified",
+      "confidence": "",
+      "summary": "",
       "freshness": "News RSS · 29 Jan 2026"
     },
     {
@@ -4865,32 +4894,32 @@
       "title": "Vietnam's Economy in 2025: GDP, FDI, and Trade - Vietnam Briefing",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdFQ2ZlJuaXJ2ZEFpaE9vQjdVY1pJUGg1UEUtRGV1eEVwelRxQUoxY0ZBMmY1aW1uaEliSWdHRDZEZ0d0RmJEV0VsalVNNXl2RDUzTlNxZG1fQmVQZHhZMURGSHFWR3NyYi14X1k3TXBIdEFwbmFHRXZpdXltZVhlNDZWY0FlUUtaUnc?oc=5",
       "publisher": "Vietnam Briefing",
-      "strategyId": 7,
+      "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "medium",
-      "summary": "Vietnam Briefing covers Vietnam's economy in 2025 focusing on GDP, FDI, and trade.",
+      "confidence": "",
+      "summary": "",
       "freshness": "News RSS · 22 Jan 2026"
     },
     {
-      "publishedAt": "8 Apr 2026",
-      "title": "The Fed - India and the Global Economy - Federal Reserve (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOb0VMUUhBOFYyVmlaTDhuVGlRdG9zMUZUQkdpNXVmZE84UXNrcHRET1lYSVF0TGdnenctM0FQUzJCcWFGMXBFVVprSGtlUVh0b2toZUVFbDB6cTZSX0lRYS02MVlmdDc1Y3A2cE9jaExwUG9Nb3psTWNEVkw2SGxTandiRUxJdDU3WkZTWFhxOGhCN09nWm1zZ2lPYktCeTQ?oc=5",
-      "publisher": "Federal Reserve (.gov)",
+      "publishedAt": "25 Aug 2026",
+      "title": "RBI Bulletin - Reserve Bank of India",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeVRxOF9YZ19OZXF5bVJLN0xrbzMxTnlLUEZ4dUcyVVdoZUZrX2dWYnVxdnh0ZFZsZ21KUHRLT3dCXzVndUY1VFF0alR6RGllRjRmZmJQM21uXy1SZnlDSnZNd0VkcGNIYms1UWlEZldUVTlaSUV2RE50a0kwd3ZzemJfRUFtWUNG?oc=5",
+      "publisher": "Reserve Bank of India",
       "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "low",
-      "summary": "Federal Reserve publishes material on India and the global economy.",
-      "freshness": "News RSS · 8 Apr 2026"
+      "confidence": "",
+      "summary": "",
+      "freshness": "News RSS · 25 Aug 2026"
     },
     {
       "publishedAt": "29 Dec 2025",
-      "title": "Press Note Details: Press Information Bureau - PIB",
+      "title": "Press Note Details: Press Information Bureau - पीआईबी",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaFBjUHNNT3FFLXFGam1uaHM0RkdyVlFfb2xZa0VmbmRMZkR2bVdNTDJrbWxkYTBMQzBfMmpuY2NBdl9PdmZTV000M1hBSUVLa0d4WXJGRU1ibGxXZXQ4Z1hJakp1a2E5aXAtdjgtSUEzVWtNTTg2UXZQWW5veFg3bEJmVFN5d3BzVFE?oc=5",
-      "publisher": "PIB",
+      "publisher": "पीआईबी",
       "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "low",
-      "summary": "Press Information Bureau provides press note details.",
+      "confidence": "",
+      "summary": "",
       "freshness": "News RSS · 29 Dec 2025"
     },
     {
@@ -4899,9 +4928,9 @@
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1BWDZOV3dxSzh5TVpZanFlWklUY3ZKZjRSRzIzdURVb0V4Z3NnbzZjdk1iX2N6MGhLUkh1XzQyZUhJNnFlRE1LaEpaNUFvOFFFVld4ZnZ4M2syTTlkSFpucGVURFZNYWtfVlF3T29BZkJ2VnVq?oc=5",
       "publisher": "EY",
       "strategyId": "Unclassified",
-      "sentiment": "neutral",
-      "confidence": "low",
-      "summary": "EY releases midyear global economic outlook addressing risk and opportunity in a supply shock world.",
+      "sentiment": "unclassified",
+      "confidence": "",
+      "summary": "",
       "freshness": "News RSS · 17 Jun 2026"
     },
     {
@@ -4911,8 +4940,8 @@
       "publisher": "Econofact",
       "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "low",
-      "summary": "Econofact examines India's path to becoming one of the world's largest economies.",
+      "confidence": "",
+      "summary": "",
       "freshness": "News RSS · 14 Jul 2025"
     },
     {
@@ -4922,19 +4951,19 @@
       "publisher": "Deloitte",
       "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "low",
-      "summary": "Deloitte shares what is happening this week in economics.",
+      "confidence": "",
+      "summary": "",
       "freshness": "News RSS · 10 Nov 2026"
     },
     {
       "publishedAt": "6 Jul 2025",
-      "title": "PIB Backgrounder - pib.gov.in",
+      "title": "PIB Backgrounder - पीआईबी",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSHRpNjZKY1hVMnVMWHJHOHNyTU11RTBtVXNPcGJLODhCMXJMRXdvZEZGMW94ZE81UGEyZ0NaWk9PUzhTM2tzcXFGbzgyQlpZeEJFdE00ekNUZ0NQNENFM0MtaEtfclZINldlal9FYk1vNnAwYkNsay1PYzdLY0liaUk4U0NLYjEzc1Fz?oc=5",
-      "publisher": "pib.gov.in",
+      "publisher": "पीआईबी",
       "strategyId": "Unclassified",
       "sentiment": "unclassified",
-      "confidence": "low",
-      "summary": "PIB provides a backgrounder document.",
+      "confidence": "",
+      "summary": "",
       "freshness": "News RSS · 6 Jul 2025"
     }
   ],
