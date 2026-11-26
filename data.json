@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-25T16:19:51.812Z",
+  "generatedAt": "2026-11-26T01:14:26.042Z",
   "appName": "BHARAT 2047 · Mission Control",
   "sourceStatus": {
-    "updatedAt": "2026-11-25T16:19:51.813Z",
+    "updatedAt": "2026-11-26T01:14:26.046Z",
     "staleCount": 0,
     "dataCount": 53
   },
@@ -17,7 +17,7 @@
     "yearsVs2047": -9,
     "status": "behind",
     "deadlineIso": "2047-01-01T00:00:00+05:30",
-    "daysToDeadline": 7342,
+    "daysToDeadline": 7341,
     "missionScore": 54.10924234866752,
     "realGrowth": 7.8,
     "inflation": 2,
@@ -2213,7 +2213,7 @@
       "symbol": "CURRENCY:USDINR",
       "company": "USD / INR",
       "kind": "currency",
-      "price": 92.30460000000001,
+      "price": 92.30655,
       "changePct": null,
       "marketCap": null,
       "freshness": "Live · GOOGLEFINANCE",
@@ -2255,7 +2255,7 @@
       "kind": "company",
       "price": 846.2,
       "changePct": 3.47,
-      "marketCap": 12877542808202.082,
+      "marketCap": 12932556216251.684,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2275,7 +2275,7 @@
       "kind": "company",
       "price": 1640,
       "changePct": 3.44,
-      "marketCap": 11470038635663.793,
+      "marketCap": 11536655939808.3,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2295,7 +2295,7 @@
       "kind": "company",
       "price": 1130,
       "changePct": 2.41,
-      "marketCap": 4603037896326.079,
+      "marketCap": 4640559178554.114,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
