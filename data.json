@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-28T10:59:58.420Z",
+  "generatedAt": "2026-11-28T19:13:09.738Z",
   "appName": "BHARAT 2047 · Mission Control",
   "sourceStatus": {
-    "updatedAt": "2026-11-28T10:59:58.422Z",
+    "updatedAt": "2026-11-28T19:13:09.739Z",
     "staleCount": 0,
     "dataCount": 53
   },
@@ -17,7 +17,7 @@
     "yearsVs2047": -9,
     "status": "behind",
     "deadlineIso": "2047-01-01T00:00:00+05:30",
-    "daysToDeadline": 7339,
+    "daysToDeadline": 7338,
     "missionScore": 54.10924234866752,
     "realGrowth": 7.8,
     "inflation": 2,
@@ -2346,7 +2346,7 @@
       "kind": "company",
       "price": 857.25,
       "changePct": -0.55,
-      "marketCap": 13468045643192.693,
+      "marketCap": 13309329969000.002,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2366,7 +2366,7 @@
       "kind": "company",
       "price": 1593.4,
       "changePct": -1.09,
-      "marketCap": 11576842683946.41,
+      "marketCap": 11518087846200,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2376,7 +2376,7 @@
       "kind": "company",
       "price": 2067.9,
       "changePct": -1.65,
-      "marketCap": 12373750515000,
+      "marketCap": 12902240000000,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -2386,7 +2386,7 @@
       "kind": "company",
       "price": 1151.3,
       "changePct": -2.68,
-      "marketCap": 4838638127424.368,
+      "marketCap": 4690967356725,
       "freshness": "Live · GOOGLEFINANCE",
       "note": "GOOGLEFINANCE formula; availability varies by ticker/exchange"
     },
@@ -5129,8 +5129,8 @@
     }
   ],
   "weekOnWeek": {
-    "referenceCapturedAt": "2026-11-24T09:29:48.290Z",
+    "referenceCapturedAt": "2026-11-24T13:33:19.690Z",
     "gdpDeltaT": 0,
-    "missionScoreDelta": null
+    "missionScoreDelta": 0
   }
 }
