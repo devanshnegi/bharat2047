@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-28T00:46:26.880Z",
+  "generatedAt": "2026-11-28T10:59:58.420Z",
   "appName": "BHARAT 2047 · Mission Control",
   "sourceStatus": {
-    "updatedAt": "2026-11-28T00:46:26.881Z",
+    "updatedAt": "2026-11-28T10:59:58.422Z",
     "staleCount": 0,
     "dataCount": 53
   },
@@ -1913,12 +1913,12 @@
   "monthly": [
     {
       "metric": "GST collections",
-      "value": 2.31,
+      "value": 2,
       "unit": "lakh crore",
-      "period": "Oct 2026",
-      "yoy": "+22.9%",
-      "yoyValue": 22.9,
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQODNiZU51MjhpS1FISUp0V3MwaWFnOW42UkJSeHdwM1pEamxPQU1XUm05ZWRSWUZaakVGX1liaVFlMnh2OHN3eThKOUkxWEFCaG4ySl9GUXFsY2NCdGhaVUU1TkhOcDFsdEx1WGptVlRBMExHZXpHekFtSlFsQm14VUtEYkhIeG1YcDhHMTg3NFNSSjJOY2tmQ29zRjdYS1BSRDVpTDkxYm1NbG5SRWRfMUJxSTRDNjNuN3pJajlmbk5TU3o4emZBZWJBdEp3M2RuVEdVSG0zOVZKOTlU0gHiAUFVX3lxTE1NbjYwY09heVd2ejdYaG1GdEpnaFpxZV92Rk1ZakpyLTF6WDhZWDRUZzFWaWhQMTVkcDE5bHlWdTRxeVhDZng0TlpFU0RhdXRHNmVpMmtqQjFROEE4RzBNYk1XTnpISVluendoUXk3c01meDdid3VwX0NoM2FNaDJETmZHQXg4TVRDRWVpbDNnNkZEU1BJQzAtcllxdlZZclFXS1JMcEwwOHFTcnpXdFcxTDZvRDdLUUdlak4ya2Z4U1kyaWhBWDJyZ20xbDYyeGNfZlVXRmY1b1BUZzVuSEJnZ0E?oc=5",
+      "period": "Sep 2026",
+      "yoy": "+14.7%",
+      "yoyValue": 14.7,
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNbWNfX09aMVVjd0lpY2FBaUlnS1ZXamFTaWRwd1l1eHZZdmpkZEhKOWJtbE1JM0JpQllPclVaSy1LVzJWTjVyZ1ZfLUNrVVlIRGY3MXNVQWowV2p5ZHdJQzFmNkRpWk5BeHFXOGFWQ3BwdVdpRW04MGxLRDhhcVlzUG5fSW5HRHU1UmJpNUZQNWtnbGJwVUdHcUZiV0pJRUczY1prQWhrZzZ0blc3M3RzUE9IeldKa1hvSFQ5Z05uQWpCV0lTM1pESTl4ZDFzZ3IxUjJNdnB3dVQzQ3ZkcUZPSWFqUHc5WFHSAewBQVVfeXFMTnpkS05SaC1xV2NQVkZYZGhYTnNaMXhiTUktUFVCdjNTNGdZZ3JTeG5XRnBRTmxWekt3djNud1BhNk9XQUpxS3MwbURya291cjZzbE1yMWkzTVI3NU1KLTZSemZlaVdaZ3FwbG1xRmEzWXB2NHdkbURqYkg5czBRQUVDb2JHQWdhMmdERk5rOENjZWNWNEFrUlk0UXczYWJ6Z3d0d054T1FBd1FxQnp0TEMxdDNPXzJRVVN1eFZZMklHQnVLcXJYU2lYa2k4dWJBVWlVWHFpMHpoY29LTzFmenlkVzNId21NRVVNOTc?oc=5",
       "freshness": "Auto-extracted · verify",
       "mode": "auto-extracted · verify",
       "history": [
@@ -1961,6 +1961,13 @@
           "value": 2.31,
           "yoy": "+22.9%",
           "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQODNiZU51MjhpS1FISUp0V3MwaWFnOW42UkJSeHdwM1pEamxPQU1XUm05ZWRSWUZaakVGX1liaVFlMnh2OHN3eThKOUkxWEFCaG4ySl9GUXFsY2NCdGhaVUU1TkhOcDFsdEx1WGptVlRBMExHZXpHekFtSlFsQm14VUtEYkhIeG1YcDhHMTg3NFNSSjJOY2tmQ29zRjdYS1BSRDVpTDkxYm1NbG5SRWRfMUJxSTRDNjNuN3pJajlmbk5TU3o4emZBZWJBdEp3M2RuVEdVSG0zOVZKOTlU0gHiAUFVX3lxTE1NbjYwY09heVd2ejdYaG1GdEpnaFpxZV92Rk1ZakpyLTF6WDhZWDRUZzFWaWhQMTVkcDE5bHlWdTRxeVhDZng0TlpFU0RhdXRHNmVpMmtqQjFROEE4RzBNYk1XTnpISVluendoUXk3c01meDdid3VwX0NoM2FNaDJETmZHQXg4TVRDRWVpbDNnNkZEU1BJQzAtcllxdlZZclFXS1JMcEwwOHFTcnpXdFcxTDZvRDdLUUdlak4ya2Z4U1kyaWhBWDJyZ20xbDYyeGNfZlVXRmY1b1BUZzVuSEJnZ0E?oc=5"
+        },
+        {
+          "date": "2026-11-28T01:43:57.421Z",
+          "period": "Sep 2026",
+          "value": 2,
+          "yoy": "+14.7%",
+          "source_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNbWNfX09aMVVjd0lpY2FBaUlnS1ZXamFTaWRwd1l1eHZZdmpkZEhKOWJtbE1JM0JpQllPclVaSy1LVzJWTjVyZ1ZfLUNrVVlIRGY3MXNVQWowV2p5ZHdJQzFmNkRpWk5BeHFXOGFWQ3BwdVdpRW04MGxLRDhhcVlzUG5fSW5HRHU1UmJpNUZQNWtnbGJwVUdHcUZiV0pJRUczY1prQWhrZzZ0blc3M3RzUE9IeldKa1hvSFQ5Z05uQWpCV0lTM1pESTl4ZDFzZ3IxUjJNdnB3dVQzQ3ZkcUZPSWFqUHc5WFHSAewBQVVfeXFMTnpkS05SaC1xV2NQVkZYZGhYTnNaMXhiTUktUFVCdjNTNGdZZ3JTeG5XRnBRTmxWekt3djNud1BhNk9XQUpxS3MwbURya291cjZzbE1yMWkzTVI3NU1KLTZSemZlaVdaZ3FwbG1xRmEzWXB2NHdkbURqYkg5czBRQUVDb2JHQWdhMmdERk5rOENjZWNWNEFrUlk0UXczYWJ6Z3d0d054T1FBd1FxQnp0TEMxdDNPXzJRVVN1eFZZMklHQnVLcXJYU2lYa2k4dWJBVWlVWHFpMHpoY29LTzFmenlkVzNId21NRVVNOTc?oc=5"
         }
       ],
       "note": "Gemini (gemini-flash-lite-latest) extracted from news RSS items; confidence: high. Verify source link."
@@ -1973,7 +1980,7 @@
       "yoy": "+29.9%",
       "yoyValue": 29.9,
       "sourceUrl": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxORlQ4eEFNUWktZ1RzLUYyY2RiXzVpT2hkZ1ZRNjhzVGk1Tl91c1Z3Y3ZHekxDZWJLSU9fcW56TTNTNVNBWGpCS2V0VUxJVXFXM0hLQ3dkUlgyLTdVVUYyWnZqZmp1SHlXdlBPTWlCUk9CZkRsX2NjaXZlTnZEaFlvNnRIWXlUblZKYUxSdE1iczQ3bGtzbkNzQ3p3SkM1S3Z1Z19XZWh6T0RQMWxlNTYyb25tU2d6dGtOX1I0Q1RuNzZBdGxJZGlTTzlYcTU4RmtBbXI5eGpUT1VPTHBOS0gtVjZoRjdQcGo3TTNvMXIxUWhuc0t2azl6RklSRFjSAYICQVVfeXFMTlJfRUlLYUtraVVyN1JoWnM2dUFYbG0yQURaVDBGdTN2eml2Q1JWNUtfSWEzNWpYVUJYTnY1YTh6RzVBOGk1VExVLUJqOU41Yjg4ZHl6UE84X0N3c1NMQ1lJWDJNZzBOOE85MlYwZFFIOVllcTFQcEo3N05yamx1Smd5dnctY3RGQnE5TjZRRnBIQllKOWphd3lmd3c5dDlyNTUwcXBodVpFYkUwZmtfbElJb01zcXRNdHVQcW9taDk3MjhNUGpGNGFGV0RWcHJNN3pWQVFhRV9mdHJGQklRVy1ETFRENUk3T2d0RWx4WDRkdV9fOW9NMVBUQTdQWUZzYmRB?oc=5",
-      "freshness": "Auto-extracted · verify",
+      "freshness": "Stale · extraction failed",
       "mode": "auto-extracted · verify",
       "history": [
         {
@@ -1991,7 +1998,7 @@
           "source_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxORlQ4eEFNUWktZ1RzLUYyY2RiXzVpT2hkZ1ZRNjhzVGk1Tl91c1Z3Y3ZHekxDZWJLSU9fcW56TTNTNVNBWGpCS2V0VUxJVXFXM0hLQ3dkUlgyLTdVVUYyWnZqZmp1SHlXdlBPTWlCUk9CZkRsX2NjaXZlTnZEaFlvNnRIWXlUblZKYUxSdE1iczQ3bGtzbkNzQ3p3SkM1S3Z1Z19XZWh6T0RQMWxlNTYyb25tU2d6dGtOX1I0Q1RuNzZBdGxJZGlTTzlYcTU4RmtBbXI5eGpUT1VPTHBOS0gtVjZoRjdQcGo3TTNvMXIxUWhuc0t2azl6RklSRFjSAYICQVVfeXFMTlJfRUlLYUtraVVyN1JoWnM2dUFYbG0yQURaVDBGdTN2eml2Q1JWNUtfSWEzNWpYVUJYTnY1YTh6RzVBOGk1VExVLUJqOU41Yjg4ZHl6UE84X0N3c1NMQ1lJWDJNZzBOOE85MlYwZFFIOVllcTFQcEo3N05yamx1Smd5dnctY3RGQnE5TjZRRnBIQllKOWphd3lmd3c5dDlyNTUwcXBodVpFYkUwZmtfbElJb01zcXRNdHVQcW9taDk3MjhNUGpGNGFGV0RWcHJNN3pWQVFhRV9mdHJGQklRVy1ETFRENUk3T2d0RWx4WDRkdV9fOW9NMVBUQTdQWUZzYmRB?oc=5"
         }
       ],
-      "note": "Gemini (gemini-flash-lite-latest) extracted from news RSS items; confidence: high. Verify source link."
+      "note": "AI extraction did not return a validated figure (missing numeric value)."
     },
     {
       "metric": "IIP",
@@ -2017,7 +2024,7 @@
           "source_url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQWnh2SFduZDVKYUVramJKYk5zdU5sTThxN3Z5SWNhdWpPR3czcURETXFMdWhPWXVmYjBmckMwQkEwQU1FMDM4eDhVNEVQQzVPVFIxcEM0QlJMeFA4ZVFnMmJIaEVoUkJXaGFQUDFnTXlwS1U1cDdnSTZqNWRfUlh0RFVLWERkcUUtNnp3Q0VVZmxpczNuUEhoTjFoN09ZbXBRS1Zxa0xRaTV5VmM4WlhVcmRNVXJXNG9ZUW1WeTYxaTlHeGh4SHJhUzYyQ2FtNmpQNVlFUm5aa3gxcTl3dGxrYVI4cVVDZEZxVVZj?oc=5"
         }
       ],
-      "note": "AI extraction did not return a validated figure (missing numeric value)."
+      "note": "AI extraction did not return a validated figure (period older than 2 months (6/2026))."
     },
     {
       "metric": "CPI inflation",
@@ -2121,18 +2128,25 @@
           "value": 56,
           "yoy": null,
           "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRlZ1ZGg5U2haVkFydEFDa2tuMUYxdllZY2FrZzlMaTE3VmNFNzBld3pGaFdCQk8tRGt0OEU5S1hzSnl5VGhSUk1vTk1xb083dkJQZS1TVFRoblllcXBWa1RLcEtWZkZKQjYtMWhkMTVvaWNDTUZwbjZrdExoUzhaejBhNUNJMDktdDhleXNXTlJSSTB5SXh1RndaMGVvUUE5NXc?oc=5"
+        },
+        {
+          "date": "2026-11-28T01:43:57.421Z",
+          "period": "Nov 2026",
+          "value": 56,
+          "yoy": null,
+          "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRlZ1ZGg5U2haVkFydEFDa2tuMUYxdllZY2FrZzlMaTE3VmNFNzBld3pGaFdCQk8tRGt0OEU5S1hzSnl5VGhSUk1vTk1xb083dkJQZS1TVFRoblllcXBWa1RLcEtWZkZKQjYtMWhkMTVvaWNDTUZwbjZrdExoUzhaejBhNUNJMDktdDhleXNXTlJSSTB5SXh1RndaMGVvUUE5NXc?oc=5"
         }
       ],
       "note": "Gemini (gemini-flash-lite-latest) extracted from news RSS items; confidence: high. Verify source link."
     },
     {
       "metric": "Forex reserves",
-      "value": 725.727,
+      "value": 700.9,
       "unit": "billion USD",
       "period": "Nov 2026",
       "yoy": "",
       "yoyValue": null,
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVnZIWEVmaXZCbzF3elowTTJwM1NfTkhMdjFyRTdNZWRpQ25rLWNwZEc3V1JxRFBjck9pSU5ka0R5Y0FTWFlDQmxpWFF4ZW1LU284a3RNanA1QzJjQlJqYUtNWVFUNlU5NDMyUlRza2xZdWVZUTBFZUhkemlFYjVTcGp3X1pWNzVLeEFVY1pJVjBGOHZ5UFNyXzRjTlZJdnYtWjNFNmFUUQ?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUmlXc2FSVnNtcEh5THFJM0w0d2RjSGM3THI4SnJ6U05lT2NKN2lLTmFJb0JpZGFickJMbWg3cGZpWVhsUVpZeWhvcUdZZ2VZaVZiVk9EeFYyZzRnMFdIWGRRenoyc1RtRldhY0kxUVNmUkV6Q3VpY2xGbkNuUmROTWJtQ3BIdkZDLWpCRXhpVElMNEFUYmZEWlBVUElhRG5WN0hBaVI1TlVsWDUtZ0NRaUgwMkJfUm8?oc=5",
       "freshness": "Auto-extracted · verify",
       "mode": "auto-extracted · verify",
       "history": [
@@ -2181,6 +2195,13 @@
           "value": 725.727,
           "yoy": null,
           "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVnZIWEVmaXZCbzF3elowTTJwM1NfTkhMdjFyRTdNZWRpQ25rLWNwZEc3V1JxRFBjck9pSU5ka0R5Y0FTWFlDQmxpWFF4ZW1LU284a3RNanA1QzJjQlJqYUtNWVFUNlU5NDMyUlRza2xZdWVZUTBFZUhkemlFYjVTcGp3X1pWNzVLeEFVY1pJVjBGOHZ5UFNyXzRjTlZJdnYtWjNFNmFUUQ?oc=5"
+        },
+        {
+          "date": "2026-11-28T01:43:57.421Z",
+          "period": "Nov 2026",
+          "value": 700.9,
+          "yoy": null,
+          "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUmlXc2FSVnNtcEh5THFJM0w0d2RjSGM3THI4SnJ6U05lT2NKN2lLTmFJb0JpZGFickJMbWg3cGZpWVhsUVpZeWhvcUdZZ2VZaVZiVk9EeFYyZzRnMFdIWGRRenoyc1RtRldhY0kxUVNmUkV6Q3VpY2xGbkNuUmROTWJtQ3BIdkZDLWpCRXhpVElMNEFUYmZEWlBVUElhRG5WN0hBaVI1TlVsWDUtZ0NRaUgwMkJfUm8?oc=5"
         }
       ],
       "note": "Gemini (gemini-flash-lite-latest) extracted from news RSS items; confidence: high. Verify source link."
@@ -2190,8 +2211,8 @@
       "value": 11.7,
       "unit": "%",
       "period": "Oct 2026",
-      "yoy": "+11.7%",
-      "yoyValue": 11.7,
+      "yoy": "",
+      "yoyValue": null,
       "sourceUrl": "https://news.google.com/rss/articles/CBMizgJBVV95cUxOUzZkR1pjZjhHLWJEcHVhbXAtbk9mY2FYQnptV2twOW9vRllDNDBaSmdXaGtONWFZeWYtcDU0Z213cHdLQjNmRmMtMDB0cUUwVFUyVll6eVE3dkxoVTB5Ry11UWc5MktROGE3NEw1SGdyYXpjWDZKVVVNaVlISDhYQWZKUUUzSWxUSGRYcDdLODZjX3JReHlSRkladHJtclZoU2ljT1dMaG9kSEttMTVxb0tpR0NhS2p2R0ZPNGN2RTl4UmJ5NFVoYXlDTWs2SExMOEdEeXAxMUgwdVhPYUFNSFVqNmdnc0o1bC1IVURLWDQyMDJPcDU0bllhLTJYRkZDNWJXbnNLR1dOak9nYXljaXhyWGZ1bmpUMzYyamVVSGo2aEE2V2hvTWU5ellPTzZlc2tXVDJHZzNGd0hHcXNRMFpFWnVVTV81N0ZBZUFB?oc=5",
       "freshness": "Auto-extracted · verify",
       "mode": "auto-extracted · verify",
@@ -2239,6 +2260,13 @@
           "period": "Oct 2026",
           "value": 11.7,
           "yoy": "+11.7%",
+          "source_url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxOUzZkR1pjZjhHLWJEcHVhbXAtbk9mY2FYQnptV2twOW9vRllDNDBaSmdXaGtONWFZeWYtcDU0Z213cHdLQjNmRmMtMDB0cUUwVFUyVll6eVE3dkxoVTB5Ry11UWc5MktROGE3NEw1SGdyYXpjWDZKVVVNaVlISDhYQWZKUUUzSWxUSGRYcDdLODZjX3JReHlSRkladHJtclZoU2ljT1dMaG9kSEttMTVxb0tpR0NhS2p2R0ZPNGN2RTl4UmJ5NFVoYXlDTWs2SExMOEdEeXAxMUgwdVhPYUFNSFVqNmdnc0o1bC1IVURLWDQyMDJPcDU0bllhLTJYRkZDNWJXbnNLR1dOak9nYXljaXhyWGZ1bmpUMzYyamVVSGo2aEE2V2hvTWU5ellPTzZlc2tXVDJHZzNGd0hHcXNRMFpFWnVVTV81N0ZBZUFB?oc=5"
+        },
+        {
+          "date": "2026-11-28T01:43:57.421Z",
+          "period": "Oct 2026",
+          "value": 11.7,
+          "yoy": null,
           "source_url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxOUzZkR1pjZjhHLWJEcHVhbXAtbk9mY2FYQnptV2twOW9vRllDNDBaSmdXaGtONWFZeWYtcDU0Z213cHdLQjNmRmMtMDB0cUUwVFUyVll6eVE3dkxoVTB5Ry11UWc5MktROGE3NEw1SGdyYXpjWDZKVVVNaVlISDhYQWZKUUUzSWxUSGRYcDdLODZjX3JReHlSRkladHJtclZoU2ljT1dMaG9kSEttMTVxb0tpR0NhS2p2R0ZPNGN2RTl4UmJ5NFVoYXlDTWs2SExMOEdEeXAxMUgwdVhPYUFNSFVqNmdnc0o1bC1IVURLWDQyMDJPcDU0bllhLTJYRkZDNWJXbnNLR1dOak9nYXljaXhyWGZ1bmpUMzYyamVVSGo2aEE2V2hvTWU5ellPTzZlc2tXVDJHZzNGd0hHcXNRMFpFWnVVTV81N0ZBZUFB?oc=5"
         }
       ],
@@ -4865,15 +4893,26 @@
   ],
   "news": [
     {
-      "publishedAt": "24 Nov 2026",
-      "title": "Global Economics Intelligence executive summary (October 2026) - McKinsey & Company",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSmgzTkdja3YzVE1LaEtHbGFYak1oUU9Pei1CR1AwOW4wak5uY3hRQk0wb1o1SWhObGhxTUZDaEZqSUZ0TjdqUS1Ed3hwclZJRi1YV0RLQzZIY3paTzR3R2l0dkp5TkhLYVdXbm5NREhjc0lSazNjRmhJNlc4Y0Z5c2d0MWZ0WWNqNVhWRjFIRUdnWHJvaEYzdmp6NnV3cXd3bjdybm9EVTN4TEgwdUJsVA?oc=5",
-      "publisher": "McKinsey & Company",
-      "strategyId": "Unclassified",
+      "publishedAt": "25 Nov 2026",
+      "title": "India GDP Growth Forecast FY27: Can Exports Help Achieve 7.3% Growth? - Alice Blue",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBTdGE0SmtGOHRBOFlIUkNXUVl4VUVtSnBrRHdFZ3ZLOXQ4d2tKaDdZbkhPTm16bFZyS1NLMUhWSEJtamlySzFQZWVxb1A0UU9RbXE2QTg0RnBPNFZpRUxVQUo1bFp0U2ZDMzBnWE4zN1J2RllqQjRFTm5lNA?oc=5",
+      "publisher": "Alice Blue",
+      "strategyId": 3,
+      "sentiment": "positive",
+      "confidence": "medium",
+      "summary": "Can exports help India achieve 7.3% GDP growth in FY27?",
+      "freshness": "News RSS · 25 Nov 2026"
+    },
+    {
+      "publishedAt": "15 Nov 2026",
+      "title": "Asia Outlook 2027: Growth broadens, capital gets selective - ing think",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9jeEZpVDNyM3JPQy1MM081YUlQVWhEZzlsaHhFX3Q1WEF4MVFmSWllcnlJTFg4dlJYR2dVaG5xZTQzNDN3TkxlUUJXYTNwWmJvT29IQ3dBT2JtdUhrazNWbHV5elVmUQ?oc=5",
+      "publisher": "ing think",
+      "strategyId": 7,
       "sentiment": "neutral",
-      "confidence": "low",
-      "summary": "Global Economics Intelligence executive summary for October 2026 published by McKinsey & Company.",
-      "freshness": "News RSS · 24 Nov 2026"
+      "confidence": "medium",
+      "summary": "Asia 2027 outlook indicates broadening growth and selective capital.",
+      "freshness": "News RSS · 15 Nov 2026"
     },
     {
       "publishedAt": "19 Oct 2026",
@@ -4883,19 +4922,19 @@
       "strategyId": 8,
       "sentiment": "positive",
       "confidence": "medium",
-      "summary": "Deloitte reports that private capital-fueled economic growth might soon arrive in India.",
+      "summary": "Private capital-fueled economic growth may soon arrive in India.",
       "freshness": "News RSS · 19 Oct 2026"
     },
     {
-      "publishedAt": "25 Aug 2026",
-      "title": "RBI Bulletin - Reserve Bank of India",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeVRxOF9YZ19OZXF5bVJLN0xrbzMxTnlLUEZ4dUcyVVdoZUZrX2dWYnVxdnh0ZFZsZ21KUHRLT3dCXzVndUY1VFF0alR6RGllRjRmZmJQM21uXy1SZnlDSnZNd0VkcGNIYms1UWlEZldUVTlaSUV2RE50a0kwd3ZzemJfRUFtWUNG?oc=5",
-      "publisher": "Reserve Bank of India",
+      "publishedAt": "31 Oct 2026",
+      "title": "India's GDP growth estimated at 7.35% in Q2 FY27: Economic Review - Fibre2Fashion",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNdXVab1k1UzVIZ0tCVTJFRHdQVVctOHJOZ1otWlVmbVpWU2xVTXJHV1BBNkppejJlMV9mMTE4V0NsVXh0V1NWbmo1R0xoRUcwczBlVDlTOUVoRkVHSUdub2loc014QmJTTDlUU2dXMU0zcGF2TnRZTVNnYmtxS2J0UWxXY2pJMGdNMzVZTTJ6WmdkU1Z6X3VtRVlOci1SVk9LU3NEUURDQXhnRnk4YjBkdFg4OWxZUVhmOUEyODBQMkI1U2hUS1ZTNHpydTZYVU0?oc=5",
+      "publisher": "Fibre2Fashion",
       "strategyId": "Unclassified",
-      "sentiment": "neutral",
-      "confidence": "low",
-      "summary": "Latest bulletin released by the Reserve Bank of India.",
-      "freshness": "News RSS · 25 Aug 2026"
+      "sentiment": "positive",
+      "confidence": "medium",
+      "summary": "India's Q2 FY27 GDP growth is estimated at 7.35%.",
+      "freshness": "News RSS · 31 Oct 2026"
     },
     {
       "publishedAt": "4 Sep 2026",
@@ -4904,9 +4943,86 @@
       "publisher": "McKinsey & Company",
       "strategyId": 14,
       "sentiment": "positive",
-      "confidence": "low",
-      "summary": "Southeast Asia quarterly review highlights tech tailwinds driving a two-speed region.",
+      "confidence": "medium",
+      "summary": "Tech tailwinds drive a two-speed Southeast Asia region.",
       "freshness": "News RSS · 4 Sep 2026"
+    },
+    {
+      "publishedAt": "1 Sep 2026",
+      "title": "India's GDP grows 7.8% in Q1: Factors powering the economy despite global turmoil - The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOeng5MG9YTU5qNDk0VlBVa1dMcGdTajFZR1ZDRDZGYTN0aHRKMHJKTlJxUHhZV0hyU25DaGNwNjU2MFRXNEI0SDhOemV5NE5XR2MxdkFVUG5XRngzQXdLSS1kOW9RVTJfODlleTRmMG0tbDRUYVBhSWZCOG0xNnpEX0g4R2YzdERFZmQwZFNFTFAzbTliQkYzaXp6Uk0xdkU0Mzk1MDJnMWZjSUlJRk81dk43QnRJSmptSk9hS0lRcWdYMnQ2VTJXc0pQYkdUVFlVdWpNRUlHT0pva1RmZGJTVXppb3hjRmx3UlpTbEVkQlJKVTlkVWMw0gH8AUFVX3lxTFA3QXZYRG1QMUs1VTlJT3hiS2JORGVPZWYwbkgyZWtXRmFxTnZXSmpzZ1hMeWVxd250aGExZUlvM0tHQkNZMVZGeVV1YXFwZ1phbGxXZHBNbFlud3BMSGRPaVZuZWFmNVNWcFlUa2NFa0QySWRZSG8wLTljVTNLUXo1eHZpSG9PS2RaM2Jadlp3ZjIwY3gtWGdGX1o1TGJUbDNWenhCck92OEd6Yk5uOGJfdVd1U0c2ZDBlTGpUU2lFQjBzV2M3aFFsTWRTU3VTRm42eFc3NThrTjhYUnE1NkNKeVNFM0VQeVBMdVFrNGZpTW1YR3pJcHhCSDhIZQ?oc=5",
+      "publisher": "The Times of India",
+      "strategyId": "Unclassified",
+      "sentiment": "positive",
+      "confidence": "medium",
+      "summary": "India's GDP grew 7.8% in Q1 despite global turmoil.",
+      "freshness": "News RSS · 1 Sep 2026"
+    },
+    {
+      "publishedAt": "31 Aug 2026",
+      "title": "7.8% Q1 growth shows Indian economy has absorbed oil shock as domestic demand cushions global headwinds - ThePrint",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPWndxMUNHb2xncjVaZ0xNRDJLU29GbDRPR1MzenFIU2tXdmVDYlFCV0lXbkItaVBhcmR5NExvQXBFRHJZUlV1YzFTd21hMnNYV2F3dHROMDRVMWl6MUpqaDlWbWR6MkxsajgtUVJ6eV9uQ2J3cEd5Y2FHWUJOUzVhMmZYRGZ5ekk3TkJpdHVtc19jUFczQzBZZGM4RTcwaGQ2eDBJOE04a1NET0hpdjAyVG5NSHdGLUxqWjhPZTl6TEF6dEJSSGZDX3JhVHhINGQzZ0xjQmR30gHbAUFVX3lxTE13M0lYUUoyZVM3QTFRN1dsLVA4UXhjbkd3NVFTVmJBLXIwcnd3U19PODJONElET2FXWWc5d3dGY0MtVWtqZFNIYjhSTHRQMmdYWUZMeUs1eXBydnc1ZEFkbDVSbExzMXRTWFB6d2lmUjhhRXNvX0NoMlRZOF9RdDNRS2ZOaW45dDNBb0RRS1JodW11Vms3ekFiM3Zyc0RUN1gxcDZCLVFlakpwM3NCVjBkb3kwTlloUWpPallWRy1TU3o3Rmtwa2JhbnB6ek5pc3lCblJsdVl4RTEzMA?oc=5",
+      "publisher": "ThePrint",
+      "strategyId": "Unclassified",
+      "sentiment": "positive",
+      "confidence": "medium",
+      "summary": "Q1 growth of 7.8% shows domestic demand cushions global headwinds.",
+      "freshness": "News RSS · 31 Aug 2026"
+    },
+    {
+      "publishedAt": "23 Sep 2026",
+      "title": "ADB raises India FY27 growth forecast to 7%, cuts FY28 estimate to 7.1% - Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQaFprRHc5XzN6UWhMcGlrb3FKTWFaemFyY1ZmOW1rRlRTY2NUWUtCbVROTFBRT2Q3Z1hweXZfMmZBNFJQQ3JLUlFYNXBUVlBhWHd2cW5GWkpRUThEVFBuYnduUnJ3bXcyajdpZFYzb2czU3pGOUdMV0ltNmJDMnptVjdXZ1B4dDdYM21sU3NCRGNpYUoyU01yQ0dKaHJBc0paOVJ1cVN6bDg0TFgzMWJXQ3ZnRzNFU3ZQYmZqd1VqakdqeVpGX3hpVC1rbXd5NF9fdElscNIB2gFBVV95cUxPUHIxU3RkSFk2aWx3YjJTY0RWRWVlcm5SWkEzS1RQNkdwX0Vzb2ExTE1HS2wtOFlPTHgxSnBQTi1udExpOEpxajNrNU50dmdlR05jT3BTakY5RmJ2SGN2VjVVU2RQTGlKRUg1clluYVlOVmFjaWJTMGY0MWh2R1VJaVJ0OGxWM3ZZU3JIaGZhaTN0YjJxVE83VEhiQS16cFNhUGw0TjZTYTBHVlV0VDRwNWN4ejlLM2FiTThFWWxYb09IUi04R2p6bDZsWFgyWU5aNkV1Y3EwYnBTZw?oc=5",
+      "publisher": "Business Standard",
+      "strategyId": "Unclassified",
+      "sentiment": "positive",
+      "confidence": "high",
+      "summary": "ADB raises India's FY27 growth forecast to 7% and cuts FY28 to 7.1%.",
+      "freshness": "News RSS · 23 Sep 2026"
+    },
+    {
+      "publishedAt": "7 Oct 2026",
+      "title": "Vietnam GDP growth hits 9.95% as exports and investment surge - https://www.indiagazette.com/",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWXk3NFBiczBvWDI1Ti1vUzdKQ2dmcnlkb1VWN0VSalFiME9wMTFlNVpkdGVqc0V5c3NLY2lCV3RWVTR6M0Zad1p5bnJzcmtTTUZsWTZXbnhEY2VidHFfbXppUkd5dnVsTEkxQlJKcy1CTXhCYjZCNldDLXRjcWZyWEcwYzgyRjlxQjBscjNqc3ZYSTdqOXFkV1h3NnJIa1c0RWt0MXJmMA?oc=5",
+      "publisher": "https://www.indiagazette.com/",
+      "strategyId": 3,
+      "sentiment": "positive",
+      "confidence": "high",
+      "summary": "Vietnam GDP growth hits 9.95% driven by surging exports and investment.",
+      "freshness": "News RSS · 7 Oct 2026"
+    },
+    {
+      "publishedAt": "5 Oct 2026",
+      "title": "India's Q2 FY27 growth seen at 7.3% as global risks weigh - Fibre2Fashion",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPS1h0WjEwb3RnRTdkblFZR0g4YjhYOXBiTGxYUER6WkNBeFZXb2FuS244UTZnZU5STWlNbXBIa1hUZV9NNTBsWjlteGJoOGE2cEFnbGJQMGZRZnNUNjlia25VcnQ1XzVHZXNENjBfTWRudGNIcHBwT2oyM09qT2poVjFNZ1BNU2RTXzFJSC1GSGFQMXo0eVJFM3pnMVh1Sm41dFdqU0E3aTlmaEFXNHpkYmh0NHlFclktWW9qdHdLMVl3aWdRQ2c?oc=5",
+      "publisher": "Fibre2Fashion",
+      "strategyId": "Unclassified",
+      "sentiment": "neutral",
+      "confidence": "medium",
+      "summary": "India's Q2 FY27 growth is seen at 7.3% as global risks weigh.",
+      "freshness": "News RSS · 5 Oct 2026"
+    },
+    {
+      "publishedAt": "15 Jul 2026",
+      "title": "China's economic growth slows to weakest pace in three years despite export boom: Here's why - The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNYnRlM3dVRTdUMzliVXdHVEZwUWVWOGhJdHRYeWh6Q2V6VDdydjE4Q1l2dk5BaUFmUG16M3djQTdmVXVZWW5IbE5qVDM4dlZfVU9NbmNVQXdJVjdGdUJBMHJuUWZzcVpwbmMzWEx1ajNZU3I3V1JKdWJabS1yWHR0QlZ0cGEyeHo1MkQzcEtrQWdhWDVyQzhHRC1nSFN3QXZqdjZ2djF5a1NCWHJKTE5GMDF5d2FMTUstLW5rcVg1anRYTUp4RDR5QWZ5cy1TbGJfQm9YUnFkQnZVNjF3TFdkYlo3MmFBZEdUUG1HbE56c0lZVG5jemhXWERQbVVIak5pTTkwME9rODZEcXBpWF9nedIBlgJBVV95cUxQQXhsMlpwMm83UEpqSE1IOW5MWmp4ZkxERngyMXNzVXNUZEljV09qQ1haQU5xcEZTUlVMZEtjTl9IZkMxU0gwU2JfdEh6X2xMSjhOM3hMSEpQQ0kxcGxvbFd5OGgzZ0ZLVUw2dUZHclZBdGV4SkRncmhYVkN6TkZGUkJacjJQLVpwSVVmRFZyYVZ4WG5reklwSl9BTHQySFlONkl4VVA0eEgzR1JsNTFTU0lvcFF1QUY2TmZfdm8xNFpXU2FQNzRTc2N1QjllaHloU2J6YUpWVXVSVzZXdk5OT0ZhaFNpcV9fM01VVXdNdkpsUy1qSXREM1VKdVg1bjItY3NlWkUyMnI5SjFSVXhtdGhqMUkwUQ?oc=5",
+      "publisher": "The Times of India",
+      "strategyId": 3,
+      "sentiment": "negative",
+      "confidence": "medium",
+      "summary": "China's economic growth slows to weakest pace in three years despite export boom.",
+      "freshness": "News RSS · 15 Jul 2026"
+    },
+    {
+      "publishedAt": "24 Sep 2026",
+      "title": "India GDP Growth Forecast FY27: Global Agencies Raise Outlook to 6.9%-7.1% - Alice Blue",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOOE9hWllKWnU4N3JuUXpneWpjSTFHVDdhbjN6aGNkSDRQX1VlQVlFQ3BNR3BRbmxUVncxRXZVNnNtWllJelo5blZlSDYwX3owY1NjbXlTM2Z0YXNxSU5jTWg0OUJ5bTg4MFdNX1c4SVAyRkhROHF0LWszNjZOOERSWjY0TUt6NE0?oc=5",
+      "publisher": "Alice Blue",
+      "strategyId": "Unclassified",
+      "sentiment": "positive",
+      "confidence": "medium",
+      "summary": "Global agencies raise India's FY27 GDP growth forecast to 6.9%-7.1%.",
+      "freshness": "News RSS · 24 Sep 2026"
     },
     {
       "publishedAt": "30 Jan 2026",
@@ -4916,7 +5032,7 @@
       "strategyId": "Unclassified",
       "sentiment": "neutral",
       "confidence": "low",
-      "summary": "Official release of the Economic Survey 2025-26 via the Press Information Bureau.",
+      "summary": "Economic Survey 2025-26 published by PIB.",
       "freshness": "News RSS · 30 Jan 2026"
     },
     {
@@ -4927,107 +5043,19 @@
       "strategyId": "Unclassified",
       "sentiment": "neutral",
       "confidence": "low",
-      "summary": "IBEF provides analysis and key findings from the Economic Survey 2025-26.",
+      "summary": "Analysis and key findings of the Economic Survey 2025-26.",
       "freshness": "News RSS · 30 Jan 2026"
     },
     {
-      "publishedAt": "29 Jan 2026",
-      "title": "INDIA’S GDP GROWTH FOR FY26 IS ESTIMATED AT 7.4 PER CENT DRIVEN BY THE DOUBLE ENGINE OF CONSUMPTION AND INVESTMENT - www.pib.gov.in",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5CWTd0TUk4dE10bk1WUHVBcFc3eXZPVkJwQ2dCRndwSzQwUl8xQ2RqdDJwUlE4N1NaSnA5X1NnLWdCd1RDZFNBWGxzLU5aRFRHTWNvejBNVnhzZndDU0hfSFpfamhETEhB?oc=5",
-      "publisher": "www.pib.gov.in",
-      "strategyId": 5,
-      "sentiment": "positive",
-      "confidence": "medium",
-      "summary": "India's FY26 GDP growth is estimated at 7.4 percent driven by consumption and investment.",
-      "freshness": "News RSS · 29 Jan 2026"
-    },
-    {
-      "publishedAt": "30 Jan 2026",
-      "title": "Economic Survey 2025–26 - Drishti IAS",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObnd2b2xRNzhtWkc2X3cyZ2VjdWFKY3hvX25ZWFZUdHR3TTI4c2k1V3pkc1c5M0tmSTEwRkFESmE4ckt1TGpEX2JhbkoyaHY3a0RYcWxSV0l5cDQtU0l3T183bmU4SjBiOVFZLWhTbWFYb2RnRHBId1pLUlZWN1UwRFVqTWdzSTk0a2swTQ?oc=5",
-      "publisher": "Drishti IAS",
-      "strategyId": "Unclassified",
-      "sentiment": "neutral",
-      "confidence": "low",
-      "summary": "Drishti IAS publishes coverage on the Economic Survey 2025-26.",
-      "freshness": "News RSS · 30 Jan 2026"
-    },
-    {
-      "publishedAt": "8 Apr 2026",
-      "title": "The Fed - India and the Global Economy - Federal Reserve (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOb0VMUUhBOFYyVmlaTDhuVGlRdG9zMUZUQkdpNXVmZE84UXNrcHRET1lYSVF0TGdnenctM0FQUzJCcWFGMXBFVVprSGtlUVh0b2toZUVFbDB6cTZSX0lRYS02MVlmdDc1Y3A2cE9jaExwUG9Nb3psTWNEVkw2SGxTandiRUxJdDU3WkZTWFhxOGhCN09nWm1zZ2lPYktCeTQ?oc=5",
-      "publisher": "Federal Reserve (.gov)",
-      "strategyId": "Unclassified",
-      "sentiment": "neutral",
-      "confidence": "low",
-      "summary": "Federal Reserve publication covering India and the global economy.",
-      "freshness": "News RSS · 8 Apr 2026"
-    },
-    {
-      "publishedAt": "17 Jun 2026",
-      "title": "Midyear Global Economic Outlook: risk and opportunity in a supply shock world - EY",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1BWDZOV3dxSzh5TVpZanFlWklUY3ZKZjRSRzIzdURVb0V4Z3NnbzZjdk1iX2N6MGhLUkh1XzQyZUhJNnFlRE1LaEpaNUFvOFFFVld4ZnZ4M2syTTlkSFpucGVURFZNYWtfVlF3T29BZkJ2VnVq?oc=5",
-      "publisher": "EY",
-      "strategyId": "Unclassified",
-      "sentiment": "neutral",
-      "confidence": "low",
-      "summary": "EY releases midyear global economic outlook focusing on risks and opportunities in a supply shock world.",
-      "freshness": "News RSS · 17 Jun 2026"
-    },
-    {
-      "publishedAt": "29 Jan 2026",
-      "title": "Economic Survey 2026 Highlights: 7.4% GDP Growth, Inflation Trends & UPSC Insights - INSIGHTS IAS",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQR0ZBSzB4aWx5U1QzM044d2dZZzFYempIb2cteVhGaHJ6YWlaTE5RY2VlNXE2UUJPbXpueVlGMWpZUG5lWktOaVRsb01vZmEwTExtT01RMmdoblZRNHdtU0FQSVp0TEpIM3lnSWpWUjZvelNWRDRxTnNsQV9nWVJjdEJPU3kwSUxTUXJRb3JLcw?oc=5",
-      "publisher": "INSIGHTS IAS",
-      "strategyId": 17,
-      "sentiment": "positive",
-      "confidence": "medium",
-      "summary": "Economic Survey 2026 highlights 7.4 percent GDP growth alongside inflation trends.",
-      "freshness": "News RSS · 29 Jan 2026"
-    },
-    {
-      "publishedAt": "23 Oct 2026",
+      "publishedAt": "25 Aug 2026",
       "title": "RBI Bulletin - Reserve Bank of India",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1SRmJxUjVnNS05VGo4SlNwVHdFR0FpWUExM1NsWTNJMEJzZV9ZeWZmYm9MOHBXTzZ6Y1hHU1hJY0VYNDVUWTZNTVE2d0FNa3gzU3VhVWFvQ0F3dW9lZlRNU01NRXdZUjRDdm1Leg?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeVRxOF9YZ19OZXF5bVJLN0xrbzMxTnlLUEZ4dUcyVVdoZUZrX2dWYnVxdnh0ZFZsZ21KUHRLT3dCXzVndUY1VFF0alR6RGllRjRmZmJQM21uXy1SZnlDSnZNd0VkcGNIYms1UWlEZldUVTlaSUV2RE50a0kwd3ZzemJfRUFtWUNG?oc=5",
       "publisher": "Reserve Bank of India",
       "strategyId": "Unclassified",
       "sentiment": "neutral",
       "confidence": "low",
-      "summary": "Reserve Bank of India publishes its regular bulletin.",
-      "freshness": "News RSS · 23 Oct 2026"
-    },
-    {
-      "publishedAt": "29 Dec 2025",
-      "title": "Press Note Details: Press Information Bureau - PIB",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaFBjUHNNT3FFLXFGam1uaHM0RkdyVlFfb2xZa0VmbmRMZkR2bVdNTDJrbWxkYTBMQzBfMmpuY2NBdl9PdmZTV000M1hBSUVLa0d4WXJGRU1ibGxXZXQ4Z1hJakp1a2E5aXAtdjgtSUEzVWtNTTg2UXZQWW5veFg3bEJmVFN5d3BzVFE?oc=5",
-      "publisher": "PIB",
-      "strategyId": "Unclassified",
-      "sentiment": "neutral",
-      "confidence": "low",
-      "summary": "Press Information Bureau provides official press note details.",
-      "freshness": "News RSS · 29 Dec 2025"
-    },
-    {
-      "publishedAt": "10 Nov 2026",
-      "title": "What’s happening this week in economics? - Deloitte",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcV9VYnV0R0RPcWN0d2g1SHJIVlNmaVA1TV9nXzRKdVlFcWtSMjQ1T1B0djE4dDNRanZvSVFGX0ZBNUd6cnZkVnAtenFuMnFzdU9zYzg5cFdkTVRxU1F5YVVXVFhVWGdhd2RsTDBkNS1Xcm9ub1FnMFp5NnB3WVBYa3JJa1FVbG5IT0ZRRHphTUhtNThkenVJS1ZrdWNDdw?oc=5",
-      "publisher": "Deloitte",
-      "strategyId": "Unclassified",
-      "sentiment": "neutral",
-      "confidence": "low",
-      "summary": "Deloitte outlines weekly developments in economics.",
-      "freshness": "News RSS · 10 Nov 2026"
-    },
-    {
-      "publishedAt": "30 Aug 2025",
-      "title": "Press Note Details: Press Information Bureau - pib.gov.in",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9oREV6c3dQN0x1YmFWdHVkSURSb1I0Vi1GNmh2Y3NHblcwQklLTWFlN3VLQW1FLWlmMDZtM1dQVUhWemItbGNBZ0lYRXBLSXJMQTRHT0YwaVNYdmRQSjdzWllMV1RBXzNyeWJVQTJjNWhBVVBvUGZlQg?oc=5",
-      "publisher": "pib.gov.in",
-      "strategyId": "Unclassified",
-      "sentiment": "neutral",
-      "confidence": "low",
-      "summary": "Official press note details released by the Press Information Bureau.",
-      "freshness": "News RSS · 30 Aug 2025"
+      "summary": "Reserve Bank of India releases its bulletin.",
+      "freshness": "News RSS · 25 Aug 2026"
     }
   ],
   "weeklyBrief": "What moved: The current economy registers at 3.91 for the year 2025, operating with an actual compound annual growth rate of 8.36 percent over the 2020–2025 period, alongside a mission score of 54 out of 100.\n\nWhy it matters: Reaching the 47 trillion dollar goal by 2047 requires an acceleration from the current trajectory, as the required compound annual growth rate stands at 11.97 percent, placing the estimated arrival year at 2056 with a status of behind.\n\nTop priorities: The three mandatory strategic focus areas are Formally skilled workforce, Electronics production, and States with 1T GSDP.",
@@ -5100,5 +5128,9 @@
       "extrapolatedYear": 2022
     }
   ],
-  "weekOnWeek": null
+  "weekOnWeek": {
+    "referenceCapturedAt": "2026-11-24T09:29:48.290Z",
+    "gdpDeltaT": 0,
+    "missionScoreDelta": null
+  }
 }
